@@ -1,0 +1,443 @@
+/*--------------------------------------------------------------
+Right to Left Style
+--------------------------------------------------------------*/
+@import "src/variables.less";
+@import "src/mixins.less";
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2 
+  }
+  &:after { 
+    clear: both;
+  }
+}
+.btn () {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: @btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid transparent; 
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: @gray-dark;
+   .button-size(@padding-base-vertical;@padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+  .user-select(none);
+  outline: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  i,
+  span{
+    z-index: 2;
+    position: relative;
+  }
+}
+
+.btn-outline(){
+  background: transparent;
+  border: 1px solid @gray-dark; 
+  text-transform: uppercase;
+  color: @gray-dark;
+  position: relative;
+  &:hover,
+  &:focus
+  {
+    color: @btn-black-color;
+    border-color: @brand-primary;
+    background: @brand-primary;
+  }
+}
+.btn-default() {
+  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+  .btn-outline();
+}
+.btn-primary() {
+  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+  &:hover,
+  &:focus {
+    background: darken(@btn-primary-bg, 15%);
+    border-color: darken(@btn-primary-bg, 15%);
+    text-decoration: none;
+  }
+}
+// Success appears as green
+.btn-success() {
+  .button-variant(@btn-success-color; @btn-success-bg; @btn-success-border);
+}
+// Info appears as blue-green
+.btn-info() {
+  .button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);
+}
+// Warning appears as orange
+.btn-warning() {
+  .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
+}
+// Danger and error appear as red
+.btn-danger() {
+  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+.btn-black() {
+  .button-variant(@btn-black-color; @btn-black-bg; @btn-black-border);
+  &:hover,
+  &:focus
+  {
+    background-color: lighten(@btn-black-bg, 20%);
+    border-color: lighten(@btn-black-bg, 20%);
+  }
+}
+.btn-lg() {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+.btn-sm() {
+  // line-height: ensure proper height of button next to small input
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.btn-xs() {
+  .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+.form-control() { 
+  display: block;
+  width: 100%;
+  height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: @padding-base-vertical @padding-base-horizontal;
+  line-height: @line-height-base;
+  color: @input-color;
+  background-color: @input-bg;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid @input-border;
+  .border-radius(@input-border-radius);
+  outline: none;
+  .form-control-focus();
+  .transition(~"border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s");
+  // Placeholder
+  //.placeholder();
+
+  // Disabled and read-only inputs
+  //
+  // HTML5 says that controls under a fieldset > legend:first-child won't be
+  // disabled if the fieldset is disabled. Due to implementation difficulty, we
+  // don't honor that edge case; we style them as disabled anyway.
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+    background-color: @input-bg-disabled;
+    .opacity(1); // iOS fix for unreadable disabled content
+  }
+
+  // Reset height for `textarea`s
+  textarea& {
+    height: auto;
+  }
+}
+.form-group() {
+ margin-bottom: @grid-gutter-width / 2;
+}
+
+/*
+RTL
+*/
+.rtl {
+  text-align: right;
+  .offcanvas {
+    left: auto;
+    right: 0;
+  }
+  &:not(.open-offcanvas) {
+    .offcanvas {
+      .translate3d(300px,0,0);
+      @media (max-width: 320px) {
+        .translate3d(260px,0,0);
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    .header-offcanvas.header-offcanvas-always-show ~ #wrapper {
+        -webkit-transform: translate3d(-300px, 0px, 0);
+        transform: translate3d(-300px, 0px, 0);
+    }
+  }
+  @media (max-width: @nav-float-breakpoint-max) {
+    .primary-nav > li.menu-item-has-children .caret {
+      left: 0;
+      right: auto;
+    }
+  }
+  @media (min-width: 800px) {
+    &.page-layout-left-sidebar .main-wrap {
+      float: left;
+    }
+  }
+  @media (min-width: @screen-md-min) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+      float: right;
+    }
+  }
+  .header-type-market .navbar-default .dh-menu {
+    text-align: right;
+  }
+  .header-type-market .navbar-default .dh-menu {
+    float: right;
+  }
+  .dh-menu .dh-menu-title h3 {
+    text-align: right;
+  }
+  .header-type-market .dh-menu ~ .navbar-nav {
+    float: right;
+    padding: 0;
+  }
+  .header-type-market .navbar-fixed-top .navbar-header .navbar-header-right {
+    right: auto;
+    left: 15px;
+  }
+  .navbar-brand {
+    float: right;
+  }
+  .dh-menu .primary-nav {
+    padding: 0;
+  }
+  .primary-nav .menu-item-badge {
+    margin-right: 0;
+    margin-left: 1.2em;
+  }
+  .dh-menu .dh-menu-title h3:after {
+    float: left;
+  }
+  .products-tab .products-tab-control {
+    h3 {
+      float: right;
+    }
+    .nav-tabs {
+      float: left;
+    }
+  }
+  @media (min-width: @nav-float-breakpoint) {
+    .offcanvas.navbar-offcanvas {
+      right: auto;
+      left: 0;
+      .translate3d(-300px, 0, 0);
+    }
+    &.open-offcanvas .header-offcanvas {
+      .translate3d( 0, 0, 0 );
+    }
+  }
+  .woocommerce {
+    span.onsale {
+      left: auto;
+      right: 15px;
+    }
+  }
+  .woocommerce .widget_price_filter {
+    .price_slider_amount {
+      text-align: left;
+    }
+    .price_label {
+      float: right;
+    }
+  }
+  &.woocommerce div.product-quickview-content form.cart .single_add_to_cart_button:before, 
+  &.woocommerce div.product form.cart .single_add_to_cart_button:before {
+    margin-right: 0;
+    margin-left: 0.5em;
+  }
+  &.woocommerce .woocommerce-pagination .woocommerce-result-count {
+    float: right;
+  }
+  &.woocommerce .woocommerce-pagination .paginate{
+    float: left;
+  }
+  &.woocommerce .widget_layered_nav ul li > a, 
+  &.woocommerce .widget_layered_nav ul li > span {
+    float: right;
+  }
+  &.woocommerce .widget_layered_nav ul li .count {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  &.woocommerce .woocommerce-ordering .woocommerce-ordering-select {
+    float: right;
+    margin-right: 0;
+    margin-left: 1em;
+  }
+  &.woocommerce .shop-toolbar .view-mode {
+    float: left;
+  }
+  &.woocommerce .woocommerce-ordering {
+    float: right;
+  }
+  .woocommerce .woocommerce-shipping-calculator h3 a:after {
+    float: left;
+  }
+  th {
+    text-align: right;
+  }
+  .woocommerce form .form-row-first {
+    float: right;
+  }
+  .woocommerce form .form-row-last {
+    float: left;
+  }
+  .woocommerce form.login, .woocommerce form.checkout_coupon, .woocommerce form.register {
+    text-align: right;
+  }
+  &.woocommerce div.product-quickview-content div.summary .share-links, 
+  &.woocommerce div.product div.summary .share-links {
+    text-align: right;
+    > span {
+      padding-right: 0;
+      padding-left: 20px;
+    }
+  }
+  .dropdown-menu {
+    text-align: right;
+  }
+  .minicart {
+    left: -10px;
+    right: auto;
+    .minicart-body .cart-product {
+      text-align: right;
+      .cart-product-details {
+        float: right;
+      }
+      .cart-product-image {
+        float: right;
+        margin: 0 0 0 5px;
+      } 
+      .remove {
+        left: 0;
+        right: auto;
+      }
+    }
+    &:before {
+      left: 20px;
+      right: auto;
+    }
+  }
+  .navbar-header-left {
+    @media (min-width: @nav-float-breakpoint) {
+      float: right;
+    } 
+  }
+  .navbar-header-right {
+    @media (min-width: @nav-float-breakpoint) {
+      float: left;
+      text-align: left;
+      > div {
+        margin-left: 0;
+        margin-right: @grid-gutter-width;
+      }
+    }
+  }
+  .navbar-header-center {
+    @media (min-width: @nav-float-breakpoint) {
+      float: right;
+    }
+  }
+  .header-type-toggle-offcanvas .navbar-toggle-right {
+    right: auto;
+    left: @grid-gutter-width/2;
+  }
+  .navbar-toggle-fixed {
+    left: auto;
+    right: @grid-gutter-width/2;
+  }
+  .header-type-classic {
+    .navbar-header {
+      left: auto;
+      right: 0;
+    }
+    .header-right {
+      text-align: left;
+      right: auto;
+      left: 0;
+      > div.navbar-offcanvas a {
+        padding-left: 0;
+        padding-right: @grid-gutter-width/2;
+      }
+    }
+    .navbar-default .primary-navbar-collapse {
+      
+    }
+  }
+  .offcanvas-nav li.menu-item-has-children .caret {
+    left: 0;
+    right: auto;
+  }
+  .offcanvas-nav a:before {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .widget_search form:before {
+    right: auto;
+    left: 0;
+  }
+  .header-search-overlay .searchform {
+    padding-left: 0;
+    padding-right: @grid-gutter-width*2;
+    &:before {
+      text-align: left;
+      left: auto;
+      right: 0;
+    }
+  }
+  .header-search-overlay .close {
+    right: auto;
+    left: 0;
+  }
+  .header-type-center .navbar-fixed-top .navbar-header .navbar-header-center {
+    left: auto;
+    right: 0;
+  }
+  .header-type-center .navbar-fixed-top .navbar-header .navbar-header-right {
+    right: auto;
+    left: 0;
+  }
+  .post-slider-wrap .hentry .entry-info {
+    text-align: right;
+  }
+  .entry-meta.icon-meta i {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .readmore-link a:before {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+  .entry-meta.icon-meta > span {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .extra-sidebar .widget_archive li, .main-sidebar .widget_archive li {
+    text-align: left;
+    a {
+      float: right;
+    }
+  }
+  .grid-style-3 .product-categories-grid-wrap .wall-col .product-category-grid-featured-summary {
+    text-align: right;
+    .product-category-grid-featured-summary-wrap h3 {
+      padding-right: @grid-gutter-width*2;
+    }
+  }
+  .grid-style-4 .product-categories-grid-wrap .wall-col .product-category-grid-featured-summary {
+    text-align: right;
+  }
+  .mailchimp-form-content button {
+    left: 0;
+    right: auto;
+  }
+  .social-widget-wrap a {
+    margin: 0 0 10px 10px;
+  }
+  .footer-widget .social-widget-wrap i {
+    margin-right: 0;
+    margin-left: 4px;
+  }
+}

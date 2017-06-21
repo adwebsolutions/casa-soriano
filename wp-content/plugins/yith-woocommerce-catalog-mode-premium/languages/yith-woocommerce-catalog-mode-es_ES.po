@@ -1,0 +1,1072 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Catalog Mode\n"
+"POT-Creation-Date: 2016-03-01 14:06+0100\n"
+"PO-Revision-Date: 2016-07-13 16:28+0100\n"
+"Last-Translator: \n"
+"Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../plugin-fw\n"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:216
+#: ../class.yith-woocommerce-catalog-mode-premium.php:246
+#: ../class.yith-woocommerce-catalog-mode-premium.php:276
+msgid "Plugin not activated or not installed"
+msgstr "Plugin no activado o no instalado"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:226
+#: ../class.yith-woocommerce-catalog-mode-premium.php:256
+#: ../class.yith-woocommerce-catalog-mode-premium.php:286
+msgid "No contact form found"
+msgstr "No se ha encontrado ningún formulario de contacto"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:307
+msgid "Show \"Add to cart\" button anyway"
+msgstr "Mostrar el botón \"Añadir al carrito\" de todas formas"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:308
+msgid "Show price anyway"
+msgstr "Mostrar precio de todas formas"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:311
+msgid "Hide \"Add to cart\" button anyway"
+msgstr "Ocultar el botón de \"Añadir al carrito\" de todas formas"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:315
+msgid "Hide price anyway"
+msgstr "Ocultar precio de todas formas"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:324
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:81
+msgid "Catalog Mode Options"
+msgstr "Opciones de Catalog Mode"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:357
+msgid "Exclude products from custom button"
+msgstr "Excluir productos del botón personalizado"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:365
+#: ../templates/admin/custom-url-table.php:667
+msgid "Enable custom button URL override"
+msgstr "Habilitar anulación de URL para el botón personalizado"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:373
+#: ../templates/admin/custom-url-table.php:675
+msgid "URL protocol type"
+msgstr "Tipo de protocolo URL"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:377
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:157
+#: ../plugin-options/premium-settings-options.php:364
+#: ../plugin-options/vendor/settings-options.php:301
+#: ../templates/admin/custom-url-table.php:679
+msgid "Generic URL"
+msgstr "URL genérica"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:378
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:158
+#: ../plugin-options/premium-settings-options.php:365
+#: ../plugin-options/vendor/settings-options.php:302
+#: ../templates/admin/custom-url-table.php:680
+msgid "E-mail address"
+msgstr "Dirección de E-mail"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:379
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:159
+#: ../plugin-options/premium-settings-options.php:366
+#: ../plugin-options/vendor/settings-options.php:303
+#: ../templates/admin/custom-url-table.php:681
+msgid "Phone number"
+msgstr "Número de teléfono"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:380
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:160
+#: ../plugin-options/premium-settings-options.php:367
+#: ../plugin-options/vendor/settings-options.php:304
+#: ../templates/admin/custom-url-table.php:682
+msgid "Skype contact"
+msgstr "Contacto de Skype"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:386
+#: ../plugin-options/premium-settings-options.php:373
+#: ../plugin-options/vendor/settings-options.php:310
+#: ../templates/admin/custom-url-table.php:688
+msgid "URL Link"
+msgstr "Enlace URL"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:583
+#: ../class.yith-woocommerce-catalog-mode-premium.php:630
+msgid "Related product"
+msgstr "Producto relacionado"
+
+#: ../class.yith-woocommerce-catalog-mode-premium.php:699
+msgid "Inquiry form"
+msgstr "Formulario de solicitud"
+
+#: ../class.yith-woocommerce-catalog-mode.php:150
+#: ../class.yith-woocommerce-catalog-mode.php:160
+#: ../class.yith-woocommerce-catalog-mode.php:752
+#: ../includes/class-ywctm-multivendor.php:225
+msgid "Settings"
+msgstr "Ajustes"
+
+#: ../class.yith-woocommerce-catalog-mode.php:151
+#: ../includes/class-ywctm-multivendor.php:226
+msgid "Exclusion List"
+msgstr "Lista de Exclusión"
+
+#: ../class.yith-woocommerce-catalog-mode.php:152
+#: ../includes/class-ywctm-multivendor.php:227
+msgid "Custom Button Url List"
+msgstr "Lista URL del botón personalizado"
+
+#: ../class.yith-woocommerce-catalog-mode.php:155
+msgid "Vendor Exclusion List"
+msgstr "Lista de exclusión de vendedores"
+
+#: ../class.yith-woocommerce-catalog-mode.php:161
+#: ../class.yith-woocommerce-catalog-mode.php:755
+msgid "Premium Version"
+msgstr "Versión Premium"
+
+#: ../class.yith-woocommerce-catalog-mode.php:168
+#: ../class.yith-woocommerce-catalog-mode.php:169
+#: ../includes/class-ywctm-multivendor.php:233
+#: ../includes/class-ywctm-multivendor.php:234
+msgid "Catalog Mode"
+msgstr "Catalog Mode"
+
+#: ../class.yith-woocommerce-catalog-mode.php:782
+msgid "Plugin Documentation"
+msgstr "Documentación del Plugin"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:99
+msgid "Show \"Add to cart\" button for this product anyway"
+msgstr ""
+"Mostrar el botón de \"Añadir al carrito\" para este producto de todas formas"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:100
+msgid "Show price for this product anyway"
+msgstr "Mostrar precio para este producto de todas formas"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:103
+msgid "Hide \"Add to cart\" button for this product anyway"
+msgstr ""
+"Ocultar el botón de \"Añadir al carrito\" para este producto de todas formas"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:107
+msgid "Hide price for this product anyway"
+msgstr "Ocultar precio de este producto de todas formas"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:113
+#: ../plugin-options/premium-settings-options.php:197
+#: ../plugin-options/settings-options.php:59
+#: ../plugin-options/vendor/settings-options.php:144
+msgid "\"Add to cart\" button"
+msgstr "Botón \"Añadir al carrito\""
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:118
+msgid "Product price"
+msgstr "Precio del producto"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:128
+msgid ""
+"Note: if you hide the price, also \"Add to cart\" button will be "
+"automatically hidden."
+msgstr ""
+"Nota: si ocultas el precio, el botón de \"Añadir al carrito\" también se "
+"ocultará automáticamente."
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:143
+msgid "Custom button exclusion"
+msgstr "Exclusión del botón personalizado"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:144
+msgid "Exclude the product from showing the custom button"
+msgstr "Excluir el producto de mostrar el botón personalizado"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:148
+msgid "Custom button URL override"
+msgstr "Anular URL del botón personalizado"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:149
+msgid "Override global URL of custom button"
+msgstr "Anular URL global del botón personalizado"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:153
+msgid "Custom button URL protocol type"
+msgstr "Tipo de protocolo URL del botón personalizado"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:154
+msgid "Specify the type of the URL"
+msgstr "Especificar el tipo de URL"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:165
+msgid "Custom button URL link"
+msgstr "Enlace URL del botón personalizado"
+
+#: ../includes/admin/meta-boxes/class-ywctm-meta-box.php:166
+msgid "Specify the URL"
+msgstr "Especifica la URL"
+
+#: ../init.php:23
+msgid ""
+"YITH WooCommerce Catalog Mode is enabled but not effective. It requires "
+"WooCommerce in order to work."
+msgstr ""
+"YITH WooCommerce Catalog Mode está habilitado pero no es efectivo. Requiere "
+"WooCommerce para funcionar."
+
+#: ../plugin-options/premium-settings-options.php:25
+#: ../plugin-options/premium-settings-options.php:346
+#: ../plugin-options/vendor/settings-options.php:24
+#: ../plugin-options/vendor/settings-options.php:283
+msgid "None"
+msgstr "Ninguno"
+
+#: ../plugin-options/premium-settings-options.php:34
+#: ../plugin-options/vendor/settings-options.php:33
+msgid "YIT Contact Form"
+msgstr "YIT Contact Form"
+
+#: ../plugin-options/premium-settings-options.php:38
+#: ../plugin-options/vendor/settings-options.php:37
+msgid "Contact Form 7"
+msgstr "Contact Form 7"
+
+#: ../plugin-options/premium-settings-options.php:42
+#: ../plugin-options/vendor/settings-options.php:41
+msgid "Gravity Forms"
+msgstr "Gravity Forms"
+
+#: ../plugin-options/premium-settings-options.php:48
+#: ../plugin-options/vendor/settings-options.php:47
+msgid "Form Plugin"
+msgstr "Form Plugin"
+
+#: ../plugin-options/premium-settings-options.php:50
+#: ../plugin-options/vendor/settings-options.php:49
+msgid ""
+"Choose from which activated plugin you want to display the inquiry form in "
+"product page"
+msgstr ""
+"Elige de qué plugin activado quieres mostrar el formulario de solicitud en "
+"la página de producto"
+
+#: ../plugin-options/premium-settings-options.php:58
+#: ../plugin-options/premium-settings-options.php:66
+#: ../plugin-options/premium-settings-options.php:74
+#: ../plugin-options/vendor/settings-options.php:57
+#: ../plugin-options/vendor/settings-options.php:65
+#: ../plugin-options/vendor/settings-options.php:73
+msgid "Choose the form to display"
+msgstr "Elige el formulario que se mustra"
+
+#: ../plugin-options/premium-settings-options.php:80
+#: ../plugin-options/vendor/settings-options.php:79
+msgid "Product Permalink"
+msgstr "Permalink del Producto"
+
+#: ../plugin-options/premium-settings-options.php:82
+#: ../plugin-options/vendor/settings-options.php:81
+msgid ""
+"Add the product permalink to the email body (it works only with Contact Form "
+"7 and Gravity Forms)."
+msgstr ""
+"Añade el permalink del producto al cuerpo del email (sólo funciona con  "
+"Contact Form 7 y Gravity Forms)."
+
+#: ../plugin-options/premium-settings-options.php:90
+#: ../plugin-options/vendor/settings-options.php:89
+msgid ""
+"To use this feature, YIT Contact Form, Contact Form 7 or Gravity Forms must "
+"be installed and activated."
+msgstr ""
+"Para usar esta característica, YIT Contact Form, Contact Form 7 o Gravity "
+"Forms deben estar instalados y activados."
+
+#: ../plugin-options/premium-settings-options.php:103
+msgid "Admin Override"
+msgstr "Anular Admin"
+
+#: ../plugin-options/premium-settings-options.php:105
+msgid "Administrator settings override the vendors' settings"
+msgstr "Los ajustes de administrador anulan los ajustes de vendedores."
+
+#: ../plugin-options/premium-settings-options.php:115
+#, php-format
+msgid ""
+"Do not apply to vendors in the  %s\"Vendor Exclusion List\" %s(Exclusion)"
+msgstr ""
+"No aplicar a los vendedores de la %s\"Lista de Exclusión de Vendedores\" "
+"%s(Exclusión)"
+
+#: ../plugin-options/premium-settings-options.php:123
+#, php-format
+msgid ""
+"Apply only to vendors  in the %s\"Vendor Exclusion List\"%s (Reverse "
+"Exclusion)"
+msgstr ""
+"Aplicar sólo a los vendedores de la %s\"Lista de Exclusión de Vendedores\"%s "
+"(Exclusión Contraria)"
+
+#: ../plugin-options/premium-settings-options.php:134
+#: ../plugin-options/settings-options.php:40
+msgid "General Settings"
+msgstr "Ajustes generales"
+
+#: ../plugin-options/premium-settings-options.php:138
+#: ../plugin-options/settings-options.php:44
+msgid "Enable YITH WooCommerce Catalog Mode"
+msgstr "Habilitar YITH WooCommerce Catalog Mode"
+
+#: ../plugin-options/premium-settings-options.php:149
+#: ../plugin-options/settings-options.php:55
+#: ../plugin-options/vendor/settings-options.php:96
+msgid "Catalog Mode Settings"
+msgstr "Ajustes de Catalog Mode"
+
+#: ../plugin-options/premium-settings-options.php:153
+#: ../plugin-options/vendor/settings-options.php:100
+msgid "Price and \"Add to cart\" button"
+msgstr "Botones de precio y \"Añadir al Carrito\""
+
+#: ../plugin-options/premium-settings-options.php:155
+#: ../plugin-options/vendor/settings-options.php:102
+msgid "Hide"
+msgstr "Ocultar"
+
+#: ../plugin-options/premium-settings-options.php:161
+#: ../plugin-options/vendor/settings-options.php:108
+msgid "Insert a text that will replace the product price (optional)"
+msgstr "Insertar un texto que sustituirá el precio de producto (opcional)"
+
+#: ../plugin-options/premium-settings-options.php:167
+#: ../plugin-options/premium-settings-options.php:215
+#: ../plugin-options/vendor/settings-options.php:114
+#: ../plugin-options/vendor/settings-options.php:162
+msgid "Hide product variations"
+msgstr "Ocultar variaciones de producto"
+
+#: ../plugin-options/premium-settings-options.php:174
+#: ../plugin-options/vendor/settings-options.php:121
+#, php-format
+msgid ""
+"Show price and \"Add to cart\" options in items of the %s\"Exclusion List"
+"\"%s (Exclusion)"
+msgstr ""
+"Mostrar precio y opciones de \"Añadir al carrito\" en artículos de la %s"
+"\"Lista de Exclusión\"%s (Exclusión)"
+
+#: ../plugin-options/premium-settings-options.php:182
+#: ../plugin-options/vendor/settings-options.php:129
+#, php-format
+msgid ""
+"Hide price only in items of the %s\"Exclusion List\"%s (Reverse Exclusion)"
+msgstr ""
+"Ocultar precio sólo en los artículos de la %s\"Lista de Exclusión\"%s "
+"(Exclusión Contraria)"
+
+#: ../plugin-options/premium-settings-options.php:190
+#: ../plugin-options/premium-settings-options.php:231
+#: ../plugin-options/vendor/settings-options.php:137
+#: ../plugin-options/vendor/settings-options.php:178
+#, php-format
+msgid ""
+"Hide \"Add to cart\" button only in items of the %s\"Exclusion List\"%s "
+"(Reverse Exclusion)"
+msgstr ""
+"Ocultar \"Añadir al carrito\" sólo en los artículos de la %s\"Lista de "
+"Exclusión\"%s (Exclusión Contraria)"
+
+#: ../plugin-options/premium-settings-options.php:199
+#: ../plugin-options/settings-options.php:61
+#: ../plugin-options/vendor/settings-options.php:146
+msgid "Hide in product detail page"
+msgstr "Ocultar en la página de detalles del producto"
+
+#: ../plugin-options/premium-settings-options.php:206
+#: ../plugin-options/settings-options.php:68
+#: ../plugin-options/vendor/settings-options.php:153
+msgid "Hide in other shop pages"
+msgstr "Ocultar en otras páginas de tienda"
+
+#: ../plugin-options/premium-settings-options.php:213
+#: ../plugin-options/vendor/settings-options.php:160
+msgid "Variable products"
+msgstr "Productos variables"
+
+#: ../plugin-options/premium-settings-options.php:223
+#: ../plugin-options/vendor/settings-options.php:170
+#, php-format
+msgid ""
+"Show \"Add to cart\" in items of the  %s\"Exclusion List\" %s(Exclusion)"
+msgstr ""
+"Mostrar \"Añadir al carrito\" en artículos de la %s\"Lista de Exclusión\" "
+"%s(Exclusión)"
+
+#: ../plugin-options/premium-settings-options.php:238
+#: ../plugin-options/vendor/settings-options.php:185
+msgid "Affected users"
+msgstr "Usuarios afectados"
+
+#: ../plugin-options/premium-settings-options.php:240
+#: ../plugin-options/vendor/settings-options.php:187
+msgid "Users who will not see the price and the \"Add to cart\" button"
+msgstr "Los usuarios que no verán el precio ni el botón \"Añadir al carrito\""
+
+#: ../plugin-options/premium-settings-options.php:242
+#: ../plugin-options/vendor/settings-options.php:189
+msgid "All users"
+msgstr "Todos los usuarios"
+
+#: ../plugin-options/premium-settings-options.php:243
+#: ../plugin-options/vendor/settings-options.php:190
+msgid "Unregistered users only"
+msgstr "Sólo usuarios sin registrar"
+
+#: ../plugin-options/premium-settings-options.php:244
+#: ../plugin-options/vendor/settings-options.php:191
+msgid "Selected countries"
+msgstr "Países seleccionados"
+
+#: ../plugin-options/premium-settings-options.php:250
+#: ../plugin-options/vendor/settings-options.php:197
+msgid "Select countries"
+msgstr "Selecciona países"
+
+#: ../plugin-options/premium-settings-options.php:253
+#: ../plugin-options/vendor/settings-options.php:200
+msgid "Search for a country&hellip;"
+msgstr "Buscar un país&hellip;"
+
+#: ../plugin-options/premium-settings-options.php:254
+#: ../plugin-options/vendor/settings-options.php:201
+msgid ""
+"Users from these countries will not see the price and the \"Add to cart\" "
+"button"
+msgstr ""
+"Los usuarios de estos países no verán el precio y el botón \"Añadir al "
+"carrito\""
+
+#: ../plugin-options/premium-settings-options.php:258
+#: ../plugin-options/settings-options.php:75
+msgid "Admin View"
+msgstr "Vista Admin"
+
+#: ../plugin-options/premium-settings-options.php:260
+#: ../plugin-options/settings-options.php:77
+msgid "Enable Catalog Mode also for administrators"
+msgstr "Habilitar Catalog Mode también para adminstradores"
+
+#: ../plugin-options/premium-settings-options.php:272
+#: ../plugin-options/vendor/settings-options.php:209
+msgid "Inquiry Form"
+msgstr "Formulario de solicitud"
+
+#: ../plugin-options/premium-settings-options.php:286
+#: ../plugin-options/vendor/settings-options.php:223
+msgid "Custom Button"
+msgstr "Botón Personalizado"
+
+#: ../plugin-options/premium-settings-options.php:288
+#: ../plugin-options/vendor/settings-options.php:225
+msgid ""
+"To use a custom button, you have to hide the \"Add to cart\" button and/or "
+"the price"
+msgstr ""
+"Para usar un botón personalizado, tienes que ocultar el botón \"Añadir al "
+"carrito\" y/o el precio"
+
+#: ../plugin-options/premium-settings-options.php:291
+#: ../plugin-options/premium-settings-options.php:299
+#: ../plugin-options/vendor/settings-options.php:228
+#: ../plugin-options/vendor/settings-options.php:236
+msgid "Custom button"
+msgstr "Botón personalizado"
+
+#: ../plugin-options/premium-settings-options.php:293
+#: ../plugin-options/vendor/settings-options.php:230
+msgid "Show in product detail page"
+msgstr "Mostrar en la página de detalles del producto"
+
+#: ../plugin-options/premium-settings-options.php:301
+#: ../plugin-options/vendor/settings-options.php:238
+msgid "Show in shop pages"
+msgstr "Mostrar en páginas de tienda"
+
+#: ../plugin-options/premium-settings-options.php:307
+#: ../plugin-options/vendor/settings-options.php:244
+msgid "Button text"
+msgstr "Texto del botón"
+
+#: ../plugin-options/premium-settings-options.php:313
+#: ../plugin-options/vendor/settings-options.php:250
+msgid "Color"
+msgstr "Color"
+
+#: ../plugin-options/premium-settings-options.php:316
+#: ../plugin-options/vendor/settings-options.php:253
+msgid "Color of the text (Optional)"
+msgstr "Color del texto (Opcional)"
+
+#: ../plugin-options/premium-settings-options.php:320
+#: ../plugin-options/vendor/settings-options.php:257
+msgid "Hover Color"
+msgstr "Color en hover"
+
+#: ../plugin-options/premium-settings-options.php:323
+#: ../plugin-options/vendor/settings-options.php:260
+msgid "Color of the text on mouse hover (Optional)"
+msgstr "Color del texto para el evento hover del ratón (Opcional)"
+
+#: ../plugin-options/premium-settings-options.php:327
+#: ../plugin-options/vendor/settings-options.php:264
+msgid "Background Color"
+msgstr "Color de fondo"
+
+#: ../plugin-options/premium-settings-options.php:330
+#: ../plugin-options/vendor/settings-options.php:267
+msgid "Color of the background (Optional)"
+msgstr "Color de fondo (Opcional)"
+
+#: ../plugin-options/premium-settings-options.php:334
+#: ../plugin-options/vendor/settings-options.php:271
+msgid "Background Hover Color"
+msgstr "Color de fondo en hover"
+
+#: ../plugin-options/premium-settings-options.php:337
+#: ../plugin-options/vendor/settings-options.php:274
+msgid "Color of the background on mouse hover (Optional)"
+msgstr "Color de fondo en el evento hover del ratón (Opcional)"
+
+#: ../plugin-options/premium-settings-options.php:341
+#: ../plugin-options/vendor/settings-options.php:278
+msgid "Icon"
+msgstr "Icono"
+
+#: ../plugin-options/premium-settings-options.php:343
+#: ../plugin-options/vendor/settings-options.php:280
+msgid "Show optional icon"
+msgstr "Mostrar icono opcional"
+
+#: ../plugin-options/premium-settings-options.php:347
+#: ../plugin-options/vendor/settings-options.php:284
+msgid "Theme Icon"
+msgstr "Icono del tema"
+
+#: ../plugin-options/premium-settings-options.php:348
+#: ../plugin-options/vendor/settings-options.php:285
+msgid "Custom Icon"
+msgstr "Icono Personalizado"
+
+#: ../plugin-options/premium-settings-options.php:360
+#: ../plugin-options/vendor/settings-options.php:297
+msgid "URL Protocol Type"
+msgstr "Tipo de protocolo URL"
+
+#: ../plugin-options/premium-settings-options.php:362
+#: ../plugin-options/vendor/settings-options.php:299
+msgid "Specify the type of the URL (Optional)"
+msgstr "Especificar el tipo de URL (Opcional)"
+
+#: ../plugin-options/premium-settings-options.php:375
+#: ../plugin-options/vendor/settings-options.php:312
+msgid "Specify the URL (Optional)"
+msgstr "Especificar la URL (Opcional)"
+
+#: ../plugin-options/premium-settings-options.php:384
+#: ../plugin-options/settings-options.php:86
+#: ../plugin-options/vendor/settings-options.php:321
+msgid "Other Settings"
+msgstr "Otros ajustes"
+
+#: ../plugin-options/premium-settings-options.php:389
+#: ../plugin-options/vendor/settings-options.php:326
+msgid "Product Reviews"
+msgstr "Reseñas del producto"
+
+#: ../plugin-options/premium-settings-options.php:395
+#: ../plugin-options/vendor/settings-options.php:332
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: ../plugin-options/premium-settings-options.php:396
+#: ../plugin-options/vendor/settings-options.php:333
+msgid "Disabled for all users"
+msgstr "Habilitado para todos los usuarios"
+
+#: ../plugin-options/premium-settings-options.php:397
+#: ../plugin-options/vendor/settings-options.php:334
+msgid "Disabled only for unregistered users"
+msgstr "Habilitado sólo para usuarios registrados"
+
+#: ../plugin-options/premium-settings-options.php:401
+#: ../plugin-options/settings-options.php:91
+msgid "Disable shop"
+msgstr "Deshabilitar tienda"
+
+#: ../plugin-options/premium-settings-options.php:403
+#: ../plugin-options/settings-options.php:93
+msgid ""
+"Hide and disable \"Cart\" page, \"Checkout\" page and all \"Add to Cart\" "
+"buttons"
+msgstr ""
+"Ocultar y deshabilitar la página del \"Carrito\", la página de \"Pago\" y "
+"todos los botones de \"Añadir al carrito\""
+
+#: ../plugin-options/settings-options.php:18
+msgid "Upgrade to the PREMIUM VERSION"
+msgstr "Mejorar a la VERSIÓN PREMIUM"
+
+#: ../plugin-options/settings-options.php:21
+#: ../plugin-options/settings-options.php:27
+msgid "YITH WooCommerce Catalog Mode"
+msgstr "YITH WooCommerce Catalog Mode"
+
+#: ../plugin-options/settings-options.php:22
+msgid "Discover the Advanced Features"
+msgstr "Descubre las Características Avanzadas"
+
+#: ../plugin-options/settings-options.php:23
+msgid ""
+"Upgrade to the PREMIUM VERSION of YITH WooCommerce Catalog Mode to benefit "
+"from all features!"
+msgstr ""
+"¡Actualiza a la VERSIÓN PREMIUM de YITH WooCommerce Catalog Mode para "
+"beneficiarte de todas las características!"
+
+#: ../plugin-options/settings-options.php:29
+msgid "Get Support and Pro Features"
+msgstr "Hazte con Soporte y Características Pro"
+
+#: ../plugin-options/settings-options.php:30
+msgid ""
+"By purchasing the premium version of the plugin, you will take advantage of "
+"the advanced features of the product and you will get one year of free "
+"updates and support through our platform available 24h/24."
+msgstr ""
+"Comprando la versión premium del plugin, obtendrás las ventajas de las "
+"características avanzadas del producto y obtendrás un año de actualizaciones "
+"gratuitas y soporte a través de nuestra plataforma disponible 24h/24."
+
+#: ../templates/admin/custom-url-table.php:84
+#: ../templates/admin/custom-url-table.php:806
+#: ../templates/admin/exclusions-table.php:98
+#: ../templates/admin/exclusions-table.php:835
+msgid "Products"
+msgstr "Productos"
+
+#: ../templates/admin/custom-url-table.php:86
+#: ../templates/admin/exclusions-table.php:100
+msgid "product"
+msgstr "producto"
+
+#: ../templates/admin/custom-url-table.php:87
+#: ../templates/admin/exclusions-table.php:101
+msgid "products"
+msgstr "productos"
+
+#: ../templates/admin/custom-url-table.php:109
+#: ../templates/admin/exclusions-table.php:124
+msgid "Product"
+msgstr "Producto"
+
+#: ../templates/admin/custom-url-table.php:110
+#: ../templates/admin/custom-url-table.php:218
+#: ../templates/admin/custom-url-table.php:330
+msgid "Custom button URL"
+msgstr "Personalizar URL del botón"
+
+#: ../templates/admin/custom-url-table.php:144
+#: ../templates/admin/custom-url-table.php:149
+#: ../templates/admin/custom-url-table.php:254
+#: ../templates/admin/custom-url-table.php:259
+#: ../templates/admin/custom-url-table.php:367
+#: ../templates/admin/custom-url-table.php:372
+#: ../templates/admin/exclusions-table.php:165
+msgid "Edit URL"
+msgstr "Editar URL"
+
+#: ../templates/admin/custom-url-table.php:145
+#: ../templates/admin/exclusions-table.php:161
+msgid "Edit product"
+msgstr "Editar producto"
+
+#: ../templates/admin/custom-url-table.php:146
+#: ../templates/admin/custom-url-table.php:168
+#: ../templates/admin/custom-url-table.php:256
+#: ../templates/admin/custom-url-table.php:278
+#: ../templates/admin/custom-url-table.php:369
+#: ../templates/admin/custom-url-table.php:391
+#: ../templates/admin/exclusions-table.php:162
+#: ../templates/admin/exclusions-table.php:198
+#: ../templates/admin/exclusions-table.php:288
+#: ../templates/admin/exclusions-table.php:324
+#: ../templates/admin/exclusions-table.php:416
+#: ../templates/admin/exclusions-table.php:452
+#: ../templates/admin/vendors-table.php:147
+#: ../templates/admin/vendors-table.php:169
+msgid "Remove from list"
+msgstr "Quitar de la lista"
+
+#: ../templates/admin/custom-url-table.php:154
+#: ../templates/admin/custom-url-table.php:264
+#: ../templates/admin/custom-url-table.php:377
+msgid "Excluded from custom button"
+msgstr "Excluído del botón personalizado"
+
+#: ../templates/admin/custom-url-table.php:192
+#: ../templates/admin/custom-url-table.php:807
+#: ../templates/admin/exclusions-table.php:222
+#: ../templates/admin/exclusions-table.php:836
+msgid "Categories"
+msgstr "Categorías"
+
+#: ../templates/admin/custom-url-table.php:194
+#: ../templates/admin/exclusions-table.php:224
+msgid "category"
+msgstr "categoría"
+
+#: ../templates/admin/custom-url-table.php:195
+#: ../templates/admin/exclusions-table.php:225
+msgid "categories"
+msgstr "categorías"
+
+#: ../templates/admin/custom-url-table.php:217
+#: ../templates/admin/exclusions-table.php:248
+msgid "Category"
+msgstr "Categoría"
+
+#: ../templates/admin/custom-url-table.php:255
+#: ../templates/admin/exclusions-table.php:287
+msgid "Edit category"
+msgstr "Editar categoría"
+
+#: ../templates/admin/custom-url-table.php:304
+#: ../templates/admin/custom-url-table.php:808
+#: ../templates/admin/exclusions-table.php:350
+#: ../templates/admin/exclusions-table.php:837
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: ../templates/admin/custom-url-table.php:306
+#: ../templates/admin/exclusions-table.php:352
+msgid "tag"
+msgstr "etiqueta"
+
+#: ../templates/admin/custom-url-table.php:307
+#: ../templates/admin/exclusions-table.php:353
+msgid "tags"
+msgstr "etiqueta"
+
+#: ../templates/admin/custom-url-table.php:329
+#: ../templates/admin/exclusions-table.php:376
+msgid "Tag"
+msgstr "Etiqueta"
+
+#: ../templates/admin/custom-url-table.php:368
+#: ../templates/admin/exclusions-table.php:415
+msgid "Edit tag"
+msgstr "Editar etiqueta"
+
+#: ../templates/admin/custom-url-table.php:506
+#: ../templates/admin/exclusions-table.php:561
+#, php-format
+msgid "1 %s added successfully"
+msgstr "Se ha añadido 1 %s satisfactoriamente"
+
+#: ../templates/admin/custom-url-table.php:507
+#: ../templates/admin/exclusions-table.php:562
+#, php-format
+msgid "%s %s added successfully"
+msgstr "%s %s añadidas satisfactoriamente"
+
+#: ../templates/admin/custom-url-table.php:513
+#: ../templates/admin/exclusions-table.php:568
+#, php-format
+msgid "%s updated successfully"
+msgstr "%s actualizadas satisfactoriamente"
+
+#: ../templates/admin/custom-url-table.php:585
+#: ../templates/admin/exclusions-table.php:634
+#, php-format
+msgid "1 %s removed successfully"
+msgstr "1 %s eliminada satisfactoriamente"
+
+#: ../templates/admin/custom-url-table.php:586
+#: ../templates/admin/exclusions-table.php:635
+#, php-format
+msgid "%s %s removed successfully"
+msgstr "%s %s eliminadas satisfactoriamente"
+
+#: ../templates/admin/custom-url-table.php:610
+msgid "Custom Button URL list"
+msgstr "Lista URL del botón personalizado"
+
+#: ../templates/admin/custom-url-table.php:617
+#: ../templates/admin/exclusions-table.php:666
+#, php-format
+msgid "Add %s"
+msgstr "Añadir %s"
+
+#: ../templates/admin/custom-url-table.php:638
+#: ../templates/admin/exclusions-table.php:687
+#, php-format
+msgid "%s to edit"
+msgstr "%s para editar"
+
+#: ../templates/admin/custom-url-table.php:638
+#: ../templates/admin/exclusions-table.php:687
+#, php-format
+msgid "Select %s"
+msgstr "Seleccionar %s"
+
+#: ../templates/admin/custom-url-table.php:648
+#: ../templates/admin/exclusions-table.php:697
+#, php-format
+msgid "Search for a %s&hellip;"
+msgstr "Buscar %s&hellip;"
+
+#: ../templates/admin/custom-url-table.php:659
+msgid "Exclude from custom button"
+msgstr "Excluir del botón personalizado"
+
+#: ../templates/admin/custom-url-table.php:697
+msgid "Add custom URL"
+msgstr "Añadir URL personalizada"
+
+#: ../templates/admin/custom-url-table.php:697
+msgid "Update custom URL"
+msgstr "Actualizar URL personalizada"
+
+#: ../templates/admin/custom-url-table.php:699
+#: ../templates/admin/exclusions-table.php:727
+#: ../templates/admin/vendors-table.php:334
+msgid "Return to list"
+msgstr "Volver a la lista"
+
+#: ../templates/admin/custom-url-table.php:705
+msgid ""
+"If you activate the option \"Custom Button\", the items belonging to the "
+"following list will use a custom link for the button."
+msgstr ""
+"Si activas la opción \"Botón personalizado\", los artículos que pertenezcan "
+"a la siguiente lista usarán un enlace personalizado para el botón."
+
+#: ../templates/admin/custom-url-table.php:709
+#: ../templates/admin/exclusions-table.php:738
+#, php-format
+msgid "Search %s"
+msgstr "Buscar %s"
+
+#: ../templates/admin/custom-url-table.php:767
+#: ../templates/admin/exclusions-table.php:796
+#: ../templates/admin/vendors-table.php:376
+msgid "Select at least one category"
+msgstr "Selecciona al menos una categoría"
+
+#: ../templates/admin/custom-url-table.php:775
+#: ../templates/admin/exclusions-table.php:804
+msgid "Select at least one tag"
+msgstr "Selecciona al menos una etiqueta"
+
+#: ../templates/admin/custom-url-table.php:783
+#: ../templates/admin/exclusions-table.php:812
+msgid "Select at least one product"
+msgstr "Selecciona al menos un producto"
+
+#: ../templates/admin/exclusions-table.php:81
+msgid "Show \"Add to cart\""
+msgstr "Mostrar \"Añadir al carrito\""
+
+#: ../templates/admin/exclusions-table.php:82
+msgid "Show \"Add to cart\" button"
+msgstr "Mostrar el botón \"Añadir al carrito\""
+
+#: ../templates/admin/exclusions-table.php:83
+msgid "Show price"
+msgstr "Mostrar precio"
+
+#: ../templates/admin/exclusions-table.php:84
+msgid "Show product price"
+msgstr "Mostrar precio de producto"
+
+#: ../templates/admin/exclusions-table.php:87
+msgid "Hide \"Add to cart\""
+msgstr "Ocultar \"Añadir al carrito\""
+
+#: ../templates/admin/exclusions-table.php:88
+msgid "Hide \"Add to cart\" button"
+msgstr "Ocultar el botón de \"Añadir al carrito\""
+
+#: ../templates/admin/exclusions-table.php:92
+msgid "Hide price"
+msgstr "Ocultar precio"
+
+#: ../templates/admin/exclusions-table.php:93
+msgid "Hide product price"
+msgstr "Ocultar precio del producto"
+
+#: ../templates/admin/exclusions-table.php:160
+msgid "Edit exclusions"
+msgstr "Editar exclusiones"
+
+#: ../templates/admin/exclusions-table.php:171
+#: ../templates/admin/exclusions-table.php:185
+#: ../templates/admin/exclusions-table.php:297
+#: ../templates/admin/exclusions-table.php:311
+#: ../templates/admin/exclusions-table.php:425
+#: ../templates/admin/exclusions-table.php:439
+#: ../templates/admin/vendors-table.php:156
+msgid "Yes"
+msgstr "Sí"
+
+#: ../templates/admin/exclusions-table.php:175
+#: ../templates/admin/exclusions-table.php:189
+#: ../templates/admin/exclusions-table.php:301
+#: ../templates/admin/exclusions-table.php:315
+#: ../templates/admin/exclusions-table.php:429
+#: ../templates/admin/exclusions-table.php:443
+#: ../templates/admin/vendors-table.php:160
+msgid "No"
+msgstr "No"
+
+#: ../templates/admin/exclusions-table.php:286
+#: ../templates/admin/exclusions-table.php:291
+#: ../templates/admin/exclusions-table.php:414
+#: ../templates/admin/exclusions-table.php:419
+#: ../templates/admin/vendors-table.php:145
+#: ../templates/admin/vendors-table.php:150
+msgid "Edit exclusion"
+msgstr "Editar exclusión"
+
+#: ../templates/admin/exclusions-table.php:659
+msgid "Exclusion list"
+msgstr "Lista de exclusión"
+
+#: ../templates/admin/exclusions-table.php:725
+#: ../templates/admin/vendors-table.php:332
+msgid "Add exclusion"
+msgstr "Añadir exclusión"
+
+#: ../templates/admin/exclusions-table.php:725
+#: ../templates/admin/vendors-table.php:332
+msgid "Update exclusion"
+msgstr "Actualizar exclusión"
+
+#: ../templates/admin/exclusions-table.php:734
+msgid ""
+"If you want to use this table, firstly you have to specify what you want to "
+"hide (\"Add to cart\", price or both), then enable the \"Exclusion\" option "
+"and, if want, also enable the \"Reverse Exclusion\" option. Note: if you "
+"hide the price, also \"Add to cart\" button will be automatically hidden."
+msgstr ""
+"Si quieres usar esta tabla, primero tienes que especificar qué quieres "
+"ocultar (\"Añadir al carrito\", precio, o ambos) entonces habilitar la "
+"opción y, si quieres, también habilitar la opción \"Exclusión contraria\". "
+"Nota: si ocultas el precio, el botón \"Añadir al carrito\" también será "
+"automáticamente ocultado."
+
+#: ../templates/admin/icon-list.php:72
+msgid "Upload"
+msgstr "Subir"
+
+#: ../templates/admin/icon-list.php:81
+msgid "Image preview"
+msgstr "Vista previa de imagen"
+
+#: ../templates/admin/vendors-table.php:79
+msgid "Exclude from override"
+msgstr "Excluir de anulación"
+
+#: ../templates/admin/vendors-table.php:82
+msgid "Apply override"
+msgstr "Aplicar anulación"
+
+#: ../templates/admin/vendors-table.php:86
+msgid "vendor"
+msgstr "vendedor"
+
+#: ../templates/admin/vendors-table.php:87
+msgid "vendors"
+msgstr "vendedores"
+
+#: ../templates/admin/vendors-table.php:110
+msgid "Vendor"
+msgstr "Vendedor"
+
+#: ../templates/admin/vendors-table.php:146
+msgid "Edit vendor"
+msgstr "Editar vendedor"
+
+#: ../templates/admin/vendors-table.php:226
+msgid "1 vendor added successfully"
+msgstr "1 vendedor añadido satisfactoriamente"
+
+#: ../templates/admin/vendors-table.php:227
+#, php-format
+msgid "%s vendors added successfully"
+msgstr "%s vendedores añadidos satisfactoriamente"
+
+#: ../templates/admin/vendors-table.php:233
+msgid "Vendor updated successfully"
+msgstr "Vendedor actualizado satisfactoriamente"
+
+#: ../templates/admin/vendors-table.php:264
+msgid "1 vendor removed successfully"
+msgstr "1 vendedor eliminado satisfactoriamente"
+
+#: ../templates/admin/vendors-table.php:265
+#, php-format
+msgid "%s vendors removed successfully"
+msgstr "%s vendedores eliminados satisfactoriamente"
+
+#: ../templates/admin/vendors-table.php:273
+msgid "Vendor Exclusion list"
+msgstr "Lista de Exclusión de Vendedores"
+
+#: ../templates/admin/vendors-table.php:280
+msgid "Add vendors"
+msgstr "Añadir vendedores"
+
+#: ../templates/admin/vendors-table.php:301
+msgid "Vendor to edit"
+msgstr "Vendedor para editar"
+
+#: ../templates/admin/vendors-table.php:301
+msgid "Select vendors"
+msgstr "Seleccionar vendedores"
+
+#: ../templates/admin/vendors-table.php:311
+msgid "Search for a vendor&hellip;"
+msgstr "Buscar un vendedor&hellip;"
+
+#: ../templates/admin/vendors-table.php:341
+msgid ""
+"If you want to use this table, firstly you have to enable the \"Admin "
+"Override\" option, then enable the \"Exclusion\" option and, if want, also "
+"enable the \"Reverse Exclusion\" option."
+msgstr ""
+"Si quieres utilizar esta tabla, primero tienes que habilitar la opción de "
+"\"Anular Admin\", entonces habilitar la opción \"Exclusión\" y, si quieres, "
+"también habilitar la opción \"Exclusión contraria\"."
+
+#: ../templates/admin/vendors-table.php:345
+msgid "Search vendor"
+msgstr "Buscar vendedor"
+
+#: ../templates/admin/vendors-table.php:401
+msgid "Vendors"
+msgstr "Vendedores"

@@ -1,0 +1,200 @@
+CODIGO,HIJO,NOMBRE,DESCRPCIÓN CORTA,DESCRIPCIÓN LARGA,CATEGORÍA,Sub categoria (MARCA=/FABRICANTE,SUBSUBCATEGORÍA2,SUBSUBCATEGORÍA3,RANGO,AMPERAJE,VOLTAJE,POLOS,OHMS,WATTS,TAMAÑO,SALIDA  RELEVADOR,OPCIONES SALIDA,CARACTERISTICA,CARACTERISTICA2,CARACTERISTICA3,RELACIONADOS,IMAGEN
+ACD10TRMS,,AMPROBE ACD- 10TRMS,Voltampermetro de gancho  ACD-10TRMS,"Voltampermetro de gancho Apertura de pinza para medir cables de hasta 25mm .Volts   CA/CD: 600V , Amperes : 600ACA , resistencia:  20 MW, CAPACITANCIA : 3000mF , FRECUENCIA , INCLUYE PUNTAS Y ESTUCHE",MEDICION,AMPROBE,VOLTAMPERMETRO,,,,,,,,,,,VCA/VCD:600V,ACA:600V,,,acd-10trms-plus.jpg|acd-10trms-plus2.jpg
+AMP108,,FIMESA amperimetro 108,Amperimetro FIMESA MOD. 108,"Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexión directa",MEDICION,FIMESA,AMPERIMETRO CD,,5|10|15|20|25|30|50|100|150,,,,,,,,,,,,SHUNTFW,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP108-5,AMP108,,,,,,,,5,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP108-10,AMP108,,,,,,,,10,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP108-15,AMP108,,,,,,,,15,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP108-20,AMP108,,,,,,,,20,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP108-25,AMP108,,,,,,,,25,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP108-30,AMP108,,,,,,,,30,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP108-50,AMP108,,,,,,,,50,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP108-100,AMP108,,,,,,,,100,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP108-150,AMP108,,,,,,,,150,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP118,,FIMESA amperimetro 118,Amperimetro  FIMESA MOD. 118,"Amperimetro para tablero CA FIMESA MOD. 118 .Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de PERATURA, TIENE MAYOR IMPORTANCIA QUE LA PRECISION.HASTA 30ACA ES CONEXIÓN DIRECTA, RANGOS MAYORES USAR TRANSFORMADOR DE CORRIENTE",MEDICION,FIMESA,AMPERIMETRO CA,,5|10|15|20|25|30|50|100,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP118-5,AMP118,,,,,,,,5,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP118-10,AMP118,,,,,,,,10,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP118-15,AMP118,,,,,,,,15,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP118-20,AMP118,,,,,,,,20,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP118-25,AMP118,,,,,,,,25,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP118-30,AMP118,,,,,,,,30,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP118-50,AMP118,,,,,,,,50,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP118-100,AMP118,,,,,,,,100,,,,,,,,,,,,,amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg
+AMP201,,FIMESA amperimetro 201,Amperimetro FIMESA MOD. 201,Amperimetro para tablero CD FIMESA MOD. 201 . Dimensiones  100x75mm .Los amperimetros con rango mayor a 30ACD  deberan de usar derivador de corriente (SHUNT),MEDICION,FIMESA,AMPERIMETRO CD,,10|15|20| 25|30| GRADUACION CARATULA,,,,,,,,,,,,SHUNTFIMESA,amp201.jpg|dimensiones 201211.jpg
+AMP201-10,AMP201,,,,,,,,10,,,,,,,,,,,,,amp201.jpg|dimensiones 201211.jpg
+AMP201-15,AMP201,,,,,,,,15,,,,,,,,,,,,,amp201.jpg|dimensiones 201211.jpg
+AMP201-20,AMP201,,,,,,,,20,,,,,,,,,,,,,amp201.jpg|dimensiones 201211.jpg
+AMP201-25,AMP201,,,,,,,,25,,,,,,,,,,,,,amp201.jpg|dimensiones 201211.jpg
+AMP201-30,AMP201,,,,,,,,30,,,,,,,,,,,,,amp201.jpg|dimensiones 201211.jpg
+AMP201-GRAD,AMP201,,,,,,,,,,,,,,,,,,,,,amp201.jpg|dimensiones 201211.jpg
+C40D,,FEMA INDICADOR MULTISEÑAL C40D,Indicador multiseñal  FEMA MOD. C40D,"Indicador de panel multiseñal configurable de 4 digitos   para señales de proceso (mA Vcd) , Temperatura : termopares ( K,J,E,N,L,SB,T,C), Pt100,Pt500,Pt1000, Ni100, Ni200, Ni1000, PTC y NYC , Resistencia, Voltaje CA y CD (hasta 400V) Corriente CA, CD ( hasta 5A).Tamaño 96x48mm .Opciones: control relevador, salida analogica, salida MODBUS RTU",MEDICION,FEMA,,,,,,,,,,"A1(1RELEVADOR ),A2 (2o RELEVADOR)","Analogica (4-20mA),MODBUS RTU",,,,"A1, A2",c40d.jpg
+A1,,FEMA MODULO ALARMA A1,Modulo salida  FEMA  alarma A1,"Modulo salida relevador para C40D  mod. A1.1 salida relevador, 3 contactos  (NC,NA,Común)  hasta 250 VCA @ 8 amperes",MEDICION,FEMA,,,,,,,,,,,,,,,,A1.JPG
+A2,,FEMA MODULO ALARMA A2,Modulo salida  FEMA  alarma A2,"Modulo salida relevador para C40D  mod. A2.1 salida relevador, 3 contactos  (NC,NA,Común)  hasta 250 VCA @ 8 amperes",MEDICION,FEMA,,,,,,,,,,,,,,,,A2.JPG
+UT201,,UNI-T,Voltampermetro de gancho UNI-T MOD. UT-201,"Voltampermetro de gancho  VCD: 200mV/2V/20V/200V/600V  VCA:2V/20V/200V/600V   ACA: 2A/20A/200A/400A OHMS: 200W/2KW/20KW/200KW/2MW/20MWAUTORRANGO , PRUEBA DIODOS, CONTINUIDAD, RETENCION DE LECTURA INCLUYE PUNTAS Y ESTUCHE",MEDICON,UNIT,VOLTAMPERMETRO,,,,,,,,,,,,,,UNIT202,ut201.jpg
+4102A,,KYORITSU TERROMETRO,Probador de resitencia de tierra KYORITSU MOD. 4102A,"El modelo 4102 A es un medidor de la resistencia de tierra diseñado para la medición en líneas de distribución de potencia, instalaciones domesticas y aplicaciones eléctricas. También dispone de una escala de voltaje CA para medir la tensión de tierra.Resistencia de tierra x 1W: 0-12 W , x10 W:0-120W , x100 0-1200W",MEDICION,KYORITSU,TERROMETRO,,,,,,,,,,,,,,,4102a.jpg
+FRECH9663,,HEDRICK FRECUENCIMETRO LENGÜETAS,Frecuencimetro de  lengüetas HEDRICK MOD. H96,Frecuencimetro de  lengüetas HEDRICK MOD. H96.Rango: 57-63Hz. Voltaje 127/220 VCA,MEDICION,HEDRICK,FRECUENCIMETRO,,,,,,,,,,,,,,,frech96.jpg
+KLK,,LITTELFUSE fusible  KLK,Fusible LITTELFUSE MOD. KLK,Fusible suplementario  tipo MIDGET fusion rapida  600VCA/500VCD.Dimensiones 10X38mm,PROTECCION,LITTELFUSE,FUSIBLE,MIDGET,,1/10 |1/8 | 2/10|1/4|3/10|1/2|3/4| 1 | 1 1/2 | 2 |2 1/2 |3 |3 1/2|4 |5| 6|7|8|9|10|12|15|20|25|30,,,,,,,,,,,L600M,klk.jpg
+KLK-0.100,KLK,,,,,,,,,1/10,,,,,,,,,,,,klk.jpg
+KLK-0.125,KLK,,,,,,,,,1/8,,,,,,,,,,,,klk.jpg
+KLK-0.200,KLK,,,,,,,,,2/10,,,,,,,,,,,,klk.jpg
+KLK-0.250,KLK,,,,,,,,,1/4,,,,,,,,,,,,klk.jpg
+KLK-0.300,KLK,,,,,,,,,3/10,,,,,,,,,,,,klk.jpg
+KLK-0.500,KLK,,,,,,,,,1/2,,,,,,,,,,,,klk.jpg
+KLK-0.750,KLK,,,,,,,,,3/4,,,,,,,,,,,,klk.jpg
+KLK-1,KLK,,,,,,,,,1,,,,,,,,,,,,klk.jpg
+KLK-1.500,KLK,,,,,,,,,1 1/2,,,,,,,,,,,,klk.jpg
+KLK-2,KLK,,,,,,,,,2,,,,,,,,,,,,klk.jpg
+KLK-2.500,KLK,,,,,,,,,2 1/2,,,,,,,,,,,,klk.jpg
+KLK-3,KLK,,,,,,,,,3,,,,,,,,,,,,klk.jpg
+KLK-3.500,KLK,,,,,,,,,3 1/2,,,,,,,,,,,,klk.jpg
+KLK-4,KLK,,,,,,,,,4,,,,,,,,,,,,klk.jpg
+KLK-5,KLK,,,,,,,,,5,,,,,,,,,,,,klk.jpg
+KLK-6,KLK,,,,,,,,,6,,,,,,,,,,,,klk.jpg
+KLK-7,KLK,,,,,,,,,7,,,,,,,,,,,,klk.jpg
+KLK-8,KLK,,,,,,,,,8,,,,,,,,,,,,klk.jpg
+KLK-9,KLK,,,,,,,,,9,,,,,,,,,,,,klk.jpg
+KLK-10,KLK,,,,,,,,,10,,,,,,,,,,,,klk.jpg
+KLK-12,KLK,,,,,,,,,12,,,,,,,,,,,,klk.jpg
+KLK-15,KLK,,,,,,,,,15,,,,,,,,,,,,klk.jpg
+KLK-20,KLK,,,,,,,,,20,,,,,,,,,,,,klk.jpg
+KLK-25,KLK,,,,,,,,,25,,,,,,,,,,,,klk.jpg
+KLK-30,KLK,,,,,,,,,30,,,,,,,,,,,,klk.jpg
+L60030M,,LITTELFUSE portafusible serie L600M,Portafusible LITTELFUSE SERIE MOD. L600M,Portafusible para  fusibles tipo MIDGET  (10x38mm) 600VCA/VCD 30A.Rango de cables 6-14AWG,PROTECCION,LITTELFUSE,PORTAFUSIBLE,MIDGET,,,,1|2|3,,,,,,,,,,L60030M.JPG
+L60030M1C,L60030M,,,,,,,,,,,1,,,,,,,,,,L60030M.JPG|L60030M1C.JPG|L60030MLATERAL.JPG
+L60030M2C,L60030M,,,,,,,,,,,2,,,,,,,,,,L60030M.JPG|L60030M2C.JPG|L60030MLATERAL.JPG
+L60030M3C,L60030M,,,,,,,,,,,3,,,,,,,,,,L60030M.JPG|L60030M3C.JPG|L60030MLATERAL.JPG
+BA9S,,FOCO BA9S,FOCO BA9S,Foco miniatura BA9S .Base bayoneta 10X28mm,CONTROL,NORMAN,EUROPEO,,,,12|24|48|60|130|230,,,,,,,,,,,BA9S.JPG
+BA9S-12,BA9S,,,,,,,,,,12,,,,,,,,,,,BA9S.JPG
+BA9S-24,BA9S,,,,,,,,,,24,,,,,,,,,,,BA9S.JPG
+BA9S-48,BA9S,,,,,,,,,,48,,,,,,,,,,,BA9S.JPG
+BA9S-60,BA9S,,,,,,,,,,60,,,,,,,,,,,BA9S.JPG
+BA9S-130,BA9S,,,,,,,,,,130,,,,,,,,,,,BA9S.JPG
+BA9S-230,BA9S,,,,,,,,,,230,,,,,,,,,,,BA9S.JPG
+RHS,,OHMITE REOSTATO RHS,Reostato OHMITE MOD. H,"Reostato OHMITE mod. H  25 Watts.  Diametro  1 9/16""",CONTROL,OHMITE,REOSTATO,,,,,,2|8|10|25|50|100|250|500|1000|1500|5K|10K|15K|20K|25K,,,,,,,,,RHS.JPG
+RHS00002,RHS,,,,,,,,,,,,2,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS00008,RHS,,,,,,,,,,,,8,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS00010,RHS,,,,,,,,,,,,10,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS00025,RHS,,,,,,,,,,,,25,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS00050,RHS,,,,,,,,,,,,50,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS00100,RHS,,,,,,,,,,,,100,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS00250,RHS,,,,,,,,,,,,250,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS00500,RHS,,,,,,,,,,,,500,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS01000,RHS,,,,,,,,,,,,1000,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS01500,RHS,,,,,,,,,,,,1500,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS05000,RHS,,,,,,,,,,,,5K,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS10000,RHS,,,,,,,,,,,,10K,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS15000,RHS,,,,,,,,,,,,15K,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS20000,RHS,,,,,,,,,,,,20K,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+RHS25000,RHS,,,,,,,,,,,,25K,,,,,,,,,"RHS,JPG|RHS1.JPG|RH2.JPG"
+TAP31211,,OHMITE TAP SWITCH,TAPSWITCH OHMITE MOD. 312-11,TAPSWITCH OHMITE MOD. 312-11 . CAPACIDAD CONTACTOS CA: 30A 300V   CD 30A 20 V . NUMERO DE PASOS: 11 . DIAMETRO 84mm,CONTROL,OHMITE,TAPSWITCH,,,,,,,,,,,,,,,312.JPG
+TAP41212,,OHMITE TAP SWITCH,TAPSWITCH OHMITE MOD. 412-12,TAPSWITCH OHMITE MOD. 412-12 . CAPACIDAD CONTACTOS CA: 50A 300V   CD 50A 20 V . NUMERO DE PASOS: 12 . DIAMETRO 108mm,CONTROL,OHMITE,TAPSWITCH,,,,,,,,,,,,,,,412.JPG
+SKN130,,SEMIKRON Diodo SKN130,Diodo SEMIKRON mod. SKN 130 . ITAV=165A@ 100°C  .Anodo al tornillo (Positivo),Diodo SEMIKRON mod. SKN 130 . ITAV=130A Anodo al tornillo (Positivo).Montaje E14 Rosca M12,,SEMIKRON,DIODO,,,,400|600|800|1200,,,,,,,,,,,skn130.jpg|skn.jpg|sknrosca.jpg
+SKN130/04,SKN130,,,,,,,,,,400,,,,,,,,,,,skn130.jpg|skn.jpg|sknrosca.jpg
+SKN130/06,SKN130,,,,,,,,,,600,,,,,,,,,,,skn130.jpg|skn.jpg|sknrosca.jpg
+SKN130/08,SKN130,,,,,,,,,,800,,,,,,,,,,,skn130.jpg|skn.jpg|sknrosca.jpg
+SKN130/12,SKN130,,,,,,,,,,1200,,,,,,,,,,,skn130.jpg|skn.jpg|sknrosca.jpg
+SKR130,,SEMIKRON Diodo SKR130,Diodo SEMIKRON mod. SKR 130 . ITAV=165A@ 100°C .Catodo al tornillo (Negativo),Diodo SEMIKRON mod. SKN 130 . ITAV=130A Catodo al tornillo (Negativo).Montaje E14.Rosca M12,,SEMIKRON,DIODO,,,,400|600|800|1200,,,,,,,,,,,skn130.jpg|skr.jpg|sknrosca.jpg
+SKR130/04,SKN130,,,,,,,,,,400,,,,,,,,,,,skn130.jpg|skr.jpg|sknrosca.jpg
+SKR130/06,SKN130,,,,,,,,,,600,,,,,,,,,,,skn130.jpg|skr.jpg|sknrosca.jpg
+SKR130/08,SKN130,,,,,,,,,,800,,,,,,,,,,,skn130.jpg|skr.jpg|sknrosca.jpg
+SKR130/12,SKN130,,,,,,,,,,1200,,,,,,,,,,,skn130.jpg|skr.jpg|sknrosca.jpg
+SKN240,,SEMIKRON Diodo SKN240,Diodo SEMIKRON mod. SKN 240 . ITAV=320A@ 100 °C .Anodo al tornillo (Positivo),"Diodo SEMIKRON mod. SKN 240 . ITAV=320A@ 100 °C .Anodo al tornillo (Positivo).Montaje E15.Rosca M16 , UNF 3/4"" (Version medida imperial)",,SEMIKRON,DIODO,,,,600|600UNF|800|1200,,,,,,,,,,,skn240.jpg|skn.jpg|sknrosca.jpg
+SKN240/06,SKN240,,,,,,,,,,600,,,,,,,,,,,skn240.jpg|skn.jpg|sknrosca.jpg
+SKN240/06UNF,SKN240,,,,,,,,,,600UNF,,,,,,,,,,,skn240.jpg|skn.jpg|sknrosca.jpg
+SKN240/08,SKN240,,,,,,,,,,800,,,,,,,,,,,skn240.jpg|skn.jpg|sknrosca.jpg
+SKN240/12,SKN240,,,,,,,,,,1200,,,,,,,,,,,skn240.jpg|skn.jpg|sknrosca.jpg
+SKR240,,SEMIKRON Diodo SKR240,Diodo SEMIKRON mod. SKR 240 . ITAV=320A@100 °C .Catodo al tornillo (Negativo),"Diodo SEMIKRON mod. SKN 240 . ITAV=320A@ 100 °C .Catodo al tornillo (Negativo ).Montaje E15.Rosca M16 , UNF 3/4"" (Version medida imperial)",,SEMIKRON,DIODO,,,,600|600UNF|800|1200,,,,,,,,,,,skn240.jpg|skr.jpg|sknrosca.jpg
+SKR240/06,SKR240,,,,,,,,,,600,,,,,,,,,,,skn240.jpg|skr.jpg|sknrosca.jpg
+SKR240/06UNF,SKR240,,,,,,,,,,600UNF,,,,,,,,,,,skn240.jpg|skr.jpg|sknrosca.jpg
+SKR240/08,SKR240,,,,,,,,,,800,,,,,,,,,,,skn240.jpg|skr.jpg|sknrosca.jpg
+SKR240/12,SKR240,,,,,,,,,,1200,,,,,,,,,,,skn240.jpg|skr.jpg|sknrosca.jpg
+010c,,SUPERIOR ELECTRIC AUTOTRANSFORMADOR 10C,AUTOTRANSFORMADOR SUPERIOR ELECTRIC MOD. 10C,AUTOTRANSFORMADOR SUPERIOR ELECTRIC MOD. 10C VOLTAJE DE ENTRADA : 120VCA.VOLTAJE DE SALIDA 0-120VCA  2.25A,CONTROL,SUPERIOR ELECTRIC,AUTOTRANSFORMADOR,,,,,,,,,,,,,,,10c.jpg
+CVMC10,,CIRCUTOR ANALIZADOR CVM-C10,ANALIZADOR DE REDES CIRCUTOR MOD. CVM-C10,"analizador de redes para panel en 96x96 mm con registro de energías compacto y con medida en 4 cuadrantes (Consumo y Generación). Adecuado para instalaciones de Media y Baja Tensión, tanto en circuitos trifásicos a 3 o 4 hilos, 2 fases con o sin neutro, conexiones ARON o sistemas monofásicos.
+Características de visualización e interfaz:
+•Visualización rápida y simple usando un solo botón
+•Teclado capacitivo de tres teclas
+•Pantalla LCD retro-iluminada de alto contraste
+Otras características:
+•Comunicaciones de serie RS-485 Modbus
+•2 salidas a transistor configurables para impulsos o alarmas
+•2 salidas a relé configurables como alarmas
+•2 entradas digitales para selección de tres tarifas o detección de estados lógicos
+•Permite selección de tarifas mediante comunicaciones
+•Presición Clase 0.5 en tensión, corriente y potencia; 1 en energía
+ analizador de redes para panel en 96x96 mm con registro de energías compacto y con medida en 4 cuadrantes (Consumo y Generación). Adecuado para instalaciones de Media y Baja Tensión, tanto en circuitos trifásicos a 3 o 4 hilos, 2 fases con o sin neutro, conexiones ARON o sistemas monofásicos.
+Características de visualización e interfaz:
+•Visualización rápida y simple usando un solo botón
+•Teclado capacitivo de tres teclas
+•Pantalla LCD retro-iluminada de alto contraste
+Otras características:
+•Comunicaciones de serie RS-485 Modbus
+•2 salidas a transistor configurables para impulsos o alarmas
+•2 salidas a relé configurables como alarmas
+•2 entradas digitales para selección de tres tarifas o detección de estados lógicos
+•Permite selección de tarifas mediante comunicaciones
+•Precisión Clase 0.5 en tensión, corriente y potencia; 1 en energía",,CIRCUTOR,ANALIZADOR DE REDES,,,,,,,,,,,,,,,cvmc10.jpg
+SMARTIII,,CIRCUTOR REGULADOR REACTIVA SMART III,Regulador de reactiva CIRCUTOR MOD. SMART III,"La medida con tres transformadores de corriente asegura una lectura análoga a la del
+contador de compañía. El regulador de energía reactiva computer SMART III es el único
+del mercado que añade a la tradicional medida con un solo transformador de corriente, la
+posibilidad de medir con 3, incorporando, además, las funciones de un completo analizador
+de redes, y el control de corrientes residuales de fuga.
+El computer SMART III es un regulador que asegura un excelente mantenimiento
+preventivo, mediante la programación de sus alarmas y las opciones de test de estado de los
+condensadores, ofreciendo máxima supervisión y seguridad en su equipo de compensación. 6 Y 12 pasos R3-1
+Computer
+SMART III
+Reguladores de energía reactiva
+Regulador inteligente de energía reactiva
+La medida con tres transformadores de corriente asegura una lectura análoga a la del
+contador de compañía. El regulador de energía reactiva computer SMART III es el único
+del mercado que añade a la tradicional medida con un solo transformador de corriente, la
+posibilidad de medir con 3, incorporando, además, las funciones de un completo analizador
+de redes, y el control de corrientes residuales de fuga.
+El computer SMART III es un regulador que asegura un excelente mantenimiento
+preventivo, mediante la programación de sus alarmas y las opciones de test de estado de los
+condensadores, ofreciendo máxima supervisión y seguridad en su equipo de compensación.
+La conexión con 1 o 3 transformadores que permite el computer SMART III
+lo convierten en el regulador ideal en cualquier instalación, siendo posible:
+—— Cambiar de 1 a 3 transformadores en caso de:
+–– Cambios en la penalización de reactiva
+–– Cambios en los hábitos de consumo
+–– Importantes desequilibrios en el sistema
+—— Intercambiar el regulador en cualquier batería
+—— Ideal en instalaciones con hasta 4 cos ? objetivos, para adaptarse a
+cualquier necesidad de compensación (diferentes franjas horarias).
+Permite su uso en equipos de compensación de Media Tensión.
+Descripción
+Aplicación
+Características técnicas
+Circuito de tensión Tensión alimentación 110...480 Vc.a.
+Tolerancia 10%
+Consumo 6 VA
+Frecuencia 45...65 Hz
+Circuito medida Tensión de medida 525 Vc.a. F-F
+300 Vc.a. F-N
+Medida de corriente x1 ó x3 transf. .../5 A ó .../1 A
+Corriente de fugas Rango de medida I?prim = 10 mA...1 Ac.a.
+Transformadores de corriente Serie WGC
+Precisión Tensión y Corriente 1%
+Cos ? 2% ±1 dígito
+Medida de temperatura Rango de medida 0...80 ºC ±3 ºC
+Relé de alarma Contacto de salida Conmutado
+Umax y Imax de maniobra 250 Vc.a. / 6 A
+Relé de salida Nº de relés 6 o 12 según tipo
+Umax y Imax de maniobra 250 Vc.a. / 6 A
+Relé de ventilador Contacto de salida No conmutado
+Umax y Imax de maniobra 250 Vc.a. / 6 A
+Salidas digitales Nº salidas 2
+Tipo Transistor NPN
+Umax y Imax de maniobra 24 Vc.c. / 50 mA
+Entradas digitales Nº Entradas 2
+Alarmas Nº de alarmas 17, totalmente configurables
+Comunicaciones Puerto RS-485
+Protocolo Modbus/RTU
+Condiciones de trabajo Temperatura -20...+60 ºC
+Humedad relativa 95% sin condensación
+Altitud máxima 2000 m
+Sistema de control PFC (Programa que minimiza el número de maniobras)
+Seguridad Aislamiento Categoría III Clase II EN 61010-1
+Grado de protección IP 40 montado
+IP 30 sin montar según EN-60529
+Normas IEC 62053-23 (2003-01), IEC 61326-1, EN 61010-1, UL 508",,,,,,,,,,,,,,,,,,smartiii.jpg

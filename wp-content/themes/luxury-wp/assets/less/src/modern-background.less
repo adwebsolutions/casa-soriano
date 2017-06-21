@@ -1,0 +1,68 @@
+.modern-background {
+	background: #f9f9f9;
+	.content-container {
+		background: #f9f9f9;
+	}
+	.shop-toolbar .view-mode,
+	.form-flat-select{
+		background: #fff;
+	}
+	.posts-layout-default,
+	.posts-layout-center {
+		.entry-featured {
+			margin: 0;
+		}
+		.entry-info {
+			padding: @grid-gutter-width;
+			background: #fff;
+			border: 1px solid @border-color-base;
+			border-top: 0;
+			.box-shadow(0 0 18px 0 rgba(0,0,0,.06));
+		}
+	}
+	.posts {
+		.posts-wrap.posts-layout-grid,
+		.posts-wrap.posts-layout-masonry {
+			.entry-info {
+				background: #fff;
+				.box-shadow(0 0 18px 0 rgba(0,0,0,.06));
+			}
+		}
+	}
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url,
+	.comment-form-comment{
+		input,
+		textarea{
+			background: #fff;
+		}
+	}
+	&.woocommerce {
+		table.cart thead th,
+		.quantity input.qty {
+			background: transparent;
+		}
+	}
+	.woocommerce .woocommerce-checkout-login, 
+	.woocommerce .woocommerce-checkout-coupon{
+		border:1px solid @border-color-base;
+	}
+	.woocommerce {
+		form .form-row select,
+		form .form-row .input-text,
+		.coupon-wrap input[type="text"],
+		.quantity input.qty {
+			//background: transparent;
+		}
+	}
+	table{
+		background: transparent;
+	}
+	.form-control,
+	.form-flat-radio i, 
+	.form-flat-checkbox i,
+	.select2-container .select2-choice {
+		background: #fff;
+	}
+}

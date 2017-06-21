@@ -1,0 +1,7728 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Luxury\n"
+"POT-Creation-Date: 2016-08-20 22:10+0700\n"
+"PO-Revision-Date: 2017-06-21 15:32-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: includes/assets\n"
+"X-Poedit-SearchPathExcluded-2: includes/vc/assets\n"
+"X-Poedit-SearchPathExcluded-3: includes/dhwc-brand/assets\n"
+
+#: 404.php:8
+msgid "WHOOPS!"
+msgstr ""
+
+#: 404.php:9
+msgid "404"
+msgstr ""
+
+#: 404.php:11
+msgid "It looks like you are lost! Try searching here"
+msgstr ""
+
+#: author-bio.php:9
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: author-bio.php:24
+#, php-format
+msgid "%s on Facebook"
+msgstr ""
+
+#: author-bio.php:29
+#, php-format
+msgid "%s on Twitter"
+msgstr ""
+
+#: author-bio.php:34
+#, php-format
+msgid "%s on Google +"
+msgstr ""
+
+#: author-bio.php:39
+#, php-format
+msgid "%s on Linked In"
+msgstr ""
+
+#: author-bio.php:44
+#, php-format
+msgid "%s on Pinterest"
+msgstr ""
+
+#: comments.php:10
+msgid "No Comments"
+msgstr ""
+
+#: comments.php:10
+msgid "One Comment"
+msgstr ""
+
+#: comments.php:10 includes/functions.php:1797
+msgid "Comments"
+msgstr ""
+
+#: comments.php:33
+msgid "Comments are closed."
+msgstr ""
+
+#: content-none.php:3
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:8
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: content-none.php:13
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: footer.php:14
+msgid "SUBSCRIBE US."
+msgstr ""
+
+#: footer.php:14
+msgid "Get our latest news"
+msgstr ""
+
+#: functions.php:47
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:48
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:49
+msgid "Categories Menu"
+msgstr ""
+
+#: functions.php:50
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:51
+msgid "Sidebar Menu"
+msgstr ""
+
+#: functions.php:52 includes/admin/theme-options.php:1496
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:94
+msgctxt "Google font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:159
+msgid "All posts displayed"
+msgstr ""
+
+#: functions.php:160
+msgid "Loading the next set of posts..."
+msgstr ""
+
+#: functions.php:165
+msgid "Sending info, please wait..."
+msgstr ""
+
+#: functions.php:176 includes/admin/meta-boxes.php:247
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:177
+msgid "This is main sidebar"
+msgstr ""
+
+#: functions.php:186
+msgid "Shop Sidebar"
+msgstr ""
+
+#: functions.php:187
+msgid "This sidebar use for Woocommerce page"
+msgstr ""
+
+#: functions.php:195
+msgid "Shop Filter Sidebar"
+msgstr ""
+
+#: functions.php:196
+msgid "This sidebar use for Woocommerce Filter page"
+msgstr ""
+
+#: functions.php:204
+msgid "Off-canvas Sidebar"
+msgstr ""
+
+#: functions.php:205
+msgid "This sidebar use for Offcanvas Sidebar"
+msgstr ""
+
+#: functions.php:214
+msgid "Footer Sidebar #"
+msgstr ""
+
+#: header.php:114
+msgid "Skip to main content"
+msgstr ""
+
+#: header/center-logo.php:94 header/center-logo.php:161 header/center.php:212
+#: header/classic-right.php:214 header/classic.php:144 header/market.php:208
+#: header/offcanvas.php:43 header/offcanvas.php:79
+msgid "No menu assigned!"
+msgstr ""
+
+#: header/center-logo.php:101 header/center.php:88 header/classic-right.php:92
+#: header/classic.php:82 header/market.php:81 header/offcanvas.php:51
+#: header/overlay.php:85 header/toggle-offcanvas.php:108
+msgid "Toggle navigation"
+msgstr ""
+
+#: header/center-logo.php:232 header/center.php:227 header/classic-right.php:85
+#: header/classic.php:216 header/market.php:222 header/toggle-offcanvas.php:124
+msgid "Close"
+msgstr ""
+
+#: header/market.php:131 includes/functions.php:1122
+#: includes/functions.php:2146
+msgid "Search..."
+msgstr ""
+
+#: header/market.php:191 includes/vc/shortcodes/dh_post.php:65
+#: includes/vc/shortcodes/dh_post_slider.php:94 includes/vc/woocommerce.php:229
+#: includes/vc/woocommerce.php:354 includes/vc/woocommerce.php:434
+#: includes/widget.php:544
+msgid "Categories"
+msgstr ""
+
+#: header/offcanvas-header-icon.php:23 header/offcanvas-header-icon.php:42
+#: header/overlay.php:30 header/toggle-offcanvas.php:53
+#: woocommerce/checkout/thankyou.php:31
+msgid "My Account"
+msgstr ""
+
+#: header/offcanvas-header-icon.php:47 header/offcanvas.php:25
+#: header/overlay.php:53 header/toggle-offcanvas.php:76
+msgid "My Wishlist"
+msgstr ""
+
+#: header/offcanvas-header-icon.php:54 header/overlay.php:60
+#: header/toggle-offcanvas.php:83
+msgid "Logout"
+msgstr ""
+
+#: header/offcanvas.php:28 includes/hook.php:402
+#: woocommerce/global/form-login.php:45 woocommerce/myaccount/form-login.php:24
+#: woocommerce/myaccount/form-login.php:36
+#: woocommerce/myaccount/form-login.php:64
+msgid "Login"
+msgstr ""
+
+#: header/offcanvas.php:28
+msgid "Account"
+msgstr ""
+
+#: includes/admin/admin.php:50
+msgid "Tooltip Shortcode"
+msgstr ""
+
+#: includes/admin/admin.php:64 includes/admin/admin.php:65
+#: includes/vc/shortcodes/dh_button.php:14
+#: includes/vc/shortcodes/dh_testimonial.php:106
+msgid "Text"
+msgstr ""
+
+#: includes/admin/admin.php:70 includes/post-type-slider.php:606
+msgid "URL"
+msgstr ""
+
+#: includes/admin/admin.php:71
+msgid "http://"
+msgstr ""
+
+#: includes/admin/admin.php:76 includes/plugins/tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr ""
+
+#: includes/admin/admin.php:78 includes/vc/shortcodes/dh_button.php:305
+#: includes/vc/shortcodes/dh_pricing_table.php:199
+msgid "Tooltip"
+msgstr ""
+
+#: includes/admin/admin.php:79 includes/vc/shortcodes/dh_button.php:306
+#: includes/vc/shortcodes/dh_pricing_table.php:200
+msgid "Popover"
+msgstr ""
+
+#: includes/admin/admin.php:85 includes/vc/shortcodes/dh_button.php:310
+msgid "Tip position"
+msgstr ""
+
+#: includes/admin/admin.php:87 includes/admin/meta-boxes.php:242
+#: includes/vc/shortcodes/dh_box_feature.php:31
+#: includes/vc/shortcodes/dh_button.php:314
+#: includes/vc/shortcodes/dh_counter.php:112
+#: includes/vc/shortcodes/dh_pricing_table.php:208
+msgid "Top"
+msgstr ""
+
+#: includes/admin/admin.php:88 includes/admin/meta-boxes.php:243
+#: includes/vc/shortcodes/dh_box_feature.php:32
+#: includes/vc/shortcodes/dh_button.php:315
+#: includes/vc/shortcodes/dh_pricing_table.php:209
+msgid "Bottom"
+msgstr ""
+
+#: includes/admin/admin.php:89 includes/admin/theme-options.php:1174
+#: includes/lookbook/includes/admin.php:100
+#: includes/lookbook/includes/admin.php:194 includes/post-type-slider.php:555
+#: includes/vc/shortcodes/dh_box_feature.php:33
+#: includes/vc/shortcodes/dh_button.php:47
+#: includes/vc/shortcodes/dh_button.php:295
+#: includes/vc/shortcodes/dh_button.php:316
+#: includes/vc/shortcodes/dh_counter.php:112
+#: includes/vc/shortcodes/dh_pricing_table.php:131
+#: includes/vc/shortcodes/dh_pricing_table.php:210
+msgid "Left"
+msgstr ""
+
+#: includes/admin/admin.php:90 includes/lookbook/includes/admin.php:101
+#: includes/lookbook/includes/admin.php:195 includes/post-type-slider.php:557
+#: includes/vc/shortcodes/dh_box_feature.php:34
+#: includes/vc/shortcodes/dh_button.php:48
+#: includes/vc/shortcodes/dh_button.php:297
+#: includes/vc/shortcodes/dh_button.php:317
+#: includes/vc/shortcodes/dh_pricing_table.php:133
+#: includes/vc/shortcodes/dh_pricing_table.php:211
+msgid "Right"
+msgstr ""
+
+#: includes/admin/admin.php:96 includes/admin/admin.php:97
+#: includes/vc/init.php:543 includes/vc/shortcodes/dh_box_feature.php:76
+#: includes/vc/shortcodes/dh_carousel.php:161
+#: includes/vc/shortcodes/dh_counter.php:115
+#: includes/vc/shortcodes/dh_mailchimp.php:14
+#: includes/vc/shortcodes/dh_pricing_table.php:66
+#: includes/vc/shortcodes/dh_tabs.php:66
+#: includes/vc/shortcodes/dh_testimonial.php:100
+#: includes/vc/woocommerce.php:308 includes/widget.php:200
+#: includes/widget.php:429 includes/widget.php:521 includes/widget.php:642
+#: includes/widget.php:699 includes/widget.php:1061 includes/widget.php:1149
+msgid "Title"
+msgstr ""
+
+#: includes/admin/admin.php:102 includes/admin/admin.php:103
+#: includes/vc/shortcodes/dh_typed.php:13
+msgid "Content"
+msgstr ""
+
+#: includes/admin/admin.php:108
+msgid "Action to trigger"
+msgstr ""
+
+#: includes/admin/admin.php:110 includes/vc/shortcodes/dh_button.php:335
+#: includes/vc/shortcodes/dh_pricing_table.php:229
+msgid "Hover"
+msgstr ""
+
+#: includes/admin/admin.php:111 includes/vc/shortcodes/dh_button.php:335
+#: includes/vc/shortcodes/dh_pricing_table.php:229
+msgid "Click"
+msgstr ""
+
+#: includes/admin/admin.php:118
+msgid "Cancel"
+msgstr ""
+
+#: includes/admin/admin.php:121
+msgid "Add Tooltip"
+msgstr ""
+
+#: includes/admin/functions.php:8
+msgid "Nothing Found..."
+msgstr ""
+
+#: includes/admin/functions.php:15
+msgid "Unable to load MailChimp lists, check your API Key."
+msgstr ""
+
+#: includes/admin/functions.php:18
+msgid "You have not created any lists at MailChimp"
+msgstr ""
+
+#: includes/admin/functions.php:20
+msgid "Select a list"
+msgstr ""
+
+#: includes/admin/functions.php:137
+msgid "Select a sidebar..."
+msgstr ""
+
+#: includes/admin/functions.php:212
+#: includes/woocommerce_product_variable.php:121
+msgid "Add Images to Gallery"
+msgstr ""
+
+#: includes/admin/functions.php:214
+#: includes/woocommerce_product_variable.php:122
+msgid "Add to Gallery"
+msgstr ""
+
+#: includes/admin/functions.php:232 includes/admin/functions.php:307
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/functions.php:317
+msgid "Add Gallery Images"
+msgstr ""
+
+#: includes/admin/functions.php:331 includes/admin/functions.php:371
+msgid "Change Media"
+msgstr ""
+
+#: includes/admin/functions.php:331 includes/admin/functions.php:382
+msgid "Select Media"
+msgstr ""
+
+#: includes/admin/functions.php:336
+msgid "Clear"
+msgstr ""
+
+#: includes/admin/functions.php:358
+msgid "Select or Upload your Media"
+msgstr ""
+
+#: includes/admin/functions.php:360 includes/admin/functions.php:430
+#: includes/admin/mega-menu.php:102 includes/admin/theme-options.php:397
+#: includes/admin/theme-options.php:668
+msgid "Select"
+msgstr ""
+
+#: includes/admin/functions.php:401 includes/admin/functions.php:455
+#: includes/admin/theme-options.php:373 includes/admin/theme-options.php:411
+#: includes/admin/theme-options.php:643 includes/admin/theme-options.php:682
+msgid "Change Image"
+msgstr ""
+
+#: includes/admin/functions.php:401 includes/admin/functions.php:466
+#: includes/admin/mega-menu.php:67 includes/admin/theme-options.php:373
+#: includes/admin/theme-options.php:422 includes/admin/theme-options.php:643
+#: includes/admin/theme-options.php:693
+msgid "Select Image"
+msgstr ""
+
+#: includes/admin/functions.php:407 includes/admin/mega-menu.php:68
+#: includes/admin/theme-options.php:378 includes/admin/theme-options.php:649
+msgid "Clear Image"
+msgstr ""
+
+#: includes/admin/functions.php:428 includes/admin/mega-menu.php:100
+#: includes/admin/theme-options.php:395 includes/admin/theme-options.php:666
+msgid "Select or Upload your Image"
+msgstr ""
+
+#: includes/admin/import-demo.php:19
+msgid "Import Demo"
+msgstr ""
+
+#: includes/admin/import-demo.php:30
+msgid "Importing Demo Content..."
+msgstr ""
+
+#: includes/admin/import-demo.php:31
+msgid ""
+"Please be patient and do not navigate away from this page while the import "
+"is in&nbsp;progress. This can take a while if your server is slow "
+"(inexpensive hosting).<br>You will be notified via this page when the import "
+"is completed."
+msgstr ""
+
+#: includes/admin/import-demo.php:34
+msgid "Error has occured"
+msgstr ""
+
+#: includes/admin/import-demo.php:38
+msgid "Import completed successfully!"
+msgstr ""
+
+#: includes/admin/import-demo.php:39
+msgid "Now you can see the result at"
+msgstr ""
+
+#: includes/admin/import-demo.php:39
+msgid "your site"
+msgstr ""
+
+#: includes/admin/import-demo.php:39
+msgid "or start customize via"
+msgstr ""
+
+#: includes/admin/import-demo.php:39 includes/admin/theme-options.php:2460
+msgid "Theme Options"
+msgstr ""
+
+#: includes/admin/import-demo.php:43 includes/admin/import-demo.php:119
+msgid "Import Demo Data"
+msgstr ""
+
+#: includes/admin/import-demo.php:123
+msgid "Important Notes:"
+msgstr ""
+
+#: includes/admin/import-demo.php:125
+msgid "We recommend to run Demo Import on a clean WordPress installation."
+msgstr ""
+
+#: includes/admin/import-demo.php:126
+#, php-format
+msgid "To reset your installation we recommend %s plugin."
+msgstr ""
+
+#: includes/admin/import-demo.php:127
+msgid ""
+"The Demo Import will not import the images we have used in our live demo, "
+"due to copyright/license reasons."
+msgstr ""
+
+#: includes/admin/import-demo.php:128
+msgid ""
+"Do not run the Demo Import multiple times one after another, it will result "
+"in double content."
+msgstr ""
+
+#: includes/admin/import-demo.php:132 includes/admin/theme-options.php:814
+msgid "Import"
+msgstr ""
+
+#: includes/admin/mega-menu.php:35
+msgid "Enable Mega Menu"
+msgstr ""
+
+#: includes/admin/mega-menu.php:41
+msgid "Full Width Mega Menu"
+msgstr ""
+
+#: includes/admin/mega-menu.php:46
+msgid "Mega Menu Columns"
+msgstr ""
+
+#: includes/admin/mega-menu.php:57
+msgid "Menu Badge"
+msgstr ""
+
+#: includes/admin/mega-menu.php:153
+msgid "Disable Mega Menu Column Title"
+msgstr ""
+
+#: includes/admin/mega-menu.php:158 includes/admin/mega-menu.php:177
+msgid "Display Sidebar in Menu"
+msgstr ""
+
+#: includes/admin/mega-menu.php:160
+msgid "Select Widget Area..."
+msgstr ""
+
+#: includes/admin/mega-menu.php:179
+msgid "Select Widget Area"
+msgstr ""
+
+#: includes/admin/mega-menu.php:196
+msgid ""
+"Menu Icon Class (Font Awesome Icon or Elegant Icon.ex: fa fa-home, "
+"elegant_icon_house_alt)"
+msgstr ""
+
+#: includes/admin/mega-menu.php:202 includes/vc/shortcodes/dh_animation.php:121
+#: includes/vc/shortcodes/dh_box_feature.php:89
+#: includes/vc/shortcodes/dh_button.php:340
+#: includes/vc/shortcodes/dh_carousel.php:116
+#: includes/vc/shortcodes/dh_client.php:52
+#: includes/vc/shortcodes/dh_countdown.php:27
+#: includes/vc/shortcodes/dh_counter.php:134
+#: includes/vc/shortcodes/dh_instagram.php:48
+#: includes/vc/shortcodes/dh_post.php:189
+#: includes/vc/shortcodes/dh_post_slider.php:100
+#: includes/vc/shortcodes/dh_pricing_table.php:16
+#: includes/vc/shortcodes/dh_slider.php:27
+#: includes/vc/shortcodes/dh_tabs.php:22
+#: includes/vc/shortcodes/dh_testimonial.php:59 includes/vc/woocommerce.php:146
+msgid "Visibility"
+msgstr ""
+
+#: includes/admin/mega-menu.php:205 includes/vc/shortcodes/dh_animation.php:125
+#: includes/vc/shortcodes/dh_box_feature.php:93
+#: includes/vc/shortcodes/dh_button.php:344
+#: includes/vc/shortcodes/dh_carousel.php:120
+#: includes/vc/shortcodes/dh_client.php:56
+#: includes/vc/shortcodes/dh_countdown.php:31
+#: includes/vc/shortcodes/dh_counter.php:138
+#: includes/vc/shortcodes/dh_instagram.php:52
+#: includes/vc/shortcodes/dh_post.php:193
+#: includes/vc/shortcodes/dh_post_slider.php:104
+#: includes/vc/shortcodes/dh_pricing_table.php:20
+#: includes/vc/shortcodes/dh_slider.php:31
+#: includes/vc/shortcodes/dh_tabs.php:26
+#: includes/vc/shortcodes/dh_testimonial.php:63 includes/vc/woocommerce.php:151
+msgid "All Devices"
+msgstr ""
+
+#: includes/admin/mega-menu.php:206 includes/vc/shortcodes/dh_animation.php:126
+#: includes/vc/shortcodes/dh_box_feature.php:94
+#: includes/vc/shortcodes/dh_button.php:345
+#: includes/vc/shortcodes/dh_carousel.php:121
+#: includes/vc/shortcodes/dh_client.php:57
+#: includes/vc/shortcodes/dh_countdown.php:32
+#: includes/vc/shortcodes/dh_counter.php:139
+#: includes/vc/shortcodes/dh_instagram.php:53
+#: includes/vc/shortcodes/dh_post.php:194
+#: includes/vc/shortcodes/dh_post_slider.php:105
+#: includes/vc/shortcodes/dh_pricing_table.php:21
+#: includes/vc/shortcodes/dh_slider.php:32
+#: includes/vc/shortcodes/dh_tabs.php:27
+#: includes/vc/shortcodes/dh_testimonial.php:64 includes/vc/woocommerce.php:152
+msgid "Hidden Phone"
+msgstr ""
+
+#: includes/admin/mega-menu.php:207 includes/vc/shortcodes/dh_animation.php:127
+#: includes/vc/shortcodes/dh_box_feature.php:95
+#: includes/vc/shortcodes/dh_button.php:346
+#: includes/vc/shortcodes/dh_carousel.php:122
+#: includes/vc/shortcodes/dh_client.php:58
+#: includes/vc/shortcodes/dh_countdown.php:33
+#: includes/vc/shortcodes/dh_counter.php:140
+#: includes/vc/shortcodes/dh_instagram.php:54
+#: includes/vc/shortcodes/dh_post.php:195
+#: includes/vc/shortcodes/dh_post_slider.php:106
+#: includes/vc/shortcodes/dh_pricing_table.php:22
+#: includes/vc/shortcodes/dh_slider.php:33
+#: includes/vc/shortcodes/dh_tabs.php:28
+#: includes/vc/shortcodes/dh_testimonial.php:65 includes/vc/woocommerce.php:153
+msgid "Hidden Tablet"
+msgstr ""
+
+#: includes/admin/mega-menu.php:208 includes/vc/shortcodes/dh_animation.php:128
+#: includes/vc/shortcodes/dh_box_feature.php:96
+#: includes/vc/shortcodes/dh_button.php:347
+#: includes/vc/shortcodes/dh_carousel.php:123
+#: includes/vc/shortcodes/dh_client.php:59
+#: includes/vc/shortcodes/dh_countdown.php:34
+#: includes/vc/shortcodes/dh_counter.php:141
+#: includes/vc/shortcodes/dh_instagram.php:55
+#: includes/vc/shortcodes/dh_post.php:196
+#: includes/vc/shortcodes/dh_post_slider.php:107
+#: includes/vc/shortcodes/dh_pricing_table.php:23
+#: includes/vc/shortcodes/dh_slider.php:34
+#: includes/vc/shortcodes/dh_tabs.php:29
+#: includes/vc/shortcodes/dh_testimonial.php:66 includes/vc/woocommerce.php:154
+msgid "Hidden PC"
+msgstr ""
+
+#: includes/admin/mega-menu.php:209 includes/vc/shortcodes/dh_animation.php:129
+#: includes/vc/shortcodes/dh_box_feature.php:97
+#: includes/vc/shortcodes/dh_button.php:348
+#: includes/vc/shortcodes/dh_carousel.php:124
+#: includes/vc/shortcodes/dh_client.php:60
+#: includes/vc/shortcodes/dh_countdown.php:35
+#: includes/vc/shortcodes/dh_counter.php:142
+#: includes/vc/shortcodes/dh_instagram.php:56
+#: includes/vc/shortcodes/dh_post.php:197
+#: includes/vc/shortcodes/dh_post_slider.php:108
+#: includes/vc/shortcodes/dh_pricing_table.php:24
+#: includes/vc/shortcodes/dh_slider.php:35
+#: includes/vc/shortcodes/dh_tabs.php:30
+#: includes/vc/shortcodes/dh_testimonial.php:67 includes/vc/woocommerce.php:155
+msgid "Visible Phone"
+msgstr ""
+
+#: includes/admin/mega-menu.php:210 includes/vc/shortcodes/dh_animation.php:130
+#: includes/vc/shortcodes/dh_box_feature.php:98
+#: includes/vc/shortcodes/dh_button.php:349
+#: includes/vc/shortcodes/dh_carousel.php:125
+#: includes/vc/shortcodes/dh_client.php:61
+#: includes/vc/shortcodes/dh_countdown.php:36
+#: includes/vc/shortcodes/dh_counter.php:143
+#: includes/vc/shortcodes/dh_instagram.php:57
+#: includes/vc/shortcodes/dh_post.php:198
+#: includes/vc/shortcodes/dh_post_slider.php:109
+#: includes/vc/shortcodes/dh_pricing_table.php:25
+#: includes/vc/shortcodes/dh_slider.php:36
+#: includes/vc/shortcodes/dh_tabs.php:31
+#: includes/vc/shortcodes/dh_testimonial.php:68 includes/vc/woocommerce.php:156
+msgid "Visible Tablet"
+msgstr ""
+
+#: includes/admin/mega-menu.php:211 includes/vc/shortcodes/dh_animation.php:131
+#: includes/vc/shortcodes/dh_box_feature.php:99
+#: includes/vc/shortcodes/dh_button.php:350
+#: includes/vc/shortcodes/dh_carousel.php:126
+#: includes/vc/shortcodes/dh_client.php:62
+#: includes/vc/shortcodes/dh_countdown.php:37
+#: includes/vc/shortcodes/dh_counter.php:144
+#: includes/vc/shortcodes/dh_instagram.php:58
+#: includes/vc/shortcodes/dh_post.php:199
+#: includes/vc/shortcodes/dh_post_slider.php:110
+#: includes/vc/shortcodes/dh_pricing_table.php:26
+#: includes/vc/shortcodes/dh_slider.php:37
+#: includes/vc/shortcodes/dh_tabs.php:32
+#: includes/vc/shortcodes/dh_testimonial.php:69 includes/vc/woocommerce.php:157
+msgid "Visible PC"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:24
+msgid "Gallery Settings"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:31
+msgid "Gallery"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:42
+msgid "Quote Settings"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:49
+msgid "Quote Content"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:50
+msgid "Please type the text for your quote here."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:61
+msgid "Link Settings"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:68
+msgid "Link URL"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:69
+msgid "Please input the URL for your link. I.e. http://www.example.com"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:80
+msgid "Video Settings"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:88
+msgid "Use service video"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:91 includes/vc/shortcodes/dh_video.php:32
+msgid "Embedded Code"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:92
+msgid ""
+"Used when you select Video format. Enter a Youtube, Vimeo, Soundcloud, etc "
+"URL. See supported services at <a href=\"http://codex.wordpress.org/Embeds"
+"\">http://codex.wordpress.org/Embeds</a>."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:99
+msgid "Use hosted video"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:102 includes/post-type-slider.php:522
+msgid "MP4 File URL"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:103 includes/post-type-slider.php:523
+msgid "Please enter in the URL to the .m4v video file."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:108 includes/post-type-slider.php:528
+msgid "OGV/OGG File URL"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:109 includes/post-type-slider.php:529
+msgid "Please enter in the URL to the .ogv or .ogg video file."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:114 includes/post-type-slider.php:534
+msgid "WEBM File URL"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:115 includes/post-type-slider.php:535
+msgid "Please enter in the URL to the .webm video file."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:129
+msgid "Audio Settings"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:136
+msgid "MP3 File URL"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:137
+msgid "Please enter in the URL to the .mp3 file"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:142
+msgid "OGA File URL"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:143
+msgid "Please enter in the URL to the .ogg or .oga file"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:170
+msgid "No sliders found"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:174
+msgid "Default Menu..."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:180
+msgid "Page Settings"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:187
+msgid "Content Page no Padding"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:188
+msgid "If checked. content of page  with no padding top and padding bottom"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:193 includes/admin/theme-options.php:989
+msgid "Modern Background"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:194
+msgid "Use Modern Background for Page."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:198 includes/admin/meta-boxes.php:258
+#: includes/admin/meta-boxes.php:284 includes/admin/meta-boxes.php:295
+#: includes/admin/meta-boxes.php:368 includes/admin/meta-boxes.php:379
+msgid "Global"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:199 includes/admin/meta-boxes.php:215
+#: includes/admin/meta-boxes.php:225 includes/admin/meta-boxes.php:275
+#: includes/admin/theme-options.php:1426 includes/admin/theme-options.php:1596
+#: includes/admin/theme-options.php:1606 includes/admin/theme-options.php:1646
+#: includes/admin/theme-options.php:1656 includes/admin/theme-options.php:1989
+#: includes/post-type-slider.php:277 includes/post-type-slider.php:345
+#: includes/vc/shortcodes/dh_post.php:165
+#: includes/vc/shortcodes/dh_typed.php:47 includes/vc/woocommerce.php:458
+#: includes/vc/woocommerce.php:495 includes/vc/woocommerce.php:584
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:200 includes/admin/meta-boxes.php:214
+#: includes/admin/meta-boxes.php:224 includes/admin/meta-boxes.php:274
+#: includes/admin/theme-options.php:1427 includes/admin/theme-options.php:1597
+#: includes/admin/theme-options.php:1607 includes/admin/theme-options.php:1647
+#: includes/admin/theme-options.php:1657 includes/admin/theme-options.php:1688
+#: includes/admin/theme-options.php:1990 includes/post-type-slider.php:278
+#: includes/post-type-slider.php:346 includes/vc/shortcodes/dh_button.php:304
+#: includes/vc/shortcodes/dh_post.php:93 includes/vc/shortcodes/dh_post.php:165
+#: includes/vc/shortcodes/dh_post.php:179
+#: includes/vc/shortcodes/dh_pricing_table.php:198
+#: includes/vc/shortcodes/dh_typed.php:47 includes/vc/woocommerce.php:458
+#: includes/vc/woocommerce.php:495 includes/vc/woocommerce.php:584
+msgid "No"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:204
+msgid "Is One Page ?"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:209
+msgid "Hide Header"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:210
+msgid "Hide Headear."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:219
+msgid "Hide Footer"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:220
+msgid "Hide Footer."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:229
+msgid "Main Navigation Menu"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:230
+msgid "Select which main menu displays on this page."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:237 includes/admin/meta-boxes.php:238
+msgid "Main Menu Position"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:248
+msgid "Select sidebar for page with 2 or 3 colums."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:253 includes/admin/theme-options.php:1085
+msgid "Header Style"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:254 includes/admin/theme-options.php:1086
+msgid "Please select your header style here."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:259 includes/admin/theme-options.php:1088
+#: includes/admin/theme-options.php:2180
+msgid "Classic"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:260 includes/admin/theme-options.php:1089
+msgid "Classic Right"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:261 includes/admin/theme-options.php:1090
+#: includes/admin/theme-options.php:1173 includes/admin/theme-options.php:1588
+#: includes/admin/theme-options.php:1638 includes/post-type-slider.php:556
+#: includes/vc/shortcodes/dh_button.php:296
+#: includes/vc/shortcodes/dh_post.php:23
+#: includes/vc/shortcodes/dh_pricing_table.php:132
+msgid "Center"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:262 includes/admin/theme-options.php:1091
+msgid "Center Logo"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:263 includes/admin/theme-options.php:1092
+msgid "Market"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:264 includes/admin/theme-options.php:1093
+msgid "Off Canvas"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:265 includes/admin/theme-options.php:1094
+msgid "Menu Overlay"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:269
+msgid "Always show Categories menu"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:270
+msgid "Always show Categories menu in Header Market."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:279
+msgid "Topbar"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:280
+msgid "Enable or disable the top bar."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:285 includes/admin/meta-boxes.php:369
+#: includes/admin/meta-boxes.php:380 includes/admin/theme-options.php:892
+#: includes/admin/theme-options.php:901 includes/admin/theme-options.php:911
+#: includes/admin/theme-options.php:1199 includes/admin/theme-options.php:1213
+#: includes/admin/theme-options.php:1358 includes/admin/theme-options.php:1374
+#: includes/admin/theme-options.php:1455 includes/admin/theme-options.php:1485
+#: includes/admin/theme-options.php:1494 includes/admin/theme-options.php:1704
+#: includes/admin/theme-options.php:1721 includes/admin/theme-options.php:1738
+#: includes/admin/theme-options.php:1747 includes/admin/theme-options.php:1763
+#: includes/admin/theme-options.php:1773 includes/admin/theme-options.php:1784
+#: includes/admin/theme-options.php:1800 includes/admin/theme-options.php:1826
+#: includes/admin/theme-options.php:1835 includes/admin/theme-options.php:1844
+#: includes/admin/theme-options.php:1860 includes/admin/theme-options.php:1869
+#: includes/admin/theme-options.php:1879 includes/admin/theme-options.php:1888
+#: includes/admin/theme-options.php:1897 includes/admin/theme-options.php:1906
+#: includes/admin/theme-options.php:1959 includes/admin/theme-options.php:1968
+#: includes/admin/theme-options.php:2087 includes/vc/woocommerce.php:252
+#: includes/vc/woocommerce.php:384 includes/vc/woocommerce.php:982
+msgid "Show"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:286 includes/admin/meta-boxes.php:310
+#: includes/admin/meta-boxes.php:370 includes/admin/meta-boxes.php:381
+#: includes/admin/theme-options.php:893 includes/admin/theme-options.php:902
+#: includes/admin/theme-options.php:912 includes/admin/theme-options.php:1200
+#: includes/admin/theme-options.php:1214 includes/admin/theme-options.php:1359
+#: includes/admin/theme-options.php:1375 includes/admin/theme-options.php:1456
+#: includes/admin/theme-options.php:1486 includes/admin/theme-options.php:1495
+#: includes/admin/theme-options.php:1705 includes/admin/theme-options.php:1722
+#: includes/admin/theme-options.php:1739 includes/admin/theme-options.php:1748
+#: includes/admin/theme-options.php:1764 includes/admin/theme-options.php:1774
+#: includes/admin/theme-options.php:1785 includes/admin/theme-options.php:1801
+#: includes/admin/theme-options.php:1827 includes/admin/theme-options.php:1836
+#: includes/admin/theme-options.php:1845 includes/admin/theme-options.php:1861
+#: includes/admin/theme-options.php:1870 includes/admin/theme-options.php:1880
+#: includes/admin/theme-options.php:1889 includes/admin/theme-options.php:1898
+#: includes/admin/theme-options.php:1907 includes/admin/theme-options.php:1960
+#: includes/admin/theme-options.php:1969 includes/admin/theme-options.php:2088
+#: includes/admin/theme-options.php:2099
+msgid "Hide"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:290
+msgid "Transparent Main Menu"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:291
+msgid "Enable or disable main menu background transparency."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:296 includes/admin/theme-options.php:498
+msgid "On"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:297 includes/admin/theme-options.php:505
+msgid "Off"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:301
+msgid "Page Heading"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:302
+msgid "Enable/disable page heading or custom page heading"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:307
+msgid "Default Heading"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:308
+msgid "Custom Heading"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:309
+msgid "Use Revolution Slider"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:314
+msgid "Heading Menu Anchor "
+msgstr ""
+
+#: includes/admin/meta-boxes.php:315
+msgid "Add menu anchor for heading. You can use in One Page"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:320
+msgid "Revolution Slider"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:321
+msgid "Select your Revolution Slider."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:327
+msgid "Page Heading Background Image"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:328
+msgid "Custom heading background image."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:339
+msgid "Page Heading Title"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:340
+msgid "Custom heading title."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:345
+msgid "Page Heading Sub-title"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:346
+msgid "Custom heading sub-title."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:351
+msgid "Button text"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:352
+msgid "Custom heading button text."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:357
+msgid "Button URL"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:358
+msgid "Custom heading button URL."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:363 includes/admin/theme-options.php:1487
+msgid "Footer Newsletter"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:364
+msgid "Do you want show/hide footer newsletter."
+msgstr ""
+
+#: includes/admin/meta-boxes.php:374 includes/admin/theme-options.php:1457
+msgid "Footer Widget Area"
+msgstr ""
+
+#: includes/admin/meta-boxes.php:375 includes/admin/theme-options.php:1458
+msgid "Do you want use the main footer that contains all the widgets areas."
+msgstr ""
+
+#: includes/admin/theme-options.php:84
+msgid "Something went wrong: custom.css could not be created."
+msgstr ""
+
+#: includes/admin/theme-options.php:86
+msgid "custom.css could not be created. Connection error."
+msgstr ""
+
+#: includes/admin/theme-options.php:88
+msgid "custom.css could not be created. Cannot write custom css to \""
+msgstr ""
+
+#: includes/admin/theme-options.php:90
+msgid "custom.css could not be created. Problem with access."
+msgstr ""
+
+#: includes/admin/theme-options.php:127 includes/admin/theme-options.php:133
+msgid "This is required to enable file writing"
+msgstr ""
+
+#: includes/admin/theme-options.php:226
+msgid "Online Document"
+msgstr ""
+
+#: includes/admin/theme-options.php:231 includes/admin/theme-options.php:290
+msgid "Save All Change"
+msgstr ""
+
+#: includes/admin/theme-options.php:291
+msgid "Reset Options"
+msgstr ""
+
+#: includes/admin/theme-options.php:454
+msgid "Select Menu..."
+msgstr ""
+
+#: includes/admin/theme-options.php:592
+msgid "Background Repeat"
+msgstr ""
+
+#: includes/admin/theme-options.php:602
+msgid "Background Size"
+msgstr ""
+
+#: includes/admin/theme-options.php:612
+msgid "Background Attachment"
+msgstr ""
+
+#: includes/admin/theme-options.php:632
+msgid "Background Position"
+msgstr ""
+
+#: includes/admin/theme-options.php:726
+msgid "Select a font family"
+msgstr ""
+
+#: includes/admin/theme-options.php:735
+msgid "Font size"
+msgstr ""
+
+#: includes/admin/theme-options.php:744
+msgid "Font style"
+msgstr ""
+
+#: includes/admin/theme-options.php:763
+msgid "Subset"
+msgstr ""
+
+#: includes/admin/theme-options.php:815
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with "
+"caution!"
+msgstr ""
+
+#: includes/admin/theme-options.php:821
+msgid "Export"
+msgstr ""
+
+#: includes/admin/theme-options.php:833
+msgid "General"
+msgstr ""
+
+#: includes/admin/theme-options.php:834
+msgid ""
+"<p class=\"description\">Here you will set your site-wide preferences.</p>"
+msgstr ""
+
+#: includes/admin/theme-options.php:840
+msgid "Logo"
+msgstr ""
+
+#: includes/admin/theme-options.php:841
+msgid "Upload your own logo."
+msgstr ""
+
+#: includes/admin/theme-options.php:847
+msgid "Fixed Menu Logo"
+msgstr ""
+
+#: includes/admin/theme-options.php:848
+msgid "Upload your own logo.This is optional use when fixed menu"
+msgstr ""
+
+#: includes/admin/theme-options.php:854
+msgid "Transparent Menu Logo"
+msgstr ""
+
+#: includes/admin/theme-options.php:855
+msgid "Upload your own logo.This is optional use for menu transparent"
+msgstr ""
+
+#: includes/admin/theme-options.php:861
+msgid "Mobile Version Logo"
+msgstr ""
+
+#: includes/admin/theme-options.php:862
+msgid ""
+"Use this option to change your logo for mobile devices if your logo width is "
+"quite long to fit in mobile device screen."
+msgstr ""
+
+#: includes/admin/theme-options.php:868
+msgid "Favicon"
+msgstr ""
+
+#: includes/admin/theme-options.php:869
+msgid "Image that will be used as favicon (32px32px)."
+msgstr ""
+
+#: includes/admin/theme-options.php:874
+msgid "Apple Iphone Icon"
+msgstr ""
+
+#: includes/admin/theme-options.php:875
+msgid "Apple Iphone Icon (57px 57px)."
+msgstr ""
+
+#: includes/admin/theme-options.php:880
+msgid "Apple iPad Icon"
+msgstr ""
+
+#: includes/admin/theme-options.php:881
+msgid "Apple Iphone Retina Icon (72px 72px)."
+msgstr ""
+
+#: includes/admin/theme-options.php:886
+msgid "Apple Retina Icon"
+msgstr ""
+
+#: includes/admin/theme-options.php:887
+msgid "Apple iPad Retina Icon (144px 144px)."
+msgstr ""
+
+#: includes/admin/theme-options.php:894
+msgid "Preloader"
+msgstr ""
+
+#: includes/admin/theme-options.php:896
+msgid "Toggle whether or not to enable Preloader on your pages."
+msgstr ""
+
+#: includes/admin/theme-options.php:903
+msgid "Back To Top Button"
+msgstr ""
+
+#: includes/admin/theme-options.php:905
+msgid "Toggle whether or not to enable a back to top button on your pages."
+msgstr ""
+
+#: includes/admin/theme-options.php:913 includes/hook.php:369
+msgid "Newsletter"
+msgstr ""
+
+#: includes/admin/theme-options.php:915
+msgid "Toggle whether or not to enable modal Newsletter in your site."
+msgstr ""
+
+#: includes/admin/theme-options.php:921
+msgid "Newsletter refresh interval"
+msgstr ""
+
+#: includes/admin/theme-options.php:923
+msgid ""
+"Enter day number to refresh newsletter. value 0 will be shown every page"
+msgstr ""
+
+#: includes/admin/theme-options.php:929
+msgid "Newsletter Heading"
+msgstr ""
+
+#: includes/admin/theme-options.php:931
+msgid "Enter Newsletter Heading"
+msgstr ""
+
+#: includes/admin/theme-options.php:937
+msgid "Newsletter Description"
+msgstr ""
+
+#: includes/admin/theme-options.php:939
+msgid "Enter Newsletter Description"
+msgstr ""
+
+#: includes/admin/theme-options.php:945
+msgid "Newsletter Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:951
+msgid "Design and Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:952
+msgid "<p class=\"description\">Customize Design and Layout.</p>"
+msgstr ""
+
+#: includes/admin/theme-options.php:957
+msgid "Site Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:958
+msgid "Select between wide or boxed site layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:961
+msgid "Wide"
+msgstr ""
+
+#: includes/admin/theme-options.php:962
+msgid "Boxed"
+msgstr ""
+
+#: includes/admin/theme-options.php:963
+msgid "Full Padding"
+msgstr ""
+
+#: includes/admin/theme-options.php:970 includes/vc/shortcodes/dh_video.php:20
+msgid "Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:971
+msgid "Select your boxed background"
+msgstr ""
+
+#: includes/admin/theme-options.php:977
+msgid "Wide Layout Width"
+msgstr ""
+
+#: includes/admin/theme-options.php:978
+msgid ""
+"Select between Full Width (full width container - spanning the entire width "
+"of your viewport. ) or Fixed Width ( fixed width container. ) for Wide "
+"layout width"
+msgstr ""
+
+#: includes/admin/theme-options.php:982 includes/vc/init.php:150
+#: includes/vc/init.php:161
+msgid "Full Width"
+msgstr ""
+
+#: includes/admin/theme-options.php:983
+msgid "Fixed Width"
+msgstr ""
+
+#: includes/admin/theme-options.php:991
+msgid "Use Modern Background for Theme"
+msgstr ""
+
+#: includes/admin/theme-options.php:997
+msgid "Layout Border"
+msgstr ""
+
+#: includes/admin/theme-options.php:1000
+msgid " All Sidebar border"
+msgstr ""
+
+#: includes/admin/theme-options.php:1001
+msgid "Content Border"
+msgstr ""
+
+#: includes/admin/theme-options.php:1002
+msgid "No Border"
+msgstr ""
+
+#: includes/admin/theme-options.php:1004
+msgid "Layout with border and padding"
+msgstr ""
+
+#: includes/admin/theme-options.php:1009
+msgid "Smart Sidebar"
+msgstr ""
+
+#: includes/admin/theme-options.php:1011
+msgid "Sticky Sidebar when scroll"
+msgstr ""
+
+#: includes/admin/theme-options.php:1018
+msgid "Color and Typography"
+msgstr ""
+
+#: includes/admin/theme-options.php:1019
+msgid "<p class=\"description\">Customize Color and Typography.</p>"
+msgstr ""
+
+#: includes/admin/theme-options.php:1024
+msgid "Brand primary"
+msgstr ""
+
+#: includes/admin/theme-options.php:1030
+msgid "Body"
+msgstr ""
+
+#: includes/admin/theme-options.php:1036
+msgid "Navigation"
+msgstr ""
+
+#: includes/admin/theme-options.php:1042
+msgid "Heading H1"
+msgstr ""
+
+#: includes/admin/theme-options.php:1048
+msgid "Heading H2"
+msgstr ""
+
+#: includes/admin/theme-options.php:1054
+msgid "Heading H3"
+msgstr ""
+
+#: includes/admin/theme-options.php:1060
+msgid "Heading H4"
+msgstr ""
+
+#: includes/admin/theme-options.php:1066
+msgid "Heading H5"
+msgstr ""
+
+#: includes/admin/theme-options.php:1072
+msgid "Heading H6"
+msgstr ""
+
+#: includes/admin/theme-options.php:1079
+msgid "Header"
+msgstr ""
+
+#: includes/admin/theme-options.php:1080
+msgid "<p class=\"description\">Customize Header.</p>"
+msgstr ""
+
+#: includes/admin/theme-options.php:1102
+msgid "Select Left Menu"
+msgstr ""
+
+#: includes/admin/theme-options.php:1109
+msgid "Select Right Menu"
+msgstr ""
+
+#: includes/admin/theme-options.php:1116
+msgid "Overlay Menu Content Custom HTML"
+msgstr ""
+
+#: includes/admin/theme-options.php:1122
+msgid "Overlay Menu Social Icon"
+msgstr ""
+
+#: includes/admin/theme-options.php:1146
+msgid "Show Sidebar Offcanvas"
+msgstr ""
+
+#: includes/admin/theme-options.php:1148
+msgid "When Click"
+msgstr ""
+
+#: includes/admin/theme-options.php:1149
+msgid "Always"
+msgstr ""
+
+#: includes/admin/theme-options.php:1156
+msgid "User icon in header"
+msgstr ""
+
+#: includes/admin/theme-options.php:1157
+msgid "Show or hide user icon in menu."
+msgstr ""
+
+#: includes/admin/theme-options.php:1163
+msgid "Search icon in menu"
+msgstr ""
+
+#: includes/admin/theme-options.php:1164
+msgid "Enable or disable search icon in menu."
+msgstr ""
+
+#: includes/admin/theme-options.php:1171
+msgid "Logo Positon"
+msgstr ""
+
+#: includes/admin/theme-options.php:1201
+msgid "Display Side Menu in Main Menu"
+msgstr ""
+
+#: includes/admin/theme-options.php:1202
+msgid ""
+"Display Side Menu in Main Menu, and it not working with Header Off-Canvas"
+msgstr ""
+
+#: includes/admin/theme-options.php:1208
+msgid "Topbar Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:1215
+msgid "Display top bar"
+msgstr ""
+
+#: includes/admin/theme-options.php:1216
+msgid ""
+"Enable or disable the top bar.<br> See Social icons tab to enable the social "
+"icons inside it.<br> Set a Top menu from  Appearance - Menus "
+msgstr ""
+
+#: includes/admin/theme-options.php:1223
+msgid "Left topbar content"
+msgstr ""
+
+#: includes/admin/theme-options.php:1225 includes/functions.php:2293
+#: includes/vc/shortcodes/dh_button.php:27
+#: includes/vc/shortcodes/dh_slider.php:4 includes/widget.php:230
+msgid "None"
+msgstr ""
+
+#: includes/admin/theme-options.php:1226 includes/widget.php:194
+#: includes/widget.php:206
+msgid "Social"
+msgstr ""
+
+#: includes/admin/theme-options.php:1227
+msgid "Site Info"
+msgstr ""
+
+#: includes/admin/theme-options.php:1228
+msgid "Custom HTML"
+msgstr ""
+
+#: includes/admin/theme-options.php:1235
+msgid "Top Social Icon"
+msgstr ""
+
+#: includes/admin/theme-options.php:1259
+msgid "Phone number"
+msgstr ""
+
+#: includes/admin/theme-options.php:1266 includes/hook.php:376
+#: includes/hook.php:463 includes/hook.php:464
+#: woocommerce/single-product-reviews.php:67
+msgid "Email"
+msgstr ""
+
+#: includes/admin/theme-options.php:1273
+msgid "Skype"
+msgstr ""
+
+#: includes/admin/theme-options.php:1280
+msgid "Left Topbar Content Custom HTML"
+msgstr ""
+
+#: includes/admin/theme-options.php:1286
+msgid "Main Navbar Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:1291
+msgid "Sticky Top menu"
+msgstr ""
+
+#: includes/admin/theme-options.php:1292
+msgid "Enable or disable the sticky menu."
+msgstr ""
+
+#: includes/admin/theme-options.php:1298
+msgid "Custom Sticky Color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1300
+msgid "Custom sticky menu color scheme ?"
+msgstr ""
+
+#: includes/admin/theme-options.php:1306
+msgid "Sticky menu background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1313
+msgid "Sticky menu color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1320
+msgid "Sticky menu hover color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1335
+msgid "Header Social Icon"
+msgstr ""
+
+#: includes/admin/theme-options.php:1360
+msgid "Show Heading"
+msgstr ""
+
+#: includes/admin/theme-options.php:1361
+msgid "Show or hide heading in site."
+msgstr ""
+
+#: includes/admin/theme-options.php:1368
+msgid "Change Heading background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1369
+msgid "Heading background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1377
+msgid "Show breadcrumb"
+msgstr ""
+
+#: includes/admin/theme-options.php:1378
+msgid "Enable or disable the site path under the page title."
+msgstr ""
+
+#: includes/admin/theme-options.php:1384 includes/admin/theme-options.php:1389
+msgid "Header Color Scheme"
+msgstr ""
+
+#: includes/admin/theme-options.php:1390
+msgid "Custom Topbar and Main menu color scheme ."
+msgstr ""
+
+#: includes/admin/theme-options.php:1398
+msgid "Topbar Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1399
+msgid "Topbar Color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1400
+msgid "Topbar Link Color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1401
+msgid "Header Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1402
+msgid "Header Color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1403
+msgid "Header Hover Color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1404
+msgid "Navbar Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1405
+msgid "Navbar Color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1406
+msgid "Navbar Color Hover"
+msgstr ""
+
+#: includes/admin/theme-options.php:1407
+msgid "Navbar Dropdown Border"
+msgstr ""
+
+#: includes/admin/theme-options.php:1408
+msgid "Navbar Dropdown Item Border"
+msgstr ""
+
+#: includes/admin/theme-options.php:1409
+msgid "Navbar Dropdown Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1410
+msgid "Navbar Dropdown Hover Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1411
+msgid "Navbar Dropdown Color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1412
+msgid "Navbar Dropdown Color Hover"
+msgstr ""
+
+#: includes/admin/theme-options.php:1413
+msgid "Navbar Dropdown Mega Menu Title"
+msgstr ""
+
+#: includes/admin/theme-options.php:1420
+msgid "Footer"
+msgstr ""
+
+#: includes/admin/theme-options.php:1421
+msgid "<p class=\"description\">Customize Footer.</p>"
+msgstr ""
+
+#: includes/admin/theme-options.php:1428
+msgid "Footer Fixed"
+msgstr ""
+
+#: includes/admin/theme-options.php:1429
+msgid "Do you want use Footer Fixed style."
+msgstr ""
+
+#: includes/admin/theme-options.php:1435
+msgid "Show Instagram in Footer"
+msgstr ""
+
+#: includes/admin/theme-options.php:1443
+msgid "Instagram Titlte"
+msgstr ""
+
+#: includes/admin/theme-options.php:1450
+msgid "Instagram User"
+msgstr ""
+
+#: includes/admin/theme-options.php:1464
+msgid "Footer Area Columns"
+msgstr ""
+
+#: includes/admin/theme-options.php:1465
+msgid "Please select the number of columns you would like for your footer."
+msgstr ""
+
+#: includes/admin/theme-options.php:1479
+msgid "Footer Area Columns Background Image"
+msgstr ""
+
+#: includes/admin/theme-options.php:1480
+msgid "Footer Area Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1488
+msgid "Do you want use Mailchimp newsletter form in footer."
+msgstr ""
+
+#: includes/admin/theme-options.php:1497
+msgid "Do you want use menu in footer."
+msgstr ""
+
+#: includes/admin/theme-options.php:1503
+msgid "Footer Info"
+msgstr ""
+
+#: includes/admin/theme-options.php:1509
+msgid "Footer Social Icon"
+msgstr ""
+
+#: includes/admin/theme-options.php:1531
+msgid "Footer Color Scheme"
+msgstr ""
+
+#: includes/admin/theme-options.php:1536
+msgid "Custom Footer Color Scheme"
+msgstr ""
+
+#: includes/admin/theme-options.php:1544
+msgid "Footer Widget Area Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1545
+msgid "Footer Widget Area Color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1546
+msgid "Footer Widget Area Link"
+msgstr ""
+
+#: includes/admin/theme-options.php:1547
+msgid "Footer Widget Area Link Hover"
+msgstr ""
+
+#: includes/admin/theme-options.php:1548
+msgid "Footer Info Background"
+msgstr ""
+
+#: includes/admin/theme-options.php:1549
+msgid "Footer Info Color"
+msgstr ""
+
+#: includes/admin/theme-options.php:1550
+msgid "Footer Info Link"
+msgstr ""
+
+#: includes/admin/theme-options.php:1551
+msgid "Footer Info Link Hover"
+msgstr ""
+
+#: includes/admin/theme-options.php:1558
+msgid "Blog"
+msgstr ""
+
+#: includes/admin/theme-options.php:1559
+msgid "<p class=\"description\">Customize Blog.</p>"
+msgstr ""
+
+#: includes/admin/theme-options.php:1564
+msgid "Main Blog Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:1569
+msgid "Main Blog Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:1570
+msgid "Select main blog layout. Choose between 1, 2 or 3 column layout."
+msgstr ""
+
+#: includes/admin/theme-options.php:1581
+msgid "Main Blog Style"
+msgstr ""
+
+#: includes/admin/theme-options.php:1582 includes/admin/theme-options.php:1632
+msgid "How your blog posts will display."
+msgstr ""
+
+#: includes/admin/theme-options.php:1584 includes/admin/theme-options.php:1634
+#: includes/admin/theme-options.php:2179 includes/vc/init.php:173
+#: includes/vc/shortcodes/dh_box_feature.php:30
+#: includes/vc/shortcodes/dh_button.php:177
+#: includes/vc/shortcodes/dh_button.php:237
+#: includes/vc/shortcodes/dh_member.php:18
+#: includes/vc/shortcodes/dh_post.php:19
+#: includes/vc/shortcodes/dh_pricing_table.php:88
+#: includes/vc/shortcodes/dh_pricing_table.php:172
+#: includes/vc/shortcodes/dh_pricing_table.php:184
+#: includes/vc/woocommerce.php:32 includes/vc/woocommerce.php:140
+msgid "Default"
+msgstr ""
+
+#: includes/admin/theme-options.php:1585 includes/admin/theme-options.php:1635
+#: includes/vc/shortcodes/dh_post.php:20
+msgid "Zigzag"
+msgstr ""
+
+#: includes/admin/theme-options.php:1586 includes/admin/theme-options.php:1636
+#: includes/admin/theme-options.php:2067
+#: includes/vc/shortcodes/dh_instagram.php:23
+#: includes/vc/shortcodes/dh_post.php:21 includes/vc/woocommerce.php:520
+#: includes/woocommerce.php:312
+msgid "Grid"
+msgstr ""
+
+#: includes/admin/theme-options.php:1587 includes/admin/theme-options.php:1637
+#: includes/vc/shortcodes/dh_post.php:22
+msgid "Masonry"
+msgstr ""
+
+#: includes/admin/theme-options.php:1598 includes/admin/theme-options.php:1648
+#: includes/vc/shortcodes/dh_post.php:30
+msgid "Full First Item"
+msgstr ""
+
+#: includes/admin/theme-options.php:1599 includes/admin/theme-options.php:1649
+#: includes/vc/shortcodes/dh_post.php:31
+msgid "Show full item in Grid layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:1608 includes/admin/theme-options.php:1658
+#: includes/vc/shortcodes/dh_post.php:37
+msgid "Grid Style no Border"
+msgstr ""
+
+#: includes/admin/theme-options.php:1614
+msgid "Archive Page Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:1619
+msgid "Archive Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:1620
+msgid "Select Archive layout. Choose between 1, 2 or 3 column layout."
+msgstr ""
+
+#: includes/admin/theme-options.php:1631
+msgid "Archive Style"
+msgstr ""
+
+#: includes/admin/theme-options.php:1665
+msgid "Blog Meta Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:1670
+msgid "Blogs Grid/Masonry Columns"
+msgstr ""
+
+#: includes/admin/theme-options.php:1671
+msgid "Select blogs columns."
+msgstr ""
+
+#: includes/admin/theme-options.php:1681 includes/admin/theme-options.php:2109
+#: includes/vc/shortcodes/dh_post.php:173
+msgid "Pagination"
+msgstr ""
+
+#: includes/admin/theme-options.php:1684 includes/admin/theme-options.php:2112
+#: includes/vc/shortcodes/dh_post.php:176
+msgid "Page Number"
+msgstr ""
+
+#: includes/admin/theme-options.php:1685
+msgid "Next/Previous Button"
+msgstr ""
+
+#: includes/admin/theme-options.php:1686 includes/admin/theme-options.php:2113
+#: includes/vc/shortcodes/dh_post.php:177
+msgid "Load More Button"
+msgstr ""
+
+#: includes/admin/theme-options.php:1687 includes/admin/theme-options.php:2114
+#: includes/vc/shortcodes/dh_post.php:178
+msgid "Infinite Scrolling"
+msgstr ""
+
+#: includes/admin/theme-options.php:1691 includes/admin/theme-options.php:2117
+#: includes/vc/shortcodes/dh_post.php:180
+msgid "Choose pagination type."
+msgstr ""
+
+#: includes/admin/theme-options.php:1695 includes/admin/theme-options.php:2121
+#: includes/vc/shortcodes/dh_post.php:183
+msgid "Load More Button Text"
+msgstr ""
+
+#: includes/admin/theme-options.php:1698 includes/admin/theme-options.php:2124
+#: includes/vc/shortcodes/dh_post.php:186 index.php:8 search.php:8
+#: vc_templates/dh_post.php:26 vc_templates/dh_wc_product_mansory.php:14
+msgid "Load More"
+msgstr ""
+
+#: includes/admin/theme-options.php:1706
+msgid "Show/Hide Title"
+msgstr ""
+
+#: includes/admin/theme-options.php:1707
+msgid "In Archive Blog. Show/Hide the post title below the featured"
+msgstr ""
+
+#: includes/admin/theme-options.php:1713 includes/vc/shortcodes/dh_post.php:90
+msgid "Link Title To Post"
+msgstr ""
+
+#: includes/admin/theme-options.php:1714
+msgid ""
+"In Archive Blog. Choose if the title should be a link to the single post "
+"page."
+msgstr ""
+
+#: includes/admin/theme-options.php:1723
+msgid "Show Featured Image"
+msgstr ""
+
+#: includes/admin/theme-options.php:1724
+msgid "In Archive Blog. Show/Hide the post featured Image"
+msgstr ""
+
+#: includes/admin/theme-options.php:1730
+msgid "Excerpt Length"
+msgstr ""
+
+#: includes/admin/theme-options.php:1732
+msgid "In Archive Blog. Enter the number words excerpt"
+msgstr ""
+
+#: includes/admin/theme-options.php:1740 includes/admin/theme-options.php:1837
+msgid "Date Meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1741
+msgid "In Archive Blog. Show/Hide the date meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1749 includes/admin/theme-options.php:1846
+msgid "Comment Meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1750
+msgid "In Archive Blog. Show/Hide the comment meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1756 includes/admin/theme-options.php:1853
+msgid "Show/Hide Category"
+msgstr ""
+
+#: includes/admin/theme-options.php:1757
+msgid "In Archive Blog. Show/Hide the category meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1766 includes/admin/theme-options.php:1862
+msgid "Author Meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1767
+msgid "In Archive Blog. Show/Hide the author meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1776
+msgid "Tags"
+msgstr ""
+
+#: includes/admin/theme-options.php:1777
+msgid "In Archive Blog. If enabled it will show tag."
+msgstr ""
+
+#: includes/admin/theme-options.php:1787
+msgid "Show/Hide Readmore"
+msgstr ""
+
+#: includes/admin/theme-options.php:1788
+msgid "In Archive Blog. Show/Hide the post readmore"
+msgstr ""
+
+#: includes/admin/theme-options.php:1794
+msgid "Single Page Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:1802
+msgid "Page Comment"
+msgstr ""
+
+#: includes/admin/theme-options.php:1803
+msgid "Show/hide comment form in single page ?"
+msgstr ""
+
+#: includes/admin/theme-options.php:1809
+msgid "Single Blog Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:1814
+msgid "Single Blog Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:1815
+msgid ""
+"Select single content and sidebar alignment. Choose between 1, 2 or 3 column "
+"layout."
+msgstr ""
+
+#: includes/admin/theme-options.php:1828
+msgid "Feature Image"
+msgstr ""
+
+#: includes/admin/theme-options.php:1829
+msgid "In Single Blog. Show/Hide the feature image"
+msgstr ""
+
+#: includes/admin/theme-options.php:1838
+msgid "In Single Blog. Show/Hide the date meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1847
+msgid "In Single Blog. Show/Hide the comment meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1854
+msgid "In Single Blog. Show/Hide the category"
+msgstr ""
+
+#: includes/admin/theme-options.php:1863
+msgid "In Single Blog. Show/Hide the author meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:1871
+msgid "Show/Hide Tag"
+msgstr ""
+
+#: includes/admin/theme-options.php:1872
+msgid "In Single Blog. If enabled it will show tag."
+msgstr ""
+
+#: includes/admin/theme-options.php:1881
+msgid "Show Author Bio"
+msgstr ""
+
+#: includes/admin/theme-options.php:1882
+msgid "Display the author bio at the bottom of post on single post page ?"
+msgstr ""
+
+#: includes/admin/theme-options.php:1890
+msgid "Show Next/Prev Post Link On Single Post Page"
+msgstr ""
+
+#: includes/admin/theme-options.php:1891
+msgid ""
+"Using this will add a link at the bottom of every post page that leads to "
+"the next/prev post."
+msgstr ""
+
+#: includes/admin/theme-options.php:1899
+msgid "Show Related Post On Single Post Page"
+msgstr ""
+
+#: includes/admin/theme-options.php:1900
+msgid "Display related post the bottom of posts?"
+msgstr ""
+
+#: includes/admin/theme-options.php:1908 includes/admin/theme-options.php:2205
+msgid "Show Sharing Button"
+msgstr ""
+
+#: includes/admin/theme-options.php:1909
+msgid "Activate this to enable social sharing buttons on single post page."
+msgstr ""
+
+#: includes/admin/theme-options.php:1916 includes/admin/theme-options.php:2213
+#: includes/functions.php:842
+msgid "Share on Facebook"
+msgstr ""
+
+#: includes/admin/theme-options.php:1923 includes/admin/theme-options.php:2220
+#: includes/functions.php:847
+msgid "Share on Twitter"
+msgstr ""
+
+#: includes/admin/theme-options.php:1930 includes/admin/theme-options.php:2227
+msgid "Share on Google+"
+msgstr ""
+
+#: includes/admin/theme-options.php:1937 includes/admin/theme-options.php:2234
+#: includes/functions.php:857
+msgid "Share on Pinterest"
+msgstr ""
+
+#: includes/admin/theme-options.php:1944 includes/admin/theme-options.php:2241
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: includes/admin/theme-options.php:1953
+msgid "Woocommerce"
+msgstr ""
+
+#: includes/admin/theme-options.php:1954
+msgid "<p class=\"description\">Customize Woocommerce.</p>"
+msgstr ""
+
+#: includes/admin/theme-options.php:1961
+msgid "Cart In header"
+msgstr ""
+
+#: includes/admin/theme-options.php:1962
+msgid "This will show cat in header."
+msgstr ""
+
+#: includes/admin/theme-options.php:1970
+msgid "Mobile Cart Icon"
+msgstr ""
+
+#: includes/admin/theme-options.php:1971
+msgid ""
+"This will show on mobile menu a shop icon with the number of cart items."
+msgstr ""
+
+#: includes/admin/theme-options.php:1977
+msgid "Minicart Style"
+msgstr ""
+
+#: includes/admin/theme-options.php:1978
+msgid "Minicart Style."
+msgstr ""
+
+#: includes/admin/theme-options.php:1981
+msgid "Side"
+msgstr ""
+
+#: includes/admin/theme-options.php:1982
+msgid "Mini"
+msgstr ""
+
+#: includes/admin/theme-options.php:1991
+msgid "Product Image Lazy Loading"
+msgstr ""
+
+#: includes/admin/theme-options.php:1992
+msgid "Lazy load product catalog images when scrolling down the page."
+msgstr ""
+
+#: includes/admin/theme-options.php:1998
+msgid "List Product Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:2003
+msgid "Shop Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:2004
+msgid "Select shop layout."
+msgstr ""
+
+#: includes/admin/theme-options.php:2015
+msgid "Product Category Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:2016
+msgid "Select product category layout."
+msgstr ""
+
+#: includes/admin/theme-options.php:2027
+msgid "Product Tag Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:2028
+msgid "Select product tag layout."
+msgstr ""
+
+#: includes/admin/theme-options.php:2039
+msgid "Product Brand Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:2040
+msgid "Select product brand layout."
+msgstr ""
+
+#: includes/admin/theme-options.php:2051
+msgid "Product lookbook Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:2052
+msgid "Select product lookbook layout."
+msgstr ""
+
+#: includes/admin/theme-options.php:2063
+msgid "Default View Mode"
+msgstr ""
+
+#: includes/admin/theme-options.php:2064
+msgid "Select default view mode"
+msgstr ""
+
+#: includes/admin/theme-options.php:2068
+#: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:311
+#: includes/vc/woocommerce.php:800 includes/woocommerce.php:313
+msgid "List"
+msgstr ""
+
+#: includes/admin/theme-options.php:2073
+msgid "Grid Product Style"
+msgstr ""
+
+#: includes/admin/theme-options.php:2076 includes/vc/init.php:174
+#: includes/vc/shortcodes/dh_box_feature.php:18
+#: includes/vc/shortcodes/dh_testimonial.php:35 includes/vc/woocommerce.php:447
+msgid "Style 1"
+msgstr ""
+
+#: includes/admin/theme-options.php:2077
+#: includes/vc/shortcodes/dh_box_feature.php:19
+#: includes/vc/shortcodes/dh_testimonial.php:35 includes/vc/woocommerce.php:448
+msgid "Style 2"
+msgstr ""
+
+#: includes/admin/theme-options.php:2078
+#: includes/vc/shortcodes/dh_box_feature.php:20
+#: includes/vc/shortcodes/dh_testimonial.php:35 includes/vc/woocommerce.php:449
+msgid "Style 3"
+msgstr ""
+
+#: includes/admin/theme-options.php:2082
+msgid "Choose grid product style."
+msgstr ""
+
+#: includes/admin/theme-options.php:2089
+msgid "Product List Rating"
+msgstr ""
+
+#: includes/admin/theme-options.php:2090
+msgid "This will show on rating on list products."
+msgstr ""
+
+#: includes/admin/theme-options.php:2096
+msgid "User Shop Ajax Filter"
+msgstr ""
+
+#: includes/admin/theme-options.php:2097
+msgid "Show/hide shop ajax filter in shop or Product Taxonomy archive page."
+msgstr ""
+
+#: includes/admin/theme-options.php:2100
+msgid "Only Shop"
+msgstr ""
+
+#: includes/admin/theme-options.php:2101
+msgid "Only Product Taxonomy archive Page"
+msgstr ""
+
+#: includes/admin/theme-options.php:2102
+msgid "Shop and Category Page"
+msgstr ""
+
+#: includes/admin/theme-options.php:2128
+msgid "List Products per Rows"
+msgstr ""
+
+#: includes/admin/theme-options.php:2138
+msgid "Choose Products per Rows."
+msgstr ""
+
+#: includes/admin/theme-options.php:2145
+msgid "Products Gap (px)"
+msgstr ""
+
+#: includes/admin/theme-options.php:2146
+msgid "Enter gap for each product in lists."
+msgstr ""
+
+#: includes/admin/theme-options.php:2152
+msgid "Number of Products per Page"
+msgstr ""
+
+#: includes/admin/theme-options.php:2153
+msgid "Enter the products of posts to display per page."
+msgstr ""
+
+#: includes/admin/theme-options.php:2158
+msgid "Single Product Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:2163
+msgid "Single Product Layout"
+msgstr ""
+
+#: includes/admin/theme-options.php:2164
+msgid "Select single product layout."
+msgstr ""
+
+#: includes/admin/theme-options.php:2175
+msgid "Single Product style"
+msgstr ""
+
+#: includes/admin/theme-options.php:2176
+msgid "Select Single Product style."
+msgstr ""
+
+#: includes/admin/theme-options.php:2181
+msgid "Full width and No Thumbnails"
+msgstr ""
+
+#: includes/admin/theme-options.php:2187
+msgid "Single Product Popup Type"
+msgstr ""
+
+#: includes/admin/theme-options.php:2188
+msgid "Select Single Product Popup Type."
+msgstr ""
+
+#: includes/admin/theme-options.php:2191 includes/vc/shortcodes/dh_video.php:17
+msgid "Popup"
+msgstr ""
+
+#: includes/admin/theme-options.php:2192
+msgid "Zoom"
+msgstr ""
+
+#: includes/admin/theme-options.php:2198
+msgid "Show Single Product Meta"
+msgstr ""
+
+#: includes/admin/theme-options.php:2199
+msgid "Activate this to enable product meta."
+msgstr ""
+
+#: includes/admin/theme-options.php:2206
+msgid "Activate this to enable social sharing buttons."
+msgstr ""
+
+#: includes/admin/theme-options.php:2250
+msgid "Social API"
+msgstr ""
+
+#: includes/admin/theme-options.php:2251
+msgid "<p class=\"description\">Social API"
+msgstr ""
+
+#: includes/admin/theme-options.php:2256
+msgid "Facebook Login Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:2262
+msgid "Use Facebook login"
+msgstr ""
+
+#: includes/admin/theme-options.php:2263
+msgid "Enable or disable Login/Register with Facebook"
+msgstr ""
+
+#: includes/admin/theme-options.php:2269
+msgid "Facebook App ID"
+msgstr ""
+
+#: includes/admin/theme-options.php:2270
+#, php-format
+msgid ""
+"Use Facebook login you need to enter your Facebook App ID. If you don't have "
+"one, you can create it from: <a target=\"_blank\" href=\"%s\">Here</a>"
+msgstr ""
+
+#: includes/admin/theme-options.php:2275
+msgid "MailChimp Settings"
+msgstr ""
+
+#: includes/admin/theme-options.php:2280
+msgid "MailChimp API Key"
+msgstr ""
+
+#: includes/admin/theme-options.php:2281
+#, php-format
+msgid ""
+"Enter your API Key.<a target=\"_blank\" href=\"%s\">Get your API key</a>"
+msgstr ""
+
+#: includes/admin/theme-options.php:2287
+msgid "MailChimp List"
+msgstr ""
+
+#: includes/admin/theme-options.php:2288
+msgid ""
+"After you add your MailChimp API Key above and save it this list will be "
+"populated."
+msgstr ""
+
+#: includes/admin/theme-options.php:2293
+msgid "Enable Double Opt-In"
+msgstr ""
+
+#: includes/admin/theme-options.php:2294
+#, php-format
+msgid "Learn more about <a target=\"_blank\" href=\"%s\">Double Opt-in</a>."
+msgstr ""
+
+#: includes/admin/theme-options.php:2299
+msgid "Send Welcome Email"
+msgstr ""
+
+#: includes/admin/theme-options.php:2300
+#, php-format
+msgid ""
+"If your Double Opt-in is false and this is true, MailChimp will send your "
+"lists Welcome Email if this subscribe succeeds - this will not fire if "
+"MailChimp ends up updating an existing subscriber. If Double Opt-in is true, "
+"this has no effect. Learn more about <a target=\"_blank\" href=\"%s"
+"\">Welcome Emails</a>."
+msgstr ""
+
+#: includes/admin/theme-options.php:2305
+msgid "MailChimp Group Name"
+msgstr ""
+
+#: includes/admin/theme-options.php:2306
+#, php-format
+msgid ""
+"Optional: Enter the name of the group. Learn more about <a target=\"_blank\" "
+"href=\"%s\">Groups</a>"
+msgstr ""
+
+#: includes/admin/theme-options.php:2311
+msgid "MailChimp Group"
+msgstr ""
+
+#: includes/admin/theme-options.php:2312
+msgid "Optional: Comma delimited list of interest groups to add the email to."
+msgstr ""
+
+#: includes/admin/theme-options.php:2317
+msgid "MailChimp Replace Interests"
+msgstr ""
+
+#: includes/admin/theme-options.php:2318
+msgid ""
+"Whether MailChimp will replace the interest groups with the groups provided "
+"or add the provided groups to the member interest groups."
+msgstr ""
+
+#: includes/admin/theme-options.php:2328
+msgid "Social Profile"
+msgstr ""
+
+#: includes/admin/theme-options.php:2329
+msgid ""
+"<p class=\"description\">Enter in your profile media locations here."
+"<br><strong>Remember to include the \"http://\" in all URLs!</strong></p>"
+msgstr ""
+
+#: includes/admin/theme-options.php:2334
+#: includes/vc/shortcodes/dh_member.php:45
+msgid "Facebook URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2339
+#: includes/vc/shortcodes/dh_member.php:47
+msgid "Twitter URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2344
+#: includes/vc/shortcodes/dh_member.php:48
+msgid "Google+ URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2349
+msgid "Pinterest URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2354
+#: includes/vc/shortcodes/dh_member.php:49
+msgid "LinkedIn URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2359
+msgid "RSS URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2364
+msgid "Instagram URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2369
+msgid "Youtube URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2374
+msgid "GitHub URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2379
+msgid "Behance URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2384
+msgid "Stack Exchange URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2389
+msgid "Tumblr URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2394
+msgid "SoundCloud URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2399
+msgid "Dribbble URL"
+msgstr ""
+
+#: includes/admin/theme-options.php:2405
+msgid "Import and Export"
+msgstr ""
+
+#: includes/admin/theme-options.php:2410
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: includes/admin/theme-options.php:2415
+msgid ""
+"Here you can download your current option settings.You can use it to restore "
+"your settings on this site (or any other site)."
+msgstr ""
+
+#: includes/admin/theme-options.php:2421
+msgid "Custom Code"
+msgstr ""
+
+#: includes/admin/theme-options.php:2426
+msgid "Custom CSS Code"
+msgstr ""
+
+#: includes/admin/theme-options.php:2427
+msgid ""
+"Paste your CSS code, do not include any tags or HTML in thie field. Any "
+"custom CSS entered here will override the theme CSS. In some cases, the !"
+"important tag may be needed."
+msgstr ""
+
+#: includes/admin/theme-options.php:2432
+msgid "Space before </head>"
+msgstr ""
+
+#: includes/admin/theme-options.php:2433
+msgid "Add code before the </head> tag."
+msgstr ""
+
+#: includes/admin/theme-options.php:2438
+msgid "Space before </body>"
+msgstr ""
+
+#: includes/admin/theme-options.php:2439
+msgid "Add code before the </body> tag."
+msgstr ""
+
+#: includes/admin/theme-options.php:2453
+msgid "You want reset all options ?"
+msgstr ""
+
+#: includes/breadcrumb.php:19
+msgid "Home"
+msgstr "Inicio"
+
+#: includes/breadcrumb.php:118
+#, php-format
+msgid "Weekly Archive for: \"%s\""
+msgstr ""
+
+#: includes/breadcrumb.php:120
+#, php-format
+msgid "Daily Archive for: \"%s\""
+msgstr ""
+
+#: includes/breadcrumb.php:122
+#, php-format
+msgid "Monthly Archive for: \"%s\""
+msgstr ""
+
+#: includes/breadcrumb.php:124
+#, php-format
+msgid "Yearly Archive for: \"%s\""
+msgstr ""
+
+#: includes/breadcrumb.php:128
+#, php-format
+msgid "Author Archive for: \"%s\""
+msgstr ""
+
+#: includes/breadcrumb.php:133 includes/functions.php:1123 searchform.php:2
+#: searchform.php:5
+msgid "Search"
+msgstr ""
+
+#: includes/breadcrumb.php:137
+msgid "Page Not Found"
+msgstr ""
+
+#: includes/breadcrumb.php:182
+msgid "Split"
+msgstr ""
+
+#: includes/breadcrumb.php:185
+msgid "Merge"
+msgstr ""
+
+#: includes/breadcrumb.php:188 includes/breadcrumb.php:202
+#: includes/breadcrumb.php:222 includes/functions.php:1096
+#: includes/post-type-slider.php:746
+msgid "Edit"
+msgstr ""
+
+#: includes/controller.php:41
+msgid "Authenication required."
+msgstr ""
+
+#: includes/controller.php:53
+msgid "Please connect your facebook account."
+msgstr ""
+
+#: includes/controller.php:66
+msgid "Registration is not open at this time. Please come back later."
+msgstr ""
+
+#: includes/controller.php:69
+msgid ""
+"Registration using Facebook is not currently allowed. Please use our "
+"Register page"
+msgstr ""
+
+#: includes/controller.php:83
+msgid ""
+"Your facebook account is not verified. You have to verify your account "
+"before proceed login or registering on this site."
+msgstr ""
+
+#: includes/controller.php:88
+msgid ""
+"Please click again to login with Facebook and allow the application to use "
+"your email address"
+msgstr ""
+
+#: includes/controller.php:92
+msgid ""
+"We didn't find your name. Please complete your facebook account before "
+"proceeding."
+msgstr ""
+
+#: includes/controller.php:130 includes/controller.php:148
+msgid "Login successful, redirecting..."
+msgstr ""
+
+#: includes/controller.php:156
+msgid "Your session is expired or you submitted an invalid form."
+msgstr ""
+
+#: includes/controller.php:176
+msgid "Registration complete."
+msgstr ""
+
+#: includes/controller.php:183
+msgid "Not allow register in site."
+msgstr ""
+
+#: includes/controller.php:196
+msgid "Please enter a username."
+msgstr ""
+
+#: includes/controller.php:198
+msgid ""
+"This username is invalid because it uses illegal characters. Please enter a "
+"valid username."
+msgstr ""
+
+#: includes/controller.php:201
+msgid "This username is already registered. Please choose another one."
+msgstr ""
+
+#: includes/controller.php:206
+msgid "Please type your email address."
+msgstr ""
+
+#: includes/controller.php:208
+msgid "The email address isn't correct."
+msgstr ""
+
+#: includes/controller.php:211
+msgid "This email is already registered, please choose another one."
+msgstr ""
+
+#: includes/controller.php:219
+msgid "Password must be 6 character long."
+msgstr ""
+
+#: includes/controller.php:221
+msgid "Not see password confirmation field."
+msgstr ""
+
+#: includes/controller.php:223
+msgid "Passwords do not match."
+msgstr ""
+
+#: includes/controller.php:242
+msgid "Couldn't register you... please contact the site administrator"
+msgstr ""
+
+#: includes/controller.php:271
+#, php-format
+msgid "Welcome to [%1$s]"
+msgstr ""
+
+#: includes/controller.php:274
+#, php-format
+msgid ""
+"Hi %1$s,<br/><br/>You've just successfully registered an account on %2$s.<br/"
+">Start reading now! %3$s<br/><br/>Best regards,<br/>%4$s"
+msgstr ""
+
+#: includes/controller.php:290 includes/controller.php:296
+#, php-format
+msgid ""
+"You are already logged in. Please <a href=\"#\" onclick=\"%s\">refresh</a> "
+"page"
+msgstr ""
+
+#: includes/controller.php:309
+msgid "<strong>ERROR</strong>: Enter a username or e-mail address."
+msgstr ""
+
+#: includes/controller.php:313
+msgid ""
+"<strong>ERROR</strong>: There is no user registered with that email address."
+msgstr ""
+
+#: includes/controller.php:332
+msgid "<strong>ERROR</strong>: Invalid username or e-mail."
+msgstr ""
+
+#: includes/controller.php:371
+msgid "Password reset is not allowed for this user"
+msgstr ""
+
+#: includes/controller.php:407
+msgid "Could not save password reset key to database."
+msgstr ""
+
+#: includes/controller.php:412
+msgid "Someone requested that the password be reset for the following account:"
+msgstr ""
+
+#: includes/controller.php:414
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: includes/controller.php:415
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: includes/controller.php:416
+msgid "To reset your password, visit the following address:"
+msgstr ""
+
+#: includes/controller.php:428
+#, php-format
+msgid "[%s] Password Reset"
+msgstr ""
+
+#: includes/controller.php:450
+msgid "Failure!"
+msgstr ""
+
+#: includes/controller.php:451
+msgid "The e-mail could not be sent."
+msgstr ""
+
+#: includes/controller.php:455
+msgid "Email successfully sent!"
+msgstr ""
+
+#: includes/controller.php:480 includes/controller.php:482
+msgid "Verify Nonce Failed"
+msgstr ""
+
+#: includes/controller.php:486
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: includes/controller.php:488
+msgid "Invalid Email"
+msgstr ""
+
+#: includes/controller.php:537
+msgid "<strong>Well done!</strong> Subscribe to our Newsletter successful!"
+msgstr ""
+
+#: includes/controller.php:539
+msgid "Can not subscribe our Newsletter"
+msgstr ""
+
+#: includes/controller.php:568
+msgid "No results matched!"
+msgstr ""
+
+#: includes/controller.php:624
+msgid "View all results"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:43
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:335
+msgctxt "slug"
+msgid "product-brand"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:50 includes/dhwc-brand/dhwc-brand.php:52
+#: includes/vc/woocommerce.php:525
+msgid "Product Brands"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:53
+msgid "Product Brand"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:54
+msgctxt "Admin menu name"
+msgid "Brands"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:55
+msgid "Search Product Brands"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:56
+msgid "All Product Brands"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:57
+msgid "Parent Product Brand"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:58
+msgid "Parent Product Brand:"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:59
+msgid "Edit Product Brand"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:60
+msgid "Update Product Brand"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:61
+msgid "Add New Product Brand"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:62
+msgid "New Product Brand Name"
+msgstr ""
+
+#: includes/dhwc-brand/dhwc-brand.php:223
+msgid "Brand:"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:17
+msgid ""
+"Product brands for your store can be managed here. To change the order of "
+"brands on the front-end you can drag and drop to sort them. To see more "
+"brands listed click the \"screen options\" link at the top of the page."
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:29
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:105
+#: includes/lookbook/includes/admin.php:37
+#: includes/lookbook/includes/admin.php:127 includes/post-type-slider.php:439
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:35
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:110
+#: includes/lookbook/includes/admin.php:43
+#: includes/lookbook/includes/admin.php:132 includes/woocommerce.php:953
+#: includes/woocommerce.php:1063
+msgid "Upload/Add image"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:36
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:111
+#: includes/lookbook/includes/admin.php:44
+#: includes/lookbook/includes/admin.php:133 includes/woocommerce.php:954
+#: includes/woocommerce.php:1064
+msgid "Remove image"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:59
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:136
+#: includes/lookbook/includes/admin.php:67
+#: includes/lookbook/includes/admin.php:158 includes/woocommerce.php:977
+#: includes/woocommerce.php:1087
+msgid "Choose an image"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:61
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:138
+#: includes/lookbook/includes/admin.php:69
+#: includes/lookbook/includes/admin.php:160 includes/woocommerce.php:979
+#: includes/woocommerce.php:1089
+msgid "Use image"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:200
+#: includes/lookbook/includes/admin.php:236 includes/post-type-slider.php:510
+msgid "Image"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:255
+msgid "Brands Options"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:259
+msgid "Show description"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:260
+msgid "Show/hide the product brand description on the archive page."
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:297
+msgid "Product brand base"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-admin.php:355
+#: includes/dhwc-brand/includes/dhwc-brand-functions.php:155
+#: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:288
+#: includes/dhwc-brand/includes/dhwc-widget-slider-brands.php:33
+#: includes/vc/woocommerce.php:535
+msgid "Brands"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-functions.php:107
+msgid "Select a brand"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-functions.php:110
+msgid "Uncategorized"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-brand-functions.php:147
+msgid "No brands"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:11
+msgid "A list or dropdown of product brands."
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:13
+msgid "DHWOO Product Brands"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:23
+msgid "Product brands"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:161
+msgid "No product brands exist."
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:190
+#: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:306
+#: includes/dhwc-brand/includes/dhwc-widget-slider-brands.php:107
+msgid "Title:"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:193
+#: includes/dhwc-brand/includes/dhwc-widget-slider-brands.php:112
+msgid "Order by:"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:195
+#: includes/dhwc-brand/includes/dhwc-widget-slider-brands.php:114
+msgid "Order"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:196
+#: includes/dhwc-brand/includes/dhwc-widget-slider-brands.php:115
+#: includes/vc/init.php:478 includes/vc/init.php:515
+#: includes/vc/shortcodes/dh_member.php:25 includes/vc/woocommerce.php:476
+#: includes/vc/woocommerce.php:868 woocommerce/single-product-reviews.php:65
+msgid "Name"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:201
+#: includes/vc/woocommerce.php:872
+msgid "Show as dropdown"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:204
+#: includes/vc/woocommerce.php:878
+msgid "Show post counts"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:207
+#: includes/vc/woocommerce.php:884
+msgid "Show hierarchy"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:210
+msgid "Only show children for the current brand"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-brands.php:213
+msgid "Hide Empty Brands"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:11
+msgid ""
+"Shows product brands in a widget which lets you narrow down the list of "
+"products when viewing product categories"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:13
+msgid "DHWOO Product Brand Layered Nav"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:124
+msgid "Any brand"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:309
+msgid "Display Type:"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:312
+#: includes/vc/woocommerce.php:800
+msgid "Dropdown"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-slider-brands.php:10
+msgid "Shows product brans with slider"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-slider-brands.php:12
+msgid "DHWOO Product Brand Slider"
+msgstr ""
+
+#: includes/dhwc-brand/includes/dhwc-widget-slider-brands.php:120
+msgid "Hide empty brands"
+msgstr ""
+
+#: includes/functions.php:122 includes/functions.php:136
+msgid "Languages"
+msgstr ""
+
+#: includes/functions.php:194
+msgid "Unable to communicate with Instagram."
+msgstr ""
+
+#: includes/functions.php:197
+msgid "Instagram did not return a 200."
+msgstr ""
+
+#: includes/functions.php:204 includes/functions.php:215
+#: includes/functions.php:219 includes/functions.php:288
+msgid "Instagram has returned invalid data."
+msgstr ""
+
+#: includes/functions.php:260
+msgid "Instagram Image"
+msgstr ""
+
+#: includes/functions.php:731 vc_templates/dh_member.php:38
+#: vc_templates/dh_member.php:79 vc_templates/dh_member.php:105
+msgid "Facebook"
+msgstr ""
+
+#: includes/functions.php:735 vc_templates/dh_member.php:43
+#: vc_templates/dh_member.php:84 vc_templates/dh_member.php:110
+msgid "Twitter"
+msgstr ""
+
+#: includes/functions.php:739
+msgid "Google+"
+msgstr ""
+
+#: includes/functions.php:743
+msgid "Pinterest"
+msgstr ""
+
+#: includes/functions.php:747
+msgid "LinkedIn"
+msgstr ""
+
+#: includes/functions.php:751
+msgid "RSS"
+msgstr ""
+
+#: includes/functions.php:755 includes/vc/shortcodes/dh_instagram.php:6
+msgid "Instagram"
+msgstr ""
+
+#: includes/functions.php:759
+msgid "Youtube"
+msgstr ""
+
+#: includes/functions.php:763
+msgid "GitHub"
+msgstr ""
+
+#: includes/functions.php:767
+msgid "Behance"
+msgstr ""
+
+#: includes/functions.php:771
+msgid "StackExchange"
+msgstr ""
+
+#: includes/functions.php:775
+msgid "Tumblr"
+msgstr ""
+
+#: includes/functions.php:779
+msgid "SoundCloud"
+msgstr ""
+
+#: includes/functions.php:783
+msgid "Dribbble"
+msgstr ""
+
+#: includes/functions.php:852
+msgid "Share on Google +"
+msgstr ""
+
+#: includes/functions.php:862
+msgid "Share on Linked In"
+msgstr ""
+
+#: includes/functions.php:1037
+msgid "Related News"
+msgstr ""
+
+#: includes/functions.php:1059 index.php:189 search.php:189
+#: vc_templates/dh_post.php:241 vc_templates/dh_post_slider.php:168
+msgid "Read More"
+msgstr ""
+
+#: includes/functions.php:1088 includes/vc/shortcodes/dh_testimonial.php:113
+msgid "Author"
+msgstr ""
+
+#: includes/functions.php:1093 includes/functions.php:1764
+#: includes/functions.php:1774
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: includes/functions.php:1101
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/functions.php:1109
+msgid "Reply"
+msgstr ""
+
+#: includes/functions.php:1151
+msgid "Name *"
+msgstr ""
+
+#: includes/functions.php:1152
+msgid "Email *"
+msgstr ""
+
+#: includes/functions.php:1153
+msgid "Website"
+msgstr ""
+
+#: includes/functions.php:1157
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: includes/functions.php:1158
+msgid "Leave a reply"
+msgstr ""
+
+#: includes/functions.php:1159
+#, php-format
+msgid "Leave a reply to %s"
+msgstr ""
+
+#: includes/functions.php:1160
+msgid "Click here to cancel the reply"
+msgstr ""
+
+#: includes/functions.php:1161
+#: includes/lib/wordpress-importer/wordpress-importer.php:279
+#: woocommerce/single-product-reviews.php:70
+msgid "Submit"
+msgstr ""
+
+#: includes/functions.php:1162 includes/functions.php:1789
+#: includes/functions.php:1793
+msgid "Comment"
+msgstr ""
+
+#: includes/functions.php:1163
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: includes/functions.php:1177
+msgctxt "word count: words or characters?"
+msgid "words"
+msgstr ""
+
+#: includes/functions.php:1232
+msgctxt "Previous post link"
+msgid "%title"
+msgstr ""
+
+#: includes/functions.php:1237
+msgid "Previous article"
+msgstr ""
+
+#: includes/functions.php:1243
+msgctxt "Next post link"
+msgid "%title"
+msgstr ""
+
+#: includes/functions.php:1248
+msgid "Next article"
+msgstr ""
+
+#: includes/functions.php:1286
+msgid "Archive for date:"
+msgstr ""
+
+#: includes/functions.php:1290
+msgid "Archive for month:"
+msgstr ""
+
+#: includes/functions.php:1294
+msgid "Archive for year:"
+msgstr ""
+
+#: includes/functions.php:1303
+msgid "search results for"
+msgstr ""
+
+#: includes/functions.php:1307
+msgid "search result for"
+msgstr ""
+
+#: includes/functions.php:1314
+msgid "Search results for"
+msgstr ""
+
+#: includes/functions.php:1318
+msgid "To search the site please enter a valid term"
+msgstr ""
+
+#: includes/functions.php:1346
+msgid "404 - Page not found"
+msgstr ""
+
+#: includes/functions.php:1354
+msgid "Page"
+msgstr ""
+
+#: includes/functions.php:1366
+msgid "My Portfolio"
+msgstr ""
+
+#: includes/functions.php:1761
+#, php-format
+msgid "Posts by: %s"
+msgstr ""
+
+#: includes/functions.php:1787
+#, php-format
+msgid "Leave a comment on: &ldquo;%s&rdquo;"
+msgstr ""
+
+#: includes/functions.php:1791
+#, php-format
+msgid "View a comment on: &ldquo;%s&rdquo;"
+msgstr ""
+
+#: includes/functions.php:1795
+#, php-format
+msgid "View all comments on: &ldquo;%s&rdquo;"
+msgstr ""
+
+#: includes/functions.php:1860
+#, php-format
+msgid "%d/%d"
+msgstr ""
+
+#: includes/functions.php:1963
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: includes/functions.php:1967
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: includes/functions.php:2153 woocommerce/cart/cart.php:28
+#: woocommerce/checkout/form-pay.php:20
+msgid "Product"
+msgstr ""
+
+#: includes/functions.php:2188
+msgid "Popular"
+msgstr ""
+
+#: includes/functions.php:2206
+#, php-format
+msgid "%s Comment"
+msgstr ""
+
+#: includes/functions.php:2216
+msgid "Recent"
+msgstr ""
+
+#: includes/functions.php:2262
+msgid "Not Subscribe to Mailchimp!"
+msgstr ""
+
+#: includes/functions.php:2264
+msgid "Subscribe to Mailchimp Successful!"
+msgstr ""
+
+#: includes/functions.php:2271 includes/hook.php:382
+msgid "Subscribe"
+msgstr ""
+
+#: includes/functions.php:2272
+msgid "Enter your email..."
+msgstr ""
+
+#: includes/functions.php:2274
+msgid "OK"
+msgstr ""
+
+#: includes/hook.php:73
+msgid "Google+ Profile URL"
+msgstr ""
+
+#: includes/hook.php:74
+msgid "Twitter Profile URL"
+msgstr ""
+
+#: includes/hook.php:75
+msgid "Facebook Profile URL"
+msgstr ""
+
+#: includes/hook.php:76
+msgid "LinkedIn Profile URL"
+msgstr ""
+
+#: includes/hook.php:77
+msgid "Pinterest Profile URL"
+msgstr ""
+
+#: includes/hook.php:126 includes/hook.php:129
+msgid "Theme options"
+msgstr ""
+
+#: includes/hook.php:305 includes/hook.php:456
+msgid "or"
+msgstr ""
+
+#: includes/hook.php:350
+msgid "Sign in with Facebook"
+msgstr ""
+
+#: includes/hook.php:377
+msgid "Your email"
+msgstr ""
+
+#: includes/hook.php:414 includes/hook.php:415 includes/hook.php:459
+#: includes/hook.php:460 woocommerce/myaccount/form-login.php:81
+msgid "Username"
+msgstr ""
+
+#: includes/hook.php:418 includes/hook.php:419 includes/hook.php:467
+#: includes/hook.php:468 woocommerce/global/form-login.php:32
+#: woocommerce/myaccount/form-login.php:51
+#: woocommerce/myaccount/form-login.php:95
+msgid "Password"
+msgstr ""
+
+#: includes/hook.php:423
+msgid "Remember Me"
+msgstr ""
+
+#: includes/hook.php:426 woocommerce/global/form-login.php:49
+#: woocommerce/myaccount/form-login.php:62
+msgid "Lost your password?"
+msgstr ""
+
+#: includes/hook.php:434
+msgid "Not a Member yet?"
+msgstr ""
+
+#: includes/hook.php:436
+msgid "Sign in"
+msgstr ""
+
+#: includes/hook.php:449
+msgid "Register account"
+msgstr ""
+
+#: includes/hook.php:471 includes/hook.php:472
+msgid "Retype password"
+msgstr ""
+
+#: includes/hook.php:478 includes/hook.php:505
+msgid "Already have an account?"
+msgstr ""
+
+#: includes/hook.php:479 woocommerce/myaccount/form-login.php:27
+#: woocommerce/myaccount/form-login.php:109
+msgid "Register"
+msgstr ""
+
+#: includes/hook.php:492
+msgid "Forgot Password"
+msgstr ""
+
+#: includes/hook.php:498
+msgid "Username or E-mail:"
+msgstr ""
+
+#: includes/hook.php:499
+msgid "Username or E-mail"
+msgstr ""
+
+#: includes/hook.php:506 woocommerce/myaccount/form-lost-password.php:50
+msgid "Reset Password"
+msgstr ""
+
+#: includes/lib/google-fonts.php:23
+msgid "100"
+msgstr ""
+
+#: includes/lib/google-fonts.php:24
+msgid "200"
+msgstr ""
+
+#: includes/lib/google-fonts.php:25
+msgid "200 Italic"
+msgstr ""
+
+#: includes/lib/google-fonts.php:26
+msgid "300"
+msgstr ""
+
+#: includes/lib/google-fonts.php:27
+msgid "300 Italic"
+msgstr ""
+
+#: includes/lib/google-fonts.php:28
+msgid "Regular"
+msgstr ""
+
+#: includes/lib/google-fonts.php:29
+msgid "Regular Italic"
+msgstr ""
+
+#: includes/lib/google-fonts.php:30
+msgid "500"
+msgstr ""
+
+#: includes/lib/google-fonts.php:31
+msgid "500 Italic"
+msgstr ""
+
+#: includes/lib/google-fonts.php:32
+msgid "600"
+msgstr ""
+
+#: includes/lib/google-fonts.php:33
+msgid "600 Italic"
+msgstr ""
+
+#: includes/lib/google-fonts.php:34
+msgid "700"
+msgstr ""
+
+#: includes/lib/google-fonts.php:35
+msgid "700 Italic"
+msgstr ""
+
+#: includes/lib/google-fonts.php:36
+msgid "800"
+msgstr ""
+
+#: includes/lib/google-fonts.php:37
+msgid "800 Italic"
+msgstr ""
+
+#: includes/lib/google-fonts.php:38
+msgid "900"
+msgstr ""
+
+#: includes/lib/google-fonts.php:39
+msgid "900 Italic"
+msgstr ""
+
+#: includes/lib/wordpress-importer/parsers.php:42
+#: includes/lib/wordpress-importer/parsers.php:72
+#: includes/lib/wordpress-importer/parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: includes/lib/wordpress-importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: includes/lib/wordpress-importer/parsers.php:84
+#: includes/lib/wordpress-importer/parsers.php:89
+#: includes/lib/wordpress-importer/parsers.php:279
+#: includes/lib/wordpress-importer/parsers.php:468
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:127
+#: includes/lib/wordpress-importer/wordpress-importer.php:136
+#: includes/lib/wordpress-importer/wordpress-importer.php:187
+#: includes/lib/wordpress-importer/wordpress-importer.php:191
+#: includes/lib/wordpress-importer/wordpress-importer.php:200
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:128
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:171
+msgid "All done."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:171
+msgid "Have fun!"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:172
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:192
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:208
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:233
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:259
+msgid "Assign Authors"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:260
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:262
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:272
+msgid "Import Attachments"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:275
+msgid "Download and import file attachments"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:292
+msgid "Import author:"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:303
+msgid "or create new user with login name:"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:306
+msgid "as a new user:"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:314
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:316
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:317
+msgid "- Select -"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:367
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:418
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:458
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:504
+#: includes/lib/wordpress-importer/wordpress-importer.php:645
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:530
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:552
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:611
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:776
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:783
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:846
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:859
+msgid "Invalid file type"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:903
+msgid "Remote server did not respond"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:909
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:916
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:921
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:927
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:1026
+msgid "Import WordPress"
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:1033
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:1048
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:1049
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: includes/lib/wordpress-importer/wordpress-importer.php:1123
+msgid ""
+"Import <strong>posts, pages, comments, custom fields, categories, and tags</"
+"strong> from a WordPress export file."
+msgstr ""
+
+#: includes/lookbook/includes/admin.php:21
+msgid ""
+"Product lookbooks for your store can be managed here. To change the order of "
+"lookbooks on the front-end you can drag and drop to sort them. To see more "
+"lookbooks listed click the \"screen options\" link at the top of the page."
+msgstr ""
+
+#: includes/lookbook/includes/admin.php:33
+#: includes/lookbook/includes/admin.php:123
+msgid "Small title"
+msgstr ""
+
+#: includes/lookbook/includes/admin.php:98
+#: includes/lookbook/includes/admin.php:191
+msgid "Thumbnail Align"
+msgstr ""
+
+#: includes/lookbook/includes/admin.php:290
+msgid "Product lookbook base"
+msgstr ""
+
+#: includes/lookbook/includes/admin.php:328
+msgctxt "slug"
+msgid "product-lookbook"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:39
+msgctxt "slug"
+msgid "product-lookbok"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:46 includes/lookbook/lookbook.php:48
+#: includes/vc/woocommerce.php:499
+msgid "Product Lookbooks"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:49
+msgid "Product Lookbook"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:50
+msgctxt "Admin menu name"
+msgid "Lookbooks"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:51
+msgid "Search Product Lookbooks"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:52
+msgid "All Product Lookbooks"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:53
+msgid "Parent Product Lookbook"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:54
+msgid "Parent Product Lookbook:"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:55
+msgid "Edit Product Lookbook"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:56
+msgid "Update Product Lookbook"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:57
+msgid "Add New Product Lookbook"
+msgstr ""
+
+#: includes/lookbook/lookbook.php:58
+msgid "New Product Lookbook Name"
+msgstr ""
+
+#: includes/plugins/plugin-activation.php:76
+#: includes/plugins/tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/plugins/plugin-activation.php:77
+#: includes/plugins/tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr ""
+
+#: includes/plugins/plugin-activation.php:78
+#: includes/plugins/tgm-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: includes/plugins/plugin-activation.php:79
+#: includes/plugins/tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: includes/plugins/plugin-activation.php:80
+#: includes/plugins/tgm-plugin-activation.php:338
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:81
+#: includes/plugins/tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:82
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:83
+#: includes/plugins/tgm-plugin-activation.php:368
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:84
+#: includes/plugins/tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:85
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:86
+#: includes/plugins/tgm-plugin-activation.php:353
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:87
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:88
+#: includes/plugins/tgm-plugin-activation.php:383
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:89
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/plugin-activation.php:90
+#: includes/plugins/tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/plugins/plugin-activation.php:91
+#: includes/plugins/tgm-plugin-activation.php:399
+#: includes/plugins/tgm-plugin-activation.php:3029
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/plugins/plugin-activation.php:92
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:358
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:363
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:378
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:388
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:393
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:400
+#: includes/plugins/tgm-plugin-activation.php:2832
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:520
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:635
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:828
+#: includes/plugins/tgm-plugin-activation.php:3438
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:935
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:935
+#: includes/plugins/tgm-plugin-activation.php:938
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:938
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:1116
+#: includes/plugins/tgm-plugin-activation.php:2828
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:1881
+#, php-format
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2235
+#, php-format
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2280
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:2283
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:2286
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:2289
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/plugins/tgm-plugin-activation.php:2371
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2422
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2491
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2495
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2500
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2570
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2788
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:2814
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3369
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3370
+#: includes/plugins/tgm-plugin-activation.php:3376
+msgid "Show Details"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3370
+#: includes/plugins/tgm-plugin-activation.php:3376
+msgid "Hide Details"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3375
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3376
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr ""
+
+#: includes/plugins/tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/post-type-slider.php:259 includes/post-type-slider.php:320
+msgid "Slider Layout"
+msgstr ""
+
+#: includes/post-type-slider.php:261 includes/post-type-slider.php:323
+#: includes/vc/shortcodes/dh_button.php:245
+#: includes/vc/shortcodes/dh_pie.php:66
+#: includes/vc/shortcodes/dh_pricing_table.php:95
+msgid "Custom"
+msgstr ""
+
+#: includes/post-type-slider.php:262 includes/post-type-slider.php:324
+msgid "Full Screen"
+msgstr ""
+
+#: includes/post-type-slider.php:266 includes/post-type-slider.php:329
+msgid "Slider Width"
+msgstr ""
+
+#: includes/post-type-slider.php:268 includes/post-type-slider.php:332
+msgid "Enter 100% to full width"
+msgstr ""
+
+#: includes/post-type-slider.php:271 includes/post-type-slider.php:336
+msgid "Slider Height"
+msgstr ""
+
+#: includes/post-type-slider.php:275 includes/post-type-slider.php:342
+msgid "Auto Run"
+msgstr ""
+
+#: includes/post-type-slider.php:282 includes/post-type-slider.php:351
+msgid "Duration"
+msgstr ""
+
+#: includes/post-type-slider.php:440 includes/post-type-slider.php:583
+msgid "Caption"
+msgstr ""
+
+#: includes/post-type-slider.php:441 includes/post-type-slider.php:771
+#: includes/vc/shortcodes/dh_client.php:29
+#: includes/vc/shortcodes/dh_instagram.php:23
+#: includes/vc/shortcodes/dh_slider.php:21 includes/vc/woocommerce.php:520
+msgid "Slider"
+msgstr ""
+
+#: includes/post-type-slider.php:475 includes/post-type-slider.php:485
+msgid "No image added"
+msgstr ""
+
+#: includes/post-type-slider.php:498
+msgid "Slide Settings"
+msgstr ""
+
+#: includes/post-type-slider.php:505
+msgid "Background Type"
+msgstr ""
+
+#: includes/post-type-slider.php:506
+msgid "Please select the background type for your slide."
+msgstr ""
+
+#: includes/post-type-slider.php:511
+msgid "Video"
+msgstr ""
+
+#: includes/post-type-slider.php:516
+msgid "Slide Background Image"
+msgstr ""
+
+#: includes/post-type-slider.php:517
+msgid "Click the \"Upload\" button to begin uploading your image"
+msgstr ""
+
+#: includes/post-type-slider.php:540
+msgid "Preview Image"
+msgstr ""
+
+#: includes/post-type-slider.php:541
+msgid ""
+"Image should be at least 680px wide. Click the \"Upload\" button to begin "
+"uploading your image"
+msgstr ""
+
+#: includes/post-type-slider.php:549
+msgid "Caption Align"
+msgstr ""
+
+#: includes/post-type-slider.php:550
+msgid "Caption align"
+msgstr ""
+
+#: includes/post-type-slider.php:561
+msgid "Top Small Heading"
+msgstr ""
+
+#: includes/post-type-slider.php:562
+msgid "Please enter in the top small heading for your slide"
+msgstr ""
+
+#: includes/post-type-slider.php:567
+msgid "Small Heading Color"
+msgstr ""
+
+#: includes/post-type-slider.php:572
+msgid "Heading"
+msgstr ""
+
+#: includes/post-type-slider.php:573
+msgid "Please enter in the heading for your slide"
+msgstr ""
+
+#: includes/post-type-slider.php:578
+msgid "Heading Color"
+msgstr ""
+
+#: includes/post-type-slider.php:584
+msgid "Please enter in the caption for your slide"
+msgstr ""
+
+#: includes/post-type-slider.php:589
+msgid "Caption Color"
+msgstr ""
+
+#: includes/post-type-slider.php:595
+msgid "Link Type"
+msgstr ""
+
+#: includes/post-type-slider.php:596
+msgid "Please select the link type for your slide."
+msgstr ""
+
+#: includes/post-type-slider.php:600
+msgid "Button Link"
+msgstr ""
+
+#: includes/post-type-slider.php:601
+msgid "Link"
+msgstr ""
+
+#: includes/post-type-slider.php:607
+msgid "Please enter URL"
+msgstr ""
+
+#: includes/post-type-slider.php:612
+msgid "Button #1 Text"
+msgstr ""
+
+#: includes/post-type-slider.php:613
+msgid "Please enter text for button #1"
+msgstr ""
+
+#: includes/post-type-slider.php:618
+msgid "Button #1 Link"
+msgstr ""
+
+#: includes/post-type-slider.php:619
+msgid "Please enter link for button #1 (remember to include \"http://\")"
+msgstr ""
+
+#: includes/post-type-slider.php:625
+msgid "Button #1 Style"
+msgstr ""
+
+#: includes/post-type-slider.php:626 includes/post-type-slider.php:637
+msgid "Please select style for button #1"
+msgstr ""
+
+#: includes/post-type-slider.php:630 includes/post-type-slider.php:669
+msgid "Solid Background"
+msgstr ""
+
+#: includes/post-type-slider.php:631 includes/post-type-slider.php:670
+#: includes/widget.php:233
+msgid "Outlined"
+msgstr ""
+
+#: includes/post-type-slider.php:636
+msgid "Button #1 Color"
+msgstr ""
+
+#: includes/post-type-slider.php:641 includes/post-type-slider.php:680
+#: includes/vc/shortcodes/dh_button.php:238
+#: includes/vc/shortcodes/dh_pricing_table.php:89
+#: includes/vc/shortcodes/dh_pricing_table.php:185
+#: includes/vc/woocommerce.php:33
+msgid "Primary"
+msgstr ""
+
+#: includes/post-type-slider.php:642 includes/post-type-slider.php:681
+#: includes/vc/shortcodes/dh_button.php:239
+#: includes/vc/shortcodes/dh_pricing_table.php:90
+#: includes/vc/shortcodes/dh_pricing_table.php:186
+#: includes/vc/woocommerce.php:34
+msgid "Success"
+msgstr ""
+
+#: includes/post-type-slider.php:643 includes/post-type-slider.php:682
+#: includes/vc/shortcodes/dh_button.php:240
+#: includes/vc/shortcodes/dh_pricing_table.php:91
+#: includes/vc/shortcodes/dh_pricing_table.php:187
+#: includes/vc/woocommerce.php:35
+msgid "Info"
+msgstr ""
+
+#: includes/post-type-slider.php:644 includes/post-type-slider.php:683
+#: includes/vc/shortcodes/dh_button.php:241
+#: includes/vc/shortcodes/dh_pricing_table.php:92
+#: includes/vc/shortcodes/dh_pricing_table.php:188
+#: includes/vc/woocommerce.php:36
+msgid "Warning"
+msgstr ""
+
+#: includes/post-type-slider.php:645 includes/post-type-slider.php:684
+#: includes/vc/shortcodes/dh_button.php:242
+#: includes/vc/shortcodes/dh_pricing_table.php:93
+#: includes/vc/shortcodes/dh_pricing_table.php:189
+#: includes/vc/woocommerce.php:37
+msgid "Danger"
+msgstr ""
+
+#: includes/post-type-slider.php:646 includes/post-type-slider.php:685
+#: includes/vc/shortcodes/dh_box_feature.php:55
+#: includes/vc/shortcodes/dh_button.php:243
+#: includes/vc/shortcodes/dh_countdown.php:17
+#: includes/vc/shortcodes/dh_pricing_table.php:94
+#: includes/vc/shortcodes/dh_pricing_table.php:190
+msgid "White"
+msgstr ""
+
+#: includes/post-type-slider.php:651
+msgid "Button #2 Text"
+msgstr ""
+
+#: includes/post-type-slider.php:652
+msgid "Please enter text for button #2"
+msgstr ""
+
+#: includes/post-type-slider.php:657
+msgid "Button #2 Link"
+msgstr ""
+
+#: includes/post-type-slider.php:658
+msgid "Please enter link for button #2 (remember to include \"http://\")"
+msgstr ""
+
+#: includes/post-type-slider.php:664
+msgid "Button #2 Style"
+msgstr ""
+
+#: includes/post-type-slider.php:665 includes/post-type-slider.php:676
+msgid "Please select style for button #2"
+msgstr ""
+
+#: includes/post-type-slider.php:675
+msgid "Button #2 Color"
+msgstr ""
+
+#: includes/post-type-slider.php:741
+msgid "DHSlides"
+msgstr ""
+
+#: includes/post-type-slider.php:742 includes/post-type-slider.php:756
+msgid "DHSlide"
+msgstr ""
+
+#: includes/post-type-slider.php:743
+msgctxt "Admin menu name"
+msgid "DHSlides"
+msgstr ""
+
+#: includes/post-type-slider.php:744
+msgid "Add New"
+msgstr ""
+
+#: includes/post-type-slider.php:745
+msgid "Add New Slide"
+msgstr ""
+
+#: includes/post-type-slider.php:747
+msgid "Edit DHSlide"
+msgstr ""
+
+#: includes/post-type-slider.php:748
+msgid "New DHSlide"
+msgstr ""
+
+#: includes/post-type-slider.php:749 includes/post-type-slider.php:750
+msgid "View DHSlide"
+msgstr ""
+
+#: includes/post-type-slider.php:751
+msgid "Search DHSlides"
+msgstr ""
+
+#: includes/post-type-slider.php:752
+msgid "No DHSlides found"
+msgstr ""
+
+#: includes/post-type-slider.php:753
+msgid "No DHSlides found in trash"
+msgstr ""
+
+#: includes/post-type-slider.php:754
+msgid "Parent DHSlide"
+msgstr ""
+
+#: includes/post-type-slider.php:770 includes/post-type-slider.php:778
+msgid "Sliders"
+msgstr ""
+
+#: includes/post-type-slider.php:772
+msgid "Search Sliders"
+msgstr ""
+
+#: includes/post-type-slider.php:773
+msgid "All Sliders"
+msgstr ""
+
+#: includes/post-type-slider.php:774
+msgid "Edit Slider"
+msgstr ""
+
+#: includes/post-type-slider.php:775
+msgid "Update Slider"
+msgstr ""
+
+#: includes/post-type-slider.php:776
+msgid "Add New Slider"
+msgstr ""
+
+#: includes/post-type-slider.php:777
+msgid "New Slider"
+msgstr ""
+
+#: includes/updaters/updater-admin.php:17
+msgid "Auto Updates"
+msgstr ""
+
+#: includes/updaters/updater-admin.php:22
+msgid "ThemeForest Username"
+msgstr ""
+
+#: includes/updaters/updater-admin.php:27
+msgid "ThemeForest Secret API Key"
+msgstr ""
+
+#: includes/updaters/updater-admin.php:28
+msgid ""
+"You can create one from ThemeForest User settings page. View a tutorial <a "
+"target=\"_blank\" href=\""
+msgstr ""
+
+#: includes/updaters/updater-admin.php:33
+msgid "ThemeForest Purchase Code"
+msgstr ""
+
+#: includes/updaters/updater.php:47
+msgid "Error! Can't connect to filesystem"
+msgstr ""
+
+#: includes/updaters/updater.php:57
+#, php-format
+msgid ""
+"To receive automatic updates license activation is required. Please visit <a "
+"href=\"%1$s\" target=\"_blank\">Settings</a> to activate %2$s."
+msgstr ""
+
+#: includes/updaters/updater.php:60
+msgid "Getting download link..."
+msgstr ""
+
+#: includes/updaters/updater.php:68 includes/updaters/updater.php:71
+#: includes/updaters/updater.php:84
+msgid "Error! Envato API error"
+msgstr ""
+
+#: includes/updaters/updater.php:74
+msgid "Downloading package..."
+msgstr ""
+
+#: includes/vc/init.php:5
+msgid "Add Item"
+msgstr ""
+
+#: includes/vc/init.php:9
+msgid "Item"
+msgstr ""
+
+#: includes/vc/init.php:13
+msgid "Move"
+msgstr ""
+
+#: includes/vc/init.php:111 includes/vc/shortcodes/dh_box_feature.php:14
+#: includes/vc/shortcodes/dh_button.php:161
+#: includes/vc/shortcodes/dh_countdown.php:14
+#: includes/vc/shortcodes/dh_instagram.php:20
+#: includes/vc/shortcodes/dh_member.php:15
+#: includes/vc/shortcodes/dh_tabs.php:16
+#: includes/vc/shortcodes/dh_testimonial.php:32 includes/vc/woocommerce.php:516
+#: includes/widget.php:228
+msgid "Style"
+msgstr ""
+
+#: includes/vc/init.php:113
+msgid "Inherit from Theme"
+msgstr ""
+
+#: includes/vc/init.php:114
+msgid "Separator display style."
+msgstr ""
+
+#: includes/vc/init.php:121 includes/vc/shortcodes/dh_button.php:66
+#: includes/vc/shortcodes/dh_button.php:83
+#: includes/vc/shortcodes/dh_button.php:99
+#: includes/vc/shortcodes/dh_button.php:115
+#: includes/vc/shortcodes/dh_button.php:130
+#: includes/vc/shortcodes/dh_counter.php:87
+msgid "Icon"
+msgstr ""
+
+#: includes/vc/init.php:126 includes/vc/shortcodes/dh_button.php:79
+#: includes/vc/shortcodes/dh_button.php:95
+#: includes/vc/shortcodes/dh_button.php:111
+#: includes/vc/shortcodes/dh_button.php:142
+msgid "Select icon from library."
+msgstr ""
+
+#: includes/vc/init.php:130
+msgid "Elegant"
+msgstr ""
+
+#: includes/vc/init.php:136 includes/vc/shortcodes/dh_button.php:24
+msgid "Icon library"
+msgstr ""
+
+#: includes/vc/init.php:140 includes/vc/shortcodes/dh_button.php:35
+msgid "Select icon library."
+msgstr ""
+
+#: includes/vc/init.php:144 includes/vc/init.php:155
+msgid "Row Type"
+msgstr ""
+
+#: includes/vc/init.php:151 includes/vc/init.php:162
+msgid "In Container"
+msgstr ""
+
+#: includes/vc/init.php:166
+msgid "Styles"
+msgstr ""
+
+#: includes/vc/init.php:253
+msgid "Select Attibute"
+msgstr ""
+
+#: includes/vc/init.php:280
+msgid "Select Attibute Filter"
+msgstr ""
+
+#: includes/vc/init.php:316
+msgid "Select brands"
+msgstr ""
+
+#: includes/vc/init.php:341
+msgid "Select lookbooks"
+msgstr ""
+
+#: includes/vc/init.php:366
+msgid "Select categories"
+msgstr ""
+
+#: includes/vc/init.php:392
+msgid "Search for a product..."
+msgstr ""
+
+#: includes/vc/init.php:408 includes/woocommerce.php:901
+#, php-format
+msgid "%s &ndash; %s"
+msgstr ""
+
+#: includes/vc/init.php:477 includes/vc/init.php:514 includes/vc/init.php:546
+msgid "Id"
+msgstr ""
+
+#: includes/vc/init.php:479 includes/vc/init.php:516
+msgid "Slug"
+msgstr ""
+
+#: includes/vc/init.php:538
+msgid "Sku"
+msgstr ""
+
+#: includes/vc/init.php:932 includes/vc/shortcodes/dh_pricing_table.php:268
+msgid "Remove"
+msgstr ""
+
+#: includes/vc/init.php:936
+msgid "Pricing Table element only support display 5 item"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:5
+#: includes/vc/shortcodes/dh_box_feature.php:5
+#: includes/vc/shortcodes/dh_button.php:7
+#: includes/vc/shortcodes/dh_carousel.php:5
+#: includes/vc/shortcodes/dh_carousel.php:154
+#: includes/vc/shortcodes/dh_client.php:10
+#: includes/vc/shortcodes/dh_countdown.php:10
+#: includes/vc/shortcodes/dh_counter.php:10
+#: includes/vc/shortcodes/dh_instagram.php:5
+#: includes/vc/shortcodes/dh_mailchimp.php:5
+#: includes/vc/shortcodes/dh_member.php:7 includes/vc/shortcodes/dh_menu.php:15
+#: includes/vc/shortcodes/dh_pie.php:9 includes/vc/shortcodes/dh_post.php:7
+#: includes/vc/shortcodes/dh_post_slider.php:7
+#: includes/vc/shortcodes/dh_slider.php:11 includes/vc/shortcodes/dh_tabs.php:5
+#: includes/vc/shortcodes/dh_tabs.php:59
+#: includes/vc/shortcodes/dh_testimonial.php:6
+#: includes/vc/shortcodes/dh_testimonial.php:96
+#: includes/vc/shortcodes/dh_typed.php:7 includes/vc/shortcodes/dh_video.php:6
+msgid "Sitesao"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:6
+msgid "Animation Box"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:7
+msgid "Enable animation for serveral elements."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:17
+msgid "Select Animation"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:18
+msgid "Choose animation effect for this column."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:65
+msgid "Animation Transition"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:98
+msgid "Select the a animation transition."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:101
+msgid "Animation Duration (ms)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:102
+msgid "Specifies how many milliseconds an animation takes to complete."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:111
+msgid "Animation Delay (ms)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:112
+msgid "Specifies a delay before the animation will start."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:134
+#: includes/vc/shortcodes/dh_box_feature.php:102
+#: includes/vc/shortcodes/dh_button.php:353
+#: includes/vc/shortcodes/dh_carousel.php:129
+#: includes/vc/shortcodes/dh_client.php:65
+#: includes/vc/shortcodes/dh_countdown.php:40
+#: includes/vc/shortcodes/dh_counter.php:147
+#: includes/vc/shortcodes/dh_instagram.php:61
+#: includes/vc/shortcodes/dh_post.php:202
+#: includes/vc/shortcodes/dh_post_slider.php:113
+#: includes/vc/shortcodes/dh_pricing_table.php:29
+#: includes/vc/shortcodes/dh_slider.php:40
+#: includes/vc/shortcodes/dh_tabs.php:35
+#: includes/vc/shortcodes/dh_testimonial.php:72 includes/vc/woocommerce.php:161
+msgid "(Optional) Extra class name"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:138
+#: includes/vc/shortcodes/dh_box_feature.php:106
+#: includes/vc/shortcodes/dh_button.php:357
+#: includes/vc/shortcodes/dh_carousel.php:133
+#: includes/vc/shortcodes/dh_client.php:69
+#: includes/vc/shortcodes/dh_countdown.php:44
+#: includes/vc/shortcodes/dh_counter.php:151
+#: includes/vc/shortcodes/dh_instagram.php:65
+#: includes/vc/shortcodes/dh_post.php:206
+#: includes/vc/shortcodes/dh_post_slider.php:117
+#: includes/vc/shortcodes/dh_pricing_table.php:33
+#: includes/vc/shortcodes/dh_slider.php:44
+#: includes/vc/shortcodes/dh_tabs.php:39
+#: includes/vc/shortcodes/dh_testimonial.php:76
+#: includes/vc/shortcodes/dh_typed.php:96 includes/vc/woocommerce.php:165
+#: includes/vc/woocommerce.php:732 includes/vc/woocommerce.php:758
+#: includes/vc/woocommerce.php:815 includes/vc/woocommerce.php:841
+#: includes/vc/woocommerce.php:900 includes/vc/woocommerce.php:926
+#: includes/vc/woocommerce.php:952 includes/vc/woocommerce.php:1025
+#: includes/vc/woocommerce.php:1057 includes/vc/woocommerce.php:1089
+#: includes/vc/woocommerce.php:1121
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:142
+#: includes/vc/shortcodes/dh_typed.php:100 includes/vc/woocommerce.php:170
+msgid "Css"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_animation.php:144
+#: includes/vc/shortcodes/dh_typed.php:102 includes/vc/woocommerce.php:172
+msgid "Design options"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:6
+msgid "Box Feature"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:7
+msgid "Box Feature."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:21
+#: includes/vc/shortcodes/dh_testimonial.php:35 includes/vc/woocommerce.php:450
+msgid "Style 4"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:22
+msgid "Style 5"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:25
+msgid "Content Position"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:35
+msgid "Full Box"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:38
+msgid "Button Text"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:42
+msgid "Button link text"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:45
+msgid "Full Box with Primary Soild Background ?"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:48
+#: includes/vc/shortcodes/dh_carousel.php:98
+#: includes/vc/shortcodes/dh_carousel.php:103
+#: includes/vc/shortcodes/dh_carousel.php:108
+#: includes/vc/shortcodes/dh_carousel.php:113
+#: includes/vc/shortcodes/dh_client.php:36
+#: includes/vc/shortcodes/dh_counter.php:27
+#: includes/vc/shortcodes/dh_post.php:32 includes/vc/shortcodes/dh_post.php:38
+#: includes/vc/shortcodes/dh_post.php:78 includes/vc/shortcodes/dh_post.php:86
+#: includes/vc/shortcodes/dh_post.php:93 includes/vc/shortcodes/dh_post.php:99
+#: includes/vc/shortcodes/dh_post.php:105
+#: includes/vc/shortcodes/dh_post.php:121
+#: includes/vc/shortcodes/dh_post.php:127
+#: includes/vc/shortcodes/dh_post.php:134
+#: includes/vc/shortcodes/dh_post.php:140
+#: includes/vc/shortcodes/dh_post.php:146
+#: includes/vc/shortcodes/dh_post.php:155
+#: includes/vc/shortcodes/dh_post_slider.php:42
+#: includes/vc/shortcodes/dh_post_slider.php:48
+#: includes/vc/shortcodes/dh_post_slider.php:53
+#: includes/vc/shortcodes/dh_post_slider.php:59
+#: includes/vc/shortcodes/dh_post_slider.php:65
+#: includes/vc/shortcodes/dh_post_slider.php:71
+#: includes/vc/shortcodes/dh_post_slider.php:77
+#: includes/vc/shortcodes/dh_post_slider.php:90
+#: includes/vc/shortcodes/dh_testimonial.php:18
+#: includes/vc/shortcodes/dh_testimonial.php:40 includes/vc/woocommerce.php:113
+#: includes/vc/woocommerce.php:119 includes/vc/woocommerce.php:125
+#: includes/vc/woocommerce.php:131 includes/vc/woocommerce.php:283
+#: includes/vc/woocommerce.php:289 includes/vc/woocommerce.php:295
+#: includes/vc/woocommerce.php:415 includes/vc/woocommerce.php:421
+#: includes/vc/woocommerce.php:725 includes/vc/woocommerce.php:874
+#: includes/vc/woocommerce.php:880 includes/vc/woocommerce.php:887
+#: includes/vc/woocommerce.php:893 includes/vc/woocommerce.php:1012
+#: includes/vc/woocommerce.php:1018
+msgid "Yes,please"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:51
+msgid "Text color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:55
+#: includes/vc/shortcodes/dh_button.php:244
+#: includes/vc/shortcodes/dh_countdown.php:17
+#: includes/vc/shortcodes/dh_pricing_table.php:191
+msgid "Black"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:58
+msgid "Image Background"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:60
+msgid "Image Background."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:63
+msgid "Image URL (Link)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:65
+msgid "Image Link."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:68
+#: includes/vc/shortcodes/dh_button.php:151
+#: includes/vc/shortcodes/dh_pricing_table.php:141
+#: includes/vc/woocommerce.php:343
+msgid "Target"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:71
+#: includes/vc/shortcodes/dh_button.php:154
+#: includes/vc/shortcodes/dh_pricing_table.php:143
+#: includes/vc/woocommerce.php:346
+msgid "Same window"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:71
+#: includes/vc/shortcodes/dh_button.php:154
+#: includes/vc/shortcodes/dh_pricing_table.php:143
+#: includes/vc/woocommerce.php:346
+msgid "New window"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:80
+msgid "Box Title"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:83
+msgid "Sub Title"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_box_feature.php:86
+msgid "Box Sub Title"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:5
+#: includes/vc/shortcodes/dh_button.php:19
+msgid "Button"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:6
+msgid "Eye catching button."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:20
+#: includes/vc/shortcodes/dh_pricing_table.php:153
+msgid "Text on the button."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:28
+msgid "Font Awesome"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:29
+msgid "Open Iconic"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:30
+msgid "Typicons"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:31
+msgid "Entypo"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:32
+msgid "Linecons"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:39
+msgid "Button Icon Alignment"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:49
+msgid "Button Icon alignment"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:52
+msgid "Button icon Slide In"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:62
+#: includes/vc/shortcodes/dh_button.php:169
+#: includes/vc/shortcodes/dh_button.php:287
+#: includes/vc/shortcodes/dh_pricing_table.php:63
+#: includes/vc/shortcodes/dh_pricing_table.php:164
+msgid "Yes, please"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:63
+msgid "Use button icon slide in"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:146
+#: includes/vc/shortcodes/dh_pricing_table.php:136
+#: includes/vc/woocommerce.php:337
+msgid "URL (Link)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:148
+#: includes/vc/shortcodes/dh_pricing_table.php:138
+msgid "Button link."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:164
+#: includes/vc/shortcodes/dh_pricing_table.php:159
+msgid "Button style."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:167
+#: includes/vc/shortcodes/dh_pricing_table.php:162
+msgid "Button Round"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:170
+#: includes/vc/shortcodes/dh_pricing_table.php:165
+msgid "Use button round"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:173
+msgid "Size"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:178
+#: includes/vc/shortcodes/dh_pricing_table.php:173
+msgid "Large"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:179
+#: includes/vc/shortcodes/dh_pricing_table.php:174
+msgid "Small"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:180
+#: includes/vc/shortcodes/dh_pricing_table.php:175
+msgid "Extra small"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:181
+#: includes/vc/shortcodes/dh_pricing_table.php:176
+msgid "Custom size"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:182
+#: includes/vc/shortcodes/dh_pricing_table.php:177
+msgid "Button size."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:185
+msgid "Font Size (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:193
+msgid "Border Width (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:201
+msgid "Padding Top (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:209
+#: includes/vc/shortcodes/dh_button.php:225
+msgid "Padding Right (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:217
+msgid "Padding Bottom (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:233
+#: includes/vc/shortcodes/dh_pie.php:64
+#: includes/vc/shortcodes/dh_pricing_table.php:84
+#: includes/vc/shortcodes/dh_testimonial.php:21
+msgid "Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:246
+#: includes/vc/shortcodes/dh_pricing_table.php:192
+msgid "Button color."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:249
+msgid "Background Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:252
+msgid "Select background color for button."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:255
+msgid "Border Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:258
+msgid "Select border color for button."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:261
+msgid "Text Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:264
+msgid "Select text color for button."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:267
+msgid "Hover Background Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:270
+msgid "Select background color for button when hover."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:273
+msgid "Hover Border Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:276
+msgid "Select border color for button when hover."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:279
+msgid "Hover Text Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:282
+msgid "Select text color for button when hover."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:285
+msgid "Button Full Width"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:288
+msgid "Button full width of a parent"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:291
+msgid "Alignment"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:298
+msgid "Button alignment (Not use for Button full width)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:301
+msgid "Show Tooltip/Popover"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:307
+#: includes/vc/shortcodes/dh_pricing_table.php:201
+msgid "Display a tooltip or popover with descriptive text."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:319
+#: includes/vc/shortcodes/dh_pricing_table.php:213
+msgid "Choose the display position."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:322
+msgid "Popover Title"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:327
+msgid "Tip/Popover Content"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:332
+msgid "Tip/Popover trigger"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_button.php:337
+#: includes/vc/shortcodes/dh_pricing_table.php:231
+msgid "Choose action to trigger the tooltip."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:6
+msgid "Carousel Content"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:7
+msgid "Animated carousel with carousel"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:16 includes/vc/woocommerce.php:19
+msgid "Carousel Title"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:19
+#: includes/vc/shortcodes/dh_mailchimp.php:17
+#: includes/vc/shortcodes/dh_menu.php:22 includes/vc/woocommerce.php:22
+#: includes/vc/woocommerce.php:311
+msgid ""
+"Enter text which will be used as widget title. Leave blank if no title is "
+"needed."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:23
+#: includes/vc/shortcodes/dh_testimonial.php:44 includes/vc/woocommerce.php:41
+msgid "Transition"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:35
+#: includes/vc/shortcodes/dh_testimonial.php:56 includes/vc/woocommerce.php:53
+msgid "Indicates which effect to use for the transition."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:38
+msgid "The number of visible items"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:45 includes/vc/woocommerce.php:58
+msgid "Transition Scroll Speed (ms)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:54 includes/vc/woocommerce.php:68
+msgid "Easing"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:91 includes/vc/woocommerce.php:105
+msgid ""
+"Select the animation easing you would like for slide transitions <a href="
+"\"http://jqueryui.com/resources/demos/effect/easing.html\" target=\"_blank"
+"\"> Click here </a> to see examples of these."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:95 includes/vc/woocommerce.php:110
+msgid "Item no Padding ?"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:97 includes/vc/woocommerce.php:112
+msgid "Item No Padding"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:101 includes/vc/woocommerce.php:117
+msgid "Autoplay ?"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:106
+#: includes/vc/shortcodes/dh_client.php:33 includes/vc/woocommerce.php:123
+msgid "Hide Slide Pagination ?"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:111
+#: includes/vc/shortcodes/dh_post_slider.php:46 includes/vc/woocommerce.php:129
+msgid "Hide Previous/Next Control ?"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:142
+#: includes/vc/shortcodes/dh_pricing_table.php:43
+#: includes/vc/shortcodes/dh_tabs.php:49
+#: includes/vc/shortcodes/dh_testimonial.php:85
+msgid "Item 1"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:145
+#: includes/vc/shortcodes/dh_pricing_table.php:46
+#: includes/vc/shortcodes/dh_tabs.php:51
+#: includes/vc/shortcodes/dh_testimonial.php:86
+msgid "Item 2"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:148
+#: includes/vc/shortcodes/dh_pricing_table.php:49
+#: includes/vc/shortcodes/dh_tabs.php:53
+#: includes/vc/shortcodes/dh_testimonial.php:87
+msgid "Item 3"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:152
+msgid "Carousel Item"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_carousel.php:163
+#: includes/vc/shortcodes/dh_pricing_table.php:68
+#: includes/vc/shortcodes/dh_tabs.php:68
+#: includes/vc/shortcodes/dh_testimonial.php:102
+msgid "Item title."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:5
+msgid "Client"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:6
+msgid "Display list clients."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:14
+msgid "Images"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:17
+msgid "Select images from media library."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:20
+msgid "Custom links"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:23
+msgid ""
+"Enter links for each image here. Divide links with linebreaks (Enter) . "
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:27 includes/vc/woocommerce.php:798
+msgid "Display type"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:29
+msgid "Image grid"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:30
+msgid "Select display type."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:39
+msgid "The number of visible items on a slide or on a grid row"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:44
+msgid "Image style"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:47
+msgid "Normal"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:48
+msgid "Grayscale and Color on hover"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_client.php:49
+msgid "Select image style."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_countdown.php:5
+msgid "Coundown"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_countdown.php:6
+msgid "Display Countdown."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_countdown.php:18
+msgid "Select style."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_countdown.php:21
+msgid "Countdown end"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_countdown.php:23
+msgid "Please select day to end."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:5
+msgid "Counter"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:6
+msgid "Display Counter."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:14
+msgid "Counter Speed"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:19 includes/vc/woocommerce.php:462
+#: includes/vc/woocommerce.php:541
+msgid "Number"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:21
+msgid "Enter the number."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:24
+msgid "Format number displayed ?"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:30
+msgid "Thousand Separator"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:34
+msgid "This sets the thousand separator of displayed number."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:37
+msgid "Decimal Separator"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:41
+msgid "This sets the decimal separator of displayed number."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:44
+msgid "Number of Decimals"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:48
+msgid "This sets the number of decimal points shown in displayed number."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:52
+msgid "Custom Number Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:55
+#: includes/vc/shortcodes/dh_counter.php:76
+msgid "Select color for number."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:58
+msgid "Custom Number Font Size (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:66
+#: includes/vc/shortcodes/dh_pie.php:50
+#: includes/vc/shortcodes/dh_pricing_table.php:78
+msgid "Units"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:69
+msgid ""
+"Enter measurement units (if needed) Eg. %, px, points, etc. Graph value and "
+"unit will be appended to the graph title."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:73
+msgid "Custom Units Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:79
+msgid "Custom Units Font Size (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:91
+msgid "Button icon."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:94
+msgid "Custom Icon Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:97
+msgid "Select color for icon."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:100
+msgid "Custom Icon Size (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:109
+msgid "Icon Postiton"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:120
+msgid "Custom Title Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:123
+msgid "Select color for title."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_counter.php:126
+msgid "Custom Title Font Size (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:7
+msgid "Instagram."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:14
+msgid "Instagram Username"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:26
+msgid "Grid Columns"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:30
+#: includes/vc/shortcodes/dh_post.php:44
+#: includes/vc/shortcodes/dh_post_slider.php:19
+msgid "2"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:31
+#: includes/vc/shortcodes/dh_post.php:44
+#: includes/vc/shortcodes/dh_post_slider.php:20
+msgid "3"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:32
+#: includes/vc/shortcodes/dh_post.php:44
+#: includes/vc/shortcodes/dh_post_slider.php:21
+msgid "4"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:33
+msgid "5"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:34
+msgid "6"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:38
+msgid "Number of Images to Show"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_instagram.php:43
+msgid "Check for new images on every (hours)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_mailchimp.php:6 includes/widget.php:636
+msgid "Mailchimp Subscribe"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_mailchimp.php:7 includes/widget.php:634
+msgid "Widget Mailchimp Subscribe."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:5
+msgid "Team Member"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:6
+msgid "Display team member."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:19
+msgid "Meta below"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:20
+msgid "Meta overlay"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:21
+msgid "Meta right"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:22
+msgid "Team Member Stlye."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:28
+msgid "Enter the name of team member."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:31
+msgid "Job Position"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:33
+msgid "Enter the job position for team member."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:36
+#: includes/vc/shortcodes/dh_testimonial.php:123
+msgid "Avatar"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:38
+msgid "Select avatar from media library."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:41
+msgid "Description"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_member.php:43
+msgid "Enter the description for team member."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_menu.php:10 includes/vc/shortcodes/dh_menu.php:26
+msgid "Menu"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_menu.php:11
+msgid "Display custom Menu menu."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_menu.php:19
+msgid "Menu Title"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_menu_anchor.php:5
+msgid "Menu Anchor"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_menu_anchor.php:6
+msgid "Add a menu anchor points."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_menu_anchor.php:14
+msgid "Name Of Menu Anchor"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_menu_anchor.php:17
+msgid "This name will be the id you will have to use in your one page menu."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:4
+msgid "DH Pie Chart"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:10
+msgid "Animated pie chart"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:14 includes/vc/woocommerce.php:715
+#: includes/vc/woocommerce.php:747 includes/vc/woocommerce.php:781
+#: includes/vc/woocommerce.php:830 includes/vc/woocommerce.php:856
+#: includes/vc/woocommerce.php:915 includes/vc/woocommerce.php:941
+#: includes/vc/woocommerce.php:967 includes/vc/woocommerce.php:1040
+#: includes/vc/woocommerce.php:1072 includes/vc/woocommerce.php:1104
+msgid "Widget title"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:16
+msgid "Enter text used as widget title (Note: located above content element)."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:21
+msgid "Value"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:23
+msgid "Enter value for graph (Note: choose range from 0 to 100)."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:29
+msgid "Label value"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:31
+msgid ""
+"Enter label for pie chart (Note: leaving empty will set value from \"Value\" "
+"field)."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:36
+msgid "Label font size (px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:38
+msgid "Enter label font size for pie chart"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:44
+msgid "Label color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:46
+msgid "Select label color."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:52
+msgid ""
+"Enter measurement units (Example: %, px, points, etc. Note: graph value and "
+"units will be appended to graph title)."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:56
+msgid "Border width"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:58
+msgid "Enter border width for graph"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:67
+msgid "Select pie chart color."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:74
+msgid "Custom color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:76
+msgid "Select custom color."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:84 includes/vc/shortcodes/dh_typed.php:93
+#: includes/vc/woocommerce.php:729 includes/vc/woocommerce.php:755
+#: includes/vc/woocommerce.php:812 includes/vc/woocommerce.php:838
+#: includes/vc/woocommerce.php:897 includes/vc/woocommerce.php:923
+#: includes/vc/woocommerce.php:949 includes/vc/woocommerce.php:1022
+#: includes/vc/woocommerce.php:1054 includes/vc/woocommerce.php:1086
+#: includes/vc/woocommerce.php:1118
+msgid "Extra class name"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:86
+msgid ""
+"Style particular content element differently - add a class name and refer to "
+"it in custom CSS."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:90
+msgid "CSS box"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pie.php:92
+msgid "Design Options"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:5
+msgid "Post"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:6
+msgid "Display post."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:14
+msgid "Layout"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:25
+msgid "Select the layout for the blog shortcode."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:41
+#: includes/vc/shortcodes/dh_post_slider.php:14
+#: includes/vc/shortcodes/dh_testimonial.php:26 includes/vc/woocommerce.php:192
+#: includes/vc/woocommerce.php:243 includes/vc/woocommerce.php:375
+#: includes/vc/woocommerce.php:550 includes/vc/woocommerce.php:674
+msgid "Columns"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:46
+msgid "Select whether to display the layout in 2, 3 or 4 column."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:49
+#: includes/vc/shortcodes/dh_post_slider.php:25
+msgid "Posts Per Page"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:52
+#: includes/vc/shortcodes/dh_post_slider.php:28
+msgid "Select number of posts per page.Set \"-1\" to display all"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:55
+#: includes/vc/shortcodes/dh_post_slider.php:31 includes/vc/woocommerce.php:262
+#: includes/vc/woocommerce.php:394 includes/vc/woocommerce.php:865
+#: includes/vc/woocommerce.php:993 includes/widget.php:534
+msgid "Order by"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:59
+#: includes/vc/shortcodes/dh_post_slider.php:34
+msgid "Recent First"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:60
+#: includes/vc/shortcodes/dh_post_slider.php:35
+msgid "Older First"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:61
+#: includes/vc/shortcodes/dh_post_slider.php:36
+msgid "Title Alphabet"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:62
+#: includes/vc/shortcodes/dh_post_slider.php:37
+msgid "Title Reversed Alphabet"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:68
+#: includes/vc/shortcodes/dh_post_slider.php:97 includes/widget.php:545
+msgid "Select a category or leave blank for all"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:71
+msgid "Exclude Categories"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:73
+msgid "Select a category to exclude"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:76
+msgid "Post no padding"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:80
+msgid "Disable padding of posts"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:84
+msgid "Hide Post Title"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:87
+msgid "Hide the post title below the featured"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:94
+msgid "Choose if the title should be a link to the single post page."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:97
+msgid "Hide Thumbnail"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:100
+msgid "Hide the post featured"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:103
+#: includes/vc/shortcodes/dh_post_slider.php:75
+msgid "Hide Excerpt"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:109
+#: includes/vc/shortcodes/dh_post_slider.php:78
+msgid "Hide excerpt"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:112
+#: includes/vc/shortcodes/dh_post_slider.php:81
+msgid "Number of words in Excerpt"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:116
+#: includes/vc/shortcodes/dh_post_slider.php:85
+msgid "The number of words"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:119
+#: includes/vc/shortcodes/dh_post_slider.php:51
+msgid "Hide Date"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:122
+#: includes/vc/shortcodes/dh_post_slider.php:54 includes/widget.php:551
+msgid "Hide date in post meta info"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:125
+msgid "Hide Timeline Month"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:129
+msgid "Hide timeline month"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:132
+#: includes/vc/shortcodes/dh_post_slider.php:69
+msgid "Hide Comment"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:135
+#: includes/vc/shortcodes/dh_post_slider.php:72 includes/widget.php:556
+msgid "Hide comment in post meta info"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:138
+#: includes/vc/shortcodes/dh_post_slider.php:63
+msgid "Hide Category"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:141
+#: includes/vc/shortcodes/dh_post_slider.php:66
+msgid "Hide category in post meta info"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:144
+#: includes/vc/shortcodes/dh_post_slider.php:57
+msgid "Hide Author"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:150
+#: includes/vc/shortcodes/dh_post_slider.php:60
+msgid "Hide author in post meta info"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:153
+#: includes/vc/shortcodes/dh_post_slider.php:88
+msgid "Hide Read More Link"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:159
+#: includes/vc/shortcodes/dh_post_slider.php:91
+msgid "Choose to hide the link"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:162
+msgid "Show Tags"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post.php:169
+msgid "Choose to show the tags"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post_slider.php:5
+msgid "Post Slider"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post_slider.php:6
+msgid "Display posts with slider."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post_slider.php:18
+msgid "1"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post_slider.php:22
+msgid "Select whether to display the layout in 1, 2, 3 or 4 column."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post_slider.php:40
+#: includes/vc/shortcodes/dh_testimonial.php:38
+msgid "Hide Pagination"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_post_slider.php:43
+#: includes/vc/shortcodes/dh_testimonial.php:41
+msgid "Hide pagination of slider"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:5
+msgid "Pricing Table"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:6
+msgid "Create pricing table"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:53
+msgid "Pricing Table Item"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:61
+msgid "Recommend"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:69
+#: includes/vc/woocommerce.php:209 includes/vc/woocommerce.php:267
+#: includes/vc/woocommerce.php:399 includes/vc/woocommerce.php:568
+#: includes/vc/woocommerce.php:646 includes/vc/woocommerce.php:692
+#: includes/vc/woocommerce.php:997 woocommerce/cart/cart.php:29
+msgid "Price"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:72
+msgid "Currency Symbol"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:75
+msgid "Enter the currency symbol that will display for your price"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:81
+msgid "Enter measurement units (if needed) Eg. /month /year etc."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:96
+msgid "color."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:99
+msgid "Title Background Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:102
+msgid "Custom background color for title."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:105
+msgid "Title Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:108
+msgid "Custom color for title."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:111
+msgid "Price Background Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:114
+msgid "Custom background color for price."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:117
+msgid "Price Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:120
+msgid "Custom color for price."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:123
+msgid "Features"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:127
+msgid "Features Alignment"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:150
+msgid "Text on the button"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:152
+msgid "Buy Now"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:156
+msgid "Button Style"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:168
+msgid "Button Size"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:180
+msgid "Button Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:195
+msgid "Button Show Tooltip/Popover"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:204
+msgid "Button Tip position"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:216
+msgid "Button Popover Title"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:221
+msgid "Button Tip/Popover Content"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:226
+msgid "Button Tip/Popover trigger"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:253
+msgid "Content (<em>Add Arbitrary text or HTML.</em>)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_pricing_table.php:278
+msgid "Add"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_slider.php:12
+msgid "DH Slider"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_slider.php:13
+msgid "Display DH Slider."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_slider.php:24
+msgid "Select a slider."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_tabs.php:6
+msgid "DH Tabs"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_tabs.php:7
+msgid "Tabbed content"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_tabs.php:19
+msgid "Tab Style."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_tabs.php:57
+msgid "DH Tab Content"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:5
+msgid "Testimonial"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:7
+msgid "Animated Testimonial with slider"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:16
+msgid "Background Transparent?"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:23
+msgid "Custom color."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:29
+msgid "1 Column"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:29
+msgid "2 Columns"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:29
+msgid "3 Columns"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:91
+msgid "Testimonial Item"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:109
+msgid ""
+"I am testimonial. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:115
+msgid "Testimonial author."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:118
+msgid "Company"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:120
+msgid "Author company."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_testimonial.php:125
+msgid "Avatar author."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:5
+msgid "Animated typing"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:6
+msgid "Animated text typing"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:27
+msgid "Font Size (ex: 30px)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:34
+msgid "Animated Text Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:36
+msgid "Animated Text Color."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:39
+msgid "Animated Text Background Color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:41
+msgid "Animated Background Text Color."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:44
+msgid "Show more options"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:48
+msgid "Configure animation options."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:51
+msgid "Character for cursor"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:53
+msgid "Leave empty to remove the blinking cursor."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:58
+msgid "Iteration loop"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:60
+msgid "Leave empty for single loop only. Set -1 for infinite loop."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:65
+msgid "Type speed"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:67
+msgid "Type of speed when entering the text. (Unit is milliseconds)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:72
+msgid "Back speed"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:74
+msgid "Back speed when deleting the text. (Unit is milliseconds)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:79
+msgid "Start delay"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:81
+msgid "Set delay before starting text typing. (Unit is milliseconds)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:86
+msgid "Back delay"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_typed.php:88
+msgid "Set back delay after text is typed. (Unit is milliseconds)"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_video.php:5
+msgid "Video Player"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_video.php:13
+msgid "Video Type"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_video.php:17
+msgid "Iniline"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_video.php:23
+msgid "Video Background."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_video.php:26
+msgid "Icon Play color"
+msgstr ""
+
+#: includes/vc/shortcodes/dh_video.php:29
+msgid "Select Icon Play color."
+msgstr ""
+
+#: includes/vc/shortcodes/dh_video.php:36
+msgid ""
+"Used when you select Video format. Enter a Youtube, Vimeo, Soundcloud, etc "
+"URL. See supported services at <a href=\"http://codex.wordpress.org/Embeds\" "
+"target=\"_blank\">http://codex.wordpress.org/Embeds</a>."
+msgstr ""
+
+#: includes/vc/woocommerce.php:5
+msgid "Product Slider"
+msgstr ""
+
+#: includes/vc/woocommerce.php:6
+msgid "Animated products with carousel."
+msgstr ""
+
+#: includes/vc/woocommerce.php:10 includes/vc/woocommerce.php:177
+#: includes/vc/woocommerce.php:221 includes/vc/woocommerce.php:300
+#: includes/vc/woocommerce.php:426 includes/vc/woocommerce.php:501
+#: includes/vc/woocommerce.php:527 includes/vc/woocommerce.php:590
+#: includes/vc/woocommerce.php:606 includes/vc/woocommerce.php:659
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/vc/woocommerce.php:27
+msgid "Title color"
+msgstr ""
+
+#: includes/vc/woocommerce.php:135
+msgid "Previous/Next Control Position"
+msgstr ""
+
+#: includes/vc/woocommerce.php:141
+msgid "Center with Title"
+msgstr ""
+
+#: includes/vc/woocommerce.php:142
+msgid "Right with Title"
+msgstr ""
+
+#: includes/vc/woocommerce.php:175
+msgid "Products Sales Countdown"
+msgstr ""
+
+#: includes/vc/woocommerce.php:180
+msgid "List multiple products slider."
+msgstr ""
+
+#: includes/vc/woocommerce.php:185 includes/vc/woocommerce.php:236
+#: includes/vc/woocommerce.php:368 includes/vc/woocommerce.php:667
+msgid "Product Per Page"
+msgstr ""
+
+#: includes/vc/woocommerce.php:200 includes/vc/woocommerce.php:471
+#: includes/vc/woocommerce.php:558 includes/vc/woocommerce.php:636
+#: includes/vc/woocommerce.php:682
+msgid "Products Ordering"
+msgstr ""
+
+#: includes/vc/woocommerce.php:203 includes/vc/woocommerce.php:562
+#: includes/vc/woocommerce.php:640 includes/vc/woocommerce.php:686
+msgid "Publish Date"
+msgstr ""
+
+#: includes/vc/woocommerce.php:204 includes/vc/woocommerce.php:563
+#: includes/vc/woocommerce.php:641 includes/vc/woocommerce.php:687
+msgid "Modified Date"
+msgstr ""
+
+#: includes/vc/woocommerce.php:205 includes/vc/woocommerce.php:268
+#: includes/vc/woocommerce.php:400 includes/vc/woocommerce.php:564
+#: includes/vc/woocommerce.php:642 includes/vc/woocommerce.php:688
+#: includes/vc/woocommerce.php:998
+msgid "Random"
+msgstr ""
+
+#: includes/vc/woocommerce.php:206 includes/vc/woocommerce.php:565
+#: includes/vc/woocommerce.php:643 includes/vc/woocommerce.php:689
+msgid "Alphabetic"
+msgstr ""
+
+#: includes/vc/woocommerce.php:207 includes/vc/woocommerce.php:566
+#: includes/vc/woocommerce.php:644 includes/vc/woocommerce.php:690
+msgid "Popularity"
+msgstr ""
+
+#: includes/vc/woocommerce.php:208 includes/vc/woocommerce.php:567
+#: includes/vc/woocommerce.php:645 includes/vc/woocommerce.php:691
+msgid "Rate"
+msgstr ""
+
+#: includes/vc/woocommerce.php:214 includes/vc/woocommerce.php:485
+#: includes/vc/woocommerce.php:574 includes/vc/woocommerce.php:652
+#: includes/vc/woocommerce.php:698
+msgid "Ascending or Descending"
+msgstr ""
+
+#: includes/vc/woocommerce.php:216 includes/vc/woocommerce.php:487
+#: includes/vc/woocommerce.php:576 includes/vc/woocommerce.php:654
+#: includes/vc/woocommerce.php:700
+msgid "Ascending"
+msgstr ""
+
+#: includes/vc/woocommerce.php:216 includes/vc/woocommerce.php:487
+#: includes/vc/woocommerce.php:576 includes/vc/woocommerce.php:654
+#: includes/vc/woocommerce.php:700
+msgid "Descending"
+msgstr ""
+
+#: includes/vc/woocommerce.php:219
+msgid "Product Masonry"
+msgstr ""
+
+#: includes/vc/woocommerce.php:224
+msgid "List products with Masonry layout."
+msgstr ""
+
+#: includes/vc/woocommerce.php:255 includes/vc/woocommerce.php:387
+#: includes/vc/woocommerce.php:985
+msgid "All Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:256 includes/vc/woocommerce.php:388
+#: includes/vc/woocommerce.php:986
+msgid "Featured Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:257 includes/vc/woocommerce.php:389
+#: includes/vc/woocommerce.php:987
+msgid "On-sale Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:266 includes/vc/woocommerce.php:398
+#: includes/vc/woocommerce.php:996
+msgid "Date"
+msgstr ""
+
+#: includes/vc/woocommerce.php:269 includes/vc/woocommerce.php:401
+#: includes/vc/woocommerce.php:999
+msgid "Sales"
+msgstr ""
+
+#: includes/vc/woocommerce.php:274 includes/vc/woocommerce.php:406
+#: includes/vc/woocommerce.php:1005
+msgctxt "Sorting order"
+msgid "Order"
+msgstr ""
+
+#: includes/vc/woocommerce.php:277 includes/vc/woocommerce.php:409
+#: includes/vc/woocommerce.php:1006
+msgid "ASC"
+msgstr ""
+
+#: includes/vc/woocommerce.php:277 includes/vc/woocommerce.php:409
+#: includes/vc/woocommerce.php:1006
+msgid "DESC"
+msgstr ""
+
+#: includes/vc/woocommerce.php:281
+msgid "Hide All Filter Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:287 includes/vc/woocommerce.php:413
+#: includes/vc/woocommerce.php:1010
+msgid "Hide free products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:293 includes/vc/woocommerce.php:419
+#: includes/vc/woocommerce.php:1016
+msgid "Show hidden products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:298
+msgid "Product Tab"
+msgstr ""
+
+#: includes/vc/woocommerce.php:303
+msgid "List products with Tab layout."
+msgstr ""
+
+#: includes/vc/woocommerce.php:316
+msgid "Title Badge"
+msgstr ""
+
+#: includes/vc/woocommerce.php:319 includes/vc/woocommerce.php:332
+#: includes/vc/woocommerce.php:626
+msgid "Select image from media library."
+msgstr ""
+
+#: includes/vc/woocommerce.php:323
+msgid "Tab Color"
+msgstr ""
+
+#: includes/vc/woocommerce.php:325
+msgid "Tab color."
+msgstr ""
+
+#: includes/vc/woocommerce.php:329
+msgid "Tab Banner"
+msgstr ""
+
+#: includes/vc/woocommerce.php:339
+msgid "Banner link."
+msgstr ""
+
+#: includes/vc/woocommerce.php:359
+msgid "List of product categories"
+msgstr ""
+
+#: includes/vc/woocommerce.php:424
+msgid "Product Categories Grid"
+msgstr ""
+
+#: includes/vc/woocommerce.php:429
+msgid "Display categories with grid layout."
+msgstr ""
+
+#: includes/vc/woocommerce.php:443
+msgid "Grid Style"
+msgstr ""
+
+#: includes/vc/woocommerce.php:456
+msgid "Grid Gutter"
+msgstr ""
+
+#: includes/vc/woocommerce.php:466
+msgid ""
+"You can specify the number of category to show (Leave blank to display all "
+"categories)."
+msgstr ""
+
+#: includes/vc/woocommerce.php:475 includes/vc/woocommerce.php:868
+msgid "Category Order"
+msgstr ""
+
+#: includes/vc/woocommerce.php:477
+msgid "Term ID"
+msgstr ""
+
+#: includes/vc/woocommerce.php:478
+msgid "Taxonomy Count"
+msgstr ""
+
+#: includes/vc/woocommerce.php:479
+msgid "ID"
+msgstr ""
+
+#: includes/vc/woocommerce.php:493 includes/vc/woocommerce.php:582
+msgid "Hide Empty"
+msgstr ""
+
+#: includes/vc/woocommerce.php:504
+msgid "List all products by lookbooks."
+msgstr ""
+
+#: includes/vc/woocommerce.php:509
+msgid "Lookbooks"
+msgstr ""
+
+#: includes/vc/woocommerce.php:530
+msgid "List all (or limited) product brands."
+msgstr ""
+
+#: includes/vc/woocommerce.php:545
+msgid ""
+"You can specify the number of brand to show (Leave blank to display all "
+"brands)."
+msgstr ""
+
+#: includes/vc/woocommerce.php:588
+msgid "Add To Cart URL"
+msgstr ""
+
+#: includes/vc/woocommerce.php:593
+msgid "Show URL on the add to cart button."
+msgstr ""
+
+#: includes/vc/woocommerce.php:598
+msgid "Select product"
+msgstr ""
+
+#: includes/vc/woocommerce.php:604
+msgid "Products Grid"
+msgstr ""
+
+#: includes/vc/woocommerce.php:609
+msgid "List multiple products grid shortcode."
+msgstr ""
+
+#: includes/vc/woocommerce.php:615
+msgid "Text Description"
+msgstr ""
+
+#: includes/vc/woocommerce.php:618
+msgid ""
+"<p>I am text block. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo.</p>"
+msgstr ""
+
+#: includes/vc/woocommerce.php:623
+msgid "Image Description"
+msgstr ""
+
+#: includes/vc/woocommerce.php:630
+msgid "Select products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:657
+msgid "Recent Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:662
+msgid "Recent Products shortcode."
+msgstr ""
+
+#: includes/vc/woocommerce.php:705
+msgid "WC Cart"
+msgstr ""
+
+#: includes/vc/woocommerce.php:707 includes/vc/woocommerce.php:738
+#: includes/vc/woocommerce.php:772 includes/vc/woocommerce.php:821
+#: includes/vc/woocommerce.php:847 includes/vc/woocommerce.php:906
+#: includes/vc/woocommerce.php:932 includes/vc/woocommerce.php:958
+#: includes/vc/woocommerce.php:1031 includes/vc/woocommerce.php:1063
+#: includes/vc/woocommerce.php:1095
+msgid "Woocommerce Widgets"
+msgstr ""
+
+#: includes/vc/woocommerce.php:710
+msgid "Woocommerce Widget Cart."
+msgstr ""
+
+#: includes/vc/woocommerce.php:718 includes/vc/woocommerce.php:750
+#: includes/vc/woocommerce.php:784 includes/vc/woocommerce.php:833
+#: includes/vc/woocommerce.php:859 includes/vc/woocommerce.php:918
+#: includes/vc/woocommerce.php:944 includes/vc/woocommerce.php:970
+#: includes/vc/woocommerce.php:1043 includes/vc/woocommerce.php:1075
+#: includes/vc/woocommerce.php:1107
+msgid ""
+"What text use as a widget title. Leave blank to use default widget title."
+msgstr ""
+
+#: includes/vc/woocommerce.php:723
+msgid "Hide if cart is empty"
+msgstr ""
+
+#: includes/vc/woocommerce.php:736
+msgid "WC Layered Nav Filters"
+msgstr ""
+
+#: includes/vc/woocommerce.php:741
+msgid "Woocommerce Widget Layered Nav Filters."
+msgstr ""
+
+#: includes/vc/woocommerce.php:746
+msgid "Active Filters"
+msgstr ""
+
+#: includes/vc/woocommerce.php:770
+msgid "WC Layered Nav"
+msgstr ""
+
+#: includes/vc/woocommerce.php:775
+msgid "Woocommerce Widget Layered Nav."
+msgstr ""
+
+#: includes/vc/woocommerce.php:780 includes/widget.php:698
+#: includes/widget.php:1060 includes/widget.php:1148
+msgid "Filter by"
+msgstr ""
+
+#: includes/vc/woocommerce.php:790 includes/widget.php:704
+msgid "Attribute"
+msgstr ""
+
+#: includes/vc/woocommerce.php:805 includes/widget.php:710
+msgid "Query type"
+msgstr ""
+
+#: includes/vc/woocommerce.php:808 includes/widget.php:712
+msgid "AND"
+msgstr ""
+
+#: includes/vc/woocommerce.php:808 includes/widget.php:713
+msgid "OR"
+msgstr ""
+
+#: includes/vc/woocommerce.php:819
+msgid "WC Price Filter"
+msgstr ""
+
+#: includes/vc/woocommerce.php:824
+msgid "Woocommerce Widget Price Filter."
+msgstr ""
+
+#: includes/vc/woocommerce.php:829
+msgid "Filter by price"
+msgstr ""
+
+#: includes/vc/woocommerce.php:845
+msgid "WC Product Categories"
+msgstr ""
+
+#: includes/vc/woocommerce.php:850
+msgid "Woocommerce Widget Product Categories."
+msgstr ""
+
+#: includes/vc/woocommerce.php:855
+msgid "Product Categories"
+msgstr ""
+
+#: includes/vc/woocommerce.php:891
+msgid "Only show children of the current category"
+msgstr ""
+
+#: includes/vc/woocommerce.php:904
+msgid "WC Product Search"
+msgstr ""
+
+#: includes/vc/woocommerce.php:909
+msgid "Woocommerce Widget Product Search."
+msgstr ""
+
+#: includes/vc/woocommerce.php:914
+msgid "Search Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:930
+msgid "WC Product Tags"
+msgstr ""
+
+#: includes/vc/woocommerce.php:935
+msgid "Woocommerce Widget Product Tags."
+msgstr ""
+
+#: includes/vc/woocommerce.php:940
+msgid "Product Tags"
+msgstr ""
+
+#: includes/vc/woocommerce.php:956
+msgid "WC Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:961
+msgid "Woocommerce Widget Products."
+msgstr ""
+
+#: includes/vc/woocommerce.php:966
+msgid "Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:976 includes/vc/woocommerce.php:1049
+#: includes/vc/woocommerce.php:1081 includes/vc/woocommerce.php:1113
+msgid "Number of products to show"
+msgstr ""
+
+#: includes/vc/woocommerce.php:1029
+msgid "WC Recent Reviews"
+msgstr ""
+
+#: includes/vc/woocommerce.php:1034
+msgid "Woocommerce Widget Recent Reviews."
+msgstr ""
+
+#: includes/vc/woocommerce.php:1039
+msgid "Recent Reviews"
+msgstr ""
+
+#: includes/vc/woocommerce.php:1061
+msgid "WC Recently Viewed"
+msgstr ""
+
+#: includes/vc/woocommerce.php:1066
+msgid "Woocommerce Widget Recently Viewed."
+msgstr ""
+
+#: includes/vc/woocommerce.php:1071
+msgid "Recently Viewed Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:1093
+msgid "WC Top Rated Products"
+msgstr ""
+
+#: includes/vc/woocommerce.php:1098
+msgid "Woocommerce Widget Top Rated Products."
+msgstr ""
+
+#: includes/vc/woocommerce.php:1103
+msgid "Top Rated Products"
+msgstr ""
+
+#: includes/widget.php:192
+msgid "Display Social Icon."
+msgstr ""
+
+#: includes/widget.php:207
+msgid "Select socials"
+msgstr ""
+
+#: includes/widget.php:231
+msgid "Square"
+msgstr ""
+
+#: includes/widget.php:232
+msgid "Round"
+msgstr ""
+
+#: includes/widget.php:277
+msgid "Display recent tweets"
+msgstr ""
+
+#: includes/widget.php:295
+msgid "Please fill all widget settings!"
+msgstr ""
+
+#: includes/widget.php:307
+msgid "Couldn't find twitteroauth.php!"
+msgstr ""
+
+#: includes/widget.php:317
+msgid ""
+"You'll need to regenerate it <a href=\"https://dev.twitter.com/apps\" target="
+"\"_blank\">here</a>!"
+msgstr ""
+
+#: includes/widget.php:396
+#, php-format
+msgid "%s seconds ago"
+msgstr ""
+
+#: includes/widget.php:398
+msgid "about 1 minute ago"
+msgstr ""
+
+#: includes/widget.php:400
+#, php-format
+msgid "%s minutes ago"
+msgstr ""
+
+#: includes/widget.php:402
+msgid "about 1 hour ago"
+msgstr ""
+
+#: includes/widget.php:404
+#, php-format
+msgid "%s hours ago"
+msgstr ""
+
+#: includes/widget.php:406
+msgid "yesterday"
+msgstr ""
+
+#: includes/widget.php:408
+#, php-format
+msgid "%s days ago"
+msgstr ""
+
+#: includes/widget.php:410
+msgid "over a year ago"
+msgstr ""
+
+#: includes/widget.php:433
+msgid "Consumer Key"
+msgstr ""
+
+#: includes/widget.php:437
+msgid "Consumer Secret"
+msgstr ""
+
+#: includes/widget.php:441
+msgid "Access Token"
+msgstr ""
+
+#: includes/widget.php:445
+msgid "Access Token Secret"
+msgstr ""
+
+#: includes/widget.php:449
+msgid "Cache Tweets in every"
+msgstr ""
+
+#: includes/widget.php:450
+msgid "hours"
+msgstr ""
+
+#: includes/widget.php:453
+msgid "Twitter Username"
+msgstr ""
+
+#: includes/widget.php:457
+msgid "Tweets to display"
+msgstr ""
+
+#: includes/widget.php:471
+msgid "Exclude replies"
+msgstr ""
+
+#: includes/widget.php:505
+msgid "Widget post with thumbnail."
+msgstr ""
+
+#: includes/widget.php:507
+msgid "Post Thumbnail"
+msgstr ""
+
+#: includes/widget.php:529
+msgid "Number of posts to show"
+msgstr ""
+
+#: includes/widget.php:536
+msgid "Latest"
+msgstr ""
+
+#: includes/widget.php:537
+msgid "Most Commented"
+msgstr ""
+
+#: includes/widget.php:609
+msgid "% Comments"
+msgstr ""
+
+#: includes/widget.php:611
+msgid "0 Comments"
+msgstr ""
+
+#: includes/widget.php:613
+msgid "1 Comment"
+msgstr ""
+
+#: includes/widget.php:665
+msgid ""
+"Shows a custom attribute in a widget when viewing product categories width "
+"Swatches and Photo ."
+msgstr ""
+
+#: includes/widget.php:667
+msgid "DH Woocommerce Swatches Layered Nav"
+msgstr ""
+
+#: includes/widget.php:957
+msgid "Remove Filter"
+msgstr ""
+
+#: includes/widget.php:1037
+msgid "Display WooCommerce Product sorting list."
+msgstr ""
+
+#: includes/widget.php:1039
+msgid "DH WooCommerce Product Sorting"
+msgstr ""
+
+#: includes/widget.php:1083
+msgid "Default sorting"
+msgstr ""
+
+#: includes/widget.php:1084
+msgid "Sort by popularity"
+msgstr ""
+
+#: includes/widget.php:1085
+msgid "Sort by average rating"
+msgstr ""
+
+#: includes/widget.php:1086
+msgid "Sort by newness"
+msgstr ""
+
+#: includes/widget.php:1087
+msgid "Sort by price: low to high"
+msgstr ""
+
+#: includes/widget.php:1088
+msgid "Sort by price: high to low"
+msgstr ""
+
+#: includes/widget.php:1125
+msgid ""
+"Shows a price filter list in a widget which lets you narrow down the list of "
+"shown products when viewing product categories."
+msgstr ""
+
+#: includes/widget.php:1127
+msgid "DH WooCommerce Price Filter"
+msgstr ""
+
+#: includes/widget.php:1156
+msgid "Price range size"
+msgstr ""
+
+#: includes/widget.php:1164
+msgid "Max price ranges"
+msgstr ""
+
+#: includes/widget.php:1169
+msgid "Hide empty price ranges"
+msgstr ""
+
+#: includes/widget.php:1310 includes/widget.php:1313
+#: vc_templates/dh_wc_product_mansory.php:96
+msgid "All"
+msgstr ""
+
+#: includes/woocommerce.php:194
+msgid "Day"
+msgstr ""
+
+#: includes/woocommerce.php:198 vc_templates/dh_countdown.php:26
+msgid "Hours"
+msgstr ""
+
+#: includes/woocommerce.php:202
+msgid "Mins"
+msgstr ""
+
+#: includes/woocommerce.php:206
+msgid "Secs"
+msgstr ""
+
+#: includes/woocommerce.php:316
+msgid "Filter"
+msgstr ""
+
+#: includes/woocommerce.php:481
+msgid "% items"
+msgstr ""
+
+#: includes/woocommerce.php:483
+msgid "0 items"
+msgstr ""
+
+#: includes/woocommerce.php:485
+msgid "1 item"
+msgstr ""
+
+#: includes/woocommerce.php:535 includes/woocommerce.php:641
+#: includes/woocommerce.php:644
+msgid "View Cart"
+msgstr ""
+
+#: includes/woocommerce.php:560
+msgid "Shopping Cart"
+msgstr ""
+
+#: includes/woocommerce.php:601
+msgid "My Cart"
+msgstr ""
+
+#: includes/woocommerce.php:611
+#, php-format
+msgid "in the <a href=\"%1$s\">shopping cart</a>"
+msgstr ""
+
+#: includes/woocommerce.php:628 woocommerce/cart/cart.php:48
+msgid "Remove this item"
+msgstr ""
+
+#: includes/woocommerce.php:634
+msgid "Cart Subtotal:"
+msgstr ""
+
+#: includes/woocommerce.php:642 includes/woocommerce.php:645
+msgid "Checkout"
+msgstr ""
+
+#: includes/woocommerce.php:652
+msgid "Your shopping bag is empty."
+msgstr ""
+
+#: includes/woocommerce.php:662
+msgid "Go to the shop"
+msgstr ""
+
+#: includes/woocommerce.php:719
+msgid "Quick view"
+msgstr ""
+
+#: includes/woocommerce.php:778
+msgid "Watch Video"
+msgstr ""
+
+#: includes/woocommerce.php:942 includes/woocommerce.php:1046
+msgid "Short Description"
+msgstr ""
+
+#: includes/woocommerce.php:947 includes/woocommerce.php:1055
+msgid "Heading Background"
+msgstr ""
+
+#: includes/woocommerce.php:1008 includes/woocommerce.php:1118
+msgid "Heading Title"
+msgstr ""
+
+#: includes/woocommerce.php:1012 includes/woocommerce.php:1122
+msgid "Heading Sub Title"
+msgstr ""
+
+#: includes/woocommerce.php:1016 includes/woocommerce.php:1126
+msgid "Heading Button Text"
+msgstr ""
+
+#: includes/woocommerce.php:1020 includes/woocommerce.php:1130
+msgid "Heading Sub Link"
+msgstr ""
+
+#: includes/woocommerce_product_variable.php:54
+msgid "Disable Variation Gallery ?"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search something&hellip;"
+msgstr ""
+
+#: single.php:36
+msgid "Continue reading &hellip;"
+msgstr ""
+
+#: single.php:37
+msgid "Pages:"
+msgstr ""
+
+#: single.php:44
+msgid "Tags:"
+msgstr ""
+
+#: single.php:50
+msgid "Share:"
+msgstr ""
+
+#: vc_templates/dh_box_feature.php:68
+msgid "View More"
+msgstr ""
+
+#: vc_templates/dh_countdown.php:22
+msgid "Days"
+msgstr ""
+
+#: vc_templates/dh_countdown.php:30
+msgid "Minutes"
+msgstr ""
+
+#: vc_templates/dh_countdown.php:34
+msgid "Seconds"
+msgstr ""
+
+#: vc_templates/dh_instagram.php:69
+msgid "Instagram did not return any images."
+msgstr ""
+
+#: vc_templates/dh_member.php:48 vc_templates/dh_member.php:89
+#: vc_templates/dh_member.php:115
+msgid "Google +"
+msgstr ""
+
+#: vc_templates/dh_member.php:53 vc_templates/dh_member.php:94
+#: vc_templates/dh_member.php:120
+msgid "Linked In"
+msgstr ""
+
+#: vc_templates/dh_wc_product_categories_grid.php:152
+#: vc_templates/dh_wc_product_lookbooks.php:57
+msgid "Shop Now"
+msgstr ""
+
+#: vc_templates/dh_wc_product_mansory.php:162
+#: woocommerce/content-product.php:61
+msgid "Out of stock"
+msgstr ""
+
+#: woocommerce-swatches/single-product/variable.php:30
+msgid "Reset selection"
+msgstr ""
+
+#: woocommerce.php:28
+msgid "Loading products"
+msgstr ""
+
+#: woocommerce.php:28
+msgid "All products loaded"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:45
+msgid "Your cart is currently empty."
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:49 woocommerce/cart/cart.php:118
+msgid "Continue Shopping"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:20
+#, php-format
+msgid "Shipping #%d"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:22 woocommerce/cart/cart-shipping.php:102
+msgid "Shipping"
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:64
+msgid "Please use the shipping calculator to see available shipping methods."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:68
+msgid ""
+"Please continue to the checkout and enter your full address to see if there "
+"are any available shipping methods."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:72
+msgid "Please fill in your details to see available shipping methods."
+msgstr ""
+
+#: woocommerce/cart/cart-shipping.php:81 woocommerce/cart/cart-shipping.php:87
+msgid ""
+"There are no shipping methods available. Please double check your address, "
+"or contact us if you need any help."
+msgstr ""
+
+#: woocommerce/cart/cart.php:30
+msgid "Quantity"
+msgstr ""
+
+#: woocommerce/cart/cart.php:31
+msgid "Total"
+msgstr ""
+
+#: woocommerce/cart/cart.php:75
+msgid "Available on backorder"
+msgstr ""
+
+#: woocommerce/cart/cart.php:117
+msgid "Update Cart"
+msgstr ""
+
+#: woocommerce/cart/cart.php:145
+msgid "Discount Codes"
+msgstr ""
+
+#: woocommerce/cart/cart.php:148
+msgid "Enter your coupon if you have one"
+msgstr ""
+
+#: woocommerce/cart/cart.php:149 woocommerce/checkout/form-coupon.php:28
+msgid "Apply Coupon"
+msgstr ""
+
+#: woocommerce/cart/cross-sells.php:52
+msgid "You may be interested in&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:24
+msgid "Estimate shipping & tax"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:28
+msgid "Enter your destination to get shipping & tax"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:32
+msgid "Select a country&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:51
+#: woocommerce/cart/shipping-calculator.php:59
+#: woocommerce/cart/shipping-calculator.php:74
+msgid "State / county"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:60
+msgid "Select a state&hellip;"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:83
+msgid "City"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:91
+msgid "Postcode / Zip"
+msgstr ""
+
+#: woocommerce/cart/shipping-calculator.php:96
+msgid "Update Totals"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:19
+msgid "Billing &amp; Shipping"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:23
+msgid "Billing Details"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:45
+msgid "Create an account?"
+msgstr ""
+
+#: woocommerce/checkout/form-billing.php:57
+msgid ""
+"Create an account by entering the information below. If you are a returning "
+"customer please login at the top of the page."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:20
+msgid "You must be logged in to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-checkout.php:55
+msgid "Your order"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:18
+msgid "Have a coupon?"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:18
+msgid "Click here to enter your code"
+msgstr ""
+
+#: woocommerce/checkout/form-coupon.php:24
+msgid "Coupon code"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:18
+msgid "Returning customer?"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:19
+msgid "Click here to login"
+msgstr ""
+
+#: woocommerce/checkout/form-login.php:26
+msgid ""
+"If you have shopped with us before, please enter your details in the boxes "
+"below. If you are a new customer please proceed to the Billing &amp; "
+"Shipping section."
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:21
+msgid "Qty"
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:22
+msgid "Totals"
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:55
+msgid "Payment"
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:79
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+
+#: woocommerce/checkout/form-pay.php:89
+msgid "Pay for order"
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:35
+msgid "Ship to a different address?"
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:61
+msgid "Additional Information"
+msgstr ""
+
+#: woocommerce/checkout/payment.php:30
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:32
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:43
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the <em>Update Totals</em> button before placing your "
+"order. You may be charged more than the amount stated above if you fail to "
+"do so."
+msgstr ""
+
+#: woocommerce/checkout/payment.php:43
+msgid "Update totals"
+msgstr ""
+
+#: woocommerce/checkout/payment.php:53
+#, php-format
+msgid ""
+"I&rsquo;ve read and accept the <a href=\"%s\" target=\"_blank\">terms &amp; "
+"conditions</a>"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:19
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:23
+msgid "Please attempt your purchase again or go to your account page."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:25
+msgid "Please attempt your purchase again."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:29
+msgid "Pay"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:37 woocommerce/checkout/thankyou.php:68
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:41
+msgid "Order Number:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:45
+msgid "Date:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:49
+msgid "Total:"
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:54
+msgid "Payment Method:"
+msgstr ""
+
+#: woocommerce/global/breadcrumb.php:65
+msgid "Products brands &ldquo;"
+msgstr ""
+
+#: woocommerce/global/breadcrumb.php:70
+msgid "Products tagged &ldquo;"
+msgstr ""
+
+#: woocommerce/global/breadcrumb.php:99 woocommerce/global/breadcrumb.php:197
+msgid "Search results for &ldquo;"
+msgstr ""
+
+#: woocommerce/global/breadcrumb.php:155
+msgid "Error 404"
+msgstr ""
+
+#: woocommerce/global/breadcrumb.php:201
+msgid "Posts tagged &ldquo;"
+msgstr ""
+
+#: woocommerce/global/breadcrumb.php:206
+msgid "Author:"
+msgstr ""
+
+#: woocommerce/global/form-login.php:28
+#: woocommerce/myaccount/form-lost-password.php:24
+msgid "Username or email"
+msgstr ""
+
+#: woocommerce/global/form-login.php:43 woocommerce/myaccount/form-login.php:60
+msgid "Remember me"
+msgstr ""
+
+#: woocommerce/loop/orderby.php:19
+msgid "Sorting:"
+msgstr ""
+
+#: woocommerce/loop/orderby.php:47
+msgid "Show:"
+msgstr ""
+
+#: woocommerce/loop/rating.php:19
+#, php-format
+msgid "Rated %s out of 5"
+msgstr ""
+
+#: woocommerce/loop/rating.php:21
+msgid "out of 5"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:47
+msgid "Username or email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:88
+msgid "Email address"
+msgstr ""
+
+#: woocommerce/myaccount/form-login.php:102
+msgid "Anti-spam"
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:22
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:28
+msgid "Enter a new password below."
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:31
+msgid "New password"
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:35
+msgid "Re-enter new password"
+msgstr ""
+
+#: woocommerce/myaccount/form-lost-password.php:50
+msgid "Save"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:24
+#, php-format
+msgid "%s review for %s"
+msgid_plural "%s reviews for %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product-reviews.php:26
+msgid "Reviews"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:47
+msgid "There are no reviews yet."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:60
+msgid "Add a review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:60
+msgid "Be the first to review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:61
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:76
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:80
+msgid "Your Rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:81
+msgid "Rate&hellip;"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:82
+msgid "Perfect"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:83
+msgid "Good"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:84
+msgid "Average"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:85
+msgid "Not that bad"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:86
+msgid "Very Poor"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:90
+msgid "Your Review"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:99
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: woocommerce/single-product/add-to-cart/swatch-variable.php:78
+#: woocommerce/single-product/add-to-cart/variable.php:39
+msgid "Clear selection"
+msgstr "Limpiar selección"
+
+#: woocommerce/single-product/add-to-cart/swatch-variable.php:106
+#: woocommerce/single-product/add-to-cart/variable.php:23
+msgid "This product is currently out of stock and unavailable."
+msgstr ""
+
+#: woocommerce/single-product/related.php:38
+msgid "Related Products"
+msgstr "Productos Relacionados"
+
+#: woocommerce/single-product/up-sells.php:39
+msgid "You may also like&hellip;"
+msgstr ""
