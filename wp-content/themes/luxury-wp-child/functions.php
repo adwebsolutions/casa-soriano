@@ -10,9 +10,9 @@ if(!defined('DHINC_ASSETS_URL'))
 include_once get_template_directory().'/includes/functions.php';
 include dirname(__FILE__) . '/includes/custom-theme-options.php';
 include dirname(__FILE__) . '/includes/class-wc-widget-custom-products.php';
+include dirname(__FILE__) . '/includes/class-wc-widget-custom-product-categories.php';
 
 add_action( 'vc_before_init', 'vc_before_init_actions' );
-
 function vc_before_init_actions() {
     // Require new custom Element
     require( dirname(__FILE__).'/vc-elements/wc_product_subcategory_tab.php' );
@@ -124,7 +124,7 @@ function wc_product_brand_dropdown_categories( $args = array(), $deprecated_hier
     }
 
     $output  = "<select name='product_brand' class='dropdown_product_cat'>";
-    $output .= '<option value="" ' . selected( $current_product_brand, '', false ) . '>' . esc_html__( 'Select a brand', 'luxury-wp-child' ) . '</option>';
+    $output .= '<option value="" ' . selected( $current_product_brand, '', false ) . '>' . esc_html__( 'Select a brand', 'luxury-wp' ) . '</option>';
     $output .= wc_walk_category_dropdown_tree( $terms, 0, $args );
     if ( $args['show_uncategorized'] ) {
         $output .= '<option value="0" ' . selected( $current_product_brand, '0', false ) . '>' . esc_html__( 'Uncategorized', 'woocommerce' ) . '</option>';
@@ -136,6 +136,15 @@ function wc_product_brand_dropdown_categories( $args = array(), $deprecated_hier
 
 function wc_register_custom_widgets() {
     register_widget( 'WC_Widget_Custom_Products' );
+    register_widget( 'WC_Widget_Custom_Product_Categories' );
+    register_sidebar( array(
+        'name' => 'Header Sidebar',
+        'id' => 'header_sidebar',
+        'before_widget' => '<aside class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
 }
 add_action( 'widgets_init', 'wc_register_custom_widgets' );
 
@@ -160,6 +169,7 @@ function get_last_post_categories($product_id){
     echo $child;
 }
 add_action('woocommerce_single_product_summary','get_last_post_categories',1);
+
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_rating',10);
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_meta',40);
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_sharing',50);
@@ -170,7 +180,13 @@ function woocommerce_remove_reviews_tab($tabs) {
     return $tabs;
 }
 
-function get_child_parent ($prodId){
-    // get all product cats for the current post
-
+/**/
+function custom_adding_scripts() {
+    if ( !is_admin() ) {
+        wp_register_script('jquery_cookie', get_stylesheet_directory_uri().'/assets/js/jquery.cookie.js','jquery','1.4.1', true);
+        wp_register_script('accordion_script', get_stylesheet_directory_uri().'/assets/js/jquery.navgoco.min.js','jquery','1.0', true);
+        wp_enqueue_script('jquery_cookie');
+        wp_enqueue_script('accordion_script');
+    }
 }
+add_action( 'wp_enqueue_scripts', 'custom_adding_scripts' );

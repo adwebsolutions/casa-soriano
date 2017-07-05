@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Luxury\n"
-"POT-Creation-Date: 2016-08-20 22:10+0700\n"
-"PO-Revision-Date: 2017-06-21 15:32-0400\n"
+"POT-Creation-Date: 2017-07-03 00:54-0400\n"
+"PO-Revision-Date: 2017-07-03 01:09-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -74,7 +74,7 @@ msgstr ""
 msgid "One Comment"
 msgstr ""
 
-#: comments.php:10 includes/functions.php:1797
+#: comments.php:10 includes/functions.php:1822
 msgid "Comments"
 msgstr ""
 
@@ -204,17 +204,17 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: header/market.php:131 includes/functions.php:1122
-#: includes/functions.php:2146
+#: header/market.php:131 header/offcanvas.php:100 includes/functions.php:1147
+#: includes/functions.php:2135
 msgid "Search..."
-msgstr ""
+msgstr "Buscar..."
 
 #: header/market.php:191 includes/vc/shortcodes/dh_post.php:65
 #: includes/vc/shortcodes/dh_post_slider.php:94 includes/vc/woocommerce.php:229
 #: includes/vc/woocommerce.php:354 includes/vc/woocommerce.php:434
 #: includes/widget.php:544
 msgid "Categories"
-msgstr ""
+msgstr "Productos"
 
 #: header/offcanvas-header-icon.php:23 header/offcanvas-header-icon.php:42
 #: header/overlay.php:30 header/toggle-offcanvas.php:53
@@ -232,7 +232,7 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
-#: header/offcanvas.php:28 includes/hook.php:402
+#: header/offcanvas.php:28 includes/hook.php:410
 #: woocommerce/global/form-login.php:45 woocommerce/myaccount/form-login.php:24
 #: woocommerce/myaccount/form-login.php:36
 #: woocommerce/myaccount/form-login.php:64
@@ -1262,7 +1262,7 @@ msgstr ""
 msgid "Toggle whether or not to enable a back to top button on your pages."
 msgstr ""
 
-#: includes/admin/theme-options.php:913 includes/hook.php:369
+#: includes/admin/theme-options.php:913 includes/hook.php:377
 msgid "Newsletter"
 msgstr ""
 
@@ -1514,7 +1514,7 @@ msgstr ""
 msgid "Left topbar content"
 msgstr ""
 
-#: includes/admin/theme-options.php:1225 includes/functions.php:2293
+#: includes/admin/theme-options.php:1225 includes/functions.php:2282
 #: includes/vc/shortcodes/dh_button.php:27
 #: includes/vc/shortcodes/dh_slider.php:4 includes/widget.php:230
 msgid "None"
@@ -1541,8 +1541,8 @@ msgstr ""
 msgid "Phone number"
 msgstr ""
 
-#: includes/admin/theme-options.php:1266 includes/hook.php:376
-#: includes/hook.php:463 includes/hook.php:464
+#: includes/admin/theme-options.php:1266 includes/hook.php:384
+#: includes/hook.php:471 includes/hook.php:472
 #: woocommerce/single-product-reviews.php:67
 msgid "Email"
 msgstr ""
@@ -1838,7 +1838,7 @@ msgstr ""
 #: includes/admin/theme-options.php:2067
 #: includes/vc/shortcodes/dh_instagram.php:23
 #: includes/vc/shortcodes/dh_post.php:21 includes/vc/woocommerce.php:520
-#: includes/woocommerce.php:312
+#: includes/woocommerce.php:326
 msgid "Grid"
 msgstr ""
 
@@ -2105,12 +2105,12 @@ msgid "Activate this to enable social sharing buttons on single post page."
 msgstr ""
 
 #: includes/admin/theme-options.php:1916 includes/admin/theme-options.php:2213
-#: includes/functions.php:842
+#: includes/functions.php:867
 msgid "Share on Facebook"
 msgstr ""
 
 #: includes/admin/theme-options.php:1923 includes/admin/theme-options.php:2220
-#: includes/functions.php:847
+#: includes/functions.php:872
 msgid "Share on Twitter"
 msgstr ""
 
@@ -2119,7 +2119,7 @@ msgid "Share on Google+"
 msgstr ""
 
 #: includes/admin/theme-options.php:1937 includes/admin/theme-options.php:2234
-#: includes/functions.php:857
+#: includes/functions.php:882
 msgid "Share on Pinterest"
 msgstr ""
 
@@ -2230,7 +2230,7 @@ msgstr ""
 
 #: includes/admin/theme-options.php:2068
 #: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:311
-#: includes/vc/woocommerce.php:800 includes/woocommerce.php:313
+#: includes/vc/woocommerce.php:800 includes/woocommerce.php:327
 msgid "List"
 msgstr ""
 
@@ -2621,7 +2621,7 @@ msgstr ""
 msgid "Author Archive for: \"%s\""
 msgstr ""
 
-#: includes/breadcrumb.php:133 includes/functions.php:1123 searchform.php:2
+#: includes/breadcrumb.php:133 includes/functions.php:1148 searchform.php:2
 #: searchform.php:5
 msgid "Search"
 msgstr ""
@@ -2639,7 +2639,7 @@ msgid "Merge"
 msgstr ""
 
 #: includes/breadcrumb.php:188 includes/breadcrumb.php:202
-#: includes/breadcrumb.php:222 includes/functions.php:1096
+#: includes/breadcrumb.php:222 includes/functions.php:1121
 #: includes/post-type-slider.php:746
 msgid "Edit"
 msgstr ""
@@ -2894,7 +2894,7 @@ msgstr ""
 
 #: includes/dhwc-brand/dhwc-brand.php:223
 msgid "Brand:"
-msgstr ""
+msgstr "Marca:"
 
 #: includes/dhwc-brand/includes/dhwc-brand-admin.php:17
 msgid ""
@@ -2913,32 +2913,32 @@ msgstr ""
 #: includes/dhwc-brand/includes/dhwc-brand-admin.php:35
 #: includes/dhwc-brand/includes/dhwc-brand-admin.php:110
 #: includes/lookbook/includes/admin.php:43
-#: includes/lookbook/includes/admin.php:132 includes/woocommerce.php:953
-#: includes/woocommerce.php:1063
+#: includes/lookbook/includes/admin.php:132 includes/woocommerce.php:967
+#: includes/woocommerce.php:1077
 msgid "Upload/Add image"
 msgstr ""
 
 #: includes/dhwc-brand/includes/dhwc-brand-admin.php:36
 #: includes/dhwc-brand/includes/dhwc-brand-admin.php:111
 #: includes/lookbook/includes/admin.php:44
-#: includes/lookbook/includes/admin.php:133 includes/woocommerce.php:954
-#: includes/woocommerce.php:1064
+#: includes/lookbook/includes/admin.php:133 includes/woocommerce.php:968
+#: includes/woocommerce.php:1078
 msgid "Remove image"
 msgstr ""
 
 #: includes/dhwc-brand/includes/dhwc-brand-admin.php:59
 #: includes/dhwc-brand/includes/dhwc-brand-admin.php:136
 #: includes/lookbook/includes/admin.php:67
-#: includes/lookbook/includes/admin.php:158 includes/woocommerce.php:977
-#: includes/woocommerce.php:1087
+#: includes/lookbook/includes/admin.php:158 includes/woocommerce.php:991
+#: includes/woocommerce.php:1101
 msgid "Choose an image"
 msgstr ""
 
 #: includes/dhwc-brand/includes/dhwc-brand-admin.php:61
 #: includes/dhwc-brand/includes/dhwc-brand-admin.php:138
 #: includes/lookbook/includes/admin.php:69
-#: includes/lookbook/includes/admin.php:160 includes/woocommerce.php:979
-#: includes/woocommerce.php:1089
+#: includes/lookbook/includes/admin.php:160 includes/woocommerce.php:993
+#: includes/woocommerce.php:1103
 msgid "Use image"
 msgstr ""
 
@@ -2969,19 +2969,19 @@ msgstr ""
 #: includes/dhwc-brand/includes/dhwc-widget-slider-brands.php:33
 #: includes/vc/woocommerce.php:535
 msgid "Brands"
-msgstr ""
+msgstr "Marcas"
 
 #: includes/dhwc-brand/includes/dhwc-brand-functions.php:107
 msgid "Select a brand"
-msgstr ""
+msgstr "Selección por Marca"
 
 #: includes/dhwc-brand/includes/dhwc-brand-functions.php:110
 msgid "Uncategorized"
-msgstr ""
+msgstr "Sin categoría"
 
 #: includes/dhwc-brand/includes/dhwc-brand-functions.php:147
 msgid "No brands"
-msgstr ""
+msgstr "No hay Marcas"
 
 #: includes/dhwc-brand/includes/dhwc-widget-brands.php:11
 msgid "A list or dropdown of product brands."
@@ -3021,7 +3021,7 @@ msgstr ""
 #: includes/vc/shortcodes/dh_member.php:25 includes/vc/woocommerce.php:476
 #: includes/vc/woocommerce.php:868 woocommerce/single-product-reviews.php:65
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: includes/dhwc-brand/includes/dhwc-widget-brands.php:201
 #: includes/vc/woocommerce.php:872
@@ -3081,299 +3081,299 @@ msgstr ""
 msgid "Hide empty brands"
 msgstr ""
 
-#: includes/functions.php:122 includes/functions.php:136
+#: includes/functions.php:147 includes/functions.php:161
 msgid "Languages"
 msgstr ""
 
-#: includes/functions.php:194
+#: includes/functions.php:219
 msgid "Unable to communicate with Instagram."
 msgstr ""
 
-#: includes/functions.php:197
+#: includes/functions.php:222
 msgid "Instagram did not return a 200."
 msgstr ""
 
-#: includes/functions.php:204 includes/functions.php:215
-#: includes/functions.php:219 includes/functions.php:288
+#: includes/functions.php:229 includes/functions.php:240
+#: includes/functions.php:244 includes/functions.php:313
 msgid "Instagram has returned invalid data."
 msgstr ""
 
-#: includes/functions.php:260
+#: includes/functions.php:285
 msgid "Instagram Image"
 msgstr ""
 
-#: includes/functions.php:731 vc_templates/dh_member.php:38
+#: includes/functions.php:756 vc_templates/dh_member.php:38
 #: vc_templates/dh_member.php:79 vc_templates/dh_member.php:105
 msgid "Facebook"
 msgstr ""
 
-#: includes/functions.php:735 vc_templates/dh_member.php:43
+#: includes/functions.php:760 vc_templates/dh_member.php:43
 #: vc_templates/dh_member.php:84 vc_templates/dh_member.php:110
 msgid "Twitter"
 msgstr ""
 
-#: includes/functions.php:739
+#: includes/functions.php:764
 msgid "Google+"
 msgstr ""
 
-#: includes/functions.php:743
+#: includes/functions.php:768
 msgid "Pinterest"
 msgstr ""
 
-#: includes/functions.php:747
+#: includes/functions.php:772
 msgid "LinkedIn"
 msgstr ""
 
-#: includes/functions.php:751
+#: includes/functions.php:776
 msgid "RSS"
 msgstr ""
 
-#: includes/functions.php:755 includes/vc/shortcodes/dh_instagram.php:6
+#: includes/functions.php:780 includes/vc/shortcodes/dh_instagram.php:6
 msgid "Instagram"
 msgstr ""
 
-#: includes/functions.php:759
+#: includes/functions.php:784
 msgid "Youtube"
 msgstr ""
 
-#: includes/functions.php:763
+#: includes/functions.php:788
 msgid "GitHub"
 msgstr ""
 
-#: includes/functions.php:767
+#: includes/functions.php:792
 msgid "Behance"
 msgstr ""
 
-#: includes/functions.php:771
+#: includes/functions.php:796
 msgid "StackExchange"
 msgstr ""
 
-#: includes/functions.php:775
+#: includes/functions.php:800
 msgid "Tumblr"
 msgstr ""
 
-#: includes/functions.php:779
+#: includes/functions.php:804
 msgid "SoundCloud"
 msgstr ""
 
-#: includes/functions.php:783
+#: includes/functions.php:808
 msgid "Dribbble"
 msgstr ""
 
-#: includes/functions.php:852
+#: includes/functions.php:877
 msgid "Share on Google +"
 msgstr ""
 
-#: includes/functions.php:862
+#: includes/functions.php:887
 msgid "Share on Linked In"
 msgstr ""
 
-#: includes/functions.php:1037
+#: includes/functions.php:1062
 msgid "Related News"
 msgstr ""
 
-#: includes/functions.php:1059 index.php:189 search.php:189
-#: vc_templates/dh_post.php:241 vc_templates/dh_post_slider.php:168
+#: includes/functions.php:1084 index.php:186 search.php:186
+#: vc_templates/dh_post.php:238 vc_templates/dh_post_slider.php:168
 msgid "Read More"
-msgstr ""
+msgstr "Leer Más"
 
-#: includes/functions.php:1088 includes/vc/shortcodes/dh_testimonial.php:113
+#: includes/functions.php:1113 includes/vc/shortcodes/dh_testimonial.php:113
 msgid "Author"
 msgstr ""
 
-#: includes/functions.php:1093 includes/functions.php:1764
-#: includes/functions.php:1774
+#: includes/functions.php:1118 includes/functions.php:1789
+#: includes/functions.php:1799
 #, php-format
 msgid "%1$s"
 msgstr ""
 
-#: includes/functions.php:1101
+#: includes/functions.php:1126
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: includes/functions.php:1109
+#: includes/functions.php:1134
 msgid "Reply"
 msgstr ""
 
-#: includes/functions.php:1151
+#: includes/functions.php:1176
 msgid "Name *"
 msgstr ""
 
-#: includes/functions.php:1152
+#: includes/functions.php:1177
 msgid "Email *"
 msgstr ""
 
-#: includes/functions.php:1153
+#: includes/functions.php:1178
 msgid "Website"
 msgstr ""
 
-#: includes/functions.php:1157
+#: includes/functions.php:1182
 #, php-format
 msgid ""
 "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
 "this account\">Log out?</a>"
 msgstr ""
 
-#: includes/functions.php:1158
+#: includes/functions.php:1183
 msgid "Leave a reply"
 msgstr ""
 
-#: includes/functions.php:1159
+#: includes/functions.php:1184
 #, php-format
 msgid "Leave a reply to %s"
 msgstr ""
 
-#: includes/functions.php:1160
+#: includes/functions.php:1185
 msgid "Click here to cancel the reply"
 msgstr ""
 
-#: includes/functions.php:1161
+#: includes/functions.php:1186
 #: includes/lib/wordpress-importer/wordpress-importer.php:279
 #: woocommerce/single-product-reviews.php:70
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
-#: includes/functions.php:1162 includes/functions.php:1789
-#: includes/functions.php:1793
+#: includes/functions.php:1187 includes/functions.php:1814
+#: includes/functions.php:1818
 msgid "Comment"
-msgstr ""
+msgstr "Comentario"
 
-#: includes/functions.php:1163
+#: includes/functions.php:1188
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 
-#: includes/functions.php:1177
+#: includes/functions.php:1202
 msgctxt "word count: words or characters?"
 msgid "words"
 msgstr ""
 
-#: includes/functions.php:1232
+#: includes/functions.php:1257
 msgctxt "Previous post link"
 msgid "%title"
 msgstr ""
 
-#: includes/functions.php:1237
+#: includes/functions.php:1262
 msgid "Previous article"
 msgstr ""
 
-#: includes/functions.php:1243
+#: includes/functions.php:1268
 msgctxt "Next post link"
 msgid "%title"
 msgstr ""
 
-#: includes/functions.php:1248
+#: includes/functions.php:1273
 msgid "Next article"
 msgstr ""
 
-#: includes/functions.php:1286
+#: includes/functions.php:1311
 msgid "Archive for date:"
 msgstr ""
 
-#: includes/functions.php:1290
+#: includes/functions.php:1315
 msgid "Archive for month:"
 msgstr ""
 
-#: includes/functions.php:1294
+#: includes/functions.php:1319
 msgid "Archive for year:"
 msgstr ""
 
-#: includes/functions.php:1303
+#: includes/functions.php:1328
 msgid "search results for"
 msgstr ""
 
-#: includes/functions.php:1307
+#: includes/functions.php:1332
 msgid "search result for"
 msgstr ""
 
-#: includes/functions.php:1314
+#: includes/functions.php:1339
 msgid "Search results for"
 msgstr ""
 
-#: includes/functions.php:1318
+#: includes/functions.php:1343
 msgid "To search the site please enter a valid term"
 msgstr ""
 
-#: includes/functions.php:1346
+#: includes/functions.php:1371
 msgid "404 - Page not found"
 msgstr ""
 
-#: includes/functions.php:1354
+#: includes/functions.php:1379
 msgid "Page"
 msgstr ""
 
-#: includes/functions.php:1366
+#: includes/functions.php:1391
 msgid "My Portfolio"
 msgstr ""
 
-#: includes/functions.php:1761
+#: includes/functions.php:1786
 #, php-format
 msgid "Posts by: %s"
 msgstr ""
 
-#: includes/functions.php:1787
+#: includes/functions.php:1812
 #, php-format
 msgid "Leave a comment on: &ldquo;%s&rdquo;"
 msgstr ""
 
-#: includes/functions.php:1791
+#: includes/functions.php:1816
 #, php-format
 msgid "View a comment on: &ldquo;%s&rdquo;"
 msgstr ""
 
-#: includes/functions.php:1795
+#: includes/functions.php:1820
 #, php-format
 msgid "View all comments on: &ldquo;%s&rdquo;"
 msgstr ""
 
-#: includes/functions.php:1860
+#: includes/functions.php:1885
 #, php-format
 msgid "%d/%d"
 msgstr ""
 
-#: includes/functions.php:1963
+#: includes/functions.php:1988
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
-#: includes/functions.php:1967
+#: includes/functions.php:1992
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: includes/functions.php:2153 woocommerce/cart/cart.php:28
+#: includes/functions.php:2142 woocommerce/cart/cart.php:29
 #: woocommerce/checkout/form-pay.php:20
 msgid "Product"
-msgstr ""
+msgstr "Proucto"
 
-#: includes/functions.php:2188
+#: includes/functions.php:2177
 msgid "Popular"
 msgstr ""
 
-#: includes/functions.php:2206
+#: includes/functions.php:2195
 #, php-format
 msgid "%s Comment"
 msgstr ""
 
-#: includes/functions.php:2216
+#: includes/functions.php:2205
 msgid "Recent"
 msgstr ""
 
-#: includes/functions.php:2262
+#: includes/functions.php:2251
 msgid "Not Subscribe to Mailchimp!"
 msgstr ""
 
-#: includes/functions.php:2264
+#: includes/functions.php:2253
 msgid "Subscribe to Mailchimp Successful!"
 msgstr ""
 
-#: includes/functions.php:2271 includes/hook.php:382
+#: includes/functions.php:2260 includes/hook.php:390
 msgid "Subscribe"
 msgstr ""
 
-#: includes/functions.php:2272
+#: includes/functions.php:2261
 msgid "Enter your email..."
 msgstr ""
 
-#: includes/functions.php:2274
+#: includes/functions.php:2263
 msgid "OK"
 msgstr ""
 
@@ -3401,7 +3401,7 @@ msgstr ""
 msgid "Theme options"
 msgstr ""
 
-#: includes/hook.php:305 includes/hook.php:456
+#: includes/hook.php:305 includes/hook.php:464
 msgid "or"
 msgstr ""
 
@@ -3409,69 +3409,69 @@ msgstr ""
 msgid "Sign in with Facebook"
 msgstr ""
 
-#: includes/hook.php:377
+#: includes/hook.php:385
 msgid "Your email"
 msgstr ""
 
-#: includes/hook.php:414 includes/hook.php:415 includes/hook.php:459
-#: includes/hook.php:460 woocommerce/myaccount/form-login.php:81
+#: includes/hook.php:422 includes/hook.php:423 includes/hook.php:467
+#: includes/hook.php:468 woocommerce/myaccount/form-login.php:81
 msgid "Username"
 msgstr ""
 
-#: includes/hook.php:418 includes/hook.php:419 includes/hook.php:467
-#: includes/hook.php:468 woocommerce/global/form-login.php:32
+#: includes/hook.php:426 includes/hook.php:427 includes/hook.php:475
+#: includes/hook.php:476 woocommerce/global/form-login.php:32
 #: woocommerce/myaccount/form-login.php:51
 #: woocommerce/myaccount/form-login.php:95
 msgid "Password"
 msgstr ""
 
-#: includes/hook.php:423
+#: includes/hook.php:431
 msgid "Remember Me"
 msgstr ""
 
-#: includes/hook.php:426 woocommerce/global/form-login.php:49
+#: includes/hook.php:434 woocommerce/global/form-login.php:49
 #: woocommerce/myaccount/form-login.php:62
 msgid "Lost your password?"
 msgstr ""
 
-#: includes/hook.php:434
+#: includes/hook.php:442
 msgid "Not a Member yet?"
 msgstr ""
 
-#: includes/hook.php:436
+#: includes/hook.php:444
 msgid "Sign in"
 msgstr ""
 
-#: includes/hook.php:449
+#: includes/hook.php:457
 msgid "Register account"
 msgstr ""
 
-#: includes/hook.php:471 includes/hook.php:472
+#: includes/hook.php:479 includes/hook.php:480
 msgid "Retype password"
 msgstr ""
 
-#: includes/hook.php:478 includes/hook.php:505
+#: includes/hook.php:486 includes/hook.php:513
 msgid "Already have an account?"
 msgstr ""
 
-#: includes/hook.php:479 woocommerce/myaccount/form-login.php:27
+#: includes/hook.php:487 woocommerce/myaccount/form-login.php:27
 #: woocommerce/myaccount/form-login.php:109
 msgid "Register"
 msgstr ""
 
-#: includes/hook.php:492
+#: includes/hook.php:500
 msgid "Forgot Password"
 msgstr ""
 
-#: includes/hook.php:498
+#: includes/hook.php:506
 msgid "Username or E-mail:"
 msgstr ""
 
-#: includes/hook.php:499
+#: includes/hook.php:507
 msgid "Username or E-mail"
 msgstr ""
 
-#: includes/hook.php:506 woocommerce/myaccount/form-lost-password.php:50
+#: includes/hook.php:514 woocommerce/myaccount/form-lost-password.php:50
 msgid "Reset Password"
 msgstr ""
 
@@ -4832,7 +4832,7 @@ msgstr ""
 msgid "Search for a product..."
 msgstr ""
 
-#: includes/vc/init.php:408 includes/woocommerce.php:901
+#: includes/vc/init.php:408 includes/woocommerce.php:915
 #, php-format
 msgid "%s &ndash; %s"
 msgstr ""
@@ -6120,7 +6120,7 @@ msgstr ""
 #: includes/vc/woocommerce.php:209 includes/vc/woocommerce.php:267
 #: includes/vc/woocommerce.php:399 includes/vc/woocommerce.php:568
 #: includes/vc/woocommerce.php:646 includes/vc/woocommerce.php:692
-#: includes/vc/woocommerce.php:997 woocommerce/cart/cart.php:29
+#: includes/vc/woocommerce.php:997 woocommerce/cart/cart.php:30
 msgid "Price"
 msgstr ""
 
@@ -7122,105 +7122,105 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: includes/woocommerce.php:194
+#: includes/woocommerce.php:208
 msgid "Day"
 msgstr ""
 
-#: includes/woocommerce.php:198 vc_templates/dh_countdown.php:26
+#: includes/woocommerce.php:212 vc_templates/dh_countdown.php:26
 msgid "Hours"
 msgstr ""
 
-#: includes/woocommerce.php:202
+#: includes/woocommerce.php:216
 msgid "Mins"
 msgstr ""
 
-#: includes/woocommerce.php:206
+#: includes/woocommerce.php:220
 msgid "Secs"
 msgstr ""
 
-#: includes/woocommerce.php:316
+#: includes/woocommerce.php:330
 msgid "Filter"
 msgstr ""
 
-#: includes/woocommerce.php:481
+#: includes/woocommerce.php:495
 msgid "% items"
 msgstr ""
 
-#: includes/woocommerce.php:483
+#: includes/woocommerce.php:497
 msgid "0 items"
 msgstr ""
 
-#: includes/woocommerce.php:485
+#: includes/woocommerce.php:499
 msgid "1 item"
 msgstr ""
 
-#: includes/woocommerce.php:535 includes/woocommerce.php:641
-#: includes/woocommerce.php:644
+#: includes/woocommerce.php:549 includes/woocommerce.php:655
+#: includes/woocommerce.php:658
 msgid "View Cart"
 msgstr ""
 
-#: includes/woocommerce.php:560
+#: includes/woocommerce.php:574
 msgid "Shopping Cart"
 msgstr ""
 
-#: includes/woocommerce.php:601
+#: includes/woocommerce.php:615
 msgid "My Cart"
 msgstr ""
 
-#: includes/woocommerce.php:611
+#: includes/woocommerce.php:625
 #, php-format
 msgid "in the <a href=\"%1$s\">shopping cart</a>"
 msgstr ""
 
-#: includes/woocommerce.php:628 woocommerce/cart/cart.php:48
+#: includes/woocommerce.php:642 woocommerce/cart/cart.php:49
 msgid "Remove this item"
 msgstr ""
 
-#: includes/woocommerce.php:634
+#: includes/woocommerce.php:648
 msgid "Cart Subtotal:"
 msgstr ""
 
-#: includes/woocommerce.php:642 includes/woocommerce.php:645
+#: includes/woocommerce.php:656 includes/woocommerce.php:659
 msgid "Checkout"
 msgstr ""
 
-#: includes/woocommerce.php:652
+#: includes/woocommerce.php:666
 msgid "Your shopping bag is empty."
 msgstr ""
 
-#: includes/woocommerce.php:662
+#: includes/woocommerce.php:676
 msgid "Go to the shop"
 msgstr ""
 
-#: includes/woocommerce.php:719
+#: includes/woocommerce.php:733
 msgid "Quick view"
 msgstr ""
 
-#: includes/woocommerce.php:778
+#: includes/woocommerce.php:792
 msgid "Watch Video"
 msgstr ""
 
-#: includes/woocommerce.php:942 includes/woocommerce.php:1046
+#: includes/woocommerce.php:956 includes/woocommerce.php:1060
 msgid "Short Description"
 msgstr ""
 
-#: includes/woocommerce.php:947 includes/woocommerce.php:1055
+#: includes/woocommerce.php:961 includes/woocommerce.php:1069
 msgid "Heading Background"
 msgstr ""
 
-#: includes/woocommerce.php:1008 includes/woocommerce.php:1118
+#: includes/woocommerce.php:1022 includes/woocommerce.php:1132
 msgid "Heading Title"
 msgstr ""
 
-#: includes/woocommerce.php:1012 includes/woocommerce.php:1122
+#: includes/woocommerce.php:1026 includes/woocommerce.php:1136
 msgid "Heading Sub Title"
 msgstr ""
 
-#: includes/woocommerce.php:1016 includes/woocommerce.php:1126
+#: includes/woocommerce.php:1030 includes/woocommerce.php:1140
 msgid "Heading Button Text"
 msgstr ""
 
-#: includes/woocommerce.php:1020 includes/woocommerce.php:1130
+#: includes/woocommerce.php:1034 includes/woocommerce.php:1144
 msgid "Heading Sub Link"
 msgstr ""
 
@@ -7304,7 +7304,7 @@ msgstr ""
 msgid "Your cart is currently empty."
 msgstr ""
 
-#: woocommerce/cart/cart-empty.php:49 woocommerce/cart/cart.php:118
+#: woocommerce/cart/cart-empty.php:49 woocommerce/cart/cart.php:119
 msgid "Continue Shopping"
 msgstr ""
 
@@ -7337,31 +7337,31 @@ msgid ""
 "or contact us if you need any help."
 msgstr ""
 
-#: woocommerce/cart/cart.php:30
+#: woocommerce/cart/cart.php:31
 msgid "Quantity"
 msgstr ""
 
-#: woocommerce/cart/cart.php:31
+#: woocommerce/cart/cart.php:32
 msgid "Total"
 msgstr ""
 
-#: woocommerce/cart/cart.php:75
+#: woocommerce/cart/cart.php:76
 msgid "Available on backorder"
 msgstr ""
 
-#: woocommerce/cart/cart.php:117
+#: woocommerce/cart/cart.php:118
 msgid "Update Cart"
 msgstr ""
 
-#: woocommerce/cart/cart.php:145
+#: woocommerce/cart/cart.php:148
 msgid "Discount Codes"
 msgstr ""
 
-#: woocommerce/cart/cart.php:148
+#: woocommerce/cart/cart.php:151
 msgid "Enter your coupon if you have one"
 msgstr ""
 
-#: woocommerce/cart/cart.php:149 woocommerce/checkout/form-coupon.php:28
+#: woocommerce/cart/cart.php:152 woocommerce/checkout/form-coupon.php:28
 msgid "Apply Coupon"
 msgstr ""
 
@@ -7594,7 +7594,7 @@ msgstr ""
 
 #: woocommerce/loop/orderby.php:47
 msgid "Show:"
-msgstr ""
+msgstr "Mostrar:"
 
 #: woocommerce/loop/rating.php:19
 #, php-format

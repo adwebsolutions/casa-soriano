@@ -173,11 +173,9 @@ if(defined('WOOCOMMERCE_VERSION')){
 										</div>
 									</div>
 									<div class="navbar-header-right">
-				            			<?php 
-											if(class_exists('DH_Woocommerce') && defined( 'WOOCOMMERCE_VERSION' ) && dh_get_theme_option( 'woo-cart-nav', 1 )){
-												echo '<div class="navbar-minicart navbar-minicart-topbar">'.DH_Woocommerce::instance()->get_minicart().'</div>';
-											}
-										?>
+
+										<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('header_sidebar') ) : endif; ?>
+
 										<?php if(dh_get_theme_option('show-navbar-offcanvas',1)):?>
 											<div class="navbar-offcanvas">
 												<a href="#" class="navbar-offcanvas-btn">
