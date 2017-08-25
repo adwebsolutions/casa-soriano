@@ -6,6 +6,8 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 
 	public $previousID;
 
+    public $product_taxonomies;
+
 	public $reserved_terms = array(
 				'attachment', 'attachment_id', 'author', 'author_name', 'calendar', 'cat', 'category', 'category__and',
 				'category__in', 'category__not_in', 'category_name', 'comments_per_page', 'comments_popup', 'cpage', 'day',
@@ -29,7 +31,10 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 		$this->logger = $options['logger'];
 		$this->chunk  = $options['chunk'];
 		$this->xpath  = $options['xpath_prefix'];
-		
+
+        $product_taxonomies = array('post_format', 'product_type', 'product_shipping_class');
+        $this->product_taxonomies = array_diff_key(get_taxonomies_by_object_type(array('product'), 'object'), array_flip($product_taxonomies));
+
 	}
 
 	public function parse()
@@ -95,11 +100,11 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			}
 		}
 
-		$options = array('id', 'parent_id', 'id_first_is_parent_id', 'id_first_is_parent_title', 'id_first_is_variation');
+		$options = array('id', 'parent_id', 'id_first_is_parent_id', 'id_first_is_parent_title', 'id_first_is_variation', 'first_is_parent_id_parent_sku', 'first_is_parent_title_parent_sku');
 		
 		foreach ($options as $option) 
 		{
-			if ( "" != $this->import->options['single_product_' . $option] )
+			if ( isset($this->import->options['single_product_' . $option]) && "" != $this->import->options['single_product_' . $option] )
 			{
 				$this->data['single_product_' . preg_replace("%id$%", "ID", $option)] = XmlImportParser::factory($this->xml, $cxpath, $this->import->options['single_product_' . $option], $file)->parse($records); $tmp_files[] = $file;
 			}
@@ -150,11 +155,13 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 		{
 			$this->count and $this->data['product_stock_status'] = array_fill(0, $this->count, $this->import->options['product_stock_status']);
 
+            $nostock = absint( max( get_option( 'woocommerce_notify_no_stock_amount' ), 0 ) );
+
 			foreach ($this->data['product_stock_qty'] as $key => $value) 
 			{
 				if ($this->data['product_manage_stock'][$key] == 'yes')
 				{
-					$this->data['product_stock_status'][$key] = (( (int) $value === 0 or (int) $value < 0 ) and $value != "") ? 'outofstock' : 'instock';					
+					$this->data['product_stock_status'][$key] = (( (int) $value === 0 or (int) $value <= $nostock ) and $value != "") ? 'outofstock' : 'instock';
 				}
 				else{
 					$this->data['product_stock_status'][$key] = 'instock';
@@ -226,11 +233,14 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 		elseif($this->import->options['variation_stock_status'] == 'auto')
 		{
 			$this->count and $this->data['v_stock_status'] = array_fill(0, $this->count, $this->import->options['variation_stock_status']);
+
+            $nostock = absint( max( get_option( 'woocommerce_notify_no_stock_amount' ), 0 ) );
+
 			foreach ($this->data['v_stock'] as $key => $value) 
 			{
 				if ($this->data['v_product_manage_stock'][$key] == 'yes')
 				{
-					$this->data['v_stock_status'][$key] = ( ( (int) $value === 0 or (int) $value < 0 ) and $value != "") ? 'outofstock' : 'instock';
+					$this->data['v_stock_status'][$key] = ( ( (int) $value === 0 or (int) $value <= $nostock ) and $value != "") ? 'outofstock' : 'instock';
 				}
 				else
 				{
@@ -360,8 +370,9 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 
 		$product_type 	= empty( $product_types[$i] ) ? 'simple' : sanitize_title( stripslashes( $product_types[$i] ) );
 
-		if ($this->import->options['update_all_data'] == 'no' and ! $this->import->options['is_update_product_type'] and ! $is_new_product ){			
-			$product 	  = get_product($pid);			
+        $product 	  = WC()->product_factory->get_product($pid);
+
+		if ($this->import->options['update_all_data'] == 'no' and ! $this->import->options['is_update_product_type'] and ! $is_new_product ){
 			if ( ! empty($product->product_type) ) $product_type = $product->product_type;
 		}		
 		
@@ -395,10 +406,10 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 		$this->pushmeta($pid, '_regular_price', ($product_regular_price[$i] == "") ? '' : stripslashes( $product_regular_price[$i] ) );
 		$this->pushmeta($pid, '_sale_price', ($product_sale_price[$i] == "") ? '' : stripslashes( $product_sale_price[$i] ) );
 		$this->pushmeta($pid, '_tax_status', stripslashes( $product_tax_status[$i] ) );
-		$this->pushmeta($pid, '_tax_class', stripslashes( $product_tax_class[$i] ) );
-		$this->pushmeta($pid, '_visibility', stripslashes( $product_visibility[$i] ) );
+		$this->pushmeta($pid, '_tax_class', strtolower($product_tax_class[$i]) == 'standard' ? '' : stripslashes( $product_tax_class[$i] ) );
 		$this->pushmeta($pid, '_purchase_note', stripslashes( $product_purchase_note[$i] ) );
-		$this->pushmeta($pid, '_featured', ($is_featured == "yes") ? 'yes' : 'no' );
+		update_post_meta($pid, '_wpai_featured', ($is_featured == "yes") ? 'yes' : 'no' );
+        update_post_meta($pid, '_wpai_visibility', stripslashes( $product_visibility[$i] ) );
 
 		// Dimensions		
 		if ( $is_virtual == 'no' ) {			
@@ -505,7 +516,22 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 		// Unique SKU
 		$sku				= ($is_new_product) ? '' : get_post_meta($pid, '_sku', true);
 		$new_sku 			= wc_clean( trim( stripslashes( $product_sku[$i] ) ) );
-		
+
+        if ( ( in_array($product_type, array('variation', 'variable')) or $product_types[$i] == "variable" ) and ! $this->import->options['link_all_variations'] ){
+            switch ($this->import->options['matching_parent']){
+                case 'first_is_parent_id':
+                    if (!empty($single_product_first_is_parent_id_parent_sku[$i])){
+                        update_post_meta($pid, '_parent_sku', $single_product_first_is_parent_id_parent_sku[$i]);
+                    }
+                    break;
+                case 'first_is_variation':
+                    if (!empty($single_product_first_is_parent_title_parent_sku[$i])){
+                        update_post_meta($pid, '_parent_sku', $single_product_first_is_parent_title_parent_sku[$i]);
+                    }
+                    break;
+            }
+        }
+
 		if ( $new_sku == '' and $this->import->options['disable_auto_sku_generation'] ) {
 			$this->pushmeta($pid, '_sku', '' );				
 		}
@@ -516,6 +542,21 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 					@unlink($file);
 				}
 				$new_sku = substr(md5($unique_keys[$i]), 0, 12);
+
+                if ( ( in_array($product_type, array('variation', 'variable')) or $product_types[$i] == "variable" ) and ! $this->import->options['link_all_variations'] ){
+                    switch ($this->import->options['matching_parent']){
+                        case 'first_is_parent_id':
+                            if (empty($single_product_first_is_parent_id_parent_sku[$i])){
+                                update_post_meta($pid, '_parent_sku', strrev($new_sku));
+                            }
+                            break;
+                        case 'first_is_variation':
+                            if (empty($single_product_first_is_parent_title_parent_sku[$i])){
+                                update_post_meta($pid, '_parent_sku', strrev($new_sku));
+                            }
+                            break;
+                    }
+                }
 			}
 		}
 		if ( $new_sku != '' and $new_sku !== $sku ) {
@@ -525,7 +566,8 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 						SELECT ".$this->wpdb->posts.".ID
 					    FROM ".$this->wpdb->posts."
 					    LEFT JOIN ".$this->wpdb->postmeta." ON (".$this->wpdb->posts.".ID = ".$this->wpdb->postmeta.".post_id)
-					    WHERE ".$this->wpdb->posts.".post_type = 'product'
+					    WHERE (".$this->wpdb->posts.".post_type = 'product'
+					    OR ".$this->wpdb->posts.".post_type = 'product_variation')
 					    AND ".$this->wpdb->posts.".post_status = 'publish'
 					    AND ".$this->wpdb->postmeta.".meta_key = '_sku' AND ".$this->wpdb->postmeta.".meta_value = '%s'
 					 ", $new_sku ) )
@@ -540,12 +582,14 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			}
 		}
 
-		$this->pushmeta($pid, '_variation_description', wp_kses_post($product_variation_description[$i]) );
+		$this->pushmeta($pid, '_variation_description', $product_variation_description[$i] );
 
 		// Save Attributes
 		$attributes = array();
 
 		$is_variation_attributes_defined = false;
+
+        $max_attribute_length = apply_filters('wp_all_import_max_woo_attribute_term_length', 199);
 
 		if ( $this->import->options['update_all_data'] == "yes" or ( $this->import->options['update_all_data'] == "no" and $this->import->options['is_update_attributes']) or $is_new_product){ // Update Product Attributes		
 
@@ -555,13 +599,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 				
 				$attribute_position = 0;
 
-				// $attr_names = array();
-
 				foreach ($serialized_attributes as $anum => $attr_data) {	$attr_name = $attr_data['names'][$i];
-
-					// if ( in_array( $attr_name, $this->reserved_terms ) ) {
-					// 	$attr_name .= 's';
-					// }
 
 					if (empty($attr_name)) continue;
 
@@ -618,7 +656,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 						 			
 						 		foreach ($values as $key => $val) {
 
-						 			$value = substr($val, 0, 199);
+						 			$value = substr($val, 0, $max_attribute_length);
 
 						 			$term = get_term_by('name', $value, wc_attribute_taxonomy_name( $attr_name ), ARRAY_A);
 						 			
@@ -655,7 +693,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 						 	else $values = array(); 					 							 	
 
 					 	} 				 				 						 	
-					 	
+
 				 		// Update post terms
 				 		if ( taxonomy_exists( wc_attribute_taxonomy_name( $attr_name ) ))			 			
 				 			$this->associate_terms( $pid, $values, wc_attribute_taxonomy_name( $attr_name ) );				 					 	
@@ -749,7 +787,13 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 				$this->pushmeta($pid, '_price', ($product_sale_price[$i] == "") ? '' : stripslashes( $product_sale_price[$i] ));						
 				
 			}
-			else{				
+			else{
+
+                // Update price if on sale
+                if ( ! empty($this->articleData['ID']) and ! $this->is_update_cf('_regular_price') )
+                {
+                    $product_regular_price[$i] = get_post_meta($pid, '_regular_price', true);
+                }
 
 				$this->pushmeta($pid, '_price', ($product_regular_price[$i] == "") ? '' : stripslashes( $product_regular_price[$i] ));						
 			}
@@ -759,9 +803,9 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			}
 
 			if ( $date_to && strtotime( $date_to ) < strtotime( 'NOW', current_time( 'timestamp' ) ) ) {
-				$this->pushmeta($pid, '_price', ($product_regular_price[$i] == "") ? '' : stripslashes( $product_regular_price[$i] ));				
-				$this->pushmeta($pid, '_sale_price_dates_from', '');				
-				$this->pushmeta($pid, '_sale_price_dates_to', '');													
+				$this->pushmeta($pid, '_price', ($product_regular_price[$i] == "") ? '' : stripslashes( $product_regular_price[$i] ));
+//				$this->pushmeta($pid, '_sale_price_dates_from', '');
+//				$this->pushmeta($pid, '_sale_price_dates_to', '');
 			}
 		}
 
@@ -792,7 +836,15 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			if ( "" != $product_grouping_parent[$i] and absint($product_grouping_parent[$i]) > 0){
 
 				$this->wpdb->update( $this->wpdb->posts, array('post_parent' => absint( $product_grouping_parent[$i] ) ), array('ID' => $pid));
-				
+
+                $all_grouped_products = get_post_meta($product_grouping_parent[$i], '_children', true);
+
+                if (empty($all_grouped_products)) $all_grouped_products = array();
+
+                if ( ! in_array($pid, $all_grouped_products) ){
+                    $all_grouped_products[] = $pid;
+                    update_post_meta($product_grouping_parent[$i], '_children', $all_grouped_products);
+                }
 			}
 		}	
 
@@ -868,8 +920,8 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			$this->pushmeta($pid, '_manage_stock', $manage_stock);	
 			$this->pushmeta($pid, '_backorders', $backorders);	
 
-			if ( $stock_status ) {							
-				$this->pushmeta( $pid, '_stock_status', $stock_status );
+			if ( $stock_status ) {
+                update_post_meta( $pid, '_stock_status', $stock_status );
 			}
 
 			$current_manage_stock = get_post_meta( $pid, '_manage_stock', true );
@@ -882,7 +934,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 
 		} else {
 			update_post_meta( $pid, '_stock_status', wc_clean( $product_stock_status[$i] ) );
-		}				
+		}
 
 		// Upsells
 		$this->import_linked_products($pid, $product_up_sells[$i], '_upsell_ids', $is_new_product);
@@ -936,7 +988,66 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			if ( isset( $product_button_text[$i] ) && $product_button_text[$i] ){
 				$this->pushmeta($pid, '_button_text', esc_attr( $product_button_text[$i] ));						
 			}
-		}			
+		}
+        // Update product visibility term WC 3.0.0
+        if ( version_compare(WOOCOMMERCE_VERSION, '3.0') >= 0 ) {
+
+            $associate_terms = array();
+
+            $term_ids = wp_get_object_terms($pid, 'product_visibility', array('fields' => 'ids'));
+
+            // If Not Update Featured Status checking for current featured status
+            if ( ! empty($articleData['ID']) && ( ! $this->is_update_data_allowed('is_update_advanced_options') || ! $this->is_update_data_allowed('is_update_featured_status'))) {
+                $featured_term = get_term_by( 'name', 'featured', 'product_visibility' );
+                if ( ! empty($featured_term) && ! is_wp_error($featured_term) && in_array($featured_term->term_taxonomy_id, $term_ids) ){
+                    $associate_terms[] = $featured_term->term_taxonomy_id;
+                }
+            }
+            else{
+                if ($is_featured == "yes"){
+                    $featured_term = get_term_by( 'name', 'featured', 'product_visibility' );
+                    if ( ! empty($featured_term) && !is_wp_error($featured_term)){
+                        $associate_terms[] = $featured_term->term_taxonomy_id;
+                    }
+                }
+            }
+
+            // If Not Update Product Visibility checking for current product visibility
+            if ( ! empty($articleData['ID']) && ( ! $this->is_update_data_allowed('is_update_advanced_options') || ! $this->is_update_data_allowed('is_update_catalog_visibility'))) {
+                $exclude_search_term = get_term_by( 'name', 'exclude-from-search', 'product_visibility' );
+                if (!empty($exclude_search_term) && !is_wp_error($exclude_search_term) && in_array($exclude_search_term->term_taxonomy_id, $term_ids)){
+                    $associate_terms[] = $exclude_search_term->term_taxonomy_id;
+                }
+                $exclude_catalog_term = get_term_by( 'name', 'exclude-from-catalog', 'product_visibility' );
+                if (!empty($exclude_catalog_term) && !is_wp_error($exclude_catalog_term) && in_array($exclude_catalog_term->term_taxonomy_id, $term_ids)){
+                    $associate_terms[] = $exclude_catalog_term->term_taxonomy_id;
+                }
+            }
+            else{
+                if (in_array($product_visibility[$i], array('hidden', 'catalog'))){
+                    $exclude_search_term = get_term_by( 'name', 'exclude-from-search', 'product_visibility' );
+                    if (!empty($exclude_search_term) && !is_wp_error($exclude_search_term)){
+                        $associate_terms[] = $exclude_search_term->term_taxonomy_id;
+                    }
+                }
+                if (in_array($product_visibility[$i], array('hidden', 'search'))){
+                    $exclude_catalog_term = get_term_by( 'name', 'exclude-from-catalog', 'product_visibility' );
+                    if (!empty($exclude_catalog_term) && !is_wp_error($exclude_catalog_term)){
+                        $associate_terms[] = $exclude_catalog_term->term_taxonomy_id;
+                    }
+                }
+            }
+
+            $_stock_status = get_post_meta( $pid, '_stock_status', true);
+            if ( $_stock_status == 'outofstock' ){
+                $outofstock_term = get_term_by( 'name', 'outofstock', 'product_visibility' );
+                if (!empty($outofstock_term) && !is_wp_error($outofstock_term)){
+                    $associate_terms[] = $outofstock_term->term_taxonomy_id;
+                }
+            }
+
+            $this->associate_terms( $pid, $associate_terms, 'product_visibility' );
+        }
 
 		// prepare bulk SQL query
 		//$this->executeSQL();
@@ -962,7 +1073,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 					$postRecord = $this->wpdb->get_row($this->wpdb->prepare("SELECT * FROM " . $this->wpdb->prefix . "pmxi_posts WHERE `import_id` = %d AND `product_key` = %s ORDER BY post_id ASC", $this->import->id, $single_product_parent_ID[$i]));
 
 					$product_parent_post = ( ! empty($postRecord) ) ? get_post($product_parent_post_id = $postRecord->post_id) : false;
-					
+
 				}
 				else{
 
@@ -1068,9 +1179,13 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 
 					foreach ($product_ids as $iter => $pid):	
 
-						$create_new_variation = ($create_new_variation && !$iter) ? true : false;				
-						
-						$parent_sku = get_post_meta($product_parent_post_id, '_sku', true);
+						$create_new_variation = ($create_new_variation && !$iter) ? true : false;
+
+                        $parent_sku = get_post_meta($product_parent_post_id, '_parent_sku', true);
+
+                        if (empty($parent_sku)) {
+                            $parent_sku = get_post_meta($product_parent_post_id, '_sku', TRUE);
+                        }
 
 						if ( $create_new_variation) {
 
@@ -1119,15 +1234,20 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 
 							if ($this->import->options['create_new_records']){
 								
-								$pid = wp_insert_post( $variation );															
+								$pid = wp_insert_post( $variation );
 
+                                // update first variation title with generated ID
+                                $updated_variation_title = str_replace('#0', '#'.$pid, $variation_post_title);
+
+                                $this->wpdb->update( $this->wpdb->posts, array(
+                                    'post_title' => $updated_variation_title,
+                                    'post_name' => sanitize_title($updated_variation_title)
+                                ), array( 'ID' => $pid ) );
 								//$logger and call_user_func($logger, sprintf(__('<b>CREATED</b>: %s variation from parent product %s.', 'wpai_woocommerce_addon_plugin'), $variation_post_title, $articleData['post_title']));	
 
 								if ($create_new_variation){															
 									
 									$this->duplicate_post_meta($pid, $product_parent_post_id);
-
-									//$this->pushmeta($pid, '_sku', 'v' . get_post_meta($pid, '_sku', true));	
 
 									// associate variation with import
 									$postRecord->isEmpty() and $postRecord->set(array(
@@ -1144,10 +1264,8 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 						} 
 						else 
 						{
-
 							if ($create_new_variation) 
-							{								
-
+							{
 								if ("manual" != $this->import->options['duplicate_matching'] or $is_new_product)
 								{
 									$this->duplicate_post_meta($pid, $product_parent_post_id);									
@@ -1161,7 +1279,6 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 								}
 							}						
 
-							//$this->wpdb->update( $this->wpdb->posts, $variation, array( 'ID' => $pid ) );
                             wp_update_post( array_merge($variation, array('ID' => $pid)) );
 
 							//$logger and call_user_func($logger, sprintf(__('<b>UPDATED</b>: %s variation for parent product %s.', 'wpai_woocommerce_addon_plugin'), $variation_post_title, $articleData['post_title']));		
@@ -1202,7 +1319,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 								}							
 
 								// Only update stock status to user setting if changed by the user, but do so before looking at stock levels at variation level
-								if ( ! empty( $_v_stock_status ) and $this->is_update_cf('_stock_status') ) {														
+								if ( ! empty( $_v_stock_status ) ) {
 									update_post_meta( $pid, '_stock_status', $_v_stock_status );
 								}
 
@@ -1224,14 +1341,14 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 								
 								$stock_status = wc_clean( $product_stock_status[$i] );	
 
-								if ( $stock_status and $this->is_update_cf('_stock_status') ) {								
+								if ( $stock_status ) {
 									update_post_meta( $pid, '_stock_status', $stock_status );
 								}
 
 								if (empty($articleData['ID']) or $this->is_update_cf('_tax_class'))
 								{
 									if ( $product_tax_class[ $i ] !== 'parent' )
-										$this->pushmeta($pid, '_tax_class', sanitize_text_field( $product_tax_class[ $i ] ));										
+										$this->pushmeta($pid, '_tax_class', strtolower($product_tax_class[ $i ]) == 'standard' ? '' : sanitize_text_field( $product_tax_class[ $i ] ));
 									else
 										delete_post_meta( $pid, '_tax_class' );
 								}
@@ -1264,7 +1381,6 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 							}											
 
 							if ($this->import->options['update_all_data'] == 'yes' or $this->import->options['update_all_data'] == 'no' and $this->import->options['is_update_product_type']){
-								//wp_set_object_terms( $pid, NULL, 'product_type' );
 								$this->associate_terms( $pid, NULL, 'product_type' );	
 							}
 
@@ -1314,13 +1430,13 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 											{
                                                 $attr_name = wc_attribute_taxonomy_name($this->create_taxonomy(preg_replace("%^pa_%", "", $attr_name), $logger));
 												$cname = wc_attribute_taxonomy_name( preg_replace("%^pa_%", "", $attr_name) );
-												$this->associate_terms( $pid, NULL, $cname );	
-											} 										
+												$this->associate_terms( $pid, NULL, $cname );
+											}
 
 											if ( $is_variation)
 											{
 												// Don't use woocommerce_clean as it destroys sanitized characters																								
-												$values = substr((intval($attr_data['is_taxonomy'])) ? $attr_data['value'] : $attr_data['value'], 0, 199);	
+												$values = substr((intval($attr_data['is_taxonomy'])) ? $attr_data['value'] : $attr_data['value'], 0, $max_attribute_length);
 												
 												if (intval($attr_data['is_taxonomy'])){
 																									
@@ -1403,13 +1519,13 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
                                             $attr_name = wc_attribute_taxonomy_name($this->create_taxonomy(preg_replace("%^pa_%", "", $attr_name), $logger));
 											$cname = wc_attribute_taxonomy_name( preg_replace("%^pa_%", "", $attr_name) );
 											$this->associate_terms( $pid, NULL, $cname );	
-										} 
+										}
 
 										if ($is_variation){
 											
 											// Don't use woocommerce_clean as it destroys sanitized characters																								
-											$values = substr((intval($attr_data['in_taxonomy'][$i])) ? $attr_data['value'][$i] : $attr_data['value'][$i], 0, 199);	
-											
+											$values = substr((intval($attr_data['in_taxonomy'][$i])) ? $attr_data['value'][$i] : $attr_data['value'][$i], 0, $max_attribute_length);
+
 											if (intval($attr_data['in_taxonomy'][$i])){
 
                                                 $cname = wc_attribute_taxonomy_name( preg_replace("%^pa_%", "", $attr_name) );
@@ -1530,9 +1646,9 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 					$parent_product_ids[] = $pid;
 				}				
 
-				foreach ($parent_product_ids as $post_parent) {																										
+				foreach ($parent_product_ids as $post_parent) {
 
-					$children = get_posts( array(
+				    $children = get_posts( array(
 						'post_parent' 	=> $post_parent,
 						'posts_per_page'=> -1,
 						'post_type' 	=> 'product_variation',
@@ -1542,7 +1658,15 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 						'post_status'	=> array('draft', 'publish', 'trash', 'pending', 'future', 'private')
 					) );			
 
-					if ( count($children) ){						
+					if ( count($children) ){
+
+                        $parent_sku = get_post_meta($post_parent, '_parent_sku', true);
+
+                        if (!empty($parent_sku)){
+                            $first_variation_sku = get_post_meta($post_parent, '_sku', true);
+                            $this->pushmeta($post_parent, '_sku', $parent_sku);
+                            $this->pushmeta($post_parent, '_first_variation_sku', $first_variation_sku);
+                        }
 
 						$product_type_term = is_exists_term('variable', 'product_type', 0);	
 						if ( ! empty($product_type_term) and ! is_wp_error($product_type_term) ){	
@@ -1555,6 +1679,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 						$total_instock = 0;
 
 						if ( $children ) {
+						    $children_prices = array();
 							foreach ( $children as $n => $child ) {
 								
 								$_variation_stock = get_post_meta($child, '_stock_status', true);
@@ -1562,6 +1687,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 								$total_instock += ($_variation_stock == 'instock') ? 1 : 0;
 
 								$child_price 			= get_post_meta( $child, '_price', true );
+                                if ( ! in_array($child_price, $children_prices) ) $children_prices[] = $child_price;
 								$child_regular_price 	= get_post_meta( $child, '_regular_price', true );
 								$child_sale_price 		= get_post_meta( $child, '_sale_price', true );
 
@@ -1599,9 +1725,15 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 						}
 
 						//$parent_manage_stock = get_post_meta($post_parent, '_manage_stock', true);
-						
-						$this->pushmeta($post_parent, '_stock_status', ($total_instock > 0) ? 'instock' : 'outofstock');						
+
+                        update_post_meta($post_parent, '_stock_status', ($total_instock > 0) ? 'instock' : 'outofstock');
 						$this->pushmeta($post_parent, '_price', $lowest_price);		
+
+                        if ( empty($articleData['ID']) or $this->is_update_cf('_price') ){
+                            foreach ($children_prices as $children_price){
+                                add_post_meta($post_parent, '_price', $children_price);
+                            }
+                        }
 
 						update_post_meta($post_parent, '_min_variation_price', $lowest_price);		
 						update_post_meta($post_parent, '_max_variation_price', $highest_price);		
@@ -1625,6 +1757,19 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 							$unique_attributes  = array();
 							$attribute_position = 0;
 							$is_update_attributes = true;
+
+                            $post_parent_attributes = (array) maybe_unserialize( get_post_meta( $post_parent, '_product_attributes', true ) );
+
+                            foreach ($post_parent_attributes as $attr)
+                            {
+                                if ( empty($attr['name']) ) continue;
+                                if ( ! in_array($attr['name'], $unique_attributes)) {
+                                    $attributes[] = $attr;
+                                    $unique_attributes[] = $attr['name'];
+                                }
+                            }
+
+                            $children[] = $post_parent;
 
 							foreach ( $children as $child ) {
 
@@ -1650,7 +1795,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 									
 									$value = array();
 
-									if ( $attribute['is_variation'] ) 
+									if ( $attribute['is_variation'] && $child != $post_parent)
 									{	
 										$value = array_map( 'stripslashes', array_map( 'strip_tags',  explode("|", trim( get_post_meta($child, 'attribute_'.sanitize_title($attribute['name']), true)))));
 									}
@@ -1665,6 +1810,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 									
 									if ( is_array($value) and isset($value[0]) ){
 										//$this->pushmeta($child, 'attribute_' . sanitize_title( $attribute['name'] ), $value[0]);
+                                        $value = array_map('trim', $value);
 										foreach ($value as $val) {
 											if ( $attribute['is_taxonomy'] ){
 												$term = get_term_by('slug', $val, $attribute['name'], ARRAY_A);
@@ -1797,7 +1943,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 								 		// Add attribute to array, but don't set values
 								 		$parent_attributes[ sanitize_title( $attribute['name'] ) ] = array(
 									 		'name' 			=> $attribute['name'],
-									 		'value' 		=> '',
+									 		'value' 		=> $attribute['value'],
 									 		'position' 		=> $attribute_position,
 									 		'is_visible' 	=> $attribute['is_visible'],
 									 		'is_variation' 	=> $attribute['is_variation'],
@@ -1832,10 +1978,12 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 								$current_product_attributes = get_post_meta($post_parent, '_product_attributes', true);						
 
 								update_post_meta($post_parent, '_product_attributes', (( ! empty($current_product_attributes)) ? array_merge($current_product_attributes, $parent_attributes) : $parent_attributes));
-								
-							}										
-
+							}
 						}
+
+                        foreach ( $children as $k => $child ) {
+                            if ( $post_parent == $child ) unset($children[$k]);
+                        }
 
 						if (count($children) == 1 and $this->import->options['make_simple_product'] and $first_is_parent == "no"){// and "manual" != $this->import->options['duplicate_matching']
 							$this->make_simple_product($post_parent);																			
@@ -1846,19 +1994,42 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 							if ( empty($product_attributes) ){
 								$this->make_simple_product($post_parent);																		
 							}
-						}						
+						}
+
+                        wc_delete_product_transients($post_parent);
+
+                        if ( version_compare(WOOCOMMERCE_VERSION, '3.0') >= 0 ){
+
+                            if ( $children ) {
+                                foreach ($children as $n => $child) {
+                                    $childProduct = WC()->product_factory->get_product($child);
+                                    $new_title = $this->generate_product_title( $childProduct );
+                                    $this->wpdb->update( $this->wpdb->posts, array( 'post_title' => $new_title ), array( 'ID' => $child ) );
+//                                    wc_delete_product_transients($child);
+                                }
+                            }
+
+                        }
+
+                        do_action('wp_all_import_variable_product_imported', $post_parent);
 
 					} 
 					elseif ( $this->import->options['make_simple_product']) {// and "manual" != $this->import->options['duplicate_matching']
-						$this->make_simple_product($post_parent);													
-					}
-
-					wc_delete_product_transients($post_parent);
-
-					do_action('wp_all_import_variable_product_imported', $post_parent);
-
+                        $table = $this->wpdb->posts;
+                        $p = $this->wpdb->get_row($this->wpdb->prepare("SELECT * FROM $table WHERE ID = %d;", $post_parent));
+                        if ($p->post_type != 'product_variation'){
+                            $parent_sku = get_post_meta($post_parent, '_parent_sku', true);
+                            if (!empty($parent_sku)){
+                                $first_variation_sku = get_post_meta($post_parent, '_sku', true);
+                                $this->pushmeta($post_parent, '_sku', $parent_sku);
+                                $this->pushmeta($post_parent, '_first_variation_sku', $first_variation_sku);
+                            }
+                            $this->make_simple_product($post_parent);
+                            wc_delete_product_transients($post_parent);
+                            do_action('wp_all_import_variable_product_imported', $post_parent);
+                        }
+                    }
 				}
-
 			}
 			// \[execute only for parent products]
 
@@ -2268,22 +2439,22 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 				// Create Variations
 				foreach ($variations as $j => $void) {
 
-          $variation_sku_for_title = ("" == $variation_sku[$j]) ? $j : $variation_sku[$j];
+                      $variation_sku_for_title = ("" == $variation_sku[$j]) ? $j : $variation_sku[$j];
 
-          if ($this->import->options['variable_sku_add_parent']){
-              $variation_sku[$j] = $product_sku[$i] . '-' . $variation_sku[$j];
-              $variation_sku_for_title = $product_sku[$i] . '-' . $variation_sku[$j];
-          }
+                      if ($this->import->options['variable_sku_add_parent']){
+                          $variation_sku[$j] = $product_sku[$i] . '-' . $variation_sku[$j];
+                          $variation_sku_for_title = $product_sku[$i] . '-' . $variation_sku[$j];
+                      }
 
-          $is_variation_have_attributes = false;
-          foreach ($variation_serialized_attributes as $attr => $attr_options){
-              if ($attr_options['in_variation'][$j] && $attr_options['value'][$j] != ''){
-                  $is_variation_have_attributes = true;
-                  break;
-              }
-          }
-          // do not create variation if it doesn't have attributes
-          if ( ! $is_variation_have_attributes && $this->import->options['make_simple_product']) continue;
+                      $is_variation_have_attributes = false;
+                      foreach ($variation_serialized_attributes as $attr => $attr_options){
+                          if ($attr_options['in_variation'][$j] && $attr_options['value'][$j] != ''){
+                              $is_variation_have_attributes = true;
+                              break;
+                          }
+                      }
+                      // do not create variation if it doesn't have attributes
+                      if ( ! $is_variation_have_attributes && $this->import->options['make_simple_product']) continue;
 
 					$variable_enabled = ($variation_product_enabled[$j] == "yes") ? 'yes' : 'no'; 					
 
@@ -2367,76 +2538,76 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 					foreach (get_post_meta($variation_to_update_id, '') as $cur_meta_key => $cur_meta_val) $existing_variation_meta_keys[] = $cur_meta_key;
 
 					// delete keys which are no longer correspond to import settings																
-					if ( !empty($existing_variation_meta_keys) ) 
+					if ( !empty($existing_variation_meta_keys) ){
+                        foreach ($existing_variation_meta_keys as $cur_meta_key) {
 
-						foreach ($existing_variation_meta_keys as $cur_meta_key) { 
-						
-							// Do not delete post meta for features image 
-							if ( in_array($cur_meta_key, array('_thumbnail_id','_product_image_gallery')) ) continue;
+                            // Do not delete post meta for features image
+                            if ( in_array($cur_meta_key, array('_thumbnail_id','_product_image_gallery')) ) continue;
 
-							// Update all data
-							if ($this->import->options['update_all_data'] == 'yes' or $variation_just_created) {
-								delete_post_meta($variation_to_update_id, $cur_meta_key);
-								continue;
-							}
-							
-							// Do not update attributes
-							if ( ! $this->import->options['is_update_attributes'] and (in_array($cur_meta_key, array('_default_attributes', '_product_attributes')) or strpos($cur_meta_key, "attribute_") === 0)) continue;
-							
-							// Update only these Attributes, leave the rest alone
-							if ($this->import->options['is_update_attributes'] and $this->import->options['update_attributes_logic'] == 'only'){
-								
-								if ($cur_meta_key == '_product_attributes'){
-									$current_product_attributes = get_post_meta($variation_to_update_id, '_product_attributes', true);
-									if ( ! empty($current_product_attributes) and ! empty($this->import->options['attributes_list']) and is_array($this->import->options['attributes_list'])) 
-										foreach ($current_product_attributes as $attr_name => $attr_value) {
-											if ( in_array($attr_name, array_filter($this->import->options['attributes_list'], 'trim'))) unset($current_product_attributes[$attr_name]);
-										}
-										
-									update_post_meta($variation_to_update_id, '_product_attributes', $current_product_attributes);
-									continue;
-								}
+                            // Update all data
+                            if ($this->import->options['update_all_data'] == 'yes' or $variation_just_created) {
+                                delete_post_meta($variation_to_update_id, $cur_meta_key);
+                                continue;
+                            }
 
-								if ( strpos($cur_meta_key, "attribute_") === 0 and ! empty($this->import->options['attributes_list']) and is_array($this->import->options['attributes_list']) and ! in_array(str_replace("attribute_", "", $cur_meta_key), array_filter($this->import->options['attributes_list'], 'trim'))) continue;
+                            // Do not update attributes
+                            if ( ! $this->import->options['is_update_attributes'] and (in_array($cur_meta_key, array('_default_attributes', '_product_attributes')) or strpos($cur_meta_key, "attribute_") === 0)) continue;
 
-								if (in_array($cur_meta_key, array('_default_attributes'))) continue;
-							}
+                            // Update only these Attributes, leave the rest alone
+                            if ($this->import->options['is_update_attributes'] and $this->import->options['update_attributes_logic'] == 'only'){
 
-							// Leave these attributes alone, update all other Attributes
-							if ($this->import->options['is_update_attributes'] and $this->import->options['update_attributes_logic'] == 'all_except'){
-								
-								if ($cur_meta_key == '_product_attributes'){
-									
-									if (empty($this->import->options['attributes_list'])) { delete_post_meta($variation_to_update_id, $cur_meta_key); continue; }
+                                if ($cur_meta_key == '_product_attributes'){
+                                    $current_product_attributes = get_post_meta($variation_to_update_id, '_product_attributes', true);
+                                    if ( ! empty($current_product_attributes) and ! empty($this->import->options['attributes_list']) and is_array($this->import->options['attributes_list']))
+                                        foreach ($current_product_attributes as $attr_name => $attr_value) {
+                                            if ( in_array($attr_name, array_filter($this->import->options['attributes_list'], 'trim'))) unset($current_product_attributes[$attr_name]);
+                                        }
 
-									$current_product_attributes = get_post_meta($variation_to_update_id, '_product_attributes', true);
-									if ( ! empty($current_product_attributes) and ! empty($this->import->options['attributes_list']) and is_array($this->import->options['attributes_list'])) 
-										foreach ($current_product_attributes as $attr_name => $attr_value) {
-											if ( ! in_array($attr_name, array_filter($this->import->options['attributes_list'], 'trim'))) unset($current_product_attributes[$attr_name]);
-										}
-										
-									update_post_meta($variation_to_update_id, '_product_attributes', $current_product_attributes);
-									continue;
-								}
+                                    update_post_meta($variation_to_update_id, '_product_attributes', $current_product_attributes);
+                                    continue;
+                                }
 
-								if ( strpos($cur_meta_key, "attribute_") === 0 and ! empty($this->import->options['attributes_list']) and is_array($this->import->options['attributes_list']) and in_array(str_replace("attribute_", "", $cur_meta_key), array_filter($this->import->options['attributes_list'], 'trim'))) continue;
+                                if ( strpos($cur_meta_key, "attribute_") === 0 and ! empty($this->import->options['attributes_list']) and is_array($this->import->options['attributes_list']) and ! in_array(str_replace("attribute_", "", $cur_meta_key), array_filter($this->import->options['attributes_list'], 'trim'))) continue;
 
-								if (in_array($cur_meta_key, array('_default_attributes'))) continue;
-							}
+                                if (in_array($cur_meta_key, array('_default_attributes'))) continue;
+                            }
 
-							// Update all Custom Fields is defined
-							if ($this->import->options['update_custom_fields_logic'] == "full_update"){
-								delete_post_meta($variation_to_update_id, $cur_meta_key);								
-							}
-							// Update only these Custom Fields, leave the rest alone
-							elseif ($this->import->options['update_custom_fields_logic'] == "only"){
-								if ( ! empty($this->import->options['custom_fields_list']) and is_array($this->import->options['custom_fields_list']) and in_array($cur_meta_key, $this->import->options['custom_fields_list'])) delete_post_meta($variation_to_update_id, $cur_meta_key);
-							}
-							// Leave these fields alone, update all other Custom Fields
-							elseif ($this->import->options['update_custom_fields_logic'] == "all_except"){
-								if ( empty($this->import->options['custom_fields_list']) or ! in_array($cur_meta_key, $this->import->options['custom_fields_list'])) delete_post_meta($variation_to_update_id, $cur_meta_key);
-							}
-						}
+                            // Leave these attributes alone, update all other Attributes
+                            if ($this->import->options['is_update_attributes'] and $this->import->options['update_attributes_logic'] == 'all_except'){
+
+                                if ($cur_meta_key == '_product_attributes'){
+
+                                    if (empty($this->import->options['attributes_list'])) { delete_post_meta($variation_to_update_id, $cur_meta_key); continue; }
+
+                                    $current_product_attributes = get_post_meta($variation_to_update_id, '_product_attributes', true);
+                                    if ( ! empty($current_product_attributes) and ! empty($this->import->options['attributes_list']) and is_array($this->import->options['attributes_list']))
+                                        foreach ($current_product_attributes as $attr_name => $attr_value) {
+                                            if ( ! in_array($attr_name, array_filter($this->import->options['attributes_list'], 'trim'))) unset($current_product_attributes[$attr_name]);
+                                        }
+
+                                    update_post_meta($variation_to_update_id, '_product_attributes', $current_product_attributes);
+                                    continue;
+                                }
+
+                                if ( strpos($cur_meta_key, "attribute_") === 0 and ! empty($this->import->options['attributes_list']) and is_array($this->import->options['attributes_list']) and in_array(str_replace("attribute_", "", $cur_meta_key), array_filter($this->import->options['attributes_list'], 'trim'))) continue;
+
+                                if (in_array($cur_meta_key, array('_default_attributes'))) continue;
+                            }
+
+                            // Update all Custom Fields is defined
+                            if ($this->import->options['update_custom_fields_logic'] == "full_update"){
+                                delete_post_meta($variation_to_update_id, $cur_meta_key);
+                            }
+                            // Update only these Custom Fields, leave the rest alone
+                            elseif ($this->import->options['update_custom_fields_logic'] == "only"){
+                                if ( ! empty($this->import->options['custom_fields_list']) and is_array($this->import->options['custom_fields_list']) and in_array($cur_meta_key, $this->import->options['custom_fields_list'])) delete_post_meta($variation_to_update_id, $cur_meta_key);
+                            }
+                            // Leave these fields alone, update all other Custom Fields
+                            elseif ($this->import->options['update_custom_fields_logic'] == "all_except"){
+                                if ( empty($this->import->options['custom_fields_list']) or ! in_array($cur_meta_key, $this->import->options['custom_fields_list'])) delete_post_meta($variation_to_update_id, $cur_meta_key);
+                            }
+                        }
+                    }
 
 					// Add any default post meta
 					//add_post_meta( $variation_to_update_id, 'total_sales', '0', true );
@@ -2470,23 +2641,23 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 					// Save shipping class		
 					if (ctype_digit($variation_product_shipping_class[ $j ])){
 
-            $t_shipping_class = get_term_by('slug', $variation_product_shipping_class[ $j ], 'product_shipping_class');
+                        $t_shipping_class = get_term_by('slug', $variation_product_shipping_class[ $j ], 'product_shipping_class');
 
-            // For compatibility with WPML plugin
-            $t_shipping_class = apply_filters('wp_all_import_term_exists', $t_shipping_class, 'product_shipping_class', $variation_product_shipping_class[ $j ], null);
+                        // For compatibility with WPML plugin
+                        $t_shipping_class = apply_filters('wp_all_import_term_exists', $t_shipping_class, 'product_shipping_class', $variation_product_shipping_class[ $j ], null);
 
-            if ( ! empty($t_shipping_class) and ! is_wp_error($t_shipping_class) )
-            {
-                $v_shipping_class = (int) $t_shipping_class->term_taxonomy_id;
-            }
-            else{
-                $t_shipping_class = is_exists_term( (int) $variation_product_shipping_class[ $j ], 'product_shipping_class', 0);
+                        if ( ! empty($t_shipping_class) and ! is_wp_error($t_shipping_class) )
+                        {
+                            $v_shipping_class = (int) $t_shipping_class->term_taxonomy_id;
+                        }
+                        else{
+                            $t_shipping_class = is_exists_term( (int) $variation_product_shipping_class[ $j ], 'product_shipping_class', 0);
 
-                if ( ! empty($t_shipping_class) and ! is_wp_error($t_shipping_class) )
-                {
-                    $v_shipping_class = (int) $t_shipping_class['term_taxonomy_id'];
-                }
-            }
+                            if ( ! empty($t_shipping_class) and ! is_wp_error($t_shipping_class) )
+                            {
+                                $v_shipping_class = (int) $t_shipping_class['term_taxonomy_id'];
+                            }
+                        }
 
 					}
 					else{
@@ -2499,7 +2670,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 							$v_shipping_class = (int) $vt_shipping_class['term_id']; 				
 					}
 
-          $this->associate_terms( $variation_to_update_id, array( $v_shipping_class ), 'product_shipping_class' );
+                    $this->associate_terms( $variation_to_update_id, array( $v_shipping_class ), 'product_shipping_class' );
 
 					// Unique SKU
 					$sku				= get_post_meta($variation_to_update_id, '_sku', true);
@@ -2543,21 +2714,21 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 					$date_to = isset( $variation_sale_price_dates_to[$i] ) ? $variation_sale_price_dates_to[$i] : '';
 
 					// Variable Description
-					$this->pushmeta($variation_to_update_id, '_variation_description', wp_kses_post( $variation_description[$j] ));	
+					$this->pushmeta($variation_to_update_id, '_variation_description', $variation_description[$j] );
 
 					// Dates
 					if ( $date_from )
-						update_post_meta( $variation_to_update_id, '_sale_price_dates_from', strtotime( $date_from ) );
+                        $this->pushmeta( $variation_to_update_id, '_sale_price_dates_from', strtotime( $date_from ) );
 					else
-						update_post_meta( $variation_to_update_id, '_sale_price_dates_from', '' );
+                        $this->pushmeta( $variation_to_update_id, '_sale_price_dates_from', '' );
 
 					if ( $date_to )
-						update_post_meta( $variation_to_update_id, '_sale_price_dates_to', strtotime( $date_to ) );
+                        $this->pushmeta( $variation_to_update_id, '_sale_price_dates_to', strtotime( $date_to ) );
 					else
-						update_post_meta( $variation_to_update_id, '_sale_price_dates_to', '' );
+                        $this->pushmeta( $variation_to_update_id, '_sale_price_dates_to', '' );
 
 					if ( $date_to && ! $date_from )
-						update_post_meta( $variation_to_update_id, '_sale_price_dates_from', strtotime( 'NOW', current_time( 'timestamp' ) ) );
+                        $this->pushmeta( $variation_to_update_id, '_sale_price_dates_from', strtotime( 'NOW', current_time( 'timestamp' ) ) );
 
 					// Update price if on sale
 					if ( $variation_sale_price[$j] == '' )
@@ -2607,7 +2778,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 					}
 
 					if ( $variation_product_tax_class[ $j ] !== 'parent' )
-						update_post_meta( $variation_to_update_id, '_tax_class', sanitize_text_field( $variation_product_tax_class[ $j ] ) );
+						update_post_meta( $variation_to_update_id, '_tax_class', strtolower($variation_product_tax_class[ $j ]) == 'standard' ? '' : sanitize_text_field( $variation_product_tax_class[ $j ] ) );
 					else
 						delete_post_meta( $variation_to_update_id, '_tax_class' );
 
@@ -3050,7 +3221,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 								if (intval($attr_data['is_create_taxonomy_terms'][0])){
                                     $attr_name = $this->create_taxonomy($attr_name, $logger);
                                 }
-																			 	
+
 								if ( isset($values) and taxonomy_exists( wc_attribute_taxonomy_name( $attr_name ) ) ) {				 							 		
 
 								 	// Remove empty items in the array
@@ -3100,7 +3271,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 
 						 		if ( $values ) {
 							 		// Add attribute to array, but don't set values
-							 		$parent_attributes[ wc_attribute_taxonomy_name( $attr_name ) ] = array(
+							 		$parent_attributes[ sanitize_title(wc_attribute_taxonomy_name( $attr_name )) ] = array(
 								 		'name' 			=> wc_attribute_taxonomy_name( $attr_name ),
 								 		'value' 		=> '',
 								 		'position' 		=> $attribute_position,
@@ -3164,62 +3335,36 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 		}
 	}
 
+    protected function generate_product_title( $product ) {
+        $attributes = (array) $product->get_attributes();
+
+        // Don't include attributes if the product has 3+ attributes.
+        $should_include_attributes = count( $attributes ) < 3;
+
+        // Don't include attributes if an attribute name has 2+ words.
+        if ( $should_include_attributes ) {
+            foreach ( $attributes as $name => $value ) {
+                if ( false !== strpos( $name, '-' ) ) {
+                    $should_include_attributes = false;
+                    break;
+                }
+            }
+        }
+
+        $should_include_attributes = apply_filters( 'woocommerce_product_variation_title_include_attributes', $should_include_attributes, $product );
+        $separator                 = apply_filters( 'woocommerce_product_variation_title_attributes_separator', ' - ', $product );
+        $title_base                = get_post_field( 'post_title', $product->get_parent_id() );
+        $title_suffix              = $should_include_attributes ? wc_get_formatted_variation( $product, true, false ) : '';
+
+        return apply_filters( 'woocommerce_product_variation_title', rtrim( $title_base . $separator . $title_suffix, $separator ), $product, $title_base, $title_suffix );
+    }
+
 	public function after_save_post( $importData )
 	{
-		$postRecord = new PMXI_Post_Record();
-						
-		$postRecord->clear();
-							
-		// find corresponding article among previously imported
-		$postRecord->getBy(array(
-			'unique_key' => 'Variation ' . get_post_meta($importData['pid'], '_sku', true),
-			'import_id'  => $this->import->id,
-		));
-		
-		$pid = ( ! $postRecord->isEmpty() ) ? $postRecord->post_id : false;
 
-		if ( $pid )
-		{
-			// Get all existing meta keys of parent product
-			$existing_meta_keys = array(); 
-
-			$table = _get_meta_table('post');
-
-			$post_meta_infos = $this->wpdb->get_results("SELECT meta_key, meta_value FROM $table WHERE post_id = " . $importData['pid'] );
-		
-			if ( ! empty($post_meta_infos) and ! empty($this->import->options['custom_name']) )
-			{
-				foreach ($post_meta_infos as $meta_info) {
-					
-					if ( in_array($meta_info->meta_key, $this->import->options['custom_name']) )
-					{
-						$this->pushmeta($pid, $meta_info->meta_key, maybe_unserialize($meta_info->meta_value));
-					}					
-				}
-			}
-						
-			// save thumbnail
-			$post_thumbnail_id = get_post_thumbnail_id( $importData['pid'] );
-
-			if ($post_thumbnail_id)
-			{
-				set_post_thumbnail($pid, $post_thumbnail_id);
-			}
-
-			if ($this->import->options['put_variation_image_to_gallery'] and $post_thumbnail_id)
-			{								
-				do_action('pmxi_gallery_image', $pid, $post_thumbnail_id, false);										
-			}	
-
-			if ($this->import->options['create_draft'] == 'yes' and $p->post_status == 'draft')
-			{
-				$this->wpdb->update( $this->wpdb->posts, array('post_status' => 'publish' ), array('ID' => $pid));				
-			}							
-		} 
-				
 		$table = $this->wpdb->posts;
 
-		$p = $this->wpdb->get_row($this->wpdb->prepare("SELECT * FROM $table WHERE ID = %d;", $importData['pid']));			
+		$p = $this->wpdb->get_row($this->wpdb->prepare("SELECT * FROM $table WHERE ID = %d;", $importData['pid']));
 
 		if ($p)
 		{
@@ -3229,21 +3374,18 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			{
 				if ($this->import->options['create_draft'] == 'yes' and $p->post_status == 'draft')
 				{
-					$this->wpdb->update( $this->wpdb->posts, array('post_status' => 'publish' ), array('ID' => $importData['pid']));				
-				}	
+					$this->wpdb->update( $this->wpdb->posts, array('post_status' => 'publish' ), array('ID' => $importData['pid']));
+				}
 
-        $this->wpdb->update( $this->wpdb->posts, array( 'post_excerpt' => '', 'post_name' => sanitize_title($p->post_title), 'guid' => '' ), array('ID' => $importData['pid']));
-        $variation_taxonomies = array('post_format', 'product_type', 'product_shipping_class');
-        $variation_taxonomies = apply_filters('wp_all_import_variation_taxonomies', $variation_taxonomies);
-        $post_taxonomies = array_diff_key(get_taxonomies_by_object_type(array('product'), 'object'), array_flip($variation_taxonomies));
-        if ( ! empty($post_taxonomies) ):
-          foreach ($post_taxonomies as $ctx):
-            if ( strpos($ctx->name, "pa_") === 0 ) continue;
-            $this->associate_terms($importData['pid'], false, $ctx->name);
-          endforeach;
-        endif;
+                $this->wpdb->update( $this->wpdb->posts, array( 'post_excerpt' => '', 'post_name' => sanitize_title($p->post_title), 'guid' => '' ), array('ID' => $importData['pid']));
+                if ( ! empty($this->product_taxonomies) ):
+                  foreach ($this->product_taxonomies as $ctx):
+                    if ( strpos($ctx->name, "pa_") === 0 ) continue;
+                    $this->associate_terms($importData['pid'], NULL, $ctx->name);
+                  endforeach;
+                endif;
 
-        delete_post_meta($importData['pid'], '_v_product_manage_stock');
+                delete_post_meta($importData['pid'], '_v_product_manage_stock');
 				delete_post_meta($importData['pid'], '_v_stock');
 				delete_post_meta($importData['pid'], '_v_stock_status');
 				delete_post_meta($importData['pid'], '_v_variation_enabled');
@@ -3251,10 +3393,20 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 				delete_post_meta($importData['pid'], '_v_shipping_class');
 
 				$post_to_update_id = $p->post_parent;
-			}			
+			}
 			else
 			{
-				update_post_meta( $importData['pid'], '_product_version', WC_VERSION );
+				// unset attributes
+                $product_attributes = get_post_meta( $importData['pid'], '_product_attributes', true );
+                if ( ! empty($this->product_taxonomies) ):
+                    foreach ($this->product_taxonomies as $ctx):
+                        if ( strpos($ctx->name, "pa_") === 0 && ! isset($product_attributes[strtolower(urlencode($ctx->name))]) ){
+                            $this->associate_terms($importData['pid'], NULL, $ctx->name);
+                        }
+                    endforeach;
+                endif;
+
+			    update_post_meta( $importData['pid'], '_product_version', WC_VERSION );
 				$post_to_update_id = $importData['pid'];
 
 				// [associate linked products]
@@ -3262,37 +3414,102 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 
 				if ( ! empty($wp_all_import_not_linked_products) )
 				{
-					$post_to_update_sku = get_post_meta($post_to_update_id, '_sku', true);					
+					$post_to_update_sku = get_post_meta($post_to_update_id, '_sku', true);
 
-					foreach ($wp_all_import_not_linked_products as $product) 
-					{						
+					foreach ($wp_all_import_not_linked_products as $product)
+					{
 						if ( $product['pid'] != $post_to_update_id && ! empty($product['not_linked_products']) )
-						{																				
-							if ( in_array($post_to_update_sku, $product['not_linked_products']) 
-									or in_array( (string) $post_to_update_id, $product['not_linked_products']) 
-										or in_array($p->post_title, $product['not_linked_products']) 
-											or in_array($p->post_name, $product['not_linked_products']) 
+						{
+							if ( in_array($post_to_update_sku, $product['not_linked_products'])
+									or in_array( (string) $post_to_update_id, $product['not_linked_products'])
+										or in_array($p->post_title, $product['not_linked_products'])
+											or in_array($p->post_name, $product['not_linked_products'])
 											)
-							{								
-								$linked_products = get_post_meta($product['pid'], $product['type'], true);								
-								
+							{
+								$linked_products = get_post_meta($product['pid'], $product['type'], true);
+
 								if (empty($linked_products)) $linked_products = array();
 
 								if ( ! in_array($post_to_update_id, $linked_products))
 								{
 									$linked_products[] = $post_to_update_id;
 
-									$this->logger and call_user_func($this->logger, sprintf(__('Added to %s list of product ID %d.', 'wpai_woocommerce_addon_plugin'), $product['type'] == '_upsell_ids' ? 'Up-Sells' : 'Cross-Sells', $product['pid']) );		
+									$this->logger and call_user_func($this->logger, sprintf(__('Added to %s list of product ID %d.', 'wpai_woocommerce_addon_plugin'), $product['type'] == '_upsell_ids' ? 'Up-Sells' : 'Cross-Sells', $product['pid']) );
 
 									update_post_meta($product['pid'], $product['type'], $linked_products);
-									
+
 								}
-							}							
+							}
 						}
 					}
 				}
 				// [\associate linked products]
-			}			
+			}
+
+			// update first variation
+            if ($post_to_update_id){
+
+                $postRecord = new PMXI_Post_Record();
+
+                $postRecord->clear();
+
+                // find corresponding article among previously imported
+                $postRecord->getBy(array(
+                    'unique_key' => 'Variation ' . get_post_meta($post_to_update_id, '_sku', true),
+                    'import_id'  => $this->import->id,
+                ));
+
+                $pid = ( ! $postRecord->isEmpty() ) ? $postRecord->post_id : false;
+
+                if ( $pid )
+                {
+                    // check is variation already processed
+                    $is_variation_updated = get_post_meta($pid, '_variation_updated', true);
+
+                    if ( empty($is_variation_updated) ){
+
+                        // Get all existing meta keys of parent product
+                        $existing_meta_keys = array();
+
+                        $table = _get_meta_table('post');
+
+                        $post_meta_infos = $this->wpdb->get_results("SELECT meta_key, meta_value FROM $table WHERE post_id = " . $post_to_update_id );
+
+                        if ( ! empty($post_meta_infos) and ! empty($this->import->options['custom_name']) )
+                        {
+                            foreach ($post_meta_infos as $meta_info) {
+
+                                if ( in_array($meta_info->meta_key, $this->import->options['custom_name']) )
+                                {
+                                    $this->pushmeta($pid, $meta_info->meta_key, maybe_unserialize($meta_info->meta_value));
+                                }
+                            }
+                        }
+
+                        // save thumbnail
+                        $post_thumbnail_id = get_post_thumbnail_id( $post_to_update_id );
+
+                        if ($post_thumbnail_id)
+                        {
+                            set_post_thumbnail($pid, $post_thumbnail_id);
+                        }
+
+                        if ($this->import->options['put_variation_image_to_gallery'] and $post_thumbnail_id)
+                        {
+                            do_action('pmxi_gallery_image', $pid, $post_thumbnail_id, false);
+                        }
+
+                        if ($this->import->options['create_draft'] == 'yes')
+                        {
+                            $this->wpdb->update( $this->wpdb->posts, array('post_status' => 'publish' ), array('ID' => $pid));
+                        }
+
+                        update_post_meta($pid, '_variation_updated', 1);
+
+                        wc_delete_product_transients($pid);
+                    }
+                }
+            }
 
 			// [update product gallery]
 			$tmp_gallery = explode(",", get_post_meta( $post_to_update_id, '_product_image_gallery_tmp', true));
@@ -3302,62 +3519,64 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 				if ( ! empty($tmp_gallery))
 				{
 					$gallery = array_unique(array_merge($gallery, $tmp_gallery));
-				}					
+				}
 			}
-			elseif ( ! empty($tmp_gallery))		
+			elseif ( ! empty($tmp_gallery))
 			{
 				$gallery = $tmp_gallery;
 			}
-      $this->pushmeta( $post_to_update_id, '_product_image_gallery', implode(",", $gallery) );
+            $this->pushmeta( $post_to_update_id, '_product_image_gallery', implode(",", $gallery) );
 			// [\update product gallery]
 
-			wc_delete_product_transients($importData['pid']);		
+			wc_delete_product_transients($importData['pid']);
 		}
+
 	}
 
-	protected function associate_terms($pid, $assign_taxes, $tx_name, $logger = false){					
+	protected function associate_terms($pid, $assign_taxes, $tx_name, $logger = false){
 
-		$terms = wp_get_object_terms( $pid, $tx_name );
-		$term_ids = array();        
+        $terms = wp_get_object_terms( $pid, $tx_name );
+        $term_ids = array();
 
-		$assign_taxes = (is_array($assign_taxes)) ? array_filter($assign_taxes) : false;   
+        $assign_taxes = (is_array($assign_taxes)) ? array_filter($assign_taxes) : false;
 
-		if ( ! empty($terms) ){
-			if ( ! is_wp_error( $terms ) ) {				
-				foreach ($terms as $term_info) {
-					$term_ids[] = $term_info->term_taxonomy_id;
-					delete_woocommerce_term_meta( $term_info->term_taxonomy_id, 'product_ids' );
-					$this->wpdb->query(  $this->wpdb->prepare("UPDATE {$this->wpdb->term_taxonomy} SET count = count - 1 WHERE term_taxonomy_id = %d", $term_info->term_taxonomy_id) );
-				}				
-				$in_tt_ids = "'" . implode( "', '", $term_ids ) . "'";				
-				$this->wpdb->query( $this->wpdb->prepare( "DELETE FROM {$this->wpdb->term_relationships} WHERE object_id = %d AND term_taxonomy_id IN ($in_tt_ids)", $pid ) );
-				delete_transient( 'wc_ln_count_' . md5( sanitize_key( $tx_name ) . sanitize_key( $term_info->term_taxonomy_id ) ) );				
-				clean_term_cache($term_ids, '', false);
-			}
-		}
-
-		if (empty($assign_taxes)){ 		
-			return;
-		}		
-
-		$values = array();
-        $term_order = 0;
-        foreach ( $assign_taxes as $tt ){
-          $values[] = $this->wpdb->prepare( "(%d, %d, %d)", $pid, $tt, ++$term_order);
-          $this->wpdb->query( "UPDATE {$this->wpdb->term_taxonomy} SET count = count + 1 WHERE term_taxonomy_id = $tt" );
-          delete_transient( 'wc_ln_count_' . md5( sanitize_key( $tx_name ) . sanitize_key( $tt ) ) );
-          delete_woocommerce_term_meta( $tt, 'product_ids' );
+        if ( ! empty($terms) ){
+            if ( ! is_wp_error( $terms ) ) {
+                foreach ($terms as $term_info) {
+                    $term_ids[] = $term_info->term_taxonomy_id;
+                    $this->wpdb->query(  $this->wpdb->prepare("UPDATE {$this->wpdb->term_taxonomy} SET count = count - 1 WHERE term_taxonomy_id = %d", $term_info->term_taxonomy_id) );
+                }
+                $in_tt_ids = "'" . implode( "', '", $term_ids ) . "'";
+                $this->wpdb->query( $this->wpdb->prepare( "DELETE FROM {$this->wpdb->term_relationships} WHERE object_id = %d AND term_taxonomy_id IN ($in_tt_ids)", $pid ) );
+            }
         }
-		                					
 
-		if ( $values ){						
-			if ( false === $this->wpdb->query( "INSERT INTO {$this->wpdb->term_relationships} (object_id, term_taxonomy_id, term_order) VALUES " . join( ',', $values ) . " ON DUPLICATE KEY UPDATE term_order = VALUES(term_order)" ) ){
-				$logger and call_user_func($logger, __('<b>ERROR</b> Could not insert term relationship into the database', 'wpai_woocommerce_addon_plugin') . ': '. $this->wpdb->last_error);				
-			}
-		}       		                 		
+        if (empty($assign_taxes)) return;
 
-		wp_cache_delete( $pid, $tx_name . '_relationships' ); 		
-	}
+        // foreach ($assign_taxes as $tt) {
+        // 	$this->wpdb->insert( $this->wpdb->term_relationships, array( 'object_id' => $pid, 'term_taxonomy_id' => $tt ) );
+        // 	$this->wpdb->query( "UPDATE {$this->wpdb->term_taxonomy} SET count = count + 1 WHERE term_taxonomy_id = $tt" );
+        // }
+
+        $values = array();
+        $term_order = 0;
+        foreach ( $assign_taxes as $tt )
+        {
+            do_action('wp_all_import_associate_term', $pid, $tt, $tx_name);
+            $values[] = $this->wpdb->prepare( "(%d, %d, %d)", $pid, $tt, ++$term_order);
+            $this->wpdb->query( "UPDATE {$this->wpdb->term_taxonomy} SET count = count + 1 WHERE term_taxonomy_id = $tt" );
+        }
+
+
+        if ( $values ){
+            if ( false === $this->wpdb->query( "INSERT INTO {$this->wpdb->term_relationships} (object_id, term_taxonomy_id, term_order) VALUES " . join( ',', $values ) . " ON DUPLICATE KEY UPDATE term_order = VALUES(term_order)" ) ){
+                $logger and call_user_func($logger, __('<b>ERROR</b> Could not insert term relationship into the database', 'wp_all_import_plugin') . ': '. $this->wpdb->last_error);
+            }
+        }
+
+        wp_cache_delete( $pid, $tx_name . '_relationships' );
+
+    }
 
 	protected function duplicate_post_meta( $new_id, $id ) {
 
@@ -3369,11 +3588,20 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			$sql_query_sel = array();
 			$sql_query = "INSERT INTO $table (post_id, meta_key, meta_value) ";
 			foreach ($post_meta_infos as $meta_info) {															
-				if (strpos($meta_info->meta_key, '_min') === false and strpos($meta_info->meta_key, '_max') === false and ! in_array($meta_info->meta_key, array('_default_attributes', '_price'))) 
+				if (strpos($meta_info->meta_key, '_min') === false and strpos($meta_info->meta_key, '_max') === false and ! in_array($meta_info->meta_key, array('_default_attributes', '_price', '_first_variation_sku', '_product_version')))
 				{
-					$this->pushmeta($new_id, $meta_info->meta_key, maybe_unserialize($meta_info->meta_value));						
-				}															
+                    $cf_value = apply_filters('pmxi_custom_field', maybe_unserialize($meta_info->meta_value), $new_id, $meta_info->meta_key, $post_meta_infos, $this->import->id);
+					$this->pushmeta($new_id, $meta_info->meta_key, $cf_value);
+				}
 			}
+			$_first_variation_sku = get_post_meta($id, '_first_variation_sku', true);
+            if (!empty($_first_variation_sku)){
+                $this->pushmeta($new_id, '_sku', $_first_variation_sku);
+                delete_post_meta($id, '_first_variation_sku');
+            }
+            delete_post_meta($new_id, '_product_version');
+            delete_post_meta($new_id, '_variation_updated');
+
 			if (empty($this->articleData['ID']) or $this->is_update_cf('_price'))
 			{
 				$sale_price    = get_post_meta($id, '_sale_price', true);
@@ -3416,24 +3644,42 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 
 		$variations = array();
 
-		$_product = get_product( $post_id, array( 'product_type' => 'variable' ) );
+		$_product = WC()->product_factory->get_product($post_id);
 
 		$v = $_product->get_attributes();		
 
 		// Put variation attributes into an array
-		foreach ( $_product->get_attributes() as $attribute ) {			
+        wp_cache_flush();
 
-			if ( ! $attribute['is_variation'] ) {
-				continue;
-			}
+        /** @var WC_Product_Attribute $attribute */
+        foreach ( $_product->get_attributes() as $attribute ) {
 
-			$attribute_field_name = 'attribute_' . sanitize_title( $attribute['name'] );
+            if ( $attribute instanceof WC_Product_Attribute){
+                $attribute = array(
+                    'name' => $attribute->get_name(),
+                    'is_taxonomy' => $attribute->is_taxonomy(),
+                    'is_variation' => $attribute->get_variation(),
+                    'value' => wc_implode_text_attributes( $attribute->get_options() )
+                );
+            }
 
-			if ( $attribute['is_taxonomy'] ) {
-				$options = wc_get_product_terms( $post_id, $attribute['name'], array( 'fields' => 'slugs' ) );
-			} else {
-				$options = explode( '|', $attribute['value'] );
-			}
+            if ( ! $attribute['is_variation'] ) {
+                continue;
+            }
+
+            $attribute_field_name = 'attribute_' . sanitize_title( $attribute['name'] );
+
+            if ( $attribute['is_taxonomy'] ) {
+                $options = array();
+                $options_arr = wc_get_product_terms( $post_id, $attribute['name'], array( 'orderby' => 'parent' ) );
+                if (!empty($options_arr)){
+                    foreach ($options_arr as $key => $value) {
+                        if (!in_array($value->slug, $options)) $options[] = $value->slug;
+                    }
+                }
+            } else {
+                $options = explode( '|', $attribute['value'] );
+            }
 
 			$options = array_map( 'trim', $options );
 
@@ -3447,9 +3693,10 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
         $available_variations = array();
 
         foreach( $_product->get_children() as $child_id ) {
-            $child = $_product->get_child( $child_id );
 
-              if ( ! empty( $child->variation_id ) ) {
+            $child = wc_get_product( $child_id );
+
+            if ( ! empty( $child->variation_id ) ) {
 
                 $postRecord = new PMXI_Post_Record();
                 $postRecord->getBy(array(
@@ -3458,20 +3705,20 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
                   'unique_key' => 'Variation ' . $child->variation_id . ' of ' . $post_id,
                 ));
                 if ( ! $postRecord->isEmpty() ){
-              $postRecord->set(array('iteration' => $iteration))->update();
-            }
+                    $postRecord->set(array('iteration' => $iteration))->update();
+                }
 
-            $variation_attributes = $child->get_variation_attributes();
+                $variation_attributes = $child->get_variation_attributes();
 
-            foreach ($variation_attributes as $key => $value) {
-                $variation_attributes[$key] = sanitize_title($value);
-            }
+                foreach ($variation_attributes as $key => $value) {
+                    $variation_attributes[$key] = sanitize_title($value);
+                }
 
-            $available_variations[] = $variation_attributes;
+                $available_variations[] = $variation_attributes;
 
-            update_post_meta( $child->variation_id, '_regular_price', get_post_meta( $post_id, '_regular_price', true ) );
-            update_post_meta( $child->variation_id, '_sale_price', get_post_meta( $post_id, '_sale_price', true ) );
-            if ( class_exists('woocommerce_wholesale_pricing') ) update_post_meta( $child->variation_id, 'pmxi_wholesale_price', get_post_meta( $post_id, 'pmxi_wholesale_price', true ) );
+                update_post_meta( $child->variation_id, '_regular_price', get_post_meta( $post_id, '_regular_price', true ) );
+                update_post_meta( $child->variation_id, '_sale_price', get_post_meta( $post_id, '_sale_price', true ) );
+                if ( class_exists('woocommerce_wholesale_pricing') ) update_post_meta( $child->variation_id, 'pmxi_wholesale_price', get_post_meta( $post_id, 'pmxi_wholesale_price', true ) );
                 update_post_meta( $child->variation_id, '_sale_price_dates_from', get_post_meta( $post_id, '_sale_price_dates_from', true ) );
                 update_post_meta( $child->variation_id, '_sale_price_dates_to', get_post_meta( $post_id, '_sale_price_dates_to', true ) );
                 update_post_meta( $child->variation_id, '_price', get_post_meta( $post_id, '_price', true ) );
@@ -3492,7 +3739,7 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			'post_parent' => $post_id,
 			'post_type' => 'product_variation'
 		);
-		
+
 		$variation_ids = array();
 		$added = 0;
 		$possible_variations = $this->array_cartesian( $variations );		
@@ -3677,12 +3924,13 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 
 					$this->wpdb->insert(
 						$this->wpdb->prefix . 'woocommerce_attribute_taxonomies',
-						array(
-							'attribute_label'   => $attribute_label,
-							'attribute_name'    => $attribute_name,
-							'attribute_type'    => $attribute_type,
-							'attribute_orderby' => $attribute_orderby,
-						)
+                        array(
+                            'attribute_label'   => $attribute_label,
+                            'attribute_name'    => $attribute_name,
+                            'attribute_type'    => $attribute_type,
+                            'attribute_orderby' => $attribute_orderby,
+                            'attribute_public'  => 1
+                        )
 					);												
 
 					register_taxonomy( $domain,
@@ -3698,9 +3946,8 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 					delete_transient( 'wc_attribute_taxonomies' );
 					$attribute_taxonomies = $this->wpdb->get_results( "SELECT * FROM " . $this->wpdb->prefix . "woocommerce_attribute_taxonomies" );
 					set_transient( 'wc_attribute_taxonomies', $attribute_taxonomies );
-					apply_filters( 'woocommerce_attribute_taxonomies', $attribute_taxonomies );
 
-					$logger and call_user_func($logger, sprintf(__('- <b>CREATED</b>: Taxonomy attribute “%s” have been successfully created.', 'wpai_woocommerce_addon_plugin'), wc_attribute_taxonomy_name( $attribute_name )));	
+					$logger and call_user_func($logger, sprintf(__('- <b>CREATED</b>: Taxonomy attribute “%s” have been successfully created.', 'wpai_woocommerce_addon_plugin'), wc_attribute_taxonomy_name( $attribute_name )));
 
 				}
 				else{
@@ -3727,6 +3974,8 @@ class XmlImportWooCommerceProduct extends XmlImportWooCommerce{
 			}
 
 			$this->pmwi_update_prices( $post_parent );
+
+            do_action('wp_all_import_make_product_simple', $post_parent, $this->import->id);
 		}		
 	}
 

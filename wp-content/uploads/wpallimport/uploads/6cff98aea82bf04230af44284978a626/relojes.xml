@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<codigo><![CDATA[GRAGON-Fer]]></codigo>
+		<nombre><![CDATA[Casio Digital de pared]]></nombre>
+		<descrpcincorta><![CDATA[Casio Metal  Dama de Pared]]></descrpcincorta>
+		<descripcinlarga><![CDATA[Casio Digital Dorado de Pared]]></descripcinlarga>
+		<categora><![CDATA[Reloj]]></categora>
+		<marcafabricante><![CDATA[Casio]]></marcafabricante>
+		<subcategora1><![CDATA[Dama]]></subcategora1>
+		<subcategora1_2><![CDATA[Resistente al Agua]]></subcategora1_2>
+		<imagen><![CDATA[prueba.jpg]]></imagen>
+		<material><![CDATA[Acero Blanco]]></material>
+		<colorcartula><![CDATA[Digital con Luz en la Pantalla]]></colorcartula>
+		<color><![CDATA[Dorado]]></color>
+		<tallas><![CDATA[]]></tallas>
+		<contenido><![CDATA[Reloj y Estuche]]></contenido>
+		<funcionadicional><![CDATA[]]></funcionadicional>
+		<lineas><![CDATA[]]></lineas>
+		<pantalla><![CDATA[]]></pantalla>
+		<proteccin><![CDATA[]]></proteccin>
+		<precio><![CDATA[1500]]></precio>
+	</node>
+</data>

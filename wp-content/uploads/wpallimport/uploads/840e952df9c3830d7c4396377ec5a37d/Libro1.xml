@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<codigo><![CDATA[M40A]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[FEMA indicador VCA/ACA M40A ]]></nombre>
+		<descripcioncorta><![CDATA[indicador VCA/ACA FEMA MOD: M40A]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero digital]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperimetro Digital CA]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R1 1 RELEVADOR|R2 2 RELEV |R4 4 RELEV|R6 6 RELEV ]]></salidarelevador>
+		<opcionessalida><![CDATA[AO SALIDA ANALOGICA |RTU MODBUS|S4 RS485 |S2 RS232 | T1 1 TRANSISTOR | SSR 1 CONTROL SSR | ]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[M40AR1]]></codigo>
+		<hijo><![CDATA[M40A]]></hijo>
+		<nombre><![CDATA[FEMA indicador VCA/ACA M40A ]]></nombre>
+		<descripcioncorta><![CDATA[indicador VCA/ACA FEMA MOD: M40A]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero digital]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperimetro Digital CA]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R1 1 RELEVADOR]]></salidarelevador>
+		<opcionessalida><![CDATA[AO SALIDA ANALOGICA]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R1 1 RELEVADOR]]></salidarelevador>
+		<opcionessalida><![CDATA[RTU MODBUS]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R1 1 RELEVADOR]]></salidarelevador>
+		<opcionessalida><![CDATA[S4 RS485]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R1 1 RELEVADOR]]></salidarelevador>
+		<opcionessalida><![CDATA[S2 RS232]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R1 1 RELEVADOR]]></salidarelevador>
+		<opcionessalida><![CDATA[T1 1 TRANSISTOR]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R1 1 RELEVADOR]]></salidarelevador>
+		<opcionessalida><![CDATA[SSR 1 CONTROL SSR ]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[M40AR2]]></codigo>
+		<hijo><![CDATA[M40A]]></hijo>
+		<nombre><![CDATA[FEMA indicador VCA/ACA M40A ]]></nombre>
+		<descripcioncorta><![CDATA[indicador VCA/ACA FEMA MOD: M40A]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero digital]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperimetro Digital CA]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R2 2 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[AO SALIDA ANALOGICA]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R2 2 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[RTU MODBUS]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R2 2 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[S4 RS485]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R2 2 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[S2 RS232]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R2 2 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[T1 1 TRANSISTOR]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R2 2 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[SSR 1 CONTROL SSR ]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[M40AR4]]></codigo>
+		<hijo><![CDATA[M40A]]></hijo>
+		<nombre><![CDATA[FEMA indicador VCA/ACA M40A ]]></nombre>
+		<descripcioncorta><![CDATA[indicador VCA/ACA FEMA MOD: M40A]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero digital]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperimetro Digital CA]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R4 4 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[AO SALIDA ANALOGICA]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R4 4 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[RTU MODBUS]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R4 4 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[S4 RS485]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R4 4 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[S2 RS232]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R4 4 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[T1 1 TRANSISTOR]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R4 4 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[SSR 1 CONTROL SSR ]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[M40AR6]]></codigo>
+		<hijo><![CDATA[M40A]]></hijo>
+		<nombre><![CDATA[FEMA indicador VCA/ACA M40A ]]></nombre>
+		<descripcioncorta><![CDATA[indicador VCA/ACA FEMA MOD: M40A]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero digital]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperimetro Digital CA]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R6 6 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[AO SALIDA ANALOGICA]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R6 6 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[RTU MODBUS]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R6 6 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[S4 RS485]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R6 6 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[S2 RS232]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R6 6 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[T1 1 TRANSISTOR]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[]]></nombre>
+		<descripcioncorta><![CDATA[]]></descripcioncorta>
+		<descripcionlarga><![CDATA[]]></descripcionlarga>
+		<categoria><![CDATA[]]></categoria>
+		<subsubcategoria1><![CDATA[]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[R6 6 RELEV]]></salidarelevador>
+		<opcionessalida><![CDATA[SSR 1 CONTROL SSR ]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[]]></relacionados>
+		<imagen><![CDATA[M40A.JPG]]></imagen>
+	</node>
+</data>

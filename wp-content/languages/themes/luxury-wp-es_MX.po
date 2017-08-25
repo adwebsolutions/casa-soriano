@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Luxury\n"
 "POT-Creation-Date: 2017-07-03 00:54-0400\n"
-"PO-Revision-Date: 2017-07-03 00:59-0400\n"
+"PO-Revision-Date: 2017-08-25 11:29-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: 404.php:11
 msgid "It looks like you are lost! Try searching here"
-msgstr ""
+msgstr "¡Pareces que estás perdido! Intenta buscando aquí"
 
 #: author-bio.php:9
 #, php-format
@@ -84,19 +84,23 @@ msgstr ""
 
 #: content-none.php:3
 msgid "Nothing Found"
-msgstr ""
+msgstr "No hay resultados"
 
 #: content-none.php:8
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with "
 "different keywords."
 msgstr ""
+"Lo sentimos, pero no hay entradas que concuerden con los términos de "
+"búsqueda. Por favor, intenta con otras palabras claves..."
 
 #: content-none.php:13
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Parece que no podemos encontrar lo que estás buscando. Quizás realizando una "
+"búsqueda pueda ayudar."
 
 #: footer.php:14
 msgid "SUBSCRIBE US."
@@ -202,7 +206,7 @@ msgstr ""
 #: header/center-logo.php:232 header/center.php:227 header/classic-right.php:85
 #: header/classic.php:216 header/market.php:222 header/toggle-offcanvas.php:124
 msgid "Close"
-msgstr ""
+msgstr "Cerrar"
 
 #: header/market.php:131 header/offcanvas.php:100 includes/functions.php:1147
 #: includes/functions.php:2135
@@ -361,7 +365,7 @@ msgstr ""
 
 #: includes/admin/functions.php:8
 msgid "Nothing Found..."
-msgstr ""
+msgstr "No hay resultados"
 
 #: includes/admin/functions.php:15
 msgid "Unable to load MailChimp lists, check your API Key."
@@ -2624,11 +2628,11 @@ msgstr ""
 #: includes/breadcrumb.php:133 includes/functions.php:1148 searchform.php:2
 #: searchform.php:5
 msgid "Search"
-msgstr ""
+msgstr "Búsqueda"
 
 #: includes/breadcrumb.php:137
 msgid "Page Not Found"
-msgstr ""
+msgstr "Página No Encontrada"
 
 #: includes/breadcrumb.php:182
 msgid "Split"
@@ -2997,7 +3001,7 @@ msgstr ""
 
 #: includes/dhwc-brand/includes/dhwc-widget-brands.php:161
 msgid "No product brands exist."
-msgstr ""
+msgstr "No existen marcas de productos."
 
 #: includes/dhwc-brand/includes/dhwc-widget-brands.php:190
 #: includes/dhwc-brand/includes/dhwc-widget-layered-nav.php:306
@@ -3280,23 +3284,23 @@ msgstr ""
 
 #: includes/functions.php:1328
 msgid "search results for"
-msgstr ""
+msgstr "resultados de búsqueda para"
 
 #: includes/functions.php:1332
 msgid "search result for"
-msgstr ""
+msgstr "resultados de búsqueda para"
 
 #: includes/functions.php:1339
 msgid "Search results for"
-msgstr ""
+msgstr "Resultados de búsqueda para"
 
 #: includes/functions.php:1343
 msgid "To search the site please enter a valid term"
-msgstr ""
+msgstr "Para Buscar en el sitio, por favor, entre un término válido"
 
 #: includes/functions.php:1371
 msgid "404 - Page not found"
-msgstr ""
+msgstr "404 - Página no encontrada"
 
 #: includes/functions.php:1379
 msgid "Page"
@@ -7230,7 +7234,7 @@ msgstr ""
 
 #: searchform.php:4
 msgid "Search something&hellip;"
-msgstr ""
+msgstr "Busca algo&hellip;"
 
 #: single.php:36
 msgid "Continue reading &hellip;"
@@ -7557,7 +7561,7 @@ msgstr ""
 
 #: woocommerce/global/breadcrumb.php:65
 msgid "Products brands &ldquo;"
-msgstr ""
+msgstr "Marca de productos &ldquo;"
 
 #: woocommerce/global/breadcrumb.php:70
 msgid "Products tagged &ldquo;"
@@ -7565,11 +7569,11 @@ msgstr ""
 
 #: woocommerce/global/breadcrumb.php:99 woocommerce/global/breadcrumb.php:197
 msgid "Search results for &ldquo;"
-msgstr ""
+msgstr "Resultados de búsqueda para &ldquo;"
 
 #: woocommerce/global/breadcrumb.php:155
 msgid "Error 404"
-msgstr ""
+msgstr "Error 404"
 
 #: woocommerce/global/breadcrumb.php:201
 msgid "Posts tagged &ldquo;"

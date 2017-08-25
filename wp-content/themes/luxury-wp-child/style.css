@@ -30,6 +30,9 @@ h1,h2,h3,h4,h5,h6 {
 .small {
     font-size: 12px !important;
 }
+.hightlight {
+	color: #0491bf;
+}
 /**/
 .esg-grid a.eg-quincy-element-1 {
     display: none;
@@ -69,8 +72,33 @@ h1,h2,h3,h4,h5,h6 {
 .navbar-default .navbar-nav .active > a, .navbar-default .navbar-nav .open > a, .primary-nav .dropdown-menu a:hover, .primary-nav > .megamenu > .dropdown-menu > li .dropdown-menu a:hover {
     color: #3e4095;
 }
-@media screen and (max-width: 900px){
-
+/**/
+.offcanvas-nav li.active > a, .offcanvas-nav li.open > a, .offcanvas-nav a:hover {
+    color: #3e4095;
+}
+.offcanvas-nav li.active > a::before, .offcanvas-nav li.open > a::before, .offcanvas-nav a:hover::before{
+    background: #3e4095;
+}
+@media screen and (max-width: 899px){
+    .header-type-market .navbar-header-left {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 900px)and (max-width: 1024px){
+    .navbar-brand {
+        display: block;
+        height: 74px;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        position: relative;
+        left: 50%;
+    }
+    .navbar-brand img {
+        max-height: 70px;
+        max-width: 90%;
+    }
 }
 .primary-nav > .megamenu > .dropdown-menu > li.mega-col-3 {
     width: 20%;
@@ -197,6 +225,20 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
     font-family: "Microsoft Sans Serif", sans-serif;
 }
+@media screen and (min-width: 900px)and (max-width: 1024px) {
+    .header-type-market .navbar-default .dh-menu {
+        padding: 0;
+    }
+    .header-type-market .dh-menu ~ .navbar-nav {
+        float: right;
+    }
+    .nav > li > a {
+        position: relative;
+        display: block;
+        padding: 12px;
+    }
+}
+
 /*main menu*/
 .primary-nav {
     font-family:"Microsoft Sans Serif", sans-serif;
@@ -398,6 +440,11 @@ h1,h2,h3,h4,h5,h6 {
 .tab-banner {
     margin-top: 15px;
 }
+@media all and (max-width: 767px){
+    .tab-banner {
+        display: none;
+    }
+}
 /*categorias tabs*/
 .categories-tab {
     margin-bottom: 35px;
@@ -461,7 +508,48 @@ h1,h2,h3,h4,h5,h6 {
     -moz-osx-font-smoothing: grayscale;
     speak: none;
 }
-
+/*call 1*/
+#call1 {
+	color: #ffffff;
+	overflow: hidden;
+}
+#call1 button.ubtn-normal {
+    padding: 0 15px;
+}
+@media all and (min-width: 768px) {
+    #call1 .vc_col-has-fill:before {
+        content: '';
+        position: absolute;
+        border-width: 170px 0px 0px 80px;
+        border-style: solid;
+        border-color: rgba(206, 206, 206, 0.7) transparent transparent transparent !important;
+        z-index: 3;
+        right: auto;
+        left: -80px;
+        top: 0;
+    }
+}
+#call1 .wpb_wrapper p {
+	font-size: 23px;
+	font-family: "Century Gothic",sans-serif;
+	line-height: 1em;
+	text-align: center;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #call1 .wpb_wrapper p {
+        font-size: 98%;
+        font-weight: 600;
+    }
+    #call1 .wpb_content_element {
+        margin-bottom: 15px;
+    }
+}
+#call1 .small, #call1  small {
+	font-size: 77%;
+}
+#call1 .ubtn-ctn-center  {
+	margin-bottom: 25px;
+}
 /*client slide*/
 .simple-light .esg-filterbutton, .simple-light .esg-navigationbutton, .simple-light .esg-sortbutton, .simple-light .esg-cartbutton a {
     background: rgb(5, 178, 233) !important;
@@ -628,6 +716,17 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 40px;
     width: 32px;
 }
+@media all and (max-width: 767px){
+    .caroufredsel .caroufredsel-wrap .caroufredsel-next, .caroufredsel .caroufredsel-wrap .caroufredsel-prev {
+        top: 20% !important;
+    }
+    .caroufredsel.product-slider .caroufredsel-prev {
+        left: 0 !important;
+    }
+    .caroufredsel .caroufredsel-wrap .caroufredsel-next {
+        right: 0 !important;
+    }
+}
 /*brands*/
 #product_brands .woocommerce .product-category h3 {
     display: none;
@@ -668,6 +767,9 @@ h1,h2,h3,h4,h5,h6 {
     background: #3E4095;
     line-height: 30px;
     border-color: #3E4095;
+}
+.contact-list a:hover {
+    color: #3e4095 !important;
 }
 div.wpcf7-validation-errors {
     font-size: 11px;
@@ -806,6 +908,9 @@ div.wpcf7-response-output {
 }
 .widget_product_categories .product-categories li a:hover, .widget_product_categories .product-categories li.current-cat > a {
     font-weight: normal;
+}
+.woocommerce.widget_product_categories ul.product-categories a:hover {
+    color: #3e4095;
 }
 .woocommerce.widget_product_categories ul.product-categories li ul.children li {
     padding-left: 0;

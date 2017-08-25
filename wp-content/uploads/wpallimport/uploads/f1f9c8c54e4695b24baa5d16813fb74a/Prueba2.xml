@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<codigo><![CDATA[AMP108]]></codigo>
+		<hijo><![CDATA[]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[FIMESA]]></marca>
+		<rango><![CDATA[5|10|15|20|25|30|50|100|150|200|600]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-5]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[5]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-10]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[10]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-15]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[15]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-20]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[20]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-25]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[25]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-30]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[30]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-50]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[50]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-100]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[100]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-150]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[150]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-200]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[200]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+	<node>
+		<codigo><![CDATA[AMP108-600]]></codigo>
+		<hijo><![CDATA[AMP108]]></hijo>
+		<nombre><![CDATA[FIMESA amperimetro 108]]></nombre>
+		<descripcioncorta><![CDATA[Amperimetro FIMESA MOD. 108]]></descripcioncorta>
+		<descripcionlarga><![CDATA[Amperimetro para tablero CD FIMESA MOD. 108.Dimensiones  61 x 61mm. Recomendando para uso en equipos donde la resistencia a golpes, vibraciones y cambios de temperatura tiene mayor importancia que la precision.Hasta  30 ACD es conexion directa]]></descripcionlarga>
+		<categoria><![CDATA[Medición]]></categoria>
+		<subsubcategoria1><![CDATA[Equipo para tablero analógico]]></subsubcategoria1>
+		<subsubcategoria2><![CDATA[Amperímetros Analógicos CD]]></subsubcategoria2>
+		<subsubcategoria3><![CDATA[]]></subsubcategoria3>
+		<subsubcategoria4><![CDATA[]]></subsubcategoria4>
+		<marca><![CDATA[]]></marca>
+		<rango><![CDATA[600]]></rango>
+		<amperaje><![CDATA[]]></amperaje>
+		<voltaje><![CDATA[]]></voltaje>
+		<polos><![CDATA[]]></polos>
+		<ohms><![CDATA[]]></ohms>
+		<watts><![CDATA[]]></watts>
+		<tamao><![CDATA[]]></tamao>
+		<salidarelevador><![CDATA[]]></salidarelevador>
+		<opcionessalida><![CDATA[]]></opcionessalida>
+		<caracteristica><![CDATA[]]></caracteristica>
+		<caracteristica2><![CDATA[]]></caracteristica2>
+		<caracteristica3><![CDATA[]]></caracteristica3>
+		<relacionados><![CDATA[SHUNTFW]]></relacionados>
+		<imagen><![CDATA[amp108.jpg|dimensiones 108118.jpg|dimensiones 108118-1.jpg]]></imagen>
+	</node>
+</data>

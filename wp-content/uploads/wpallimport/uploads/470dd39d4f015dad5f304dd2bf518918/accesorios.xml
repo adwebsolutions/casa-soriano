@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<codigo><![CDATA[FER-GRAGON]]></codigo>
+		<nombre><![CDATA[Tines]]></nombre>
+		<descrpcincorta><![CDATA[Tines Anti Ampollas]]></descrpcincorta>
+		<descripcinlarga><![CDATA[Ligeros, Autoajustables,Sin costuras]]></descripcinlarga>
+		<categora><![CDATA[Accesorio Deportivo]]></categora>
+		<marcafabricante><![CDATA[TOPTIME]]></marcafabricante>
+		<subcategora1><![CDATA[]]></subcategora1>
+		<subcategora1_2><![CDATA[Tines Anti Ampollas]]></subcategora1_2>
+		<imagen><![CDATA[prueba.jpg]]></imagen>
+		<material><![CDATA[Antiampollas ,Sin Costuras]]></material>
+		<colorcartula><![CDATA[]]></colorcartula>
+		<color><![CDATA[Negro con Rojo]]></color>
+		<tallas><![CDATA[Mediana Y Grande]]></tallas>
+		<contenido><![CDATA[Par de Tiines]]></contenido>
+		<funcionadicional><![CDATA[]]></funcionadicional>
+		<lineas><![CDATA[]]></lineas>
+		<pantalla><![CDATA[]]></pantalla>
+		<proteccin><![CDATA[]]></proteccin>
+		<precio><![CDATA[125]]></precio>
+	</node>
+</data>

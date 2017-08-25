@@ -1,5 +1,5 @@
 <div class="panel woocommerce_options_panel" id="general_product_data">
-	<div class="options_group hide_if_grouped">
+	<div class="options_group">
 		<p class="form-field">
 			<label><?php _e("SKU", "wpai_woocommerce_addon_plugin"); ?></label>
 			<input type="text" class="short" name="single_product_sku" style="" value="<?php echo esc_attr($post['single_product_sku']) ?>"/>			
@@ -128,7 +128,7 @@
 		</div>
 	</div-->
 
-	<div class="options_group">
+	<div class="options_group show_if_simple show_if_external show_if_variable">
 		
 			<p class="form-field wpallimport-radio-field">
 				<input type="radio" id="is_product_virtual_yes" class="switcher" name="is_product_virtual" value="yes" <?php echo 'yes' == $post['is_product_virtual'] ? 'checked="checked"': '' ?>/>
@@ -151,7 +151,7 @@
 			</div>
 		
 	</div>
-	<div class="options_group">
+	<div class="options_group show_if_simple show_if_external show_if_variable">
 		
 		<p class="form-field wpallimport-radio-field">
 			<input type="radio" id="is_product_downloadable_yes" class="switcher" name="is_product_downloadable" value="yes" <?php echo 'yes' == $post['is_product_downloadable'] ? 'checked="checked"': '' ?>/>
@@ -247,13 +247,16 @@
 					$tax_classes = array_filter( array_map( 'trim', explode( "\n", get_option( 'woocommerce_tax_classes' ) ) ) );
 					$classes_options = array();
 					$classes_options[''] = __( 'Standard', 'wpai_woocommerce_addon_plugin' );
-		    		if ( $tax_classes )
-		    			foreach ( $tax_classes as $class )
-		    				$classes_options[ sanitize_title( $class ) ] = esc_html( $class );										
+
+		    		if ( $tax_classes ){
+						foreach ( $tax_classes as $class ){
+							$classes_options[ sanitize_title( $class ) ] = esc_html( $class );
+						}
+					}
 					?>
 					<select class="select short" name="multiple_product_tax_class">
 						<?php foreach ($classes_options as $key => $value):?>
-							<option value="<?php echo $key; ?>" <?php echo $key == $post['multiple_product_tax_class'] ? 'selected="selected"': '' ?>><?php echo $value; ?></option>
+							<option value="<?php echo $key; ?>" <?php echo selected( esc_attr( $key ), esc_attr( $post['multiple_product_tax_class'] ), false ); ?>><?php echo $value; ?></option>
 						<?php endforeach; ?>											
 					</select>
 				</span>

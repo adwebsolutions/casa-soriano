@@ -1,0 +1,26 @@
+CODIGO,HIJO,NOMBRE,DESCRIPCION CORTA,DESCRIPCION LARGA,CATEGORIA,SUBSUBCATEGORIA1,SUBSUBCATEGORIA2,SUBSUBCATEGORIA3,SUBSUBCATEGORIA4,MARCA,RANGO,AMPERAJE,VOLTAJE,POLOS,OHMS,WATTS,TAMAÑO,SALIDA  RELEVADOR,OPCIONES SALIDA,CARACTERISTICA,CARACTERISTICA2,CARACTERISTICA3,RELACIONADOS,IMAGEN
+M40A,,FEMA indicador VCA/ACA M40A ,indicador VCA/ACA FEMA MOD: M40A,"Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ",Medición,Equipo para tablero digital,Amperimetro Digital CA,,,,,,,,,,,R1 1 RELEVADOR|R2 2 RELEV |R4 4 RELEV|R6 6 RELEV ,AO SALIDA ANALOGICA |RTU MODBUS|S4 RS485 |S2 RS232 | T1 1 TRANSISTOR | SSR 1 CONTROL SSR | ,,,,,M40A.JPG
+M40AR1-1,M40A,FEMA indicador VCA/ACA M40A ,indicador VCA/ACA FEMA MOD: M40A,"Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ",Medición,Equipo para tablero digital,Amperimetro Digital CA,,,,,,,,,,,R1 1 RELEVADOR,AO SALIDA ANALOGICA,,,,,M40A.JPG
+M40AR1-2,M40A,,,,,,,,,,,,,,,,,R1 1 RELEVADOR,RTU MODBUS,,,,,M40A.JPG
+M40AR1-3,M40A,,,,,,,,,,,,,,,,,R1 1 RELEVADOR,S4 RS485,,,,,M40A.JPG
+M40AR1-4,M40A,,,,,,,,,,,,,,,,,R1 1 RELEVADOR,S2 RS232,,,,,M40A.JPG
+M40AR1-5,M40A,,,,,,,,,,,,,,,,,R1 1 RELEVADOR,T1 1 TRANSISTOR,,,,,M40A.JPG
+M40AR1-6,M40A,,,,,,,,,,,,,,,,,R1 1 RELEVADOR,SSR 1 CONTROL SSR ,,,,,M40A.JPG
+M40AR2-2,M40A,FEMA indicador VCA/ACA M40A ,indicador VCA/ACA FEMA MOD: M40A,"Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ",Medición,Equipo para tablero digital,Amperimetro Digital CA,,,,,,,,,,,R2 2 RELEV,AO SALIDA ANALOGICA,,,,,M40A.JPG
+M40AR2-3,M40A,,,,,,,,,,,,,,,,,R2 2 RELEV,RTU MODBUS,,,,,M40A.JPG
+M40AR2-4,M40A,,,,,,,,,,,,,,,,,R2 2 RELEV,S4 RS485,,,,,M40A.JPG
+M40AR2-5,M40A,,,,,,,,,,,,,,,,,R2 2 RELEV,S2 RS232,,,,,M40A.JPG
+M40AR2-6,M40A,,,,,,,,,,,,,,,,,R2 2 RELEV,T1 1 TRANSISTOR,,,,,M40A.JPG
+M40AR2-7,M40A,,,,,,,,,,,,,,,,,R2 2 RELEV,SSR 1 CONTROL SSR ,,,,,M40A.JPG
+M40AR4-4,M40A,FEMA indicador VCA/ACA M40A ,indicador VCA/ACA FEMA MOD: M40A,"Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ",Medición,Equipo para tablero digital,Amperimetro Digital CA,,,,,,,,,,,R4 4 RELEV,AO SALIDA ANALOGICA,,,,,M40A.JPG
+M40AR4-5,M40A,,,,,,,,,,,,,,,,,R4 4 RELEV,RTU MODBUS,,,,,M40A.JPG
+M40AR4-6,M40A,,,,,,,,,,,,,,,,,R4 4 RELEV,S4 RS485,,,,,M40A.JPG
+M40AR4-7,M40A,,,,,,,,,,,,,,,,,R4 4 RELEV,S2 RS232,,,,,M40A.JPG
+M40AR4-8,M40A,,,,,,,,,,,,,,,,,R4 4 RELEV,T1 1 TRANSISTOR,,,,,M40A.JPG
+M40AR4-9,M40A,,,,,,,,,,,,,,,,,R4 4 RELEV,SSR 1 CONTROL SSR ,,,,,M40A.JPG
+M40AR6-6-6,M40A,FEMA indicador VCA/ACA M40A ,indicador VCA/ACA FEMA MOD: M40A,"Voltmetro AC y amperímetro AC para panel,rangos 600?Vac, 100?Vac, 10?Vac, 1?Vac, 0.1?Vac 5?Aac, 1?A. Indicación de 4 dígitos de 14?mm de altura. Tamaño 96?x?48?mm para montaje en panel. Medida en verdadero valor efcaz (True?RMS). Alimentación universal alta o baja en AC / DC. Opciones de salida relé, transistor, control SSR, salida analógica y comunicaciones MODBUS RTU. ",Medición,Equipo para tablero digital,Amperimetro Digital CA,,,,,,,,,,,R6 6 RELEV,AO SALIDA ANALOGICA,,,,,M40A.JPG
+M40AR6-6-7,M40A,,,,,,,,,,,,,,,,,R6 6 RELEV,RTU MODBUS,,,,,M40A.JPG
+M40AR6-6-8,M40A,,,,,,,,,,,,,,,,,R6 6 RELEV,S4 RS485,,,,,M40A.JPG
+M40AR6-6-9,M40A,,,,,,,,,,,,,,,,,R6 6 RELEV,S2 RS232,,,,,M40A.JPG
+M40AR6-6-10,M40A,,,,,,,,,,,,,,,,,R6 6 RELEV,T1 1 TRANSISTOR,,,,,M40A.JPG
+M40AR6-6-11,M40A,,,,,,,,,,,,,,,,,R6 6 RELEV,SSR 1 CONTROL SSR ,,,,,M40A.JPG

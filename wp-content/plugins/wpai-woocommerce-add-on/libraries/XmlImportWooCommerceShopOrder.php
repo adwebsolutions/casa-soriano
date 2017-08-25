@@ -640,9 +640,6 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 			'post_excerpt'  => $this->data['pmwi_order']['customer_provided_note'][$index], 
 		);
 
-		$old_status = str_replace("wc-", "", $this->articleData['post_status']);
-		$new_status = str_replace("wc-", "", $this->order_data['post_status']);			
-
 		if ( ! empty($this->articleData['ID']))
 		{
 			if ( $this->import->options['update_all_data'] == 'no' ){
@@ -666,6 +663,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 			return $order_id;
 		}
 
+		/** @var WC_Order $order */
 		$order = wc_get_order($order_id);
 
 		/*
@@ -774,49 +772,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 					break;
 			}
 		}
-		// [\Importing shipping information ]	
-
-		// send notifications on order status changed
-		if ( ! empty($this->articleData['ID']) and $new_status !== $old_status && empty($this->import->options['do_not_send_order_notifications'])) 
-		{				
-			do_action( 'woocommerce_order_status_' . $old_status . '_to_' . $new_status, $order_id );			
-			do_action( 'woocommerce_order_status_changed', $order_id, $old_status, $new_status );
-
-			if ( $new_status == 'completed' )
-			{
-				do_action( 'woocommerce_order_status_completed', $this->articleData['ID']);
-			}
-
-		}	
-
-		// send new order notification
-		if ( empty($this->articleData['ID']) && empty($this->import->options['do_not_send_order_notifications']) ) 
-		{			
-			do_action( 'woocommerce_order_status_' . $new_status, $order_id );			
-			
-			do_action( 'woocommerce_order_status_pending_to_' . $new_status, $order_id );			
-
-			do_action( 'woocommerce_before_resend_order_emails', $order );			
-
-			// Load mailer
-			$mailer = WC()->mailer();
-
-			$email_to_send = 'new_order';
-
-			$mails = $mailer->get_emails();
-
-			if ( ! empty( $mails ) ) {
-				foreach ( $mails as $mail ) {
-					if ( $mail->id == $email_to_send ) {
-						$mail->trigger( $order_id );						
-						$this->logger and call_user_func($this->logger, sprintf(__('- %s email notification has beed sent. ...', 'wp_all_import_plugin'), $mail->title));
-					}
-				}
-			}
-
-			do_action( 'woocommerce_after_resend_order_email', $order, $email_to_send );
-		}
-
+		// [\Importing shipping information ]
 
 		// [ Importing payment information ]		
 		if ( empty($this->articleData['ID']) or $this->import->options['update_all_data'] == 'yes' or $this->import->options['is_update_payment'] )
@@ -914,11 +870,34 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 			$this->_import_taxes_items( $order, $order_id, $index );
 		}
 
-		/*
-		*
-		* Import Order Refunds
-		*
-		*/		
+        /*
+        *
+        * Import Order Total
+        *
+        */
+
+        if ( empty($this->articleData['ID']) or $this->import->options['update_all_data'] == 'yes' or $this->import->options['is_update_total'] )
+        {
+            if ( $this->import->options['pmwi_order']['order_total_logic'] !== 'auto' )
+            {
+                if ( version_compare(WOOCOMMERCE_VERSION, '3.0') < 0 ) {
+                    $order->set_total($this->data['pmwi_order']['order_total_xpath'][$index], 'total');
+                }
+                else{
+                    update_post_meta( $order_id, '_order_total', wc_format_decimal( $this->data['pmwi_order']['order_total_xpath'][$index], wc_get_price_decimals() ) );
+                }
+            }
+            else
+            {
+                $order->calculate_totals();
+            }
+        }
+
+        /*
+        *
+        * Import Order Refunds
+        *
+        */
 		if ( empty($this->articleData['ID']) or $this->import->options['update_all_data'] == 'yes' or $this->import->options['is_update_refunds'] )
 		{
 			if ( ! empty($this->data['pmwi_order']['order_refund_amount'][$index]) )
@@ -949,7 +928,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 						'import_id'   => $this->import->id,
 						'post_id'     => $order_id,
 						'unique_key'  => 'refund-item-' . $order_id,
-						'product_key' => 'refund-item-' . $refund->id,
+						'product_key' => 'refund-item-' . $refund->get_id(),
 						'iteration'   => $this->import->iteration
 					))->save();
 
@@ -962,7 +941,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 							if ($customer)
 							{
 								wp_update_post(array(
-									'ID' => $refund->id,
+									'ID' => $refund->get_id(),
 									'post_author' => $customer->ID
 								));
 							}
@@ -972,7 +951,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 						default:
 							
 							wp_update_post(array(
-								'ID' => $refund->id,
+								'ID' => $refund->get_id(),
 								'post_author' => 0
 							));
 
@@ -980,25 +959,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 					}
 				}			
 			}
-		}	
-
-		/*
-		*
-		* Import Order Total
-		*
-		*/	
-
-		if ( empty($this->articleData['ID']) or $this->import->options['update_all_data'] == 'yes' or $this->import->options['is_update_total'] )
-		{
-			if ( $this->import->options['pmwi_order']['order_total_logic'] !== 'auto' )
-			{
-				$order->set_total( $this->data['pmwi_order']['order_total_xpath'][$index], 'total' );
-			}
-			else
-			{
-				$order->calculate_totals();
-			}
-		}		
+		}
 
 		/*
 		*
@@ -1012,7 +973,10 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 		}
 
 		update_post_meta( $order_id, '_order_version', WC_VERSION );
-        update_post_meta( $order_id, '_order_tax', 0 );
+        $_order_tax = get_post_meta($order_id, '_order_tax', true);
+        if (empty($_order_tax)){
+            update_post_meta( $order_id, '_order_tax', 0 );
+        }
         update_post_meta( $order_id, '_order_shipping_tax', 0 );
 	}
 
@@ -1109,7 +1073,53 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 
 	public function after_save_post( $importData )
 	{
-		// Do something when shop order already imported	
+        $old_status = str_replace("wc-", "", $this->articleData['post_status']);
+        $new_status = str_replace("wc-", "", $this->order_data['post_status']);
+
+        // send notifications on order status changed
+        if ( ! empty($this->articleData['ID']) and $new_status !== $old_status && empty($this->import->options['do_not_send_order_notifications']))
+        {
+            do_action( 'woocommerce_order_status_' . $old_status . '_to_' . $new_status, $importData['pid'] );
+            do_action( 'woocommerce_order_status_changed', $importData['pid'], $old_status, $new_status );
+
+            if ( $new_status == 'completed' )
+            {
+                do_action( 'woocommerce_order_status_completed', $importData['pid']);
+            }
+
+        }
+
+        // send new order notification
+        if ( empty($this->articleData['ID']) && empty($this->import->options['do_not_send_order_notifications']) )
+        {
+            /** @var WC_Order $order */
+            $order = wc_get_order($importData['pid']);
+
+            do_action( 'woocommerce_order_status_' . $new_status, $importData['pid'] );
+
+            do_action( 'woocommerce_order_status_pending_to_' . $new_status, $importData['pid'] );
+
+            do_action( 'woocommerce_before_resend_order_emails', $order );
+
+            // Load mailer
+            $mailer = WC()->mailer();
+
+            $email_to_send = 'new_order';
+
+            $mails = $mailer->get_emails();
+
+            if ( ! empty( $mails ) ) {
+                foreach ( $mails as $mail ) {
+                    if ( $mail->id == $email_to_send ) {
+                        $mail->trigger( $importData['pid'] );
+                        $this->logger and call_user_func($this->logger, sprintf(__('- %s email notification has beed sent. ...', 'wp_all_import_plugin'), $mail->title));
+                    }
+                }
+            }
+
+            do_action( 'woocommerce_after_resend_order_email', $order, $email_to_send );
+        }
+
 		update_option('wp_all_import_previously_updated_order_' . $this->import->id, $importData['pid']);	
 	}
 
@@ -1300,7 +1310,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 						$product_item->getBy(array(
 							'import_id'  => $this->import->id,
 							'post_id'    => $order_id,
-							'unique_key' => 'line-item-' . $product->id . '-' . $variation_str
+							'unique_key' => 'line-item-' . $product->get_id() . '-' . $variation_str
 						));
 						
 						if ( $product_item->isEmpty() )
@@ -1334,7 +1344,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 								$product_item->set(array(
 									'import_id'   => $this->import->id,
 									'post_id'     => $order_id,
-									'unique_key'  => 'line-item-' . $product->id . '-' . $variation_str,
+									'unique_key'  => 'line-item-' . $product->get_id() . '-' . $variation_str,
 									'product_key' => 'line-item-' . $item_id,
 									'iteration'   => $this->import->iteration
 								))->save();
@@ -1377,7 +1387,9 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 				$is_product_founded = true;
 				
 				foreach ($this->data['pmwi_order']['manual_products'][$index] as $productIndex => $productItem) 
-				{									
+				{
+
+				    if (empty($productItem['sku']))	continue;
 
 					$item_price = $productItem['price_per_unit'];
 
@@ -1586,8 +1598,37 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 							'tax_data' => array(),
 							'taxable' => 0
 						);
+                        if ( version_compare(WOOCOMMERCE_VERSION, '3.0') < 0 ) {
+                            $item_id = $order->add_fee((object) $fee_line);
+                        }
+                        else{
 
-						$item_id = $order->add_fee( (object) $fee_line );
+                            $item = new WC_Order_Item_Fee();
+                            $item->set_order_id( $order_id );
+                            $item->set_name( wc_clean( $fee_line['name'] ) );
+                            $item->set_total( isset( $fee_line['amount'] ) ? floatval( $fee_line['amount'] ) : 0 );
+
+                            // if taxable, tax class and total are required
+                            if ( ! empty( $fee_line['taxable'] ) ) {
+                                if ( ! isset( $fee_line['tax_class'] ) ) {
+                                    $this->logger and call_user_func($this->logger, __('- <b>WARNING</b> Fee tax class is required when fee is taxable.', 'wp_all_import_plugin'));
+                                }
+                                else{
+                                    $item->set_tax_status( 'taxable' );
+                                    $item->set_tax_class( $fee_line['tax_class'] );
+
+                                    if ( isset( $fee_line['total_tax'] ) ) {
+                                        $item->set_total_tax( isset( $fee_line['total_tax'] ) ? wc_format_refund_total( $fee_line['total_tax'] ) : 0 );
+                                    }
+
+                                    if ( isset( $fee_line['tax_data'] ) ) {
+                                        $item->set_total_tax( wc_format_refund_total( array_sum( $fee_line['tax_data'] ) ) );
+                                        $item->set_taxes( array_map( 'wc_format_refund_total', $fee_line['tax_data'] ) );
+                                    }
+                                }
+                            }
+                            $item_id = $item->save();
+                        }
 					}					
 
 					if ( ! $item_id ) {
@@ -1607,12 +1648,33 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 				else
 				{
 					$item_id = str_replace('fee-item-', '', $fee_item->product_key);
-					$is_updated = $order->update_fee($item_id, array(
-						'name' => $fee['name'],
-						'tax_class' => '',
-						'line_total' => $fee['amount'],
-						'line_tax' => 0						
-					));
+
+                    if ( version_compare(WOOCOMMERCE_VERSION, '3.0') < 0 ) {
+                        $is_updated = $order->update_fee($item_id, array(
+                            'name' => $fee['name'],
+                            'tax_class' => '',
+                            'line_total' => $fee['amount'],
+                            'line_tax' => 0
+                        ));
+                    }
+                    else{
+                        $item = new WC_Order_Item_Fee( $item_id );
+
+                        if ( isset( $fee['title'] ) ) {
+                            $item->set_name( wc_clean( $fee['name'] ) );
+                        }
+                        if ( isset( $fee['tax_class'] ) ) {
+                            $item->set_tax_class( $fee['tax_class'] );
+                        }
+                        if ( isset( $fee['amount'] ) ) {
+                            $item->set_total( floatval( $fee['amount'] ) );
+                        }
+                        if ( isset( $fee['total_tax'] ) ) {
+                            $item->set_total_tax( floatval( $fee['total_tax'] ) );
+                        }
+                        $is_updated = $item->save();
+                    }
+
 					if ( $is_updated )
 					{
 						$fee_item->set(array(								
@@ -1670,7 +1732,19 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 
 					if ( ! $item_id )
 					{
-						$item_id = $order->add_coupon( $coupon['code'], $absAmount, $coupon['amount_tax'] );
+						if ( version_compare(WOOCOMMERCE_VERSION, '3.0') < 0 ){
+                            $item_id = $order->add_coupon( $coupon['code'], $absAmount, $coupon['amount_tax'] );
+                        }
+                        else{
+                            $item = new WC_Order_Item_Coupon();
+                            $item->set_props( array(
+                                'code'         => $coupon['code'],
+                                'discount'     => isset( $coupon['amount'] ) ? floatval( $coupon['amount'] ) : 0,
+                                'discount_tax' => 0,
+                                'order_id'     => $order_id,
+                            ) );
+                            $item_id = $item->save();
+                        }
 					}					
 
 					if ( ! $item_id ) {
@@ -1689,13 +1763,32 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 				}		
 				else
 				{
-					$item_id = str_replace('coupon-item-', '', $order_item->product_key);					
+					$item_id = str_replace('coupon-item-', '', $order_item->product_key);
 
-					$is_updated = $order->update_coupon($item_id, array(
-						'code' => $coupon['code'],
-						'discount_amount' => $absAmount,
-						// 'discount_amount_tax' => empty($coupon['amount_tax']) ? NULL : $coupon['amount_tax']
-					));
+                    if ( version_compare(WOOCOMMERCE_VERSION, '3.0') < 0 ) {
+
+                        $is_updated = $order->update_coupon($item_id, array(
+                            'code' => $coupon['code'],
+                            'discount_amount' => $absAmount,
+                            // 'discount_amount_tax' => empty($coupon['amount_tax']) ? NULL : $coupon['amount_tax']
+                        ));
+
+                    }
+                    else{
+
+                        $item = new WC_Order_Item_Coupon( $item_id );
+
+                        if ( isset( $coupon['code'] ) ) {
+                            $item->set_code( $coupon['code'] );
+                        }
+
+                        if ( isset( $coupon['amount'] ) ) {
+                            $item->set_discount( floatval( $coupon['amount'] ) );
+                        }
+
+                        $is_updated = $item->save();
+                    }
+
 					if ( $is_updated )
 					{
 						$order_item->set(array(								
@@ -1763,7 +1856,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 
 				if ( $method )
 				{					
-					$shipping_method = new WC_Shipping_Rate($method->id, $shipping['name'], $shipping['amount']);					
+					$shipping_method = new WC_Shipping_Rate($method->id, $shipping['name'], $shipping['amount']);
 
 					$shipping_item = new PMXI_Post_Record();
 					$shipping_item->getBy(array(
@@ -1866,9 +1959,19 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 						$tax['tax_amount'] = 0;
 						$tax['shipping_tax_amount'] = 0;
 					}
-				}												
+				}
+                else{
+                    if ( ! empty($this->tax_rates[$tax['tax_code']])) {
+                        $tax_rate = $this->tax_rates[$tax['tax_code']];
+                        $tax['tax_amount'] = 0;
+                        $tax['shipping_tax_amount'] = 0;
+                    }
+                    else{
+                        $founded = false;
+                    }
+                }
 
-				if ( $founded )
+                if ( $founded )
 				{
 					$tax_item = new PMXI_Post_Record();
 					$tax_item->getBy(array(
@@ -1896,8 +1999,23 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 						}
 
 						if ( ! $item_id )
-						{							
-							$item_id = $order->add_tax( $tax_rate->tax_rate_id, $tax['tax_amount'], $tax['shipping_tax_amount'] );
+						{
+
+                            if ( version_compare(WOOCOMMERCE_VERSION, '3.0') < 0 ) {
+                                $item_id = $order->add_tax( $tax_rate->tax_rate_id, $tax['tax_amount'], $tax['shipping_tax_amount'] );
+                            }
+                            else{
+
+                                $item = new WC_Order_Item_Tax();
+                                $item->set_props( array(
+                                    'name'      => $tax_rate->tax_rate_name,
+                                    'tax_class' => empty($tax_rate->tax_rate_class) ? 0 : $tax_rate->tax_rate_class,
+                                    'total'     => $tax['tax_amount'],
+                                    'total_tax' => $tax['tax_amount'],
+                                    'order_id'  => $order_id,
+                                ) );
+                                $item_id = $item->save();
+                            }
 						}
 
 						if ( ! $item_id ) {						
@@ -1914,6 +2032,35 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
 							))->save();
 						}
 					}
+					else{
+
+                        $item_id = str_replace('tax-item-', '', $tax_item->product_key);
+
+                        if ( version_compare(WOOCOMMERCE_VERSION, '3.0') >= 0 ) {
+
+                            $item = new WC_Order_Item_Tax( $item_id );
+
+                            if ( isset( $tax_rate->tax_rate_name ) ) {
+                                $item->set_name( wc_clean( $tax_rate->tax_rate_name ) );
+                            }
+                            if ( isset( $tax_rate->tax_rate_id ) ) {
+                                $item->set_rate( $tax_rate->tax_rate_id );
+                            }
+                            if ( isset( $tax['tax_amount'] ) ) {
+                                $item->set_tax_total( floatval( $tax['tax_amount'] ) );
+                            }
+
+                            $is_updated = $item->save();
+
+                            if ( $is_updated )
+                            {
+                                $tax_item->set(array(
+                                    'iteration'   => $this->import->iteration
+                                ))->save();
+                            }
+                        }
+
+                    }
 //					$order->update_taxes();
 				}				
 			}
@@ -2125,7 +2272,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
         $tax_based_on       = get_option( 'woocommerce_tax_based_on' );
 
         // If is_vat_exempt is 'yes', or wc_tax_enabled is false, return and do nothing.
-        if ( 'yes' === $order->is_vat_exempt || ! wc_tax_enabled() ) {
+        if ( ! wc_tax_enabled() ) {
             return false;
         }
 
@@ -2201,7 +2348,7 @@ class XmlImportWooCommerceShopOrder extends XmlImportWooCommerce{
         $tax_based_on       = get_option( 'woocommerce_tax_based_on' );
 
         // If is_vat_exempt is 'yes', or wc_tax_enabled is false, return and do nothing.
-        if ( 'yes' === $order->is_vat_exempt || ! wc_tax_enabled() ) {
+        if ( ! wc_tax_enabled() ) {
             return false;
         }
 

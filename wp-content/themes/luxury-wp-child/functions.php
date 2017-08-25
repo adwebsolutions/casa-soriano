@@ -190,3 +190,27 @@ function custom_adding_scripts() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'custom_adding_scripts' );
+
+//Redirecting after success submit contact form
+function thanx_script_footer(){ ?>
+    <script>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            location = '<?php echo get_site_url();?>/gracias/';
+        }, false );
+    </script>
+
+<?php }
+
+add_action('wp_footer', 'thanx_script_footer');
+
+function custom_get_search_form(){
+    $ajax= apply_filters('dh_enable_ajax_search_form',false);
+    $search_form = '<form method="GET" class="searchform'.($ajax ?' search-ajax':'').'" action="'.esc_url( home_url( '/' ) ).'" role="form">
+					<input type="search" class="searchinput" name="s" autocomplete="off" value="" placeholder="'.__( 'Search...', 'luxury-wp' ).'" />
+					<input type="submit" class="searchsubmit hidden" name="submit" value="'.__( 'Search', 'luxury-wp' ).'" />
+					<input type="hidden" name="post_type" value="'.apply_filters('dh_ajax_search_form_post_type', 'product').'" />
+				</form>';
+    if($ajax)
+        $search_form .='<div class="searchform-result"></div>';
+    return $search_form;
+}

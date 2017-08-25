@@ -105,6 +105,18 @@ if(defined('WOOCOMMERCE_VERSION')){
 											<span class="icon-bar bar-middle"></span> 
 											<span class="icon-bar bar-bottom"></span>
 										</button>
+										<<?php dh_logo_tag()?> class="navbar-brand-title">
+											<a class="navbar-brand" itemprop="url" title="<?php esc_attr(bloginfo( 'name' )); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+												<?php if(!empty($logo_url)):?>
+													<img class="logo" alt="<?php bloginfo( 'name' ); ?>" src="<?php echo esc_url($logo_url)?>">
+												<?php else:?>
+													<?php echo bloginfo( 'name' ) ?>
+												<?php endif;?>
+												<img class="logo-fixed" alt="<?php bloginfo( 'name' ); ?>" src="<?php echo esc_url($logo_fixed_url)?>">
+												<img class="logo-mobile" alt="<?php bloginfo( 'name' ); ?>" src="<?php echo esc_url($logo_mobile_url)?>">
+												<span itemprop="name" class="sr-only sr-only-focusable"><?php bloginfo('name')?></span>
+											</a>
+										</<?php dh_logo_tag()?>>
 										<?php if(dh_get_theme_option('ajaxsearch',1)){ ?>
 										<a class="navbar-search-button search-icon-mobile" href="#">
 											<svg xml:space="preserve" style="enable-background:new 0 0 612 792;" viewBox="0 0 612 792" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -133,25 +145,13 @@ if(defined('WOOCOMMERCE_VERSION')){
 								     	?>
 										<a class="cart-icon-mobile" href="<?php echo esc_url($cart_url) ?>"><?php echo DH_Woocommerce::instance()->_get_minicart_icon2()?><span><?php echo absint($woocommerce->cart->cart_contents_count)?></span></a>
 										<?php endif;?>
-										<<?php dh_logo_tag()?> class="navbar-brand-title">
-											<a class="navbar-brand" itemprop="url" title="<?php esc_attr(bloginfo( 'name' )); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-												<?php if(!empty($logo_url)):?>
-													<img class="logo" alt="<?php bloginfo( 'name' ); ?>" src="<?php echo esc_url($logo_url)?>">
-												<?php else:?>
-													<?php echo bloginfo( 'name' ) ?>
-												<?php endif;?>
-												<img class="logo-fixed" alt="<?php bloginfo( 'name' ); ?>" src="<?php echo esc_url($logo_fixed_url)?>">
-												<img class="logo-mobile" alt="<?php bloginfo( 'name' ); ?>" src="<?php echo esc_url($logo_mobile_url)?>">
-												<span itemprop="name" class="sr-only sr-only-focusable"><?php bloginfo('name')?></span>
-											</a>
-										</<?php dh_logo_tag()?>>
 									</div>
 									<div class="navbar-header-center">
 										<div class="navbar-search">
 											<form method="GET" class="searchform" action="<?php echo esc_url( home_url( '/' ) )?>" role="form">												
 												<div class="searchinput-wrap">
 													<input type="search" class="searchinput" name="s" autocomplete="off" value="" placeholder="<?php esc_attr_e('Search...','luxury-wp')?>" />
-													<input type="hidden" name="post_type" value="<?php echo apply_filters('dh_ajax_search_form_post_type', 'any') ?>" />
+													<input type="hidden" name="post_type" value="<?php echo apply_filters('dh_ajax_search_form_post_type', 'product') ?>" />
 													<div class="search-product-category">
 														<div class="form-flat-select">
 															<?php
@@ -175,29 +175,6 @@ if(defined('WOOCOMMERCE_VERSION')){
 									<div class="navbar-header-right">
 
 										<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('header_sidebar') ) : endif; ?>
-
-										<?php if(dh_get_theme_option('show-navbar-offcanvas',1)):?>
-											<div class="navbar-offcanvas">
-												<a href="#" class="navbar-offcanvas-btn">
-													<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 317.825 317.825" style="enable-background:new 0 0 317.825 317.825;" xml:space="preserve">
-														<g>
-															<g>
-																<g>
-																	<g>
-																		<path d="M301.934,143.021H15.891C7.119,143.021,0,150.14,0,158.912c0,8.772,7.119,15.891,15.891,15.891
-																			h286.042c8.74,0,15.891-7.119,15.891-15.891C317.825,150.14,310.674,143.021,301.934,143.021z"/>
-																		<path d="M15.891,79.456h286.042c8.74,0,15.891-7.119,15.891-15.891s-7.151-15.891-15.891-15.891H15.891
-																			C7.119,47.674,0,54.793,0,63.565S7.119,79.456,15.891,79.456z"/>
-																		<path d="M301.934,238.369H15.891C7.119,238.369,0,245.52,0,254.26c0,8.74,7.119,15.891,15.891,15.891
-																			h286.042c8.74,0,15.891-7.151,15.891-15.891C317.825,245.52,310.674,238.369,301.934,238.369z"/>
-																	</g>
-																</g>
-															</g>
-														</g>
-													</svg>
-												</a>
-											</div>
-										<?php endif;?>
 									</div>
 								</div><!--navbar-header-->
 							</div>
@@ -237,7 +214,7 @@ if(defined('WOOCOMMERCE_VERSION')){
 			<div class="header-search-overlay hide">
 				<div class="<?php echo dh_container_class()?>">
 					<div class="header-search-overlay-wrap">
-						<?php echo dh_get_search_form()?>
+						<?php echo custom_get_search_form()?>
 						<button type="button" class="close">
 							<span aria-hidden="true" class="fa fa-times"></span><span class="sr-only"><?php echo esc_html__('Close','luxury-wp') ?></span>
 						</button>
